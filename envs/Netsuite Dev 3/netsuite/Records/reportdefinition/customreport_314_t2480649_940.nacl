@@ -1,0 +1,182 @@
+netsuite.reportdefinition customreport_314_t2480649_940 {
+  scriptid = "customreport_314_t2480649_940"
+  definition = "4357f7f4ec0416a6d905ab8a7d6cec3c35b52dd1fca3141baa4af0e6b5956eff@GZC@2025.1.16@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"
+  name = "Custom Customer Count Summary"
+  components = [
+    {
+      KEY_COMPONENT = 99
+      FLAG_SECONDARY_DIM = false
+      FIELD_CLASS = "com.netledger.app.reporting.measure.NLCustomerMeasure"
+    },
+    {
+      KEY_COMPONENT = 5
+      FLAG_SECONDARY_DIM = false
+      FIELD_CLASS = "com.netledger.app.reporting.dimension.NLSalesrepDimension"
+    },
+  ]
+  parameters = {
+    accounting_book_current_id = "1"
+    accounting_book_id = "1"
+  }
+  sorts = [
+    {
+      KEY_COMPONENT = "99"
+      FIELD_ALIAS = "numcustomers"
+      SEQ_NUMBER = 0
+      FLAG_DESCENDING = false
+      FLAG_SUBTOTAL = false
+    },
+  ]
+  fields = [
+    {
+      KEY_COMPONENT = 5
+      FIELD_TABLE = "REPKEYS"
+      FIELD_ALIAS = "SVALIDNAME"
+      FLAG_DIMENSION = false
+      FIELD_UNIT_TYPE = -1
+      FLAG_ROLLUP = true
+      FIELD_DATE_FILTER_INDEX = 0
+      FLAG_APPLY_FORWARDING = true
+      FLAG_MEASURE = false
+      SEQ_NUMBER = 1
+      FIELD_LABEL = "Sales Rep"
+      FIELD_URL = "/app/common/entity/entity.nl?id={srep,entity,nkey,x,x}"
+      FIELD_URL_TYPE = "DERIVED"
+      FLAG_DUAL_COLUMN = false
+      FLAG_PERCENT_TOTAL = false
+      FLAG_PERCENT_INCOME = false
+      FLAG_PERCENT_EXPENSE = false
+      FLAG_RUNNING_BAL = false
+      FLAG_SHOW_OPENING_BAL = false
+      FLAG_SHOW_ABS_DIFF = false
+      FLAG_SHOW_PCT_DIFF = false
+      FLAG_SUB_TOTAL = false
+      FLAG_DISPLAY = true
+      FLAG_DROP_DECIMAL = false
+      FLAG_DIV_BY_THOUSAND = false
+      FLAG_NEG_IN_RED = false
+      FIELD_NEG_VAL_FORMAT = "norm"
+      FIELD_FORMAT = "text"
+      FLAG_TOTAL_FORMULA = true
+    },
+    {
+      KEY_COMPONENT = 99
+      FIELD_ALIAS = "NUMCUSTOMERS"
+      FLAG_DIMENSION = false
+      FIELD_UNIT_TYPE = -1
+      FLAG_ROLLUP = false
+      FIELD_DATE_FILTER_INDEX = 0
+      FLAG_APPLY_FORWARDING = true
+      FLAG_MEASURE = true
+      SEQ_NUMBER = 2
+      FIELD_LABEL = "Total"
+      FIELD_URL = "cr=-3"
+      FIELD_URL_TYPE = "DERIVED"
+      FLAG_DUAL_COLUMN = false
+      FLAG_PERCENT_TOTAL = false
+      FLAG_PERCENT_INCOME = false
+      FLAG_PERCENT_EXPENSE = false
+      FLAG_RUNNING_BAL = false
+      FLAG_SHOW_OPENING_BAL = false
+      FLAG_SHOW_ABS_DIFF = false
+      FLAG_SHOW_PCT_DIFF = false
+      FLAG_SUB_TOTAL = true
+      FLAG_DISPLAY = true
+      FIELD_SUMMARY = " COUNT"
+      FLAG_DROP_DECIMAL = false
+      FLAG_DIV_BY_THOUSAND = false
+      FLAG_NEG_IN_RED = false
+      FIELD_NEG_VAL_FORMAT = "norm"
+      FIELD_FORMAT = "integer"
+      FLAG_TOTAL_FORMULA = true
+    },
+  ]
+  uiPreferences = {
+    PARAMETER_CASH_BASIS = false
+    PARAMETER_TAXCASH_BASIS = "F"
+    PARAMETER_SHOW_ZEROS = true
+    PARAMETER_SHOW_SINGLEROWLINES = true
+    PARAMETER_DISPLAY_TYPE = "data"
+    PARAMETER_INC_VS_EXP = false
+    PARAMETER_GRAPH_TOP = -1
+    PARAMETER_WEB_STORE = false
+    PARAMETER_ACTIVITY_ONLY = false
+    PARAMETER_ALLOW_WEBQUERY = false
+    PARAMETER_GRAPH_3D = false
+    PARAMETER_SHOW_CURRENCY_SYMBOL = true
+    PARAMETER_EXPAND_LEVEL = 100
+  }
+  criteria = [
+    {
+      descriptor = {
+        FIELD_ALIAS = "CREATIONDATE"
+        FIELD_OP_CLASS = "BETWEEN"
+        FILED_TYPE = "DATE"
+        SEQ_NUMBER = 0
+        FIELD_UNIT_TYPE = -1
+        FLAG_IN_FOOTER = true
+        FLAG_CUSTOM_FOOTER = false
+        FLAG_VIRTUAL_FIELD = false
+        FIELD_DESCRIPTOR = "customer,x,creationdate,x,x"
+        FLAG_IS_HIDDEN = false
+      }
+      values = [
+        {
+          FIELD_DATE_FILTER_INDEX = 0
+          SEQ_NUMBER = 0
+          FIELD_VALUE = "TM"
+        },
+      ]
+    },
+    {
+      descriptor = {
+        FIELD_ALIAS = "KSUBSIDIARY"
+        FIELD_OP_CLASS = "SUBSIDCHILDRENOF"
+        FILED_TYPE = "SELECT"
+        SEQ_NUMBER = 1
+        FIELD_UNIT_TYPE = -1
+        FLAG_IN_FOOTER = true
+        FLAG_CUSTOM_FOOTER = false
+        FLAG_VIRTUAL_FIELD = true
+        FIELD_DESCRIPTOR = "customer,entity,ksubsidiary,x,x"
+        FLAG_IS_HIDDEN = false
+      }
+      values = [
+        {
+          FIELD_DATE_FILTER_INDEX = 0
+          SEQ_NUMBER = 0
+          FIELD_VALUE = 1
+        },
+      ]
+    },
+  ]
+  flags = {
+    KEY_REPORT_ID = 314
+    KEY_SCRIPT_ID = "CUSTOMREPORT_314_T2480649_940"
+    FIELD_KEY = 314
+    FIELD_CODE = "QUICK_REPORT"
+    FIELD_NAME = "Custom Customer Count Summary"
+    FIELD_ORIGINAL_TITLE = "Custom Customer Count Summary"
+    FIELD_PERM_TYPE = "REPO_SFA"
+    KEY_FEATURE = "CRM"
+    FLAG_PERIODS_ALLOWED = false
+    FLAG_DISPLAY_TYPE = "SUMMARY"
+    FLAG_ONE_DATE = false
+    FLAG_PRIMARY_OUTER_JOIN = false
+    FLAG_CUSTOM_MODE = true
+    FLAG_CASH_BASIS = false
+    FLAG_SHOW_ZEROS = true
+    FLAG_INACTIVE = false
+    FIELD_VERSION = 8
+    FLAG_PERIODS_ON = false
+    FLAG_USE_FISCAL_YEAR_RANGE = false
+    FLAG_USE_TAX_PERIODS = false
+    KEY_ENTITY = "-5"
+    FLAG_SHOW_LINK = false
+    FLAG_SUPPORTS_CONSOL_SUBSIDIARY = true
+    FIELD_TOGGLE_TYPE = "NOTHING"
+    FLAG_AFFECTED_BY_COGS = false
+    FLAG_ACTIVITY_ONLY = false
+  }
+  _alias = "Custom Customer Count Summary"
+}

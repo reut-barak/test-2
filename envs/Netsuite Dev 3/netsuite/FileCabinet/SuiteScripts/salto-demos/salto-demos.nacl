@@ -1,0 +1,10 @@
+netsuite.folder SuiteScripts_salto_demos@db {
+  bundleable = false
+  isprivate = false
+  path = "/SuiteScripts/salto-demos"
+  isInactive = false
+  _parent = [
+    netsuite.folder.instance.SuiteScripts,
+  ]
+  _alias = "salto-demos"
+}

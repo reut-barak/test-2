@@ -1,0 +1,33 @@
+netsuite.customlist customlist4153 {
+  scriptid = "customlist4153"
+  ismatrixoption = false
+  isordered = true
+  name = "Accept Backorders?"
+  customvalues = {
+    customvalue = {
+      val_870177_t2257860_840 = {
+        scriptid = "val_870177_t2257860_840"
+        abbreviation = "Y"
+        value = "Yes"
+        index = 0
+        isInactive = false
+      }
+      val_870178_t2257860_350 = {
+        scriptid = "val_870178_t2257860_350"
+        abbreviation = "N"
+        value = "No"
+        index = 1
+        isInactive = false
+      }
+      val_870179_t2257860_891 = {
+        scriptid = "val_870179_t2257860_891"
+        abbreviation = "N"
+        value = "N/A"
+        index = 2
+        isInactive = false
+      }
+    }
+  }
+  isInactive = false
+  _alias = "Accept Backorders?"
+}

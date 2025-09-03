@@ -1,0 +1,14 @@
+netsuite.file SuiteScripts_e2e_plugin_js@duv {
+  description = "created by e2e - 4411860"
+  bundleable = true
+  availablewithoutlogin = false
+  generateurltimestamp = true
+  hideinbundle = false
+  path = "/SuiteScripts/e2e_plugin.js"
+  content = file("netsuite/FileCabinet/SuiteScripts/e2e_plugin.js")
+  isInactive = false
+  _parent = [
+    netsuite.folder.instance.SuiteScripts,
+  ]
+  _alias = "e2e_plugin.js"
+}

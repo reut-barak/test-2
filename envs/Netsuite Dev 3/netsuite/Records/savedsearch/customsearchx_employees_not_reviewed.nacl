@@ -1,0 +1,88 @@
+netsuite.savedsearch customsearchx_employees_not_reviewed {
+  scriptid = "customsearchx_employees_not_reviewed"
+  dependencies = {
+    dependency = [
+      netsuite.entitycustomfield.instance.custentity_has_mgr_reviewed.scriptid,
+    ]
+  }
+  definition = "7dfdca26ec9cba2bfbf64993782c89c69aa528c5e5213825a3c361ee8027d075@GZC@2025.1.16@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"
+  search_filter = [
+    {
+      FLAG_DATE_TIME_SECOND = false
+      FLAG_FROM_AVAILABLE_FILTER = false
+      FLAG_NOT = false
+      FLAG_OR = false
+      FIELD_OR_CLAUSE_STATUS = "N"
+      FIELD_NUM_LEFT_PARENS = 0
+      FIELD_NUM_RIGHT_PARENS = 0
+      FIELD_FILTER_NAME = "CUSTENTITY_HAS_MGR_REVIEWED"
+      FIELD_ATTRIBUTE = "F"
+      FIELD_TYPE = "CHECKBOX"
+    },
+  ]
+  return_fields = [
+    {
+      FIELD_ALIAS = "Entity_ENTITYID"
+      FIELD_INDEX = 1
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Entity_EMAIL"
+      FIELD_INDEX = 2
+      FIELD_FORMULA_ERROR = false
+    },
+  ]
+  sort_columns = [
+    {
+      KEY_FIELD = "Entity_ENTITYID"
+      FILELD_ORDER = 1
+      FLAG_DESCENDING = false
+    },
+  ]
+  audience = {
+    FLAG_AUDIENCE_ALL_CUSTOMERS = false
+    FLAG_AUDIENCE_ALL_EMPLOYEES = false
+    FLAG_AUDIENCE_ALL_PARTNERS = false
+    FLAG_AUDIENCE_ALL_ROLES = true
+    FLAG_AUDIENCE_ALL_VENDORS = false
+  }
+  KEY_SCRIPT_ID = "customsearchx_employees_not_reviewed"
+  FIELD_DEFAULT_NAME = "[Script] Unreviewed Employees"
+  FIELD_SEARCH_TYPE = "Employee"
+  FLAG_PUBLIC = true
+  FLAG_LIST = false
+  FLAG_PORTLET = false
+  FLAG_MACHINE = false
+  FLAG_REMINDER = false
+  FLAG_SHOW_LINK = false
+  FLAG_PREFERRED_LIST = false
+  FLAG_PREFERRED_PORTLET = false
+  FLAG_PREFERRED_MACHINE = false
+  FLAG_PREFERRED_FORM = false
+  FLAG_PREFERRED_RESULTS = false
+  FLAG_VIEW_AS_REPORT = false
+  FLAG_VIEW_AS_GRAPH = false
+  FLAG_VIEW_AS_GRID = false
+  FLAG_UNRESTRICTED = false
+  FLAG_DISABLE_DRILL_DOWN = false
+  FLAG_HIDE_FILTER_DROPDOWNS = false
+  KEY_DEFAULT_TEXT_FIELD_FILTER = "ANY"
+  FLAG_AVAILABLE_AS_FEED = false
+  FLAG_GLOBAL_EDIT = false
+  FLAG_CSV = false
+  FLAG_EXCEL = false
+  FLAG_PDF = false
+  FLAG_TRIGGERED_ALERT = false
+  FLAG_SCHEDULED_ALERT = false
+  FLAG_SCHEDULED_ALERT_SUMMARIES = false
+  FLAG_SEND_EMPTY_RESULTS = false
+  FLAG_ALERT_ALLOW_SUBSCRIBE = false
+  FLAG_ALERT_INCLUDE_VIEW_LINK = false
+  FLAG_HAS_TOTALS = false
+  FLAG_INCLUDE_PERIOD_END_TRANSACTIONS = false
+  FLAG_BUILT_IN = false
+  FLAG_SEND_ON_UPDATE = false
+  FLAG_SHOW_AUDIT_TRAIL = false
+  KEY_AUDIENCE = 0
+  _alias = "[Script] Unreviewed Employees"
+}
