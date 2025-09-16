@@ -34,7 +34,7 @@ netsuite.workflow customworkflow9 {
             }
           }
         }
-        index = 0
+        index = 1
       }
       workflowstate436 = {
         scriptid = "workflowstate436"
@@ -42,7 +42,7 @@ netsuite.workflow customworkflow9 {
         name = "State 2"
         positionx = 243
         positiony = 253
-        index = 1
+        index = 0
       }
     }
   }

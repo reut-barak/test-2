@@ -164,6 +164,9 @@ type netsuite.itemFulfillment {
   }
   netsuite.recordRef shipMethod {
   }
+  netsuite.location inventoryLocation {
+    isReference = true
+  }
   boolean generateIntegratedShipperLabel {
   }
   number shippingCost {

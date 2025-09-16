@@ -8,7 +8,7 @@ netsuite.workflow customworkflow_slt_e2e_test {
   inittriggertype = "BEFORESUBMIT"
   islogenabled = false
   keephistory = "ONLYWHENTESTING"
-  name = "created by e2e - 4411860"
+  name = "created by e2e - 7101274"
   recordtypes = "CASHREFUND"
   releasestatus = "NOTINITIATING"
   runasadmin = true
@@ -144,5 +144,5 @@ netsuite.workflow customworkflow_slt_e2e_test {
     }
   }
   isInactive = false
-  _alias = "created by e2e - 4411860"
+  _alias = "created by e2e - 7101274"
 }

@@ -1,5 +1,5 @@
 netsuite.file SuiteScripts_e2e_plugin_js@duv {
-  description = "created by e2e - 4411860"
+  description = "created by e2e - 7101274"
   bundleable = true
   availablewithoutlogin = false
   generateurltimestamp = true

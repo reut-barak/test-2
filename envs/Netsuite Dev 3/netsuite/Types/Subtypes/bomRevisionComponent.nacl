@@ -17,8 +17,7 @@ type netsuite.bomRevisionComponent {
   }
   netsuite.recordRef units {
   }
-  serviceid internalId {
-    _hidden_value = true
+  string id {
   }
   netsuite.customFieldList customFieldList {
   }
