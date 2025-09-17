@@ -23,7 +23,7 @@ netsuite.subsidiary Parent_Company@s {
     ]
   }
   checkLayout = {
-    id = "[ACCOUNT_SPECIFIC_VALUE] (object) (Custom Check Layout)"
+    id = "[ACCOUNT_SPECIFIC_VALUE] (object) (Custom Check Layout 2 reut)"
   }
   identifier = "Parent Company"
   _alias = "Parent Company"

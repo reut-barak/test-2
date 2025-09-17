@@ -1,0 +1,12 @@
+netsuite.advancedpdftemplate custtmpl_100_t2480649_384 {
+  scriptid = "custtmpl_100_t2480649_384"
+  displaysourcecode = false
+  preferred = false
+  printtype = "SEARCH"
+  savedsearch = "[scriptid=customsearch309]"
+  title = "Empty PDF/HTML Template 2 reut"
+  trantype = "CUSTINVC"
+  content = file("netsuite/advancedpdftemplate/custtmpl_100_t2480649_384.xml")
+  isInactive = false
+  _alias = "Empty PDF/HTML Template 2 reut"
+}
