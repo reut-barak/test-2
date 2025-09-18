@@ -82,7 +82,7 @@ netsuite {
         },
         {
           name = "advancedpdftemplate"
-          ids = ["custtmpl_100_t2480649_384111"]
+          ids = ["custtmpl_100_t2480649_384"]
 
         }
       ]
