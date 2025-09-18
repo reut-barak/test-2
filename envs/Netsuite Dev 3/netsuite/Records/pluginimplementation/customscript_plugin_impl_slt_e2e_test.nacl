@@ -2,12 +2,12 @@ netsuite.pluginimplementation customscript_plugin_impl_slt_e2e_test {
   scriptid = "customscript_plugin_impl_slt_e2e_test"
   customplugintype = netsuite.plugintype.instance.customscript_plugin_type_slt_e2e_test.scriptid
   loglevel = "DEBUG"
-  name = "created by e2e - 7101274"
+  name = "created by e2e - 7964964"
   notifyadmins = false
   notifyowner = true
   notifyuser = false
   scriptfile = netsuite.file.instance.SuiteScripts_e2e_plugin_js@duv.path
   status = "TESTING"
   isInactive = false
-  _alias = "created by e2e - 7101274"
+  _alias = "created by e2e - 7964964"
 }

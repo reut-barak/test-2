@@ -78,10 +78,6 @@ netsuite.companyPreferences {
   ALLOC_SCHEDULE_ALLOW_JE_USER_EVENTS = false
   PREPOPULATECONTACTADDRESS = true
   LOGSYSTEMNOTESONUPDATEONLY = false
-  USE_TSVC_FOR_VENDOR_BALANCE = {
-    value = "TSVCONLY"
-    text = "Use only TSVC"
-  }
   UNRESTRICTED_SEARCH_FORMULA_FIELDS = true
   RATING_ENGINE_YEAR_LIMIT = 50
   custscript_lsa_task_completed = false

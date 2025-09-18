@@ -3,12 +3,12 @@ netsuite.plugintype customscript_plugin_type_slt_e2e_test {
   class = "e2eTest"
   deploymentmodel = "ALLOW_MULTIPLE"
   loglevel = "DEBUG"
-  name = "created by e2e - 7101274"
+  name = "created by e2e - 7964964"
   notifyadmins = false
   notifyowner = false
   notifyuser = false
   scriptfile = netsuite.file.instance.SuiteScripts_e2e_plugin_js@duv.path
   status = "TESTING"
   isInactive = false
-  _alias = "created by e2e - 7101274"
+  _alias = "created by e2e - 7964964"
 }

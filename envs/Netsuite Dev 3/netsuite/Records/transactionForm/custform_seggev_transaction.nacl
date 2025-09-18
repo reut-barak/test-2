@@ -589,11 +589,17 @@ netsuite.transactionForm custform_seggev_transaction {
                     visible = true
                     index = 25
                   }
+                  TERMINMONTHS = {
+                    id = "TERMINMONTHS"
+                    label = "Rev. Term In Months"
+                    visible = false
+                    index = 26
+                  }
                   DEPARTMENT = {
                     id = "DEPARTMENT"
                     label = "Department"
                     visible = false
-                    index = 26
+                    index = 27
                   }
                 }
               }

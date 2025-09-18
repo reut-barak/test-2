@@ -55,7 +55,6 @@ netsuite.userPreferences {
     text = "-100"
   }
   DEPARTMENTUNASSIGNED = false
-  DO_NOT_SHOW_IN_APP_POPUP = false
   TIMEFORMAT = {
     value = "h:mm a"
     text = "hh:mm AM/PM"

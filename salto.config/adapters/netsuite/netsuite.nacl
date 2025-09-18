@@ -80,6 +80,9 @@ netsuite {
             FLAG_PUBLIC = false
           }
         },
+        {
+          name = "advancedpdftemplate"
+        }
       ]
     }
   }

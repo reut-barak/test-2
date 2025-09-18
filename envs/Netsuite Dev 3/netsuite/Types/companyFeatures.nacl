@@ -437,6 +437,9 @@ settings netsuite.companyFeatures {
   boolean WEEKLYTIMESHEETSNEWUI {
     label = "New Weekly Timesheets Interface"
   }
+  boolean OVERTIME {
+    label = "Enhanced Timesheets Using Workforce Management Wage Rules"
+  }
   boolean CRMTIME {
     label = "Time Tracking for CRM"
   }
@@ -535,6 +538,9 @@ settings netsuite.companyFeatures {
   }
   boolean HTML_FORMULAS_IN_SEARCH {
     label = "HTML Formulas in Search"
+  }
+  boolean SAASMETRICS {
+    label = "SaaS Metrics"
   }
   boolean WEBSITE {
     label = "Website"
@@ -649,9 +655,6 @@ settings netsuite.companyFeatures {
   }
   boolean TBA {
     label = "Token-based Authentication"
-  }
-  boolean KILLSHA1FORTBA {
-    label = "Disable HMAC-SHA1 for Token-based Authentication"
   }
   boolean OAUTH2 {
     label = "OAuth 2.0"

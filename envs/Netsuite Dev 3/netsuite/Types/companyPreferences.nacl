@@ -219,10 +219,6 @@ settings netsuite.companyPreferences {
     label = "Pre-Populate Contact Address"
     type = "checkbox"
   }
-  netsuite.selectOption USE_TSVC_FOR_VENDOR_BALANCE {
-    label = "Use TSVC for Vendor Balance"
-    type = "select"
-  }
   boolean UNRESTRICTED_SEARCH_FORMULA_FIELDS {
     label = "Is usage of restricted search formula fields allowed"
     type = "checkbox"

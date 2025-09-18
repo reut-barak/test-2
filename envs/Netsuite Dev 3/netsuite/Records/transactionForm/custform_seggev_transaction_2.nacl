@@ -254,7 +254,7 @@ netsuite.transactionForm custform_seggev_transaction_2 {
               displayType = "NORMAL"
               columnBreak = false
               sameRowAsPrevious = false
-              index = 0
+              index = 1
             }
             custbody_slt_opportunity_owner_modify = {
               id = netsuite.transactionbodycustomfield.instance.custbody_slt_opportunity_owner_modify.scriptid
@@ -264,7 +264,7 @@ netsuite.transactionForm custform_seggev_transaction_2 {
               displayType = "NORMAL"
               columnBreak = false
               sameRowAsPrevious = false
-              index = 1
+              index = 0
             }
             custbody_slt_opportunity_owner = {
               id = netsuite.transactionbodycustomfield.instance.custbody_slt_opportunity_owner.scriptid

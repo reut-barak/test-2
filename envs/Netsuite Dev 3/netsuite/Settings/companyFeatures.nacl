@@ -145,6 +145,7 @@ netsuite.companyFeatures {
   TIMETRACKING = true
   WEEKLYTIMESHEETS = false
   WEEKLYTIMESHEETSNEWUI = false
+  OVERTIME = false
   CRMTIME = false
   COMMISSIONS = true
   COMMISSIONONCUSTOMFIELDS = false
@@ -178,6 +179,7 @@ netsuite.companyFeatures {
   SUITECUBE_ENTERPRISE = false
   SUPPLYCHAINPREDICTEDRISKS = false
   HTML_FORMULAS_IN_SEARCH = false
+  SAASMETRICS = false
   WEBSITE = true
   ADVANCEDSITECUST = true
   ADVWEBREPORTS = true
@@ -216,7 +218,6 @@ netsuite.companyFeatures {
   OIDC = false
   SAMLSSO = false
   TBA = true
-  KILLSHA1FORTBA = false
   OAUTH2 = true
   NSASOIDCPROVIDER = false
   KILLINBOUNDSSO = false
