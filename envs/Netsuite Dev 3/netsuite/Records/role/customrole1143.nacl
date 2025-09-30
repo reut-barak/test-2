@@ -1,0 +1,46 @@
+netsuite.role customrole1143 {
+  scriptid = "customrole1143"
+  accountingbooksoption = "ALL"
+  centertype = "ACCOUNTCENTER"
+  coreadminpermission = false
+  employeerestriction = "NONE"
+  employeeselectionunrestricted = false
+  ispartnerrole = false
+  issalesrole = false
+  issinglesignononly = false
+  issupportrole = false
+  iswebserviceonlyrole = false
+  name = "RB role"
+  restrictbydevice = false
+  restricttimeandexpenses = false
+  subsidiaryoption = "OWN"
+  subsidiaryviewingallowed = false
+  tfaduration = "0"
+  tfarequired = "OFF"
+  permissions = {
+    permission = {
+      TRAN_CUSTDEP = {
+        permkey = "TRAN_CUSTDEP"
+        permlevel = "FULL"
+      }
+      TRAN_CUSTPYMT = {
+        permkey = "TRAN_CUSTPYMT"
+        permlevel = "FULL"
+      }
+      TRAN_PAYMENTEVENT = {
+        permkey = "TRAN_PAYMENTEVENT"
+        permlevel = "FULL"
+      }
+      LIST_ACCOUNT = {
+        permkey = "LIST_ACCOUNT"
+        permlevel = "FULL"
+      }
+      LIST_CUSTJOB = {
+        permkey = "LIST_CUSTJOB"
+        permlevel = "FULL"
+      }
+    }
+  }
+  isInactive = false
+  _alias = "RB role"
+}
