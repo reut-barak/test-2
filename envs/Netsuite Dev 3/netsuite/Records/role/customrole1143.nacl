@@ -1,5 +1,6 @@
 netsuite.role customrole1143 {
   scriptid = "customrole1143"
+  accountingbooksoption = "ALL"
   centertype = "ACCOUNTCENTER"
   coreadminpermission = false
   employeerestriction = "NONE"
@@ -18,6 +19,14 @@ netsuite.role customrole1143 {
   tfarequired = "OFF"
   permissions = {
     permission = {
+      TRAN_INVADJST = {
+        permkey = "TRAN_INVADJST"
+        permlevel = "VIEW"
+      }
+      TRAN_BALANCEOVERVIEW = {
+        permkey = "TRAN_BALANCEOVERVIEW"
+        permlevel = "VIEW"
+      }
       TRAN_CUSTDEP = {
         permkey = "TRAN_CUSTDEP"
         permlevel = "VIEW"
@@ -34,16 +43,8 @@ netsuite.role customrole1143 {
         permkey = "LIST_CUSTJOB"
         permlevel = "FULL"
       }
-      TRAN_CUSTPYMT = {
-        permkey = "TRAN_CUSTPYMT"
-        permlevel = "FULL"
-      }
-      LIST_OTHER_ADDRESS = {
-        permkey = "LIST_OTHER_ADDRESS"
-        permlevel = "FULL"
-      }
     }
   }
-  isInactive = false
+  isInactive = true
   _alias = "RB role"
 }
