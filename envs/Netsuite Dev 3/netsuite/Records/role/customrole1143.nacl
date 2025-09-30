@@ -1,6 +1,5 @@
 netsuite.role customrole1143 {
   scriptid = "customrole1143"
-  accountingbooksoption = "ALL"
   centertype = "ACCOUNTCENTER"
   coreadminpermission = false
   employeerestriction = "NONE"
@@ -33,6 +32,10 @@ netsuite.role customrole1143 {
       }
       LIST_ACCOUNT = {
         permkey = "LIST_ACCOUNT"
+        permlevel = "FULL"
+      }
+      LIST_OTHER_ADDRESS = {
+        permkey = "LIST_OTHER_ADDRESS"
         permlevel = "FULL"
       }
       LIST_CUSTJOB = {
