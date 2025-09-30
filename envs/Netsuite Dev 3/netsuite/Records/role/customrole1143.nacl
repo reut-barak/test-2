@@ -43,14 +43,6 @@ netsuite.role customrole1143 {
         permkey = "LIST_CUSTJOB"
         permlevel = "FULL"
       }
-      TRAN_CUSTPYMT = {
-        permkey = "TRAN_CUSTPYMT"
-        permlevel = "FULL"
-      }
-      LIST_OTHER_ADDRESS = {
-        permkey = "LIST_OTHER_ADDRESS"
-        permlevel = "FULL"
-      }
     }
   }
   isInactive = true
