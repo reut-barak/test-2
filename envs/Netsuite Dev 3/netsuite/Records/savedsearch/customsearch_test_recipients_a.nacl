@@ -108,7 +108,7 @@ netsuite.savedsearch customsearch_test_recipients_a {
   FLAG_CSV = false
   FLAG_EXCEL = false
   FLAG_PDF = false
-  FIELD_EMAIL_FROM = "&quot;Salto&quot; &lt;services@salto.io&gt;"
+  FIELD_EMAIL_FROM = "&quot;Salto&quot; &lt;reut@salto.io&gt;"
   FIELD_EMAIL_SUBJECT = "Some Subject"
   FIELD_EMAIL_BODY = "{type}"
   FIELD_EMAIL_COMMENT = "Intro"
