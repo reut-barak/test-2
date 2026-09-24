@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute II_restored_at_202403211012_Hardware_Assets_uuuus_Device_Type@uuuuumus {
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Device Type"
+  displayName = "Device Type"
+  objectType = jira.ObjectType.instance.II_restored_at_202403211012_Hardware_Assets@uuuus
+  options = "Physical,Virtual"
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 10
+  _alias = "Device Type"
+}

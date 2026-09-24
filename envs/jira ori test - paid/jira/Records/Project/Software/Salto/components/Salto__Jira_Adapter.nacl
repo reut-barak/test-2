@@ -1,0 +1,8 @@
+jira.ProjectComponent Salto__Jira_Adapter@uus {
+  name = "Jira Adapter"
+  assigneeType = "PROJECT_DEFAULT"
+  _parent = [
+    jira.Project.instance.Salto,
+  ]
+  _alias = "Salto:Jira Adapter"
+}

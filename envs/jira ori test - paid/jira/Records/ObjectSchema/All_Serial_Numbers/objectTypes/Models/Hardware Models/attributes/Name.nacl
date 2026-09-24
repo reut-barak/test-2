@@ -1,0 +1,25 @@
+jira.ObjectTypeAttribute All_Serial_Numbers_s_Models_uumu_Hardware_Models_uuuumus_Name@uuuuuuumu {
+  description = "The name of the object"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 1
+  name = "Name"
+  displayName = "Name"
+  objectType = jira.ObjectType.instance.All_Serial_Numbers_s_Models_uumu_Hardware_Models@uuuumus
+  options = ""
+  pendingCreation = false
+  qlQuery = ""
+  regexValidation = "aaa = bbb"
+  removable = false
+  sortable = true
+  suffix = ""
+  summable = false
+  type = 0
+  uniqueAttribute = true
+  lockedConfiguration = false
+  defaultTypeId = 0
+  _alias = "Name"
+}

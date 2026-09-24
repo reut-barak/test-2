@@ -1,0 +1,15 @@
+jira.Field New_SLA__sd_sla_field__c@suubbuu {
+  name = "New SLA"
+  description = "This custom field was created by Jira Service Management."
+  isLocked = true
+  searcherKey = "com.atlassian.servicedesk:sd-sla-field-searcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "New SLA"
+  translatedDescription = "This custom field was created by Jira Service Management."
+  type = "com.atlassian.servicedesk:sd-sla-field"
+  contexts = [
+    jira.CustomFieldContext.instance.New_SLA__sd_sla_field__c_suubbuu_Default_Configuration_Scheme_for_New_SLA@uuuuuuumusssss,
+  ]
+  _alias = "New SLA"
+}

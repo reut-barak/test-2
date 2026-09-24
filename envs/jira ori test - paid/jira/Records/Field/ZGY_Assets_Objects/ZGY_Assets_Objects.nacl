@@ -1,0 +1,14 @@
+jira.Field ZGY_Assets_Objects__cmdb_object_cftype__c@ssuubbuu {
+  name = "ZGY Assets Objects"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugins.cmdb:cmdb-object-searcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "ZGY Assets Objects"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+  contexts = [
+    jira.CustomFieldContext.instance.ZGY_Assets_Objects__cmdb_object_cftype__c_ssuubbuu_Default_Configuration_Scheme_for_ZGY_Assets_Objects@uuuuuuuumussssss,
+  ]
+  _alias = "ZGY Assets Objects"
+}

@@ -1,0 +1,22 @@
+jira.ObjectTypeAttribute Lior_s_IT_Schema_tss_Models_uuumu_Software_Models_uuuuumus_Name@uuuuuuuumu {
+  description = "The name of the object"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 1
+  name = "Name"
+  displayName = "Name"
+  objectType = jira.ObjectType.instance.Lior_s_IT_Schema_tss_Models_uuumu_Software_Models@uuuuumus
+  options = ""
+  pendingCreation = false
+  removable = false
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 0
+  _alias = "Name"
+}

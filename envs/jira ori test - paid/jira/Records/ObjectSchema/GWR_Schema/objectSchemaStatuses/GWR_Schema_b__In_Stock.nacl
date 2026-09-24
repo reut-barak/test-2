@@ -1,0 +1,11 @@
+jira.ObjectSchemaStatus GWR_Schema_b__In_Stock@umuus {
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:229"
+  name = "In Stock"
+  displayName = "In Stock"
+  description = "Asset is in stock but not in use"
+  category = 2
+  _parent = [
+    jira.ObjectSchema.instance.GWR_Schema@b,
+  ]
+  _alias = "GWR-Schema:In Stock"
+}

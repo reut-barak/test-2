@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute ISS_restored_at_202403211012_Department_R_D_uuuuue_Created@uuuuuumu {
+  editable = false
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 1
+  name = "Created"
+  displayName = "Created"
+  objectType = jira.ObjectType.instance.ISS_restored_at_202403211012_Department_R_D@uuuuue
+  options = ""
+  pendingCreation = false
+  removable = false
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 6
+  _alias = "Created"
+}

@@ -1,0 +1,14 @@
+jira.ObjectSchema Icons {
+  name = "Icons"
+  displayName = "Icons"
+  objectSchemaKey = "IIS"
+  description = ""
+  status = "Ok"
+  crossSchemaReferencingAllowed = false
+  properties = {
+    quickCreateObjects = true
+    allowOtherObjectSchema = false
+    validateQuickCreate = true
+  }
+  _alias = "Icons"
+}

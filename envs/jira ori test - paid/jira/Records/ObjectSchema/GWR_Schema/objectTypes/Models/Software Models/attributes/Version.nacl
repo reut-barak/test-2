@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute GWR_Schema_b_Models_umu_Software_Models_uuumus_Version@uuuuuumu {
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Version"
+  displayName = "Version"
+  objectType = jira.ObjectType.instance.GWR_Schema_b_Models_umu_Software_Models@uuumus
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 0
+  _alias = "Version"
+}

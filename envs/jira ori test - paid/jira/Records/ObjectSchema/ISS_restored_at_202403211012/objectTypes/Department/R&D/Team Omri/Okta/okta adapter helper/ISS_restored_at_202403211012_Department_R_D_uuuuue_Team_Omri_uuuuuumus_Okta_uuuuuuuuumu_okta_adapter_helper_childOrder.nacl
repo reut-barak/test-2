@@ -1,0 +1,8 @@
+jira.ObjectTypeOrder ISS_restored_at_202403211012_Department_R_D_uuuuue_Team_Omri_uuuuuumus_Okta_uuuuuuuuumu_okta_adapter_helper_childOrder@uuuuuuuuuuumussu {
+  objectTypes = [
+    jira.ObjectType.instance.ISS_restored_at_202403211012_Department_R_D_uuuuue_Team_Omri_uuuuuumus_Okta_uuuuuuuuumu_okta_adapter_helper_uuuuuuuuuuumuss_tusday@uuuuuuuuuuuuuuumu,
+  ]
+  _parent = [
+    jira.ObjectType.instance.ISS_restored_at_202403211012_Department_R_D_uuuuue_Team_Omri_uuuuuumus_Okta_uuuuuuuuumu_okta_adapter_helper@uuuuuuuuuuumuss,
+  ]
+}

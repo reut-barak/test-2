@@ -1,0 +1,9 @@
+jira.ProjectComponent IdozJSM__Email_and_Collaboration_Services@uusss {
+  description = "Created by Jira Service Management"
+  assigneeType = "PROJECT_DEFAULT"
+  name = "Email and Collaboration Services"
+  _parent = [
+    jira.Project.instance.IdozJSM,
+  ]
+  _alias = "IdozJSM:Email and Collaboration Services"
+}

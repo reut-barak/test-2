@@ -1,0 +1,10 @@
+jira.ObjectSchemaStatus GWR_Schema_b__Inactive@umuu {
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:223"
+  name = "Inactive"
+  displayName = "Inactive"
+  category = 0
+  _parent = [
+    jira.ObjectSchema.instance.GWR_Schema@b,
+  ]
+  _alias = "GWR-Schema:Inactive"
+}

@@ -1,0 +1,14 @@
+jira.Field batel_create_asset_field__cmdb_object_cftype__c@sssuubbuu {
+  name = "batel create asset field"
+  description = "bla"
+  searcherKey = "com.atlassian.jira.plugins.cmdb:cmdb-object-searcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "batel create asset field"
+  translatedDescription = "bla"
+  type = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+  contexts = [
+    jira.CustomFieldContext.instance.batel_create_asset_field__cmdb_object_cftype__c_sssuubbuu_Default_Configuration_Scheme_for_batel_create_asset_field@uuuuuuuuumusssssss,
+  ]
+  _alias = "batel create asset field"
+}

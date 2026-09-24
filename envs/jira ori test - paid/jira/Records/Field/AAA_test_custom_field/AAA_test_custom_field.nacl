@@ -1,0 +1,14 @@
+jira.Field AAA_test_custom_field__multicheckboxes__c@sssuuuu {
+  name = "AAA test custom field"
+  description = "original description"
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher"
+  areOptionsSupported = true
+  isOptionsCountOverLimit = false
+  translatedName = "AAA test custom field"
+  translatedDescription = "original description"
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes"
+  contexts = [
+    jira.CustomFieldContext.instance.AAA_test_custom_field__multicheckboxes__c_sssuuuu_Default_Configuration_Scheme_for_AAA_test_custom_field@uuuuuuumusssssss,
+  ]
+  _alias = "AAA test custom field"
+}

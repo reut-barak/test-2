@@ -1,0 +1,9 @@
+jira.ProjectComponent testFacilities__Intranet {
+  description = "Issues related to the intranet. Created by Jira Service Management."
+  assigneeType = "UNASSIGNED"
+  name = "Intranet"
+  _parent = [
+    jira.Project.instance.testFacilities,
+  ]
+  _alias = "testFacilities:Intranet"
+}

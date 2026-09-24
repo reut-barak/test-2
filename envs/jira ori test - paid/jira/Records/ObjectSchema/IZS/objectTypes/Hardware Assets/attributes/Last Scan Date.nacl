@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute IZS_Hardware_Assets_us_Last_Scan_Date@uumuss {
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Last Scan Date"
+  displayName = "Last Scan Date"
+  objectType = jira.ObjectType.instance.IZS_Hardware_Assets@us
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 4
+  _alias = "Last Scan Date"
+}

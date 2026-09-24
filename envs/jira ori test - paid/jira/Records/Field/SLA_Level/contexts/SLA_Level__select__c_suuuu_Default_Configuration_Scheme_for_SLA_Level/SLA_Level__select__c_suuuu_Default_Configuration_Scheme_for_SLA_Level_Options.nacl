@@ -1,0 +1,21 @@
+jira.CustomFieldContextOption SLA_Level__select__c_suuuu_Default_Configuration_Scheme_for_SLA_Level_Urgent_SLA@uuuuumusssssus {
+  value = "Urgent SLA"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.SLA_Level__select__c_suuuu_Default_Configuration_Scheme_for_SLA_Level@uuuuumusssss,
+  ]
+}
+jira.CustomFieldContextOption SLA_Level__select__c_suuuu_Default_Configuration_Scheme_for_SLA_Level_Gold_SLA@uuuuumusssssus {
+  value = "Gold SLA"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.SLA_Level__select__c_suuuu_Default_Configuration_Scheme_for_SLA_Level@uuuuumusssss,
+  ]
+}
+jira.CustomFieldContextOption SLA_Level__select__c_suuuu_Default_Configuration_Scheme_for_SLA_Level_Normal_SLA@uuuuumusssssus {
+  value = "Normal SLA"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.SLA_Level__select__c_suuuu_Default_Configuration_Scheme_for_SLA_Level@uuuuumusssss,
+  ]
+}

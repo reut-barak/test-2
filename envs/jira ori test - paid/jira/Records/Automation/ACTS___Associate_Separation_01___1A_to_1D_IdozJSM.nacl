@@ -1,0 +1,1101 @@
+jira.Automation ACTS___Associate_Separation_01___1A_to_1D_IdozJSM@sfssssbsssu {
+  name = "ACTS : Associate Separation 01 - 1A to 1D"
+  state = "ENABLED"
+  description = "Verify Desk, Delete Mailbox, Remove Support and Services, Remove Ext"
+  canOtherRuleTrigger = true
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "62d20c47a94a6f9c0eff9866"
+    displayName = "Ido Zak"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.event.trigger:transitioned"
+    value = {
+      fromStatus = [
+        {
+          type = "NAME"
+          value = jira.Status.instance.review.name
+        },
+      ]
+      toStatus = [
+        {
+          type = "NAME"
+          value = jira.Status.instance.in_progress@s.name
+        },
+      ]
+      eventKey = "jira:issue_updated"
+      issueEvent = "issue_generic"
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "CONDITION"
+      type = "jira.issue.condition"
+      value = {
+        selectedField = {
+          type = "NAME"
+          value = jira.Field.instance.Request_Type__vp_origin__c@suubuu.name
+        }
+        selectedFieldType = "com.atlassian.servicedesk:vp-origin"
+        comparison = "EQUALS"
+        compareFieldValue = {
+          type = "NAME"
+          value = "Associate Separation"
+          multiValue = false
+        }
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.create.variable"
+      value = {
+        id = "_customsmartvalue_id_1680886677579"
+        name = {
+          type = "FREE"
+          value = "jobCode"
+        }
+        type = "SMART"
+        query = {
+          type = "SMART"
+          value = "{{issue.ACTS Associate.Job Code}}"
+        }
+        lazy = false
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "codebarrel.action.log"
+      conditions = [
+      ]
+      children = [
+      ]
+      rawValue = "{{jobCode}}"
+    },
+    {
+      component = "ACTION"
+      type = "jira.create.variable"
+      value = {
+        id = "_customsmartvalue_id_1680886677579"
+        name = {
+          type = "FREE"
+          value = "AcquisitionCode"
+        }
+        type = "SMART"
+        query = {
+          type = "SMART"
+          value = "{{issue.ACTS Associate.Acquisition Code}}"
+        }
+        lazy = false
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "cmdb.lookup.objects"
+      value = {
+        schemaId = jira.ObjectSchema.instance.Facilities
+        customSmartValue = {
+          id = "_customsmartvalue_id_1680886758058"
+          name = {
+            type = "FREE"
+            value = "lookupObjects"
+          }
+          type = "IQL"
+          query = {
+            type = "SMART"
+            value = "objectType = \"Job Category\" AND \"Job Codes\" LIKE {{jobCode}}"
+          }
+          lazy = false
+        }
+        searchResultsLimit = 100
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.create.variable"
+      value = {
+        id = "_customsmartvalue_id_1680886787052"
+        name = {
+          type = "FREE"
+          value = "jobCategory"
+        }
+        type = "SMART"
+        query = {
+          type = "SMART"
+          value = "{{lookupObjects.Name}}"
+        }
+        lazy = false
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "CONDITION"
+      type = "jira.comparator.condition"
+      value = {
+        first = "{{jobCategory}}"
+        second = "Sales"
+        operator = "NOT_EQUALS"
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.create.variable"
+      value = {
+        id = "_customsmartvalue_id_1680815146071"
+        name = {
+          type = "FREE"
+          value = "facilitiesTeam"
+        }
+        type = "SMART"
+        query = {
+          type = "SMART"
+          value = "{{issue.ACTS Associate.Site.Assignment Group}}"
+        }
+        lazy = false
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.create.variable"
+      value = {
+        id = "_customsmartvalue_id_1680886698371"
+        name = {
+          type = "FREE"
+          value = "siteCode"
+        }
+        type = "SMART"
+        query = {
+          type = "SMART"
+          value = "{{issue.ACTS Associate.Site.Site Code}}"
+        }
+        lazy = false
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.create.variable"
+      value = {
+        id = "_customsmartvalue_id_1680886717795"
+        name = {
+          type = "FREE"
+          value = "siteOfficeType"
+        }
+        type = "SMART"
+        query = {
+          type = "SMART"
+          value = "{{issue.ACTS Associate.Site.Office Type}}"
+        }
+        lazy = false
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "cmdb.lookup.objects"
+      value = {
+        schemaId = jira.ObjectSchema.instance.People
+        customSmartValue = {
+          id = "_customsmartvalue_id_1680886811211"
+          name = {
+            type = "FREE"
+            value = "lookupObjects"
+          }
+          type = "IQL"
+          query = {
+            type = "SMART"
+            value = "objectType = \"AssociatePII\" AND \"Associate\" = {{issue.ACTS Associate}}"
+          }
+          lazy = false
+        }
+        searchResultsLimit = 100
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.create.variable"
+      value = {
+        id = "_customsmartvalue_id_1680886835427"
+        name = {
+          type = "FREE"
+          value = "legalHold"
+        }
+        type = "SMART"
+        query = {
+          type = "SMART"
+          value = "{{lookupObjects.Legal Hold}}"
+        }
+        lazy = false
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.create.variable"
+      value = {
+        id = "_customsmartvalue_id_1681227706632"
+        name = {
+          type = "FREE"
+          value = "separationDate"
+        }
+        type = "SMART"
+        query = {
+          type = "SMART"
+          value = "{{issue.ACTS Associate.Separation Date}}"
+        }
+        lazy = false
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.create.variable"
+      value = {
+        id = "_customsmartvalue_id_1681228949867"
+        name = {
+          type = "FREE"
+          value = "separationDatePretty"
+        }
+        type = "SMART"
+        query = {
+          type = "SMART"
+          value = "{{issue.ACTS Associate.Separation Date.setTimeZone(\"America/Chicago\").fullDate}}"
+        }
+        lazy = false
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.create.variable"
+      value = {
+        id = "_customsmartvalue_id_1681228949867"
+        name = {
+          type = "FREE"
+          value = "TGSummary"
+        }
+        type = "SMART"
+        query = {
+          type = "SMART"
+          value = "{{#if(not(issue.ACTS Associate.Acquisition Code.isEmpty))}} - TG{{/}}"
+        }
+        lazy = false
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "codebarrel.action.log"
+      conditions = [
+      ]
+      children = [
+      ]
+      rawValue = "Separation Date - {{separationDate}}.......FacilitiesTeam - {{facilitiesTeam}}......jobCode - {{jobCode}}.....siteCode - {{siteCode}}.....siteOfficeType - {{siteOfficeType}}.....jobCategory - {{jobCategory}}.....legalHold - {{legalHold}}"
+    },
+    {
+      component = "CONDITION"
+      type = "jira.condition.container.block"
+      conditions = [
+      ]
+      children = [
+        {
+          component = "CONDITION_BLOCK"
+          type = "jira.condition.if.block"
+          value = {
+            conditionMatchType = "ALL"
+          }
+          conditions = [
+            {
+              component = "CONDITION"
+              type = "cmdb.condition.query"
+              value = {
+                cmdbField = jira.Field.instance.batel_testing__cmdb_object_cftype__c@suubbuu
+                cmdbQuery = "(\"Acquisition Code\" = TG AND \"Worker Type\" = Hybrid AND object having outR(\"Office Type\" != \"TG Office\", refType IN (\"Site\"))) OR \"Acquisition Code\" != TG"
+                type = "ISSUE"
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+          ]
+          children = [
+            {
+              component = "ACTION"
+              type = "jira.sd.create.request"
+              value = {
+                operations = [
+                  {
+                    field = {
+                      type = "ID"
+                      value = jira.Field.instance.Summary__string
+                    }
+                    fieldType = "summary"
+                    type = "SET"
+                    rawValue = "Verify Desk for separation of {{issue.ACTS Associate.Name}}{{TGSummary}}"
+                  },
+                  {
+                    field = {
+                      type = "ID"
+                      value = jira.Field.instance.Description__string
+                    }
+                    fieldType = "description"
+                    type = "SET"
+                    rawValue = '''
+Verify Desk for separation of {{issue.ACTS Associate.Name}} {{issue.ACTS Associate.Acquisition Code}} 
+Associate ID:  {{issue.ACTS Associate.Associate ID}}
+Separation Date:  {{separationDatePretty}}
+
+'''
+                  },
+                  {
+                    field = {
+                      type = "NAME"
+                      value = jira.Field.instance.Severity__select__c.name
+                    }
+                    fieldType = "com.atlassian.jira.plugin.system.customfieldtypes:select"
+                    type = "SET"
+                    value = {
+                      type = "NAME"
+                      value = "Corp Serv Project Coord"
+                    }
+                  },
+                ]
+                advancedFields = ""
+                sendNotifications = false
+                requestType = jira.RequestType.instance.IdozRequest_IDOZJSM
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+            {
+              component = "ACTION"
+              type = "jira.issue.link"
+              value = {
+                linkType = jira.IssueLinkType.instance.Blocks
+                issue = {
+                  type = "COPY"
+                  value = "created"
+                }
+                linkTypeDirection = "inward"
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+            {
+              component = "BRANCH"
+              type = "jira.issue.related"
+              value = {
+                relatedType = "recentlycreated"
+                jql = ""
+                linkTypes = [
+                ]
+                onlyUpdatedIssues = false
+                similarityLimit = 40
+                compareValue = 0
+              }
+              conditions = [
+              ]
+              children = [
+                {
+                  component = "ACTION"
+                  type = "jira.issue.edit"
+                  value = {
+                    operations = [
+                      {
+                        field = {
+                          type = "NAME"
+                          value = jira.Field.instance.test__readonlyfield__c.name
+                        }
+                        fieldType = "com.atlassian.jira.plugin.system.customfieldtypes:readonlyfield"
+                        type = "SET"
+                        rawValue = "Verify Desk"
+                      },
+                      {
+                        field = {
+                          type = "NAME"
+                          value = jira.Field.instance.Batel_new_asset_creation__cmdb_object_cftype__c@sssuubbuu.name
+                        }
+                        fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+                        type = "COPY"
+                        value = {
+                          copyOptions = [
+                          ]
+                          sourceIssue = "trigger"
+                          sourceField = {
+                            type = "NAME"
+                            value = "ACTS Associate"
+                            fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+                          }
+                        }
+                      },
+                      {
+                        field = {
+                          type = "NAME"
+                          value = jira.Field.instance.Batel_Assets_Objects__cmdb_object_cftype__c@ssuubbuu.name
+                        }
+                        fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+                        type = "COPY"
+                        value = {
+                          copyOptions = [
+                          ]
+                          sourceIssue = "trigger"
+                          sourceField = {
+                            type = "NAME"
+                            value = "Associate Desk Location"
+                            fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+                          }
+                        }
+                      },
+                      {
+                        field = {
+                          type = "NAME"
+                          value = jira.Field.instance.Batel3_Assets_Objects__cmdb_object_cftype__c@ssuubbuu.name
+                        }
+                        fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+                        type = "COPY"
+                        value = {
+                          copyOptions = [
+                          ]
+                          sourceIssue = "trigger"
+                          sourceField = {
+                            type = "NAME"
+                            value = "Associate Extension"
+                            fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+                          }
+                        }
+                      },
+                      {
+                        field = {
+                          type = "NAME"
+                          value = jira.Field.instance.Source__select__c.name
+                        }
+                        fieldType = "com.atlassian.jira.plugin.system.customfieldtypes:select"
+                        type = "SET"
+                        value = {
+                          type = "NAME"
+                          value = "Automated"
+                        }
+                      },
+                    ]
+                    sendNotifications = true
+                  }
+                  conditions = [
+                  ]
+                  children = [
+                  ]
+                },
+              ]
+            },
+          ]
+        },
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.sd.create.request"
+      value = {
+        operations = [
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Summary__string
+            }
+            fieldType = "summary"
+            type = "SET"
+            rawValue = "Delete Mailbox for separation of {{issue.ACTS Associate.Name}}{{TGSummary}}"
+          },
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Description__string
+            }
+            fieldType = "description"
+            type = "SET"
+            rawValue = '''
+Delete Mailbox for {{issue.ACTS Associate.Name}} {{issue.ACTS Associate.Acquisition Code}} 
+Associate ID:  {{issue.ACTS Associate.Associate ID}}
+Separation Date:  {{separationDatePretty}}
+'''
+          },
+          {
+            field = {
+              type = "NAME"
+              value = jira.Field.instance.Severity__select__c.name
+            }
+            fieldType = "com.atlassian.jira.plugin.system.customfieldtypes:select"
+            type = "SET"
+            value = {
+              type = "NAME"
+              value = "IOC"
+            }
+          },
+        ]
+        advancedFields = ""
+        sendNotifications = false
+        requestType = jira.RequestType.instance.IdozRequest_IDOZJSM
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.issue.link"
+      value = {
+        linkType = jira.IssueLinkType.instance.Blocks
+        issue = {
+          type = "COPY"
+          value = "created"
+        }
+        linkTypeDirection = "inward"
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "BRANCH"
+      type = "jira.issue.related"
+      value = {
+        relatedType = "recentlycreated"
+        jql = ""
+        linkTypes = [
+        ]
+        onlyUpdatedIssues = false
+        similarityLimit = 40
+        compareValue = 0
+      }
+      conditions = [
+      ]
+      children = [
+        {
+          component = "ACTION"
+          type = "jira.issue.edit"
+          value = {
+            operations = [
+              {
+                field = {
+                  type = "NAME"
+                  value = jira.Field.instance.test__readonlyfield__c.name
+                }
+                fieldType = "com.atlassian.jira.plugin.system.customfieldtypes:readonlyfield"
+                type = "SET"
+                rawValue = "Delete Mailbox"
+              },
+              {
+                field = {
+                  type = "NAME"
+                  value = jira.Field.instance.Batel_new_asset_creation__cmdb_object_cftype__c@sssuubbuu.name
+                }
+                fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+                type = "COPY"
+                value = {
+                  copyOptions = [
+                  ]
+                  sourceIssue = "trigger"
+                  sourceField = {
+                    type = "NAME"
+                    value = "ACTS Associate"
+                    fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+                  }
+                }
+              },
+              {
+                field = {
+                  type = "NAME"
+                  value = jira.Field.instance.Batel_Assets_Objects__cmdb_object_cftype__c@ssuubbuu.name
+                }
+                fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+                type = "COPY"
+                value = {
+                  copyOptions = [
+                  ]
+                  sourceIssue = "trigger"
+                  sourceField = {
+                    type = "NAME"
+                    value = "Associate Desk Location"
+                    fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+                  }
+                }
+              },
+              {
+                field = {
+                  type = "NAME"
+                  value = jira.Field.instance.Batel3_Assets_Objects__cmdb_object_cftype__c@ssuubbuu.name
+                }
+                fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+                type = "COPY"
+                value = {
+                  copyOptions = [
+                  ]
+                  sourceIssue = "trigger"
+                  sourceField = {
+                    type = "NAME"
+                    value = "Associate Extension"
+                    fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+                  }
+                }
+              },
+              {
+                field = {
+                  type = "NAME"
+                  value = jira.Field.instance.Source__select__c.name
+                }
+                fieldType = "com.atlassian.jira.plugin.system.customfieldtypes:select"
+                type = "SET"
+                value = {
+                  type = "NAME"
+                  value = "Automated"
+                }
+              },
+            ]
+            sendNotifications = true
+          }
+          conditions = [
+          ]
+          children = [
+          ]
+        },
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.sd.create.request"
+      value = {
+        operations = [
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Summary__string
+            }
+            fieldType = "summary"
+            type = "SET"
+            rawValue = "Remove Support and Services for separation of {{issue.ACTS Associate.Name}}{{TGSummary}}"
+          },
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Description__string
+            }
+            fieldType = "description"
+            type = "SET"
+            rawValue = '''
+Remove Support and Services for separation of  {{issue.ACTS Associate.Name}} {{issue.ACTS Associate.Acquisition Code}} 
+Associate ID:  {{issue.ACTS Associate.Associate ID}}
+Separation Date:  {{separationDatePretty}}
+'''
+          },
+          {
+            field = {
+              type = "NAME"
+              value = jira.Field.instance.Severity__select__c.name
+            }
+            fieldType = "com.atlassian.jira.plugin.system.customfieldtypes:select"
+            type = "SET"
+            value = {
+              type = "NAME"
+              value = "Support Center"
+            }
+          },
+        ]
+        advancedFields = ""
+        sendNotifications = false
+        requestType = jira.RequestType.instance.IdozRequest_IDOZJSM
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.issue.link"
+      value = {
+        linkType = jira.IssueLinkType.instance.Blocks
+        issue = {
+          type = "COPY"
+          value = "created"
+        }
+        linkTypeDirection = "inward"
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "BRANCH"
+      type = "jira.issue.related"
+      value = {
+        relatedType = "recentlycreated"
+        jql = ""
+        linkTypes = [
+        ]
+        onlyUpdatedIssues = false
+        similarityLimit = 40
+        compareValue = 0
+      }
+      conditions = [
+      ]
+      children = [
+        {
+          component = "ACTION"
+          type = "jira.issue.edit"
+          value = {
+            operations = [
+              {
+                field = {
+                  type = "NAME"
+                  value = jira.Field.instance.test__readonlyfield__c.name
+                }
+                fieldType = "com.atlassian.jira.plugin.system.customfieldtypes:readonlyfield"
+                type = "SET"
+                rawValue = "Remove Support and Services"
+              },
+              {
+                field = {
+                  type = "NAME"
+                  value = jira.Field.instance.Batel_new_asset_creation__cmdb_object_cftype__c@sssuubbuu.name
+                }
+                fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+                type = "COPY"
+                value = {
+                  copyOptions = [
+                  ]
+                  sourceIssue = "trigger"
+                  sourceField = {
+                    type = "NAME"
+                    value = "ACTS Associate"
+                    fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+                  }
+                }
+              },
+              {
+                field = {
+                  type = "NAME"
+                  value = jira.Field.instance.Batel_Assets_Objects__cmdb_object_cftype__c@ssuubbuu.name
+                }
+                fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+                type = "COPY"
+                value = {
+                  copyOptions = [
+                  ]
+                  sourceIssue = "trigger"
+                  sourceField = {
+                    type = "NAME"
+                    value = "Associate Desk Location"
+                    fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+                  }
+                }
+              },
+              {
+                field = {
+                  type = "NAME"
+                  value = jira.Field.instance.Batel3_Assets_Objects__cmdb_object_cftype__c@ssuubbuu.name
+                }
+                fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+                type = "COPY"
+                value = {
+                  copyOptions = [
+                  ]
+                  sourceIssue = "trigger"
+                  sourceField = {
+                    type = "NAME"
+                    value = "Associate Extension"
+                    fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+                  }
+                }
+              },
+              {
+                field = {
+                  type = "NAME"
+                  value = jira.Field.instance.Source__select__c.name
+                }
+                fieldType = "com.atlassian.jira.plugin.system.customfieldtypes:select"
+                type = "SET"
+                value = {
+                  type = "NAME"
+                  value = "Automated"
+                }
+              },
+            ]
+            sendNotifications = true
+          }
+          conditions = [
+          ]
+          children = [
+          ]
+        },
+      ]
+    },
+    {
+      component = "CONDITION"
+      type = "jira.comparator.condition"
+      value = {
+        first = "{{issue.${ jira.Field.instance.Batel_new_asset_creation__cmdb_object_cftype__c@sssuubbuu.name }.Acquisition Code}}"
+        second = "TG"
+        operator = "NOT_EQUALS"
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.sd.create.request"
+      value = {
+        operations = [
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Summary__string
+            }
+            fieldType = "summary"
+            type = "SET"
+            rawValue = "Remove Ext for separation of {{issue.ACTS Associate.Name}}"
+          },
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Description__string
+            }
+            fieldType = "description"
+            type = "SET"
+            rawValue = '''
+Remove Ext for separation of {{issue.ACTS Associate.Name}}
+Associate ID:  {{issue.ACTS Associate.Associate ID}}
+Separation Date:  {{separationDatePretty}}
+'''
+          },
+          {
+            field = {
+              type = "NAME"
+              value = jira.Field.instance.Severity__select__c.name
+            }
+            fieldType = "com.atlassian.jira.plugin.system.customfieldtypes:select"
+            type = "SET"
+            value = {
+              type = "NAME"
+              value = "IOC"
+            }
+          },
+        ]
+        advancedFields = ""
+        sendNotifications = false
+        requestType = jira.RequestType.instance.IdozRequest_IDOZJSM
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.issue.link"
+      value = {
+        linkType = jira.IssueLinkType.instance.Blocks
+        issue = {
+          type = "COPY"
+          value = "created"
+        }
+        linkTypeDirection = "inward"
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "BRANCH"
+      type = "jira.issue.related"
+      value = {
+        relatedType = "recentlycreated"
+        jql = ""
+        linkTypes = [
+        ]
+        onlyUpdatedIssues = false
+        similarityLimit = 40
+        compareValue = 0
+      }
+      conditions = [
+      ]
+      children = [
+        {
+          component = "ACTION"
+          type = "jira.issue.edit"
+          value = {
+            operations = [
+              {
+                field = {
+                  type = "NAME"
+                  value = jira.Field.instance.test__readonlyfield__c.name
+                }
+                fieldType = "com.atlassian.jira.plugin.system.customfieldtypes:readonlyfield"
+                type = "SET"
+                rawValue = "Remove Ext"
+              },
+              {
+                field = {
+                  type = "NAME"
+                  value = jira.Field.instance.Batel_new_asset_creation__cmdb_object_cftype__c@sssuubbuu.name
+                }
+                fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+                type = "COPY"
+                value = {
+                  copyOptions = [
+                  ]
+                  sourceIssue = "trigger"
+                  sourceField = {
+                    type = "NAME"
+                    value = "ACTS Associate"
+                    fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+                  }
+                }
+              },
+              {
+                field = {
+                  type = "NAME"
+                  value = jira.Field.instance.Batel_Assets_Objects__cmdb_object_cftype__c@ssuubbuu.name
+                }
+                fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+                type = "COPY"
+                value = {
+                  copyOptions = [
+                  ]
+                  sourceIssue = "trigger"
+                  sourceField = {
+                    type = "NAME"
+                    value = "Associate Desk Location"
+                    fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+                  }
+                }
+              },
+              {
+                field = {
+                  type = "NAME"
+                  value = jira.Field.instance.Batel3_Assets_Objects__cmdb_object_cftype__c@ssuubbuu.name
+                }
+                fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+                type = "COPY"
+                value = {
+                  copyOptions = [
+                  ]
+                  sourceIssue = "trigger"
+                  sourceField = {
+                    type = "NAME"
+                    value = "Associate Extension"
+                    fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+                  }
+                }
+              },
+              {
+                field = {
+                  type = "NAME"
+                  value = jira.Field.instance.Source__select__c.name
+                }
+                fieldType = "com.atlassian.jira.plugin.system.customfieldtypes:select"
+                type = "SET"
+                value = {
+                  type = "NAME"
+                  value = "Automated"
+                }
+              },
+            ]
+            sendNotifications = true
+          }
+          conditions = [
+          ]
+          children = [
+          ]
+        },
+      ]
+    },
+  ]
+  projects = [
+    {
+      projectId = jira.Project.instance.IdozJSM
+    },
+  ]
+  labels = [
+    jira.AutomationLabel.instance.Incidents,
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "9e0aa1b77f3009307172bf48c9f2496dabf82cd888085bf9070a9726854a4a4b"
+  }
+  isAgentic = false
+  _alias = "ACTS : Associate Separation 01 - 1A to 1D"
+}

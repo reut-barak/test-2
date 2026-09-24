@@ -1,0 +1,77 @@
+jira.Automation IZ_schema__@saa {
+  name = "IZ schema??"
+  state = "ENABLED"
+  description = ""
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "62d20c47a94a6f9c0eff9866"
+    displayName = "Ido Zak"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.field.changed"
+    value = {
+      changeType = "VALUE_ADDED"
+      fields = [
+        {
+          value = "Assets"
+          type = "fieldName"
+        },
+      ]
+      actions = [
+      ]
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      type = "cmdb.lookup.objects"
+      value = {
+        schemaId = jira.ObjectSchema.instance.automationAdd
+        customSmartValue = {
+          id = "_customsmartvalue_id_1716801950796"
+          name = {
+            type = "FREE"
+            value = "lookupObjects"
+          }
+          type = "IQL"
+          query = {
+            type = "SMART"
+            value = "Name LIKE Ido"
+          }
+          lazy = false
+        }
+        searchResultsLimit = 100
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "fb093de5cb91253e8f5f9011f4fd1946432bdf005a2536e17d1dcc3e516de4c4"
+  }
+  isAgentic = false
+  _alias = "IZ schema??"
+}

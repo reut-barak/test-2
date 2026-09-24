@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute GWR2_Schema_s_Models_umu_Hardware_Models_uuumus_Created@uuuuuumu {
+  editable = false
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 1
+  name = "Created"
+  displayName = "Created"
+  objectType = jira.ObjectType.instance.GWR2_Schema_s_Models_umu_Hardware_Models@uuumus
+  options = ""
+  pendingCreation = false
+  removable = false
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 6
+  _alias = "Created"
+}

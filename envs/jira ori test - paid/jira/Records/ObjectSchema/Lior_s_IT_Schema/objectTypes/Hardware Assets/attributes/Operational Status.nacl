@@ -1,0 +1,26 @@
+jira.ObjectTypeAttribute Lior_s_IT_Schema_tss_Hardware_Assets_uuumus_Operational_Status@uuuuuumus {
+  description = "Health status of asset/CI"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Operational Status"
+  displayName = "Operational Status"
+  objectType = jira.ObjectType.instance.Lior_s_IT_Schema_tss_Hardware_Assets@uuumus
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 7
+  typeValueMulti = [
+    jira.ObjectSchemaGlobalStatus.instance.Active,
+    jira.ObjectSchemaStatus.instance.Lior_s_IT_Schema_tss__Inactive@uuumuu,
+  ]
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  _alias = "Operational Status"
+}

@@ -1,0 +1,21 @@
+jira.CustomFieldContextOption CustomRadioButtonZ__radiobuttons__c_Default_Configuration_Scheme_for_CustomRadioButton_opt1@uuuuussssu {
+  value = "opt1"
+  disabled = true
+  _parent = [
+    jira.CustomFieldContext.instance.CustomRadioButtonZ__radiobuttons__c_Default_Configuration_Scheme_for_CustomRadioButton@uuuuussss,
+  ]
+}
+jira.CustomFieldContextOption CustomRadioButtonZ__radiobuttons__c_Default_Configuration_Scheme_for_CustomRadioButton_opt2@uuuuussssu {
+  value = "opt2"
+  disabled = true
+  _parent = [
+    jira.CustomFieldContext.instance.CustomRadioButtonZ__radiobuttons__c_Default_Configuration_Scheme_for_CustomRadioButton@uuuuussss,
+  ]
+}
+jira.CustomFieldContextOption CustomRadioButtonZ__radiobuttons__c_Default_Configuration_Scheme_for_CustomRadioButton_opt3@uuuuussssu {
+  value = "opt3"
+  disabled = true
+  _parent = [
+    jira.CustomFieldContext.instance.CustomRadioButtonZ__radiobuttons__c_Default_Configuration_Scheme_for_CustomRadioButton@uuuuussss,
+  ]
+}

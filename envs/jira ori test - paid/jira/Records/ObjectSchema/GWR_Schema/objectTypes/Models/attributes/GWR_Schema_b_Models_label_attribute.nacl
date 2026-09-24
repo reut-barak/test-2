@@ -1,0 +1,4 @@
+jira.ObjectTypeLabelAttribute GWR_Schema_b_Models_label_attribute@umuuu {
+  labelAttribute = jira.ObjectTypeAttribute.instance.GWR_Schema_b_Models_umu_Name@uuumu
+  objectType = jira.ObjectType.instance.GWR_Schema_b_Models@umu
+}

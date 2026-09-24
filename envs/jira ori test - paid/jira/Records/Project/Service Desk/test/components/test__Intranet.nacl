@@ -1,0 +1,9 @@
+jira.ProjectComponent test__Intranet {
+  name = "Intranet"
+  description = "Created by Jira Service Management"
+  assigneeType = "PROJECT_DEFAULT"
+  _parent = [
+    jira.Project.instance.test,
+  ]
+  _alias = "test:Intranet"
+}

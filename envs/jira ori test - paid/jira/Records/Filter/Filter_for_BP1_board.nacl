@@ -1,0 +1,16 @@
+jira.Filter Filter_for_BP1_board@s {
+  name = "Filter for BP1 board"
+  owner = {
+    id = "63b1bac8741248746bf724dd"
+    displayName = "Batel Delaroz"
+  }
+  jql = "${ jira.Field.instance.Project__project } = ${ jira.Project.instance.Batel_project_11@b.key } ORDER BY ${ jira.Field.instance.Rank__gh_lexo_rank__c@uubbuu.name } ASC"
+  sharePermissions = [
+    {
+      type = "project"
+      project = {
+        id = jira.Project.instance.Batel_project_11@b
+      }
+    },
+  ]
+}

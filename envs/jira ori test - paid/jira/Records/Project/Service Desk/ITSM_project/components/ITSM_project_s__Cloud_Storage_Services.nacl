@@ -1,0 +1,9 @@
+jira.ProjectComponent ITSM_project_s__Cloud_Storage_Services@umuuss {
+  name = "Cloud Storage Services"
+  description = "Created by Jira Service Management"
+  assigneeType = "PROJECT_DEFAULT"
+  _parent = [
+    jira.Project.instance.ITSM_project@s,
+  ]
+  _alias = "ITSM project:Cloud Storage Services"
+}

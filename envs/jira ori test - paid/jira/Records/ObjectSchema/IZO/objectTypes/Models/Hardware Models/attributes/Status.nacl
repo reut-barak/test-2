@@ -1,0 +1,25 @@
+jira.ObjectTypeAttribute IZO_Models_Hardware_Models_uus_Status@uuumu {
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Status"
+  displayName = "Status"
+  objectType = jira.ObjectType.instance.IZO_Models_Hardware_Models@uus
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 7
+  typeValueMulti = [
+    jira.ObjectSchemaGlobalStatus.instance.Active,
+    jira.ObjectSchemaStatus.instance.IZO__Inactive,
+  ]
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  _alias = "Status"
+}

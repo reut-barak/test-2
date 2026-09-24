@@ -1,0 +1,16 @@
+jira.ObjectType IZY_Hardware_Assets@us {
+  name = "Hardware Assets"
+  displayName = "Hardware Assets"
+  type = 0
+  inherited = true
+  abstractObjectType = true
+  parentObjectTypeInherited = false
+  schemaLabel = "IZY"
+  schemaDisplayLabel = "IZY"
+  iconId = "141"
+  parentObjectTypeId = jira.ObjectSchema.instance.IZY
+  _parent = [
+    jira.ObjectSchema.instance.IZY,
+  ]
+  _alias = "Hardware Assets"
+}

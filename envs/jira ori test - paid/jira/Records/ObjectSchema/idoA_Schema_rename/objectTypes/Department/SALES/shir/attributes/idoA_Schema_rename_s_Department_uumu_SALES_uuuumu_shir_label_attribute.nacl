@@ -1,0 +1,4 @@
+jira.ObjectTypeLabelAttribute idoA_Schema_rename_s_Department_uumu_SALES_uuuumu_shir_label_attribute@uuuuuumuuu {
+  labelAttribute = jira.ObjectTypeAttribute.instance.idoA_Schema_rename_s_Department_uumu_SALES_uuuumu_shir_uuuuuumu_bong@uuuuuuuumu
+  objectType = jira.ObjectType.instance.idoA_Schema_rename_s_Department_uumu_SALES_uuuumu_shir@uuuuuumu
+}

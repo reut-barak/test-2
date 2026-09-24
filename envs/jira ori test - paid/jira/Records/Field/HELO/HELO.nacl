@@ -1,0 +1,15 @@
+jira.Field HELO__labels__c {
+  name = "HELO"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:labelsearcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "HELO"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:labels"
+  contexts = [
+    jira.CustomFieldContext.instance.HELO__labels__c_Default_Configuration_Scheme_for_HELO@uuuuussss,
+    jira.CustomFieldContext.instance.HELO__labels__c_pop,
+  ]
+  _alias = "HELO"
+}

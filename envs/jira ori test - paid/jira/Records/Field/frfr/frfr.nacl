@@ -1,0 +1,14 @@
+jira.Field frfr__labels__c {
+  name = "frfr"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:labelsearcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "frfr"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:labels"
+  contexts = [
+    jira.CustomFieldContext.instance.frfr__labels__c_Default_Configuration_Scheme_for_frfr@uuuuussss,
+  ]
+  _alias = "frfr"
+}

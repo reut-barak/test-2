@@ -1,0 +1,4 @@
+jira.ProjectRole atlassian_ai_agent_role@b {
+  name = "atlassian-ai-agent-role"
+  description = "Grants AI Agents access to Jira projects."
+}

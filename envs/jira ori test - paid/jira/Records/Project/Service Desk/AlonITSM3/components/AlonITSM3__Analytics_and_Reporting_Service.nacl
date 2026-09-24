@@ -1,0 +1,9 @@
+jira.ProjectComponent AlonITSM3__Analytics_and_Reporting_Service@uusss {
+  name = "Analytics and Reporting Service"
+  description = "Created by Jira Service Management"
+  assigneeType = "PROJECT_DEFAULT"
+  _parent = [
+    jira.Project.instance.AlonITSM3,
+  ]
+  _alias = "AlonITSM3:Analytics and Reporting Service"
+}

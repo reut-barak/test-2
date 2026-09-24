@@ -1,0 +1,24 @@
+jira.ObjectTypeAttribute idoA_Schema_rename_s_Department_uumu_R_D_uuuumue_Team_Omri_uuuuuuumus_Okta_uuuuuuuuuumu_Okta_adapter_lead_uuuuuuuuuuuumuss_data_uuuuuuuuuuuuuuuumu_Asset@uuuuuuuuuuuuuuuuuumu {
+  description = ""
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Asset"
+  displayName = "Asset"
+  objectType = jira.ObjectType.instance.idoA_Schema_rename_s_Department_uumu_R_D_uuuumue_Team_Omri_uuuuuuumus_Okta_uuuuuuuuuumu_Okta_adapter_lead_uuuuuuuuuuuumuss_data@uuuuuuuuuuuuuuuumu
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 1
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  additionalValue = jira.ObjectSchemaReferenceType.instance.idoA_Schema_rename_s__Asset@uumuu
+  typeValue = jira.ObjectType.instance.idoA_Schema_rename_s_Department_uumu_R_D@uuuumue
+  _alias = "Asset"
+}

@@ -1,0 +1,7 @@
+jira.ScreenScheme IZJSM__Jira_Service_Management_Task_and_Subtask_Screen_Scheme@fssssssss {
+  name = "IZJSM: Jira Service Management Task and Subtask Screen Scheme"
+  description = "This Jira Service Management Screen Scheme was generated automatically"
+  screens = {
+    default = jira.Screen.instance.IZJSM__Jira_Service_Management_Task_and_Subtask_Screen@fsssssss
+  }
+}

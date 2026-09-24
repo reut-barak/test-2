@@ -1,0 +1,49 @@
+jira.CustomFieldContextOption testSelectList9__cascadingselect__c_CustomConfigurationScheme_for_CustomSelectList93_p1@uuuuussu {
+  value = "p1"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.testSelectList9__cascadingselect__c_CustomConfigurationScheme_for_CustomSelectList93@uuuuuss,
+  ]
+}
+jira.CustomFieldContextOption testSelectList9__cascadingselect__c_CustomConfigurationScheme_for_CustomSelectList93_p2@uuuuussu {
+  value = "p2"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.testSelectList9__cascadingselect__c_CustomConfigurationScheme_for_CustomSelectList93@uuuuuss,
+  ]
+}
+jira.CustomFieldContextOption testSelectList9__cascadingselect__c_CustomConfigurationScheme_for_CustomSelectList93_p3@uuuuussu {
+  value = "p3"
+  disabled = true
+  _parent = [
+    jira.CustomFieldContext.instance.testSelectList9__cascadingselect__c_CustomConfigurationScheme_for_CustomSelectList93@uuuuuss,
+  ]
+}
+jira.CustomFieldContextOption testSelectList9__cascadingselect__c_CustomConfigurationScheme_for_CustomSelectList93_p4@uuuuussu {
+  value = "p4"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.testSelectList9__cascadingselect__c_CustomConfigurationScheme_for_CustomSelectList93@uuuuuss,
+  ]
+}
+jira.CustomFieldContextOption testSelectList9__cascadingselect__c_CustomConfigurationScheme_for_CustomSelectList93_p1_c11@uuuuussuu {
+  value = "c11"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContextOption.instance.testSelectList9__cascadingselect__c_CustomConfigurationScheme_for_CustomSelectList93_p1@uuuuussu,
+  ]
+}
+jira.CustomFieldContextOption testSelectList9__cascadingselect__c_CustomConfigurationScheme_for_CustomSelectList93_p1_c12@uuuuussuu {
+  value = "c12"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContextOption.instance.testSelectList9__cascadingselect__c_CustomConfigurationScheme_for_CustomSelectList93_p1@uuuuussu,
+  ]
+}
+jira.CustomFieldContextOption testSelectList9__cascadingselect__c_CustomConfigurationScheme_for_CustomSelectList93_p2_c22@uuuuussuu {
+  value = "c22"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContextOption.instance.testSelectList9__cascadingselect__c_CustomConfigurationScheme_for_CustomSelectList93_p2@uuuuussu,
+  ]
+}

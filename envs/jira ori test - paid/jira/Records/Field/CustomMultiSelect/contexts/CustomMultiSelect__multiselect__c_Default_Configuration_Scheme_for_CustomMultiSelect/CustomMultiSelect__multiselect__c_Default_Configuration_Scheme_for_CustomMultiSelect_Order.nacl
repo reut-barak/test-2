@@ -1,0 +1,10 @@
+jira.FieldContextOptionsOrder CustomMultiSelect__multiselect__c_Default_Configuration_Scheme_for_CustomMultiSelect_order_child@uuuuussssuu {
+  options = [
+    jira.CustomFieldContextOption.instance.CustomMultiSelect__multiselect__c_Default_Configuration_Scheme_for_CustomMultiSelect_opt1@uuuuussssu,
+    jira.CustomFieldContextOption.instance.CustomMultiSelect__multiselect__c_Default_Configuration_Scheme_for_CustomMultiSelect_opt2@uuuuussssu,
+    jira.CustomFieldContextOption.instance.CustomMultiSelect__multiselect__c_Default_Configuration_Scheme_for_CustomMultiSelect_opt3@uuuuussssu,
+  ]
+  _parent = [
+    jira.CustomFieldContext.instance.CustomMultiSelect__multiselect__c_Default_Configuration_Scheme_for_CustomMultiSelect@uuuuussss,
+  ]
+}

@@ -1,0 +1,16 @@
+jira.ObjectType IZU_Models_Model_Categories@uus {
+  name = "Model Categories"
+  displayName = "Model Categories"
+  type = 0
+  parentObjectTypeId = jira.ObjectType.instance.IZU_Models
+  inherited = false
+  abstractObjectType = false
+  parentObjectTypeInherited = false
+  schemaLabel = "IZU"
+  schemaDisplayLabel = "IZU"
+  iconId = "73"
+  _parent = [
+    jira.ObjectSchema.instance.IZU,
+  ]
+  _alias = "Model Categories"
+}

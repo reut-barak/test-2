@@ -1,0 +1,11 @@
+jira.ObjectSchemaStatus All_Serial_Numbers_s__Disposed@uumuu {
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:203"
+  name = "Disposed"
+  displayName = "Disposed"
+  description = "Asset is disposed and removed from accounting records"
+  category = 0
+  _parent = [
+    jira.ObjectSchema.instance.All_Serial_Numbers@s,
+  ]
+  _alias = "All Serial Numbers:Disposed"
+}

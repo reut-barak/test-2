@@ -1,0 +1,28 @@
+jira.CustomFieldContextOption Select_List__cascading___cascadingselect__c_ssjkuuuu_second_context_a@uuuuuuuumusu {
+  value = "a"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Select_List__cascading___cascadingselect__c_ssjkuuuu_second_context@uuuuuuuumus,
+  ]
+}
+jira.CustomFieldContextOption Select_List__cascading___cascadingselect__c_ssjkuuuu_second_context_b@uuuuuuuumusu {
+  value = "b"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Select_List__cascading___cascadingselect__c_ssjkuuuu_second_context@uuuuuuuumus,
+  ]
+}
+jira.CustomFieldContextOption Select_List__cascading___cascadingselect__c_ssjkuuuu_second_context_a_aab@uuuuuuuumusuu {
+  value = "aab"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContextOption.instance.Select_List__cascading___cascadingselect__c_ssjkuuuu_second_context_a@uuuuuuuumusu,
+  ]
+}
+jira.CustomFieldContextOption Select_List__cascading___cascadingselect__c_ssjkuuuu_second_context_a_aa2@uuuuuuuumusuu {
+  value = "aa2"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContextOption.instance.Select_List__cascading___cascadingselect__c_ssjkuuuu_second_context_a@uuuuuuuumusu,
+  ]
+}

@@ -1,0 +1,16 @@
+jira.ObjectType GWR_Schema_b_Hardware_Assets_umus_Servers_uuuumu_Windows_Server@uuuuuumus {
+  name = "Windows Server"
+  displayName = "Windows Server"
+  type = 0
+  parentObjectTypeId = jira.ObjectType.instance.GWR_Schema_b_Hardware_Assets_umus_Servers@uuuumu
+  inherited = true
+  abstractObjectType = false
+  parentObjectTypeInherited = true
+  schemaLabel = "GWR-Schema"
+  schemaDisplayLabel = "GWR-Schema"
+  iconId = "140"
+  _parent = [
+    jira.ObjectSchema.instance.GWR_Schema@b,
+  ]
+  _alias = "Windows Server"
+}

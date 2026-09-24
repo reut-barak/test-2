@@ -1,0 +1,76 @@
+jira.Automation Testing_Project_Automation_LiorCompanyManaged@ssu {
+  name = "Testing Project Automation"
+  state = "ENABLED"
+  description = ""
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "60e8b78784c9920071996842"
+    displayName = "Lior Neudorfer"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.field.changed"
+    value = {
+      changeType = "ANY_CHANGE"
+      fields = [
+        {
+          value = jira.Field.instance.Components__array
+          type = "field"
+        },
+      ]
+      actions = [
+      ]
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      type = "jira.issue.assign"
+      value = {
+        assignType = "GROUP"
+        group = {
+          type = "GROUP_ID"
+          value = jira.Group.instance.iso_27001_people
+        }
+        excludedUsers = [
+        ]
+        userList = [
+        ]
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  projects = [
+    {
+      projectId = jira.Project.instance.LiorCompanyManaged
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "3ba0f73e61af788dd440b81255d14317834f950097becd8cdb0dc451587a110b"
+  }
+  isAgentic = false
+  _alias = "Testing Project Automation"
+}

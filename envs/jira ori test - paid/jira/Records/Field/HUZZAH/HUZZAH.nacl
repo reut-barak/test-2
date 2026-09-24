@@ -1,0 +1,14 @@
+jira.Field HUZZAH__datepicker__c {
+  name = "HUZZAH"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:daterange"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "HUZZAH"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:datepicker"
+  contexts = [
+    jira.CustomFieldContext.instance.HUZZAH__datepicker__c_Default_Configuration_Scheme_for_HUZZAH@uuuuussss,
+  ]
+  _alias = "HUZZAH"
+}

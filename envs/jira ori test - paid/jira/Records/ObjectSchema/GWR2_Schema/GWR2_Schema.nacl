@@ -1,0 +1,14 @@
+jira.ObjectSchema GWR2_Schema@s {
+  name = "GWR2 Schema"
+  displayName = "GWR2 Schema"
+  objectSchemaKey = "GWR2"
+  description = ""
+  status = "Ok"
+  crossSchemaReferencingAllowed = false
+  properties = {
+    quickCreateObjects = true
+    allowOtherObjectSchema = false
+    validateQuickCreate = true
+  }
+  _alias = "GWR2 Schema"
+}

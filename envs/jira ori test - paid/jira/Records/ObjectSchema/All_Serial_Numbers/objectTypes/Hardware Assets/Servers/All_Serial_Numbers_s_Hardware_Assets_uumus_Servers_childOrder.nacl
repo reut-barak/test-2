@@ -1,0 +1,9 @@
+jira.ObjectTypeOrder All_Serial_Numbers_s_Hardware_Assets_uumus_Servers_childOrder@uuuuumuu {
+  objectTypes = [
+    jira.ObjectType.instance.All_Serial_Numbers_s_Hardware_Assets_uumus_Servers_uuuuumu_Red_Hat_Linux@uuuuuuumuss,
+    jira.ObjectType.instance.All_Serial_Numbers_s_Hardware_Assets_uumus_Servers_uuuuumu_Windows_Server@uuuuuuumus,
+  ]
+  _parent = [
+    jira.ObjectType.instance.All_Serial_Numbers_s_Hardware_Assets_uumus_Servers@uuuuumu,
+  ]
+}

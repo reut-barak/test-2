@@ -1,0 +1,10 @@
+jira.FieldContextOptionsOrder CustomRadioButtonZ__radiobuttons__c_Default_Configuration_Scheme_for_CustomRadioButton_order_child@uuuuussssuu {
+  options = [
+    jira.CustomFieldContextOption.instance.CustomRadioButtonZ__radiobuttons__c_Default_Configuration_Scheme_for_CustomRadioButton_opt1@uuuuussssu,
+    jira.CustomFieldContextOption.instance.CustomRadioButtonZ__radiobuttons__c_Default_Configuration_Scheme_for_CustomRadioButton_opt2@uuuuussssu,
+    jira.CustomFieldContextOption.instance.CustomRadioButtonZ__radiobuttons__c_Default_Configuration_Scheme_for_CustomRadioButton_opt3@uuuuussssu,
+  ]
+  _parent = [
+    jira.CustomFieldContext.instance.CustomRadioButtonZ__radiobuttons__c_Default_Configuration_Scheme_for_CustomRadioButton@uuuuussss,
+  ]
+}

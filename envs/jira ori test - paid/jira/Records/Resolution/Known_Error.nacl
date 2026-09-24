@@ -1,0 +1,4 @@
+jira.Resolution Known_Error@s {
+  description = "The problem has a documented root cause and a workaround."
+  name = "Known Error"
+}

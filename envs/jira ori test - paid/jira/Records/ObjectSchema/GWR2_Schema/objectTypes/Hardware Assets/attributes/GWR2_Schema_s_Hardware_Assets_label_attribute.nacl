@@ -1,0 +1,4 @@
+jira.ObjectTypeLabelAttribute GWR2_Schema_s_Hardware_Assets_label_attribute@umusuu {
+  labelAttribute = jira.ObjectTypeAttribute.instance.GWR2_Schema_s_Hardware_Assets_umus_Name@uuuumu
+  objectType = jira.ObjectType.instance.GWR2_Schema_s_Hardware_Assets@umus
+}

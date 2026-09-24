@@ -1,0 +1,14 @@
+jira.Field testSingleUser__userpicker__c {
+  name = "testSingleUser"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:userpickergroupsearcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "testSingleUser"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:userpicker"
+  contexts = [
+    jira.CustomFieldContext.instance.testSingleUser__userpicker__c_Default_Configuration_Scheme_for_testSingleUser@uuuuussss,
+  ]
+  _alias = "testSingleUser"
+}

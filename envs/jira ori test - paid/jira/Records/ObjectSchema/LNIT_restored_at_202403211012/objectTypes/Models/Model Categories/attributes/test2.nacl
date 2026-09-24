@@ -1,0 +1,22 @@
+jira.ObjectTypeAttribute LNIT_restored_at_202403211012_Models_Model_Categories_uuuuus_test2@uuuuuumu {
+  description = ""
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "test2"
+  displayName = "test2"
+  objectType = jira.ObjectType.instance.LNIT_restored_at_202403211012_Models_Model_Categories@uuuuus
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 0
+  _alias = "test2"
+}

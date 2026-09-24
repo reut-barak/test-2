@@ -1,0 +1,9 @@
+jira.ProjectComponent ITSM_project_s__Webstore_Purchasing_Services@umuuss {
+  name = "Webstore Purchasing Services"
+  description = "Created by Jira Service Management"
+  assigneeType = "PROJECT_DEFAULT"
+  _parent = [
+    jira.Project.instance.ITSM_project@s,
+  ]
+  _alias = "ITSM project:Webstore Purchasing Services"
+}

@@ -1,0 +1,7 @@
+/* 
+* Note: You should run this script by selecting "On load" in the check box above.
+* Make sure to select the summary field as the affected field in order for the example to work. 
+*/
+
+getFieldById("summary").setDescription("IDO11256 scriptRunner Change");
+    

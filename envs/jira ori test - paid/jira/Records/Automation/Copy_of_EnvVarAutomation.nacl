@@ -1,0 +1,69 @@
+jira.Automation Copy_of_EnvVarAutomation@s {
+  name = "Copy of EnvVarAutomation"
+  state = "ENABLED"
+  description = ""
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "60e8b78784c9920071996842"
+    displayName = "Lior Neudorfer"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.version.event.trigger:deleted"
+    value = {
+      versionNameFilter = ""
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      type = "jira.issue.outgoing.webhook"
+      value = {
+        url = "http://salto-production.com/bla/bla"
+        urlSecure = false
+        headers = [
+          {
+            id = "_header_1730364206315"
+            name = ""
+            value = ""
+            headerSecure = false
+          },
+        ]
+        sendIssue = false
+        contentType = "empty"
+        method = "POST"
+        responseEnabled = false
+        continueOnErrorEnabled = false
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "0cdfdeb62d2f96459a81abb0d7d4c72e394be0bd696ba16cdd617e5a84b91d7f"
+  }
+  isAgentic = false
+  _alias = "Copy of EnvVarAutomation"
+}

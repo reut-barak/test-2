@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute II_restored_at_202403211012_Models_Software_Models_uuuuus_Version@uuuuuumu {
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Version"
+  displayName = "Version"
+  objectType = jira.ObjectType.instance.II_restored_at_202403211012_Models_Software_Models@uuuuus
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 0
+  _alias = "Version"
+}

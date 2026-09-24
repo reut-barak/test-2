@@ -1,0 +1,31 @@
+jira.ObjectTypeAttribute IZU_Hardware_Assets_us_Asset_Status@uumus {
+  description = "Status of asset (e.g., In stock, In use, etc.)"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Asset Status"
+  displayName = "Asset Status"
+  objectType = jira.ObjectType.instance.IZU_Hardware_Assets@us
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 7
+  typeValueMulti = [
+    jira.ObjectSchemaStatus.instance.IZU__Disposed,
+    jira.ObjectSchemaStatus.instance.IZU__In_Stock@uus,
+    jira.ObjectSchemaStatus.instance.IZU__In_Use@uus,
+    jira.ObjectSchemaStatus.instance.IZU__Ordered,
+    jira.ObjectSchemaStatus.instance.IZU__Retired,
+    jira.ObjectSchemaStatus.instance.IZU__Missing,
+    jira.ObjectSchemaStatus.instance.IZU__In_transit@uus,
+  ]
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  _alias = "Asset Status"
+}

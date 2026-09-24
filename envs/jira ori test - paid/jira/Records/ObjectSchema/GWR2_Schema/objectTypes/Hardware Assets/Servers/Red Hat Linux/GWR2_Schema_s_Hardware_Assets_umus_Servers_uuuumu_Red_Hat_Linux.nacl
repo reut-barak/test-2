@@ -1,0 +1,16 @@
+jira.ObjectType GWR2_Schema_s_Hardware_Assets_umus_Servers_uuuumu_Red_Hat_Linux@uuuuuumuss {
+  name = "Red Hat Linux"
+  displayName = "Red Hat Linux"
+  type = 0
+  parentObjectTypeId = jira.ObjectType.instance.GWR2_Schema_s_Hardware_Assets_umus_Servers@uuuumu
+  inherited = true
+  abstractObjectType = false
+  parentObjectTypeInherited = true
+  schemaLabel = "GWR2 Schema"
+  schemaDisplayLabel = "GWR2 Schema"
+  iconId = "97"
+  _parent = [
+    jira.ObjectSchema.instance.GWR2_Schema@s,
+  ]
+  _alias = "Red Hat Linux"
+}

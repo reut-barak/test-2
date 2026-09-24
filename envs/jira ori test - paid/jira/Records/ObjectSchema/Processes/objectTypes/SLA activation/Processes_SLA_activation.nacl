@@ -1,0 +1,17 @@
+jira.ObjectType Processes_SLA_activation@us {
+  name = "SLA activation"
+  displayName = "SLA activation"
+  type = 0
+  description = ""
+  inherited = false
+  abstractObjectType = false
+  parentObjectTypeInherited = false
+  schemaLabel = "Processes"
+  schemaDisplayLabel = "Processes"
+  iconId = "1"
+  parentObjectTypeId = jira.ObjectSchema.instance.Processes
+  _parent = [
+    jira.ObjectSchema.instance.Processes,
+  ]
+  _alias = "SLA activation"
+}

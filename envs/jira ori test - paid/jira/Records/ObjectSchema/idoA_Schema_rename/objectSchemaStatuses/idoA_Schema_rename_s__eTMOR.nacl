@@ -1,0 +1,11 @@
+jira.ObjectSchemaStatus idoA_Schema_rename_s__eTMOR@uumuu {
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:42"
+  name = "eTMOR"
+  displayName = "eTMOR"
+  description = "emon right or wrong"
+  category = 1
+  _parent = [
+    jira.ObjectSchema.instance.idoA_Schema_rename@s,
+  ]
+  _alias = "idoA Schema rename:eTMOR"
+}

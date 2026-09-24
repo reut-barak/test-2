@@ -1,0 +1,14 @@
+jira.ObjectSchema ID2_restored_at_202403211012 {
+  name = "ID2_restored_at_202403211012"
+  displayName = "ID2_restored_at_202403211012"
+  objectSchemaKey = "AOXAKXA"
+  description = "This is for manage people kol right or left or inside?"
+  status = "Ok"
+  crossSchemaReferencingAllowed = false
+  properties = {
+    quickCreateObjects = true
+    allowOtherObjectSchema = false
+    validateQuickCreate = true
+  }
+  _alias = "ID2_restored_at_202403211012"
+}

@@ -1,0 +1,72 @@
+jira.Automation Amend_descriptions_on_issue_creation_Help_Center_Example_Project@ssssusss {
+  name = "Amend descriptions on issue creation"
+  state = "ENABLED"
+  description = ""
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "60e8b78784c9920071996842"
+    displayName = "Lior Neudorfer"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.event.trigger:created"
+    value = {
+      eventKey = "jira:issue_created"
+      issueEvent = "issue_created"
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      type = "jira.issue.edit"
+      value = {
+        operations = [
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Description__string
+            }
+            fieldType = "description"
+            type = "SET"
+            rawValue = "rwerwe"
+          },
+        ]
+        sendNotifications = true
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  projects = [
+    {
+      projectId = jira.Project.instance.Help_Center_Example_Project@s
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "454d4e8bf0795f471b7518f8fa1736357294d0f72f3b6ff579b2d84a9a2e11ab"
+  }
+  isAgentic = false
+  _alias = "Amend descriptions on issue creation"
+}

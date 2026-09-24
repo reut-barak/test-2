@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute IZT_Models_Software_Models_uus_Key@uuumu {
+  editable = false
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 1
+  name = "Key"
+  displayName = "Key"
+  objectType = jira.ObjectType.instance.IZT_Models_Software_Models@uus
+  options = ""
+  pendingCreation = false
+  removable = false
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 0
+  _alias = "Key"
+}

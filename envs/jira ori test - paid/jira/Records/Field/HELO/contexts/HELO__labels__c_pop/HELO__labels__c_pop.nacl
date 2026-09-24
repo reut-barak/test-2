@@ -1,0 +1,14 @@
+jira.CustomFieldContext HELO__labels__c_pop {
+  name = "pop"
+  description = ""
+  defaultValue = {
+    type = "labels"
+  }
+  projectIds = [
+    jira.Project.instance.A_test_project_for_Lior___@sssslll,
+  ]
+  _parent = [
+    jira.Field.instance.HELO__labels__c,
+  ]
+  _alias = "HELO context in pop"
+}

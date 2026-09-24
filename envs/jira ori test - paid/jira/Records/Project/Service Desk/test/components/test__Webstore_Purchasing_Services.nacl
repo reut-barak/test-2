@@ -1,0 +1,9 @@
+jira.ProjectComponent test__Webstore_Purchasing_Services@uuss {
+  name = "Webstore Purchasing Services"
+  description = "Created by Jira Service Management"
+  assigneeType = "PROJECT_DEFAULT"
+  _parent = [
+    jira.Project.instance.test,
+  ]
+  _alias = "test:Webstore Purchasing Services"
+}

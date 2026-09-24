@@ -1,0 +1,26 @@
+jira.ObjectTypeAttribute idoA_Schema_rename_s_Employees_uumu_Employee_Status@uuuumus {
+  description = "Employment status of employee"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Employee Status"
+  displayName = "Employee Status"
+  objectType = jira.ObjectType.instance.idoA_Schema_rename_s_Employees@uumu
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 7
+  typeValueMulti = [
+    jira.ObjectSchemaStatus.instance.idoA_Schema_rename_s__Exempt@uumuu,
+    jira.ObjectSchemaStatus.instance.idoA_Schema_rename_s__Nonexempt@uumuu,
+  ]
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  _alias = "Employee Status"
+}

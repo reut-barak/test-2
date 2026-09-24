@@ -1,0 +1,24 @@
+jira.ObjectTypeAttribute idoA_Schema_rename_s_Department_uumu_SALES_uuuumu_idoA@uuuuuumu {
+  description = "whay"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "idoA"
+  displayName = "idoA"
+  objectType = jira.ObjectType.instance.idoA_Schema_rename_s_Department_uumu_SALES@uuuumu
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 1
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  additionalValue = jira.ObjectSchemaDefaultReferenceType.instance.Assets_Reference_Type@s
+  typeValue = jira.ObjectType.instance.idoA_Schema_rename_s_Department_uumu_SALES@uuuumu
+  _alias = "idoA"
+}

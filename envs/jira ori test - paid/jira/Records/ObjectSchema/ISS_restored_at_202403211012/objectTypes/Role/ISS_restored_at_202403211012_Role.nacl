@@ -1,0 +1,16 @@
+jira.ObjectType ISS_restored_at_202403211012_Role {
+  name = "Role"
+  displayName = "Role"
+  type = 0
+  inherited = false
+  abstractObjectType = false
+  parentObjectTypeInherited = false
+  schemaLabel = "ISS_restored_at_202403211012"
+  schemaDisplayLabel = "ISS_restored_at_202403211012"
+  iconId = "94"
+  parentObjectTypeId = jira.ObjectSchema.instance.ISS_restored_at_202403211012
+  _parent = [
+    jira.ObjectSchema.instance.ISS_restored_at_202403211012,
+  ]
+  _alias = "Role"
+}

@@ -1,0 +1,15 @@
+jira.Field kihjk__labels__c {
+  name = "kihjk"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:labelsearcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "kihjk"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:labels"
+  contexts = [
+    jira.CustomFieldContext.instance.kihjk__labels__c_Default_Configuration_Scheme_for_kihjk_change_in_jsm@uuuuusssssss,
+    jira.CustomFieldContext.instance.kihjk__labels__c_Default_Configuration_Scheme_for_kihjk@uuuuussss,
+  ]
+  _alias = "kihjk"
+}

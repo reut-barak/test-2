@@ -1,0 +1,11 @@
+jira.ObjectTypeOrder LNIT_restored_at_202403211012_Models_childOrder {
+  objectTypes = [
+    jira.ObjectType.instance.LNIT_restored_at_202403211012_Models_Model_Categories@uuuuus,
+    jira.ObjectType.instance.LNIT_restored_at_202403211012_Models_Jsm2,
+    jira.ObjectType.instance.LNIT_restored_at_202403211012_Models_Software_Models@uuuuus,
+    jira.ObjectType.instance.LNIT_restored_at_202403211012_Models_Hardware_Models@uuuuus,
+  ]
+  _parent = [
+    jira.ObjectType.instance.LNIT_restored_at_202403211012_Models,
+  ]
+}

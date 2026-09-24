@@ -1,0 +1,14 @@
+jira.Field Incident_Severity__select__c@suuuu {
+  name = "Incident Severity"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher"
+  areOptionsSupported = true
+  isOptionsCountOverLimit = false
+  translatedName = "Incident Severity"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:select"
+  contexts = [
+    jira.CustomFieldContext.instance.Incident_Severity__select__c_suuuu_Default_Configuration_Scheme_for_Incident_Severity@uuuuumusssss,
+  ]
+  _alias = "Incident Severity"
+}

@@ -1,0 +1,8 @@
+jira.PriorityScheme Yuval_new {
+  name = "Yuval_new"
+  description = ""
+  defaultPriorityId = jira.Priority.instance.Lowest
+  priorities = [
+    jira.Priority.instance.Lowest,
+  ]
+}

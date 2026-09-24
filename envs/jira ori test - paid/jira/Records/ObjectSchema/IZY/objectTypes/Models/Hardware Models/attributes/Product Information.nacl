@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute IZY_Models_Hardware_Models_uus_Product_Information@uuumus {
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Product Information"
+  displayName = "Product Information"
+  objectType = jira.ObjectType.instance.IZY_Models_Hardware_Models@uus
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 9
+  _alias = "Product Information"
+}

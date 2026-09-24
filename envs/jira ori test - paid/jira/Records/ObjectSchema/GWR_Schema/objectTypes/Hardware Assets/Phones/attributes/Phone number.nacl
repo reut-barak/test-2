@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute GWR_Schema_b_Hardware_Assets_umus_Phones_uuuumu_Phone_number@uuuuuumus {
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Phone number"
+  displayName = "Phone number"
+  objectType = jira.ObjectType.instance.GWR_Schema_b_Hardware_Assets_umus_Phones@uuuumu
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 0
+  _alias = "Phone number"
+}

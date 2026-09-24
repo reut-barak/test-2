@@ -1,0 +1,5 @@
+jira.ScriptManager bla {
+  name = "bla"
+  type = "folder"
+  path = "bla"
+}

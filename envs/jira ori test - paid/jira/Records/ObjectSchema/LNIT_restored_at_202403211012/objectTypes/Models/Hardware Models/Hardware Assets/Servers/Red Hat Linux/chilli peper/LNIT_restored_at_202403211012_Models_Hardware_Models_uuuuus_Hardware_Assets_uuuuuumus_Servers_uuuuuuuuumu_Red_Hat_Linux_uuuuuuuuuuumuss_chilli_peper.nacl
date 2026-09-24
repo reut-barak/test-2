@@ -1,0 +1,17 @@
+jira.ObjectType LNIT_restored_at_202403211012_Models_Hardware_Models_uuuuus_Hardware_Assets_uuuuuumus_Servers_uuuuuuuuumu_Red_Hat_Linux_uuuuuuuuuuumuss_chilli_peper@uuuuuuuuuuuuuuumus {
+  name = "chilli peper"
+  displayName = "chilli peper"
+  type = 0
+  description = ""
+  parentObjectTypeId = jira.ObjectType.instance.LNIT_restored_at_202403211012_Models_Hardware_Models_uuuuus_Hardware_Assets_uuuuuumus_Servers_uuuuuuuuumu_Red_Hat_Linux@uuuuuuuuuuumuss
+  inherited = true
+  abstractObjectType = false
+  parentObjectTypeInherited = true
+  schemaLabel = "LNIT_restored_at_202403211012"
+  schemaDisplayLabel = "LNIT_restored_at_202403211012"
+  iconId = "97"
+  _parent = [
+    jira.ObjectSchema.instance.LNIT_restored_at_202403211012,
+  ]
+  _alias = "chilli peper"
+}

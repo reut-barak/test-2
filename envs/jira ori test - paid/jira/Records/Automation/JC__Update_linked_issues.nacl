@@ -1,0 +1,186 @@
+jira.Automation JC__Update_linked_issues@fsss {
+  name = "JC: Update linked issues"
+  state = "DISABLED"
+  description = ""
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "60e8b78784c9920071996842"
+    displayName = "Lior Neudorfer"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.event.trigger:transitioned"
+    value = {
+      fromStatus = [
+      ]
+      toStatus = [
+        {
+          type = "NAME"
+          value = jira.Status.instance.done.name
+        },
+      ]
+      eventKey = "jira:issue_updated"
+      issueEvent = "issue_generic"
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "CONDITION"
+      type = "jira.issue.condition"
+      value = {
+        selectedField = {
+          type = "ID"
+          value = jira.Field.instance.Project__project
+        }
+        selectedFieldType = "project"
+        comparison = "EQUALS"
+        compareFieldValue = {
+          type = "ID"
+          value = jira.Project.instance.JiraCon_Project@s
+          multiValue = false
+        }
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "CONDITION"
+      type = "jira.issue.condition"
+      value = {
+        selectedField = {
+          type = "ID"
+          value = jira.Field.instance.Status__status
+        }
+        selectedFieldType = "status"
+        comparison = "EQUALS"
+        compareFieldValue = {
+          type = "NAME"
+          value = jira.Status.instance.done.name
+          multiValue = false
+        }
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.issue.edit"
+      value = {
+        operations = [
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Labels__array
+            }
+            fieldType = "labels"
+            type = "ADDREMOVE"
+            value = {
+              ADD = [
+                {
+                  type = "FREE"
+                  value = "Support-notified"
+                },
+              ]
+              REMOVE = [
+              ]
+            }
+          },
+        ]
+        sendNotifications = true
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "BRANCH"
+      type = "jira.issue.related"
+      value = {
+        relatedType = "linked"
+        jql = ""
+        linkTypes = [
+          "relates to",
+        ]
+        onlyUpdatedIssues = false
+        similarityLimit = 40
+        compareValue = 0
+      }
+      conditions = [
+      ]
+      children = [
+        {
+          component = "CONDITION"
+          type = "jira.issue.condition"
+          value = {
+            selectedField = {
+              type = "ID"
+              value = jira.Field.instance.Project__project
+            }
+            selectedFieldType = "project"
+            comparison = "EQUALS"
+            compareFieldValue = {
+              type = "ID"
+              value = jira.Project.instance.JiraCon_Project@s
+              multiValue = false
+            }
+          }
+          conditions = [
+          ]
+          children = [
+          ]
+        },
+        {
+          component = "ACTION"
+          type = "jira.issue.comment"
+          value = {
+            comment = '''
+{{issue.${ jira.Field.instance.How_many_times_has_this_happened_before__float__c@ssssssuuuu.name }}} fe
+\${{issue.${ jira.Field.instance.How_many_times_has_this_happened_before__float__c@ssssssuuuu.name }}} efe {{issue.${ jira.Field.instance.How_many_times_has_this_happened_before__float__c@ssssssuuuu.name }}} fe \${{issue.${ jira.Field.instance.How_many_times_has_this_happened_before__float__c@ssssssuuuu.name }}} erreter sjhdgs jsadg jadb suab uagd uha kuahd kahf ugsf hj re gtgggffff re hire reiuh reiu reiuh rei grei riueh rieu rih itr iortj dti riueh riuhigrudrhfirhgirudgriudh reiu reiu hriueh riuhrudh ruehiruereiuh eriu girueiugr iruhgirusgiusrh iu u ui u iugri
+
+Cheers,
+
+Automation for Jira km
+'''
+            publicComment = false
+            sendNotifications = true
+            addCommentOnce = true
+          }
+          conditions = [
+          ]
+          children = [
+          ]
+        },
+      ]
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "22fb27497a98f4d6d184925c5b2ef7f4682cf34e2a0123d77c5531c0edb3e09b"
+  }
+  isAgentic = false
+  _alias = "JC: Update linked issues"
+}

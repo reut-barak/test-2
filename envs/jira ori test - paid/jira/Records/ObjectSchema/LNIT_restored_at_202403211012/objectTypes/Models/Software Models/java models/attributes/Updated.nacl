@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute LNIT_restored_at_202403211012_Models_Software_Models_uuuuus_java_models_uuuuuumus_Updated@uuuuuuuuumu {
+  editable = false
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 1
+  name = "Updated"
+  displayName = "Updated"
+  objectType = jira.ObjectType.instance.LNIT_restored_at_202403211012_Models_Software_Models_uuuuus_java_models@uuuuuumus
+  options = ""
+  pendingCreation = false
+  removable = false
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 6
+  _alias = "Updated"
+}

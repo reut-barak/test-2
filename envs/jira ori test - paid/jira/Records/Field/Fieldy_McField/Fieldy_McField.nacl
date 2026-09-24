@@ -1,0 +1,14 @@
+jira.Field Fieldy_McField__multicheckboxes__c@suuuu {
+  name = "Fieldy McField"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher"
+  areOptionsSupported = true
+  isOptionsCountOverLimit = false
+  translatedName = "Fieldy McField"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes"
+  contexts = [
+    jira.CustomFieldContext.instance.Fieldy_McField__multicheckboxes__c_suuuu_Default_Configuration_Scheme_for_Fieldy_McField@uuuuumusssss,
+  ]
+  _alias = "Fieldy McField"
+}

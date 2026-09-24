@@ -1,0 +1,9 @@
+jira.FieldContextOptionsOrder Team__multiselect__c_Default_Configuration_Scheme_for_Team_order_child@uuuuussssuu {
+  options = [
+    jira.CustomFieldContextOption.instance.Team__multiselect__c_Default_Configuration_Scheme_for_Team_a@uuuuussssu,
+    jira.CustomFieldContextOption.instance.Team__multiselect__c_Default_Configuration_Scheme_for_Team_b@uuuuussssu,
+  ]
+  _parent = [
+    jira.CustomFieldContext.instance.Team__multiselect__c_Default_Configuration_Scheme_for_Team@uuuuussss,
+  ]
+}

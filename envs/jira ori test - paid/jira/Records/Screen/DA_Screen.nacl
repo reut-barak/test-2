@@ -1,0 +1,16 @@
+jira.Screen DA_Screen {
+  name = "DA_Screen"
+  description = "DA_Screen"
+  tabs = {
+    General = {
+      name = "General"
+      fields = [
+        jira.Field.instance.Dan_the_King__multicheckboxes__c@ssuuuu,
+        jira.Field.instance.ido_date__datepicker__c@suuuu,
+        jira.Field.instance.shay_url__url__c@suuuu,
+        jira.Field.instance.AAA_test_custom_field__multicheckboxes__c@sssuuuu,
+      ]
+      position = 0
+    }
+  }
+}

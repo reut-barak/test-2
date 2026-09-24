@@ -1,0 +1,31 @@
+jira.ObjectTypeAttribute GWR2_Schema_s_Hardware_Assets_umus_Asset_Status@uuuumus {
+  description = "Status of asset (e.g., In stock, In use, etc.)"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Asset Status"
+  displayName = "Asset Status"
+  objectType = jira.ObjectType.instance.GWR2_Schema_s_Hardware_Assets@umus
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 7
+  typeValueMulti = [
+    jira.ObjectSchemaStatus.instance.GWR2_Schema_s__Disposed@umuu,
+    jira.ObjectSchemaStatus.instance.GWR2_Schema_s__In_Stock@umuus,
+    jira.ObjectSchemaStatus.instance.GWR2_Schema_s__In_Use@umuus,
+    jira.ObjectSchemaStatus.instance.GWR2_Schema_s__Ordered@umuu,
+    jira.ObjectSchemaStatus.instance.GWR2_Schema_s__Retired@umuu,
+    jira.ObjectSchemaStatus.instance.GWR2_Schema_s__Missing@umuu,
+    jira.ObjectSchemaStatus.instance.GWR2_Schema_s__In_transit@umuus,
+  ]
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  _alias = "Asset Status"
+}

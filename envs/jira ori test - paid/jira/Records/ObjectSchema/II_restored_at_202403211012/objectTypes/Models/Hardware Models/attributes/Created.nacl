@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute II_restored_at_202403211012_Models_Hardware_Models_uuuuus_Created@uuuuuumu {
+  editable = false
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 1
+  name = "Created"
+  displayName = "Created"
+  objectType = jira.ObjectType.instance.II_restored_at_202403211012_Models_Hardware_Models@uuuuus
+  options = ""
+  pendingCreation = false
+  removable = false
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 6
+  _alias = "Created"
+}

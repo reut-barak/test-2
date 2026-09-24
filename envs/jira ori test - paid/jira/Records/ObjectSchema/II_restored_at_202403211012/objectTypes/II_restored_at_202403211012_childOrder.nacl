@@ -1,0 +1,9 @@
+jira.ObjectTypeOrder II_restored_at_202403211012_childOrder {
+  objectTypes = [
+    jira.ObjectType.instance.II_restored_at_202403211012_Hardware_Assets@uuuus,
+    jira.ObjectType.instance.II_restored_at_202403211012_Models,
+  ]
+  _parent = [
+    jira.ObjectSchema.instance.II_restored_at_202403211012,
+  ]
+}

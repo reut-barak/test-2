@@ -1,0 +1,21 @@
+jira.CustomFieldContext MultipleContextTestField__radiobuttons__c_ANewConfigruationScehemeContexForMultipleContextField {
+  name = "ANewConfigruationScehemeContexForMultipleContextField"
+  description = ""
+  defaultValue = {
+    type = "option.single"
+  }
+  issueTypeIds = [
+    jira.IssueType.instance._System__Problem@his,
+    jira.IssueType.instance.IT_Help@s,
+    jira.IssueType.instance.Service_Request@s,
+  ]
+  projectIds = [
+    jira.Project.instance.AlonCompanyProject,
+    jira.Project.instance.AlonCompanyProject10,
+    jira.Project.instance.AlonCompanyProject11,
+  ]
+  _parent = [
+    jira.Field.instance.MultipleContextTestField__radiobuttons__c,
+  ]
+  _alias = "MultipleContextTestField context in ANewConfigruationScehemeContexForMultipleContextField"
+}

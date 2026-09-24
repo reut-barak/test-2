@@ -1,0 +1,117 @@
+jira.Automation AI_Hour_GitHub_Workflow_Trigger__atempt_2_@sssssjsk {
+  name = "AI Hour GitHub Workflow Trigger (atempt 2)"
+  state = "ENABLED"
+  description = ""
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "616e3f77e79ff6006f1eca7f"
+    displayName = "Shir Reifenberg"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.multiple.issue.event"
+    value = {
+      events = [
+        {
+          id = 1
+          key = "jira:issue_created"
+          event = "issue_created"
+          labelKey = "com.codebarrel.automation.trigger.multiple.created"
+          system = false
+        },
+        {
+          id = 2
+          key = "jira:issue_updated"
+          event = "issue_updated"
+          labelKey = "com.codebarrel.automation.trigger.multiple.updated"
+          system = false
+        },
+      ]
+    }
+    conditions = [
+      {
+        component = "CONDITION"
+        type = "jira.jql.condition"
+        conditions = [
+        ]
+        children = [
+        ]
+        rawValue = "${ jira.Field.instance.Labels__array } = \"ai-hour\""
+      },
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      type = "jira.issue.outgoing.webhook"
+      value = {
+        url = "https://api.github.com/repos/shir-reifenberg/tulip/actions/workflows/ai-hour.yml/dispatches"
+        urlSecure = false
+        headers = [
+          {
+            id = "_header_1754490678315"
+            name = "Content-Type"
+            value = "application/json"
+            headerSecure = false
+          },
+          {
+            id = "_header_1754490739275"
+            name = "Accept"
+            value = "application/vnd.github.v3+json"
+            headerSecure = false
+          },
+          {
+            id = "_header_1754490763739"
+            name = "Authorization"
+            value = "<SECRET_TOKEN>"
+            headerSecure = true
+          },
+        ]
+        sendIssue = false
+        contentType = "custom"
+        customBody = '''
+{
+  "ref": "main",
+  "inputs": {
+    "ticket_key": "{{issue.key}}",
+    "ticket_summary": "{{issue.${ jira.Field.instance.Summary__string }.jsonEncode}}",
+    "ticket_description": "{{issue.${ jira.Field.instance.Description__string }.jsonEncode}}",
+    "issue_type": "{{issue.issueType.name}}",
+    "reporter": "{{issue.${ jira.Field.instance.Reporter__user }.displayName}}"
+  }
+}
+'''
+        method = "POST"
+        responseEnabled = true
+        continueOnErrorEnabled = false
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "1fb9601e9af438c286fd1474badb482bae59d6e8b6d78a7ba05329540a0bccae"
+  }
+  isAgentic = false
+  _alias = "AI Hour GitHub Workflow Trigger (atempt 2)"
+}

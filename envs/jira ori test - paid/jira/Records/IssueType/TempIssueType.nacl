@@ -1,0 +1,7 @@
+jira.IssueType TempIssueType {
+  description = ""
+  name = "TempIssueType"
+  untranslatedName = "TempIssueType"
+  hierarchyLevel = 0
+  avatar = file("jira/IssueType/TempIssueType.png")
+}

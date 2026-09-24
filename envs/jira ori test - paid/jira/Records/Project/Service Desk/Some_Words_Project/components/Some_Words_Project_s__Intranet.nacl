@@ -1,0 +1,9 @@
+jira.ProjectComponent Some_Words_Project_s__Intranet@uumuu {
+  name = "Intranet"
+  description = "Issues related to the intranet. Created by Jira Service Management."
+  assigneeType = "UNASSIGNED"
+  _parent = [
+    jira.Project.instance.Some_Words_Project@s,
+  ]
+  _alias = "Some Words Project:Intranet"
+}

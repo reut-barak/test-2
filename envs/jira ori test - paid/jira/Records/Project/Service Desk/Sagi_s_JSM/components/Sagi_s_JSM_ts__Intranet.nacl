@@ -1,0 +1,9 @@
+jira.ProjectComponent Sagi_s_JSM_ts__Intranet@uumuu {
+  description = "Created by Jira Service Management"
+  assigneeType = "PROJECT_DEFAULT"
+  name = "Intranet"
+  _parent = [
+    jira.Project.instance.Sagi_s_JSM@ts,
+  ]
+  _alias = "Sagi's JSM:Intranet"
+}

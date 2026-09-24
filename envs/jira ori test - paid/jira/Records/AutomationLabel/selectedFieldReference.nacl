@@ -1,0 +1,5 @@
+jira.AutomationLabel selectedFieldReference {
+  name = "selectedFieldReference"
+  color = "P300"
+  editable = true
+}

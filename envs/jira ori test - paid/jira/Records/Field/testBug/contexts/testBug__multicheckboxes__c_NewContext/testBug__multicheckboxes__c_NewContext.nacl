@@ -1,0 +1,20 @@
+jira.CustomFieldContext testBug__multicheckboxes__c_NewContext {
+  name = "NewContext"
+  description = ""
+  defaultValue = {
+    type = "option.multiple"
+    optionIds = [
+      jira.CustomFieldContextOption.instance.testBug__multicheckboxes__c_NewContext_e,
+    ]
+  }
+  issueTypeIds = [
+    jira.IssueType.instance.AnIssueSubType,
+  ]
+  projectIds = [
+    jira.Project.instance.AlonCompanyProject10,
+  ]
+  _parent = [
+    jira.Field.instance.testBug__multicheckboxes__c,
+  ]
+  _alias = "testBug context in NewContext"
+}

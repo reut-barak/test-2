@@ -1,0 +1,70 @@
+jira.Automation EnvVarsLiran {
+  name = "EnvVarsLiran"
+  state = "ENABLED"
+  description = ""
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "60e8b78784c9920071996842"
+    displayName = "Lior Neudorfer"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.version.event.trigger:deleted"
+    value = {
+      versionNameFilter = ""
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      type = "jira.issue.outgoing.email"
+      value = {
+        fromName = ""
+        replyTo = ""
+        to = [
+          {
+            type = "FREE"
+            value = "production@blabla.com"
+          },
+        ]
+        cc = [
+        ]
+        bcc = [
+        ]
+        subject = "Subject"
+        body = file("jira/Automation/EnvVarsLiran.components.0.value.html")
+        mimeType = "text/html"
+        convertLineBreaks = true
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "fd9ace06ddb2f304c6d4eaebf291c28405e4fa9643a1509fefe1c3a5a23145c0"
+  }
+  isAgentic = false
+  _alias = "EnvVarsLiran"
+}

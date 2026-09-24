@@ -1,0 +1,16 @@
+jira.ObjectType All_Serial_Numbers_s_Hardware_Assets@uumus {
+  name = "Hardware Assets"
+  displayName = "Hardware Assets"
+  type = 0
+  inherited = true
+  abstractObjectType = true
+  parentObjectTypeInherited = false
+  schemaLabel = "All Serial Numbers"
+  schemaDisplayLabel = "All Serial Numbers"
+  iconId = "141"
+  parentObjectTypeId = jira.ObjectSchema.instance.All_Serial_Numbers@s
+  _parent = [
+    jira.ObjectSchema.instance.All_Serial_Numbers@s,
+  ]
+  _alias = "Hardware Assets"
+}

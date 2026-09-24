@@ -1,0 +1,17 @@
+jira.ObjectType LNIT_restored_at_202403211012_Models_Software_Models_uuuuus_python_models@uuuuuumus {
+  name = "python models"
+  displayName = "python models"
+  type = 0
+  description = ""
+  parentObjectTypeId = jira.ObjectType.instance.LNIT_restored_at_202403211012_Models_Software_Models@uuuuus
+  inherited = true
+  abstractObjectType = false
+  parentObjectTypeInherited = false
+  schemaLabel = "LNIT_restored_at_202403211012"
+  schemaDisplayLabel = "LNIT_restored_at_202403211012"
+  iconId = "73"
+  _parent = [
+    jira.ObjectSchema.instance.LNIT_restored_at_202403211012,
+  ]
+  _alias = "python models"
+}

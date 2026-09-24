@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute Services_Capabilities_Service_ID@uus {
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 1
+  name = "Service ID"
+  displayName = "Service ID"
+  objectType = jira.ObjectType.instance.Services_Capabilities
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = true
+  lockedConfiguration = false
+  defaultTypeId = 0
+  _alias = "Service ID"
+}

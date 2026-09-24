@@ -1,0 +1,11 @@
+jira.ObjectSchemaStatus All_Serial_Numbers_s__In_transit@uumuus {
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:197"
+  name = "In transit"
+  displayName = "In transit"
+  description = "Asset is being transported"
+  category = 2
+  _parent = [
+    jira.ObjectSchema.instance.All_Serial_Numbers@s,
+  ]
+  _alias = "All Serial Numbers:In transit"
+}

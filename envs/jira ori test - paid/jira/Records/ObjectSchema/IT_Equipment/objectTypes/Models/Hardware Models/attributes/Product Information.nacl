@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute IT_Equipment_Models_Hardware_Models_uuus_Product_Information@uuuumus {
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Product Information"
+  displayName = "Product Information"
+  objectType = jira.ObjectType.instance.IT_Equipment_Models_Hardware_Models@uuus
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 9
+  _alias = "Product Information"
+}

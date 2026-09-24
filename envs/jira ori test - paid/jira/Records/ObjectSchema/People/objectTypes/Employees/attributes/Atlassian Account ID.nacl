@@ -1,0 +1,22 @@
+jira.ObjectTypeAttribute People_Employees_Atlassian_Account_ID@uuss {
+  description = "User"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Atlassian Account ID"
+  displayName = "Atlassian Account ID"
+  objectType = jira.ObjectType.instance.People_Employees
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 2
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  _alias = "Atlassian Account ID"
+}

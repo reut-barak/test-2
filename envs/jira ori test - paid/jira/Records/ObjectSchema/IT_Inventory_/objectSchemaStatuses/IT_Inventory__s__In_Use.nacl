@@ -1,0 +1,11 @@
+jira.ObjectSchemaStatus IT_Inventory__s__In_Use@uumuus {
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:49"
+  name = "In Use"
+  displayName = "In Use"
+  description = "Asset is deployed and functioning"
+  category = 1
+  _parent = [
+    jira.ObjectSchema.instance.IT_Inventory_@s,
+  ]
+  _alias = "IT Inventory :In Use"
+}

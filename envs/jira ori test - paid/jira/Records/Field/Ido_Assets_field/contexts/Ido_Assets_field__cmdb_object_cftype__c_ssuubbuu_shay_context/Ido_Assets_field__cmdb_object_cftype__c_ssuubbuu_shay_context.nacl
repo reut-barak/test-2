@@ -1,0 +1,23 @@
+jira.CustomFieldContext Ido_Assets_field__cmdb_object_cftype__c_ssuubbuu_shay_context@uuuuuuuumus {
+  name = "shay context"
+  description = "bla"
+  projectIds = [
+    jira.Project.instance.shay_test@s,
+  ]
+  assetsObjectFieldConfiguration = {
+    objectSchemaId = jira.ObjectSchema.instance.idoA_Schema_rename@s
+    attributesIncludedInAutoCompleteSearch = [
+      jira.ObjectTypeAttribute.instance.idoA_Schema_rename_s_Department_uumu_R_D_uuuumue_Team_Omri_uuuuuuumus_Okta_uuuuuuuuuumu_Okta_adapter_lead_uuuuuuuuuuuumuss_rudi_uuuuuuuuuuuuuuuumu_Asset@uuuuuuuuuuuuuuuuuumu,
+    ]
+    attributesDisplayedOnIssue = [
+      jira.ObjectTypeAttribute.instance.idoA_Schema_rename_s_Department_uumu_R_D_uuuumue_Team_Omri_uuuuuuumus_Okta_uuuuuuuuuumu_Okta_adapter_lead_uuuuuuuuuuuumuss_bono_uuuuuuuuuuuuuuuumu_Asset2@uuuuuuuuuuuuuuuuuumu,
+    ]
+    multiple = true
+    shouldSetDefaultValuesFromEmptySearch = true
+    assignStrict = false
+  }
+  _parent = [
+    jira.Field.instance.Ido_Assets_field__cmdb_object_cftype__c@ssuubbuu,
+  ]
+  _alias = "Ido Assets field context in shay context"
+}

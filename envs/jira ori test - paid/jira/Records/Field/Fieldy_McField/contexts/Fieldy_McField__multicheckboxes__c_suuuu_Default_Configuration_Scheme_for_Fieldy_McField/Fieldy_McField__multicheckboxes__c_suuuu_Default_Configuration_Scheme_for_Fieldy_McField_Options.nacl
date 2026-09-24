@@ -1,0 +1,14 @@
+jira.CustomFieldContextOption Fieldy_McField__multicheckboxes__c_suuuu_Default_Configuration_Scheme_for_Fieldy_McField_fsdfsd@uuuuumusssssu {
+  value = "fsdfsd"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Fieldy_McField__multicheckboxes__c_suuuu_Default_Configuration_Scheme_for_Fieldy_McField@uuuuumusssss,
+  ]
+}
+jira.CustomFieldContextOption Fieldy_McField__multicheckboxes__c_suuuu_Default_Configuration_Scheme_for_Fieldy_McField_fsdfsdfsdfds@uuuuumusssssu {
+  value = "fsdfsdfsdfds"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Fieldy_McField__multicheckboxes__c_suuuu_Default_Configuration_Scheme_for_Fieldy_McField@uuuuumusssss,
+  ]
+}

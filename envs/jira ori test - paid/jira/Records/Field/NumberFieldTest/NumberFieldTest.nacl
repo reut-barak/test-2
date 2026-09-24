@@ -1,0 +1,14 @@
+jira.Field NumberFieldTest__float__c {
+  name = "NumberFieldTest"
+  description = "19.11"
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:exactnumber"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "NumberFieldTest"
+  translatedDescription = "19.11"
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:float"
+  contexts = [
+    jira.CustomFieldContext.instance.NumberFieldTest__float__c_Default_Configuration_Scheme_for_NumberFieldTest@uuuuussss,
+  ]
+  _alias = "NumberFieldTest"
+}

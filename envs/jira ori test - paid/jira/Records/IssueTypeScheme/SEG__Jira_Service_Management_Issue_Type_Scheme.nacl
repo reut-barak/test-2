@@ -1,0 +1,10 @@
+jira.IssueTypeScheme SEG__Jira_Service_Management_Issue_Type_Scheme@fssssss {
+  name = "SEG: Jira Service Management Issue Type Scheme"
+  description = "This Jira Service Management Issue Type Scheme was generated automatically"
+  issueTypeIds = [
+    jira.IssueType.instance.New_Feature@s,
+    jira.IssueType.instance.Support,
+    jira.IssueType.instance.Developer_escalation@s,
+    jira.IssueType.instance.Bug,
+  ]
+}

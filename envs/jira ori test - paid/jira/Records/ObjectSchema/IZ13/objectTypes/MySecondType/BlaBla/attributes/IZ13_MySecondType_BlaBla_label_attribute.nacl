@@ -1,0 +1,4 @@
+jira.ObjectTypeLabelAttribute IZ13_MySecondType_BlaBla_label_attribute {
+  labelAttribute = jira.ObjectTypeAttribute.instance.IZ13_MySecondType_BlaBla_Name
+  objectType = jira.ObjectType.instance.IZ13_MySecondType_BlaBla
+}

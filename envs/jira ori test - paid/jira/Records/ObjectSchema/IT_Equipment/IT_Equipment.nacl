@@ -1,0 +1,14 @@
+jira.ObjectSchema IT_Equipment {
+  name = "IT_Equipment"
+  displayName = "IT_Equipment"
+  objectSchemaKey = "IT"
+  description = "Stuff we give to our employees "
+  status = "Ok"
+  crossSchemaReferencingAllowed = false
+  properties = {
+    quickCreateObjects = true
+    allowOtherObjectSchema = false
+    validateQuickCreate = true
+  }
+  _alias = "IT_Equipment"
+}

@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute IT_Inventory__s_Models_uumu_Hardware_Models_uuuumus_Updated@uuuuuuumu {
+  editable = false
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 1
+  name = "Updated"
+  displayName = "Updated"
+  objectType = jira.ObjectType.instance.IT_Inventory__s_Models_uumu_Hardware_Models@uuuumus
+  options = ""
+  pendingCreation = false
+  removable = false
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 6
+  _alias = "Updated"
+}

@@ -1,0 +1,16 @@
+jira.ObjectType All_Serial_Numbers_s_Hardware_Assets_uumus_Servers_uuuuumu_Windows_Server@uuuuuuumus {
+  name = "Windows Server"
+  displayName = "Windows Server"
+  type = 0
+  parentObjectTypeId = jira.ObjectType.instance.All_Serial_Numbers_s_Hardware_Assets_uumus_Servers@uuuuumu
+  inherited = true
+  abstractObjectType = false
+  parentObjectTypeInherited = true
+  schemaLabel = "All Serial Numbers"
+  schemaDisplayLabel = "All Serial Numbers"
+  iconId = "140"
+  _parent = [
+    jira.ObjectSchema.instance.All_Serial_Numbers@s,
+  ]
+  _alias = "Windows Server"
+}

@@ -1,0 +1,9 @@
+jira.ObjectTypeOrder DP___People_childOrder@sbsu {
+  objectTypes = [
+    jira.ObjectType.instance.DP___People_sbs_Employees@uuumu,
+    jira.ObjectType.instance.DP___People_sbs_Department@uuumu,
+  ]
+  _parent = [
+    jira.ObjectSchema.instance.DP___People@sbs,
+  ]
+}

@@ -1,0 +1,28 @@
+jira.CustomFieldContextOption Change_requires_downtime___select__c_ssauuuu_Default_Configuration_Scheme_for_Change_requires_downtime__Yes@uuuuuuumussssssau {
+  value = "Yes"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Change_requires_downtime___select__c_ssauuuu_Default_Configuration_Scheme_for_Change_requires_downtime_@uuuuuuumussssssa,
+  ]
+}
+jira.CustomFieldContextOption Change_requires_downtime___select__c_ssauuuu_Default_Configuration_Scheme_for_Change_requires_downtime__No@uuuuuuumussssssau {
+  value = "No"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Change_requires_downtime___select__c_ssauuuu_Default_Configuration_Scheme_for_Change_requires_downtime_@uuuuuuumussssssa,
+  ]
+}
+jira.CustomFieldContextOption Change_requires_downtime___select__c_ssauuuu_Default_Configuration_Scheme_for_Change_requires_downtime__Definitely@uuuuuuumussssssau {
+  value = "Definitely"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Change_requires_downtime___select__c_ssauuuu_Default_Configuration_Scheme_for_Change_requires_downtime_@uuuuuuumussssssa,
+  ]
+}
+jira.CustomFieldContextOption Change_requires_downtime___select__c_ssauuuu_Default_Configuration_Scheme_for_Change_requires_downtime__Maybe@uuuuuuumussssssau {
+  value = "Maybe"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Change_requires_downtime___select__c_ssauuuu_Default_Configuration_Scheme_for_Change_requires_downtime_@uuuuuuumussssssa,
+  ]
+}

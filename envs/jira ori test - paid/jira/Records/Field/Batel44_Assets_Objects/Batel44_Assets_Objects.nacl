@@ -1,0 +1,15 @@
+jira.Field Batel44_Assets_Objects__cmdb_object_cftype__c@ssuubbuu {
+  name = "Batel44 Assets Objects"
+  description = "Batel44 testing assets objects"
+  searcherKey = "com.atlassian.jira.plugins.cmdb:cmdb-object-searcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "Batel44 Assets Objects"
+  translatedDescription = "Batel44 testing assets objects"
+  type = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+  _alias = "Batel44 Assets Objects"
+  contexts = [
+    jira.CustomFieldContext.instance.Batel44_Assets_Objects__cmdb_object_cftype__c_ssuubbuu_Default_Configuration_Scheme_for_Batel44_Assets_Objects_uuuuuuuumussssss_14735@uuuuuuuuuuuuuuuumu,
+    jira.CustomFieldContext.instance.Batel44_Assets_Objects__cmdb_object_cftype__c_ssuubbuu_Default_Configuration_Scheme_for_Batel44_Assets_Objects_uuuuuuuumussssss_15482@uuuuuuuuuuuuuuuumu,
+  ]
+}

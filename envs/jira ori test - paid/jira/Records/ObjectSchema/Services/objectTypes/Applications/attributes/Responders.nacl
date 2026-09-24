@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute Services_Applications_Responders {
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 100
+  minimumCardinality = 0
+  name = "Responders"
+  displayName = "Responders"
+  objectType = jira.ObjectType.instance.Services_Applications
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 2
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  _alias = "Responders"
+}

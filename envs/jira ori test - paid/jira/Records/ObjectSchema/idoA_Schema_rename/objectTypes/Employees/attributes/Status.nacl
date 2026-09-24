@@ -1,0 +1,26 @@
+jira.ObjectTypeAttribute idoA_Schema_rename_s_Employees_uumu_Status@uuuumu {
+  description = "Status of employee is ok"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Status"
+  displayName = "Status"
+  objectType = jira.ObjectType.instance.idoA_Schema_rename_s_Employees@uumu
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 7
+  typeValueMulti = [
+    jira.ObjectSchemaGlobalStatus.instance.Active,
+    jira.ObjectSchemaStatus.instance.idoA_Schema_rename_s__Inactive@uumuu,
+  ]
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  _alias = "Status"
+}

@@ -1,0 +1,7 @@
+jira.CustomFieldContextOption For_Jira_PCS_180060__select__c_ssbuuuu_label2__@uuuuuuumuu_01499 {
+  value = "כ"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.For_Jira_PCS_180060__select__c_ssbuuuu_label2@uuuuuuumu,
+  ]
+}

@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute IZU_Models_Hardware_Models_uus_Unit_Price@uuumus {
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Unit Price"
+  displayName = "Unit Price"
+  objectType = jira.ObjectType.instance.IZU_Models_Hardware_Models@uus
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 1
+  _alias = "Unit Price"
+}

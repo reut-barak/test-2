@@ -1,0 +1,28 @@
+jira.CustomFieldContextOption For_Jira_PCS_180060__select__c_ssbuuuu_Default_Configuration_Scheme_for_For_Jira_PCS_180060_a@uuuuuuumussssssbu {
+  value = "a"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.For_Jira_PCS_180060__select__c_ssbuuuu_Default_Configuration_Scheme_for_For_Jira_PCS_180060@uuuuuuumussssssb,
+  ]
+}
+jira.CustomFieldContextOption For_Jira_PCS_180060__select__c_ssbuuuu_Default_Configuration_Scheme_for_For_Jira_PCS_180060__@uuuuuuumussssssbus {
+  value = " "
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.For_Jira_PCS_180060__select__c_ssbuuuu_Default_Configuration_Scheme_for_For_Jira_PCS_180060@uuuuuuumussssssb,
+  ]
+}
+jira.CustomFieldContextOption For_Jira_PCS_180060__select__c_ssbuuuu_Default_Configuration_Scheme_for_For_Jira_PCS_180060_ddd@uuuuuuumussssssbu {
+  value = "ddd"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.For_Jira_PCS_180060__select__c_ssbuuuu_Default_Configuration_Scheme_for_For_Jira_PCS_180060@uuuuuuumussssssb,
+  ]
+}
+jira.CustomFieldContextOption For_Jira_PCS_180060__select__c_ssbuuuu_Default_Configuration_Scheme_for_For_Jira_PCS_180060_b@uuuuuuumussssssbu {
+  value = "b"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.For_Jira_PCS_180060__select__c_ssbuuuu_Default_Configuration_Scheme_for_For_Jira_PCS_180060@uuuuuuumussssssb,
+  ]
+}

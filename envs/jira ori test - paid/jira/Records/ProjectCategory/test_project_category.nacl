@@ -1,0 +1,4 @@
+jira.ProjectCategory test_project_category@s {
+  description = ""
+  name = "test project category"
+}

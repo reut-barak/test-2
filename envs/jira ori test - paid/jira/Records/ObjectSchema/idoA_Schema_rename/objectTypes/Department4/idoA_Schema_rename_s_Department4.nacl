@@ -1,0 +1,16 @@
+jira.ObjectType idoA_Schema_rename_s_Department4@uumu {
+  name = "Department4"
+  displayName = "Department4"
+  type = 0
+  inherited = false
+  abstractObjectType = false
+  parentObjectTypeInherited = false
+  schemaLabel = "idoA Schema rename"
+  schemaDisplayLabel = "idoA Schema rename"
+  iconId = "85"
+  parentObjectTypeId = jira.ObjectSchema.instance.idoA_Schema_rename@s
+  _parent = [
+    jira.ObjectSchema.instance.idoA_Schema_rename@s,
+  ]
+  _alias = "Department4"
+}

@@ -1,0 +1,21 @@
+jira.CustomFieldContextOption shay_multiple_choices__multiselect__c_ssuuuu_Default_Configuration_Scheme_for_shay_multiple_choices_a@uuuuuumussssssu {
+  value = "a"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.shay_multiple_choices__multiselect__c_ssuuuu_Default_Configuration_Scheme_for_shay_multiple_choices@uuuuuumussssss,
+  ]
+}
+jira.CustomFieldContextOption shay_multiple_choices__multiselect__c_ssuuuu_Default_Configuration_Scheme_for_shay_multiple_choices_b@uuuuuumussssssu {
+  value = "b"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.shay_multiple_choices__multiselect__c_ssuuuu_Default_Configuration_Scheme_for_shay_multiple_choices@uuuuuumussssss,
+  ]
+}
+jira.CustomFieldContextOption shay_multiple_choices__multiselect__c_ssuuuu_Default_Configuration_Scheme_for_shay_multiple_choices_c@uuuuuumussssssu {
+  value = "c"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.shay_multiple_choices__multiselect__c_ssuuuu_Default_Configuration_Scheme_for_shay_multiple_choices@uuuuuumussssss,
+  ]
+}

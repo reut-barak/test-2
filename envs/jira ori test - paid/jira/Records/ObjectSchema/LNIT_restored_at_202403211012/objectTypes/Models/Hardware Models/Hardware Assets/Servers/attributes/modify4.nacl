@@ -1,0 +1,22 @@
+jira.ObjectTypeAttribute LNIT_restored_at_202403211012_Models_Hardware_Models_uuuuus_Hardware_Assets_uuuuuumus_Servers_uuuuuuuuumu_modify4@uuuuuuuuuuumu {
+  description = ""
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "modify4"
+  displayName = "modify4"
+  objectType = jira.ObjectType.instance.LNIT_restored_at_202403211012_Models_Hardware_Models_uuuuus_Hardware_Assets_uuuuuumus_Servers@uuuuuuuuumu
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 0
+  _alias = "modify4"
+}

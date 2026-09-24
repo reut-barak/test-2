@@ -1,0 +1,69 @@
+jira.Automation farkash_test_AlonCompanyProject {
+  name = "farkash_test"
+  state = "ENABLED"
+  description = ""
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "60a60ffb2614ec0068e64623"
+    displayName = "Omri Farkash"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.field.changed"
+    value = {
+      changeType = "VALUE_ADDED"
+      fields = [
+        {
+          value = jira.Field.instance.Assignee__user
+          type = "field"
+        },
+      ]
+      actions = [
+      ]
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      type = "jira.issue.delete.link"
+      value = {
+        deleteLinkTypes = [
+        ]
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  projects = [
+    {
+      projectId = jira.Project.instance.AlonCompanyProject
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "493e15ab5685d2b1e85d2ca0f37c804654529f8526bf5c87e8541a78ead395b4"
+  }
+  isAgentic = false
+  _alias = "farkash_test"
+}

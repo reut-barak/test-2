@@ -1,0 +1,7 @@
+jira.IssueType Developer_escalation@s {
+  description = "To escalate customer support issues to developers. Created by Jira Service Management."
+  name = "Developer escalation"
+  untranslatedName = "Developer escalation"
+  hierarchyLevel = 0
+  avatar = file("jira/IssueType/Developer_escalation.s.png")
+}

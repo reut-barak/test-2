@@ -1,0 +1,231 @@
+jira.Automation Auto_populate_data_when_ticket_created___ISM___JSM_request_type_BUG1@ssssssbssbsssu {
+  name = "Auto populate data when ticket created - ISM - JSM request type"
+  state = "DISABLED"
+  description = ""
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "62d20c47a94a6f9c0eff9866"
+    displayName = "Ido Zak"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.event.trigger:created"
+    value = {
+      eventKey = "jira:issue_created"
+      issueEvent = "issue_created"
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "CONDITION"
+      type = "jira.issue.condition"
+      value = {
+        selectedField = {
+          type = "NAME"
+          value = jira.Field.instance.Request_Type__vp_origin__c@suubuu.name
+        }
+        selectedFieldType = "com.atlassian.servicedesk:vp-origin"
+        comparison = "EQUALS"
+        compareFieldValue = {
+          type = "NAME"
+          value = "Jira Service Management"
+          multiValue = false
+        }
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.issue.edit"
+      value = {
+        operations = [
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Description__string
+            }
+            fieldType = "description"
+            type = "SET"
+            rawValue = "{{issue.${ jira.Field.instance.Description__string.name }}}"
+          },
+        ]
+        sendNotifications = true
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.issue.edit"
+      value = {
+        operations = [
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Summary__string
+            }
+            fieldType = "summary"
+            type = "SET"
+            rawValue = "Jira Service Management"
+          },
+        ]
+        sendNotifications = true
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.issue.edit"
+      value = {
+        operations = [
+          {
+            field = {
+              type = "NAME"
+              value = jira.Field.instance.How_many_times_has_this_happened_before__float__c@ssssssuuuu.name
+            }
+            fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+            type = "SET"
+            rawValue = "Name LIKE \"L2_Global_App_JSM\""
+          },
+        ]
+        sendNotifications = true
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.issue.edit"
+      value = {
+        operations = [
+          {
+            field = {
+              type = "NAME"
+              value = jira.Field.instance.How_many_times_has_this_happened_before__float__c@ssssssuuuu.name
+            }
+            fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+            type = "SET"
+            rawValue = "Name LIKE \"Jira Service Management (PROD)\""
+          },
+        ]
+        sendNotifications = false
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.issue.edit"
+      value = {
+        operations = [
+          {
+            field = {
+              type = "NAME"
+              value = jira.Field.instance.How_many_times_has_this_happened_before__float__c@ssssssuuuu.name
+            }
+            fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+            type = "SET"
+            rawValue = "Name LIKE \"JSM Platform\""
+          },
+        ]
+        sendNotifications = false
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.issue.edit"
+      value = {
+        operations = [
+          {
+            field = {
+              type = "NAME"
+              value = jira.Field.instance.How_many_times_has_this_happened_before__float__c@ssssssuuuu.name
+            }
+            fieldType = "com.atlassian.jira.plugin.system.customfieldtypes:select"
+            type = "SET"
+            value = {
+              type = "NAME"
+              value = "Access Management PROD"
+            }
+          },
+        ]
+        sendNotifications = true
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.issue.edit"
+      value = {
+        operations = [
+          {
+            field = {
+              type = "NAME"
+              value = jira.Field.instance.How_many_times_has_this_happened_before__float__c@ssssssuuuu.name
+            }
+            fieldType = "com.atlassian.jira.plugin.system.customfieldtypes:select"
+            type = "SET"
+            value = {
+              type = "NAME"
+              value = "Self-Service"
+            }
+          },
+        ]
+        sendNotifications = true
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  projects = [
+    {
+      projectId = jira.Project.instance.BUG1
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "c84f6560b3cf2e869a5d94a340df5f3c1408e47681f9591a8e6f6c364681975e"
+  }
+  isAgentic = false
+  _alias = "Auto populate data when ticket created - ISM - JSM request type"
+}

@@ -1,0 +1,23 @@
+jira.ObjectTypeAttribute GWR_Schema_b_Hardware_Assets_umus_Model_Name@uuuumus {
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Model Name"
+  displayName = "Model Name"
+  objectType = jira.ObjectType.instance.GWR_Schema_b_Hardware_Assets@umus
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 1
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  additionalValue = jira.ObjectSchemaDefaultReferenceType.instance.Reference
+  typeValue = jira.ObjectType.instance.GWR_Schema_b_Models_umu_Hardware_Models@uuumus
+  _alias = "Model Name"
+}

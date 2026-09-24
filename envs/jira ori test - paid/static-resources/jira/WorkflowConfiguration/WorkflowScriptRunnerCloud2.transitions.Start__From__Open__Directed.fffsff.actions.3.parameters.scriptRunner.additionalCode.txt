@@ -1,0 +1,1 @@
+issueInput.update.labels = [[remove: "finance"]] // 19-07-26

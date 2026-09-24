@@ -1,0 +1,117 @@
+jira.Automation Trigger_rule_when_labels_equal__ai_hour__on_issue_creation_or_update@ssssstbtsssss {
+  name = "Trigger rule when labels equal 'ai-hour' on issue creation or update"
+  state = "ENABLED"
+  description = "This rule triggers when an issue is either created or updated and has the label 'ai-hour'."
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "616e3f77e79ff6006f1eca7f"
+    displayName = "Shir Reifenberg"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "616e3f77e79ff6006f1eca7f"
+      displayName = "Shir Reifenberg"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.multiple.issue.event"
+    value = {
+      events = [
+        {
+          id = 1
+          key = "jira:issue_created"
+          event = "issue_created"
+          labelKey = "com.codebarrel.automation.trigger.multiple.created"
+          system = false
+        },
+        {
+          id = 2
+          key = "jira:issue_updated"
+          event = "issue_updated"
+          labelKey = "com.codebarrel.automation.trigger.multiple.updated"
+          system = false
+        },
+      ]
+    }
+    conditions = [
+      {
+        component = "CONDITION"
+        type = "jira.jql.condition"
+        conditions = [
+        ]
+        children = [
+        ]
+        rawValue = "${ jira.Field.instance.Labels__array } = \"ai-hour\""
+      },
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      type = "jira.issue.outgoing.webhook"
+      value = {
+        url = "https://api.github.com/repos/shir-reifenberg/tulip/dispatches"
+        urlSecure = false
+        headers = [
+          {
+            id = "_header_1754487469712"
+            name = "Content-Type"
+            value = "application/json"
+            headerSecure = false
+          },
+          {
+            id = "_header_1754487513334"
+            name = "Accept"
+            value = "application/vnd.github.v3+json"
+            headerSecure = false
+          },
+          {
+            id = "_header_1754487527475"
+            name = "Authorization"
+            value = "<SECRET_TOKEN>"
+            headerSecure = true
+          },
+        ]
+        sendIssue = false
+        contentType = "custom"
+        customBody = '''
+{
+  "event_type": "jira-ai-hour",
+  "client_payload": {
+    "ticket_key": "{{issue.key}}",
+    "ticket_summary": "{{issue.${ jira.Field.instance.Summary__string }}}",
+    "ticket_description": "{{issue.${ jira.Field.instance.Description__string }}}",
+    "issue_type": "{{issue.issueType.name}}",
+    "reporter": "{{issue.${ jira.Field.instance.Reporter__user }.displayName}}"
+  }
+}
+'''
+        method = "POST"
+        responseEnabled = true
+        continueOnErrorEnabled = false
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "9ab161c077614d2869b59aec5ca327f511eb24edbe0275fecbbd071961ea54ba"
+  }
+  isAgentic = false
+  _alias = "Trigger rule when labels equal 'ai-hour' on issue creation or update"
+}

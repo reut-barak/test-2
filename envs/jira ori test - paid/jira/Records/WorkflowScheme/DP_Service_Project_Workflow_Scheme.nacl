@@ -1,0 +1,4 @@
+jira.WorkflowScheme DP_Service_Project_Workflow_Scheme@s {
+  name = "DP Service Project Workflow Scheme"
+  defaultWorkflow = jira.WorkflowConfiguration.instance.DP_Service_Project_Workflow@s
+}

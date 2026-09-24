@@ -1,0 +1,14 @@
+jira.ObjectSchema All_Serial_Numbers@s {
+  name = "All Serial Numbers"
+  displayName = "All Serial Numbers"
+  objectSchemaKey = "SERIAL"
+  description = ""
+  status = "Ok"
+  crossSchemaReferencingAllowed = false
+  properties = {
+    quickCreateObjects = true
+    allowOtherObjectSchema = false
+    validateQuickCreate = true
+  }
+  _alias = "All Serial Numbers"
+}

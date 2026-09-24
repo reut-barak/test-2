@@ -1,0 +1,11 @@
+jira.ObjectSchemaStatus idoA_Schema_rename_s__hekl1@uumuu {
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:31"
+  name = "hekl1"
+  displayName = "hekl1"
+  description = "helk1"
+  category = 2
+  _parent = [
+    jira.ObjectSchema.instance.idoA_Schema_rename@s,
+  ]
+  _alias = "idoA Schema rename:hekl1"
+}

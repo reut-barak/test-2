@@ -1,0 +1,11 @@
+jira.ObjectSchemaStatus GWR2_Schema_s__In_transit@umuus {
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:232"
+  name = "In transit"
+  displayName = "In transit"
+  description = "Asset is being transported"
+  category = 2
+  _parent = [
+    jira.ObjectSchema.instance.GWR2_Schema@s,
+  ]
+  _alias = "GWR2 Schema:In transit"
+}

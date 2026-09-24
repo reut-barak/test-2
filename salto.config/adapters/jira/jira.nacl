@@ -1,0 +1,29 @@
+jira {
+  fetch = {
+    include = [
+      {
+        type = ".*"
+      },
+    ]
+    exclude = [
+      {
+        type = "FieldConfiguration"
+      },
+      {
+        type = "FieldConfigurationScheme"
+      },
+      
+    ]
+    splitFieldContextOptions = true
+    remove10KOptionsContexts = false
+    enableProjectsScope = false
+    enableScriptRunnerAddon = true
+    enableJSUAddon = true
+    enableJSM = true
+    enableJSMPremium = true
+    fallbackToInternalId = true
+  }
+  deploy = {
+    forceDelete = false
+  }
+}

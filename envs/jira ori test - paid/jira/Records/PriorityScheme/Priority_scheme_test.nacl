@@ -1,0 +1,16 @@
+jira.PriorityScheme Priority_scheme_test@s {
+  name = "Priority scheme test"
+  description = ""
+  defaultPriorityId = jira.Priority.instance.Medium
+  priorities = [
+    jira.Priority.instance.Highest,
+    jira.Priority.instance.High,
+    jira.Priority.instance.Medium,
+    jira.Priority.instance.Low,
+    jira.Priority.instance.Lowest,
+    jira.Priority.instance.test,
+    jira.Priority.instance.test3,
+    jira.Priority.instance.test4,
+    jira.Priority.instance.test5,
+  ]
+}

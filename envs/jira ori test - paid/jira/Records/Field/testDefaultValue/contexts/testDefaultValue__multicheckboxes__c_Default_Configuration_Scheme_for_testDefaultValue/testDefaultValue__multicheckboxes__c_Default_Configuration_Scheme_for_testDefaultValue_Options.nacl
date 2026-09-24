@@ -1,0 +1,21 @@
+jira.CustomFieldContextOption testDefaultValue__multicheckboxes__c_Default_Configuration_Scheme_for_testDefaultValue_a@uuuuussssu {
+  value = "a"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.testDefaultValue__multicheckboxes__c_Default_Configuration_Scheme_for_testDefaultValue@uuuuussss,
+  ]
+}
+jira.CustomFieldContextOption testDefaultValue__multicheckboxes__c_Default_Configuration_Scheme_for_testDefaultValue_b@uuuuussssu {
+  value = "b"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.testDefaultValue__multicheckboxes__c_Default_Configuration_Scheme_for_testDefaultValue@uuuuussss,
+  ]
+}
+jira.CustomFieldContextOption testDefaultValue__multicheckboxes__c_Default_Configuration_Scheme_for_testDefaultValue_c@uuuuussssu {
+  value = "c"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.testDefaultValue__multicheckboxes__c_Default_Configuration_Scheme_for_testDefaultValue@uuuuussss,
+  ]
+}

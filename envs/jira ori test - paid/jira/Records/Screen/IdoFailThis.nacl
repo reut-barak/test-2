@@ -1,0 +1,14 @@
+jira.Screen IdoFailThis {
+  name = "IdoFailThis"
+  description = ""
+  tabs = {
+    General = {
+      name = "General"
+      fields = [
+        jira.Field.instance.testSelectList__cascadingselect__c,
+        jira.Field.instance.AAA_test_custom_field__multicheckboxes__c@sssuuuu,
+      ]
+      position = 0
+    }
+  }
+}

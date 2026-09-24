@@ -1,0 +1,11 @@
+jira.ObjectSchemaStatus IZ13__Missing {
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:85"
+  name = "Missing"
+  displayName = "Missing"
+  description = "Asset is not found in its expected location"
+  category = 0
+  _parent = [
+    jira.ObjectSchema.instance.IZ13,
+  ]
+  _alias = "IZ13:Missing"
+}

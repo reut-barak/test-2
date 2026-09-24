@@ -1,0 +1,14 @@
+jira.CustomFieldContextOption Dan_the_King__multicheckboxes__c_ssuuuu_Default_Configuration_Scheme_for_Dan_the_King_true@uuuuuumussssssu {
+  value = "true"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Dan_the_King__multicheckboxes__c_ssuuuu_Default_Configuration_Scheme_for_Dan_the_King@uuuuuumussssss,
+  ]
+}
+jira.CustomFieldContextOption Dan_the_King__multicheckboxes__c_ssuuuu_Default_Configuration_Scheme_for_Dan_the_King_false@uuuuuumussssssu {
+  value = "false"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Dan_the_King__multicheckboxes__c_ssuuuu_Default_Configuration_Scheme_for_Dan_the_King@uuuuuumussssss,
+  ]
+}

@@ -1,0 +1,17 @@
+jira.ObjectType IT_Equipment_Hardware_Assets_uus_Laptops_uuumu_Macbook@uuuuumu {
+  name = "Macbook"
+  displayName = "Macbook"
+  type = 0
+  description = ""
+  parentObjectTypeId = jira.ObjectType.instance.IT_Equipment_Hardware_Assets_uus_Laptops@uuumu
+  inherited = true
+  abstractObjectType = false
+  parentObjectTypeInherited = true
+  schemaLabel = "IT_Equipment"
+  schemaDisplayLabel = "IT_Equipment"
+  iconId = "62"
+  _parent = [
+    jira.ObjectSchema.instance.IT_Equipment,
+  ]
+  _alias = "Macbook"
+}

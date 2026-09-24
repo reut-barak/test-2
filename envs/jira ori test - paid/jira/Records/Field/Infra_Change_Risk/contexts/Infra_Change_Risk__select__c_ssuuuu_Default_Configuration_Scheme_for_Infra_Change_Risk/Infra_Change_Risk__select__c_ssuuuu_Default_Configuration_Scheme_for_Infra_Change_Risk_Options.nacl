@@ -1,0 +1,21 @@
+jira.CustomFieldContextOption Infra_Change_Risk__select__c_ssuuuu_Default_Configuration_Scheme_for_Infra_Change_Risk_Low@uuuuuumussssssu {
+  value = "Low"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Infra_Change_Risk__select__c_ssuuuu_Default_Configuration_Scheme_for_Infra_Change_Risk@uuuuuumussssss,
+  ]
+}
+jira.CustomFieldContextOption Infra_Change_Risk__select__c_ssuuuu_Default_Configuration_Scheme_for_Infra_Change_Risk_Medium@uuuuuumussssssu {
+  value = "Medium"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Infra_Change_Risk__select__c_ssuuuu_Default_Configuration_Scheme_for_Infra_Change_Risk@uuuuuumussssss,
+  ]
+}
+jira.CustomFieldContextOption Infra_Change_Risk__select__c_ssuuuu_Default_Configuration_Scheme_for_Infra_Change_Risk_High@uuuuuumussssssu {
+  value = "High"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Infra_Change_Risk__select__c_ssuuuu_Default_Configuration_Scheme_for_Infra_Change_Risk@uuuuuumussssss,
+  ]
+}

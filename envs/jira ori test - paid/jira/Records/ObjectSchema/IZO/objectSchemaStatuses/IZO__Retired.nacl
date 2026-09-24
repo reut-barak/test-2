@@ -1,0 +1,10 @@
+jira.ObjectSchemaStatus IZO__Retired {
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:102"
+  name = "Retired"
+  displayName = "Retired"
+  category = 0
+  _parent = [
+    jira.ObjectSchema.instance.IZO,
+  ]
+  _alias = "IZO:Retired"
+}

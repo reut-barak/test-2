@@ -1,0 +1,14 @@
+jira.Field Client_Classification__multiselect__c@suuuu {
+  name = "Client Classification"
+  description = "Repro for INCIDENT-43094"
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher"
+  areOptionsSupported = true
+  isOptionsCountOverLimit = false
+  translatedName = "Client Classification"
+  translatedDescription = "Repro for INCIDENT-43094"
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:multiselect"
+  contexts = [
+    jira.CustomFieldContext.instance.Client_Classification__multiselect__c_suuuu_Default_Configuration_Scheme_for_Client_Classification@uuuuumusssss,
+  ]
+  _alias = "Client Classification"
+}

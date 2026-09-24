@@ -1,0 +1,21 @@
+jira.CustomFieldContextOption CustomMultiSelect__multiselect__c_Default_Configuration_Scheme_for_CustomMultiSelect_opt1@uuuuussssu {
+  value = "opt1"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.CustomMultiSelect__multiselect__c_Default_Configuration_Scheme_for_CustomMultiSelect@uuuuussss,
+  ]
+}
+jira.CustomFieldContextOption CustomMultiSelect__multiselect__c_Default_Configuration_Scheme_for_CustomMultiSelect_opt2@uuuuussssu {
+  value = "opt2"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.CustomMultiSelect__multiselect__c_Default_Configuration_Scheme_for_CustomMultiSelect@uuuuussss,
+  ]
+}
+jira.CustomFieldContextOption CustomMultiSelect__multiselect__c_Default_Configuration_Scheme_for_CustomMultiSelect_opt3@uuuuussssu {
+  value = "opt3"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.CustomMultiSelect__multiselect__c_Default_Configuration_Scheme_for_CustomMultiSelect@uuuuussss,
+  ]
+}

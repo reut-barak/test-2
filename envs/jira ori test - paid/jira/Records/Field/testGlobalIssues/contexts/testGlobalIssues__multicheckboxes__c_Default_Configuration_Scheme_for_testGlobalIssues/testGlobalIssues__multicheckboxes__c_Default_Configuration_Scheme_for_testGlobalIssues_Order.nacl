@@ -1,0 +1,10 @@
+jira.FieldContextOptionsOrder testGlobalIssues__multicheckboxes__c_Default_Configuration_Scheme_for_testGlobalIssues_order_child@uuuuussssuu {
+  options = [
+    jira.CustomFieldContextOption.instance.testGlobalIssues__multicheckboxes__c_Default_Configuration_Scheme_for_testGlobalIssues_a@uuuuussssu,
+    jira.CustomFieldContextOption.instance.testGlobalIssues__multicheckboxes__c_Default_Configuration_Scheme_for_testGlobalIssues_b@uuuuussssu,
+    jira.CustomFieldContextOption.instance.testGlobalIssues__multicheckboxes__c_Default_Configuration_Scheme_for_testGlobalIssues_c@uuuuussssu,
+  ]
+  _parent = [
+    jira.CustomFieldContext.instance.testGlobalIssues__multicheckboxes__c_Default_Configuration_Scheme_for_testGlobalIssues@uuuuussss,
+  ]
+}

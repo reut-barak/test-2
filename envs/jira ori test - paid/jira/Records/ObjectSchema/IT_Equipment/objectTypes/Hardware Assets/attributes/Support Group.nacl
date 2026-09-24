@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute IT_Equipment_Hardware_Assets_uus_Support_Group@uuumus {
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Support Group"
+  displayName = "Support Group"
+  objectType = jira.ObjectType.instance.IT_Equipment_Hardware_Assets@uus
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 0
+  _alias = "Support Group"
+}

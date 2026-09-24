@@ -1,0 +1,9 @@
+jira.FieldContextOptionsOrder AAA_test_custom_field__multicheckboxes__c_sssuuuu_Default_Configuration_Scheme_for_AAA_test_custom_field_order_child@uuuuuuumusssssssuu {
+  options = [
+    jira.CustomFieldContextOption.instance.AAA_test_custom_field__multicheckboxes__c_sssuuuu_Default_Configuration_Scheme_for_AAA_test_custom_field_option_1@uuuuuuumusssssssus,
+    jira.CustomFieldContextOption.instance.AAA_test_custom_field__multicheckboxes__c_sssuuuu_Default_Configuration_Scheme_for_AAA_test_custom_field_option_2@uuuuuuumusssssssus,
+  ]
+  _parent = [
+    jira.CustomFieldContext.instance.AAA_test_custom_field__multicheckboxes__c_sssuuuu_Default_Configuration_Scheme_for_AAA_test_custom_field@uuuuuuumusssssss,
+  ]
+}

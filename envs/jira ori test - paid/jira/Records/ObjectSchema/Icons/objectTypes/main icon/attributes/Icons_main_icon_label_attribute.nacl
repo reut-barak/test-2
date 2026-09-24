@@ -1,0 +1,4 @@
+jira.ObjectTypeLabelAttribute Icons_main_icon_label_attribute@usuu {
+  labelAttribute = jira.ObjectTypeAttribute.instance.Icons_main_icon_us_Name@uumu
+  objectType = jira.ObjectType.instance.Icons_main_icon@us
+}

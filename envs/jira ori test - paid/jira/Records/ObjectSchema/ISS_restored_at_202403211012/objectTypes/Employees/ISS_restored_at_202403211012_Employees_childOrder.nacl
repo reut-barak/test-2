@@ -1,0 +1,13 @@
+jira.ObjectTypeOrder ISS_restored_at_202403211012_Employees_childOrder {
+  objectTypes = [
+    jira.ObjectType.instance.ISS_restored_at_202403211012_Employees_IdoA,
+    jira.ObjectType.instance.ISS_restored_at_202403211012_Employees_Segev,
+    jira.ObjectType.instance.ISS_restored_at_202403211012_Employees_Shay,
+    jira.ObjectType.instance.ISS_restored_at_202403211012_Employees_Shir,
+    jira.ObjectType.instance.ISS_restored_at_202403211012_Employees_oneF,
+    jira.ObjectType.instance.ISS_restored_at_202403211012_Employees_Omri,
+  ]
+  _parent = [
+    jira.ObjectType.instance.ISS_restored_at_202403211012_Employees,
+  ]
+}

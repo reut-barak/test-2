@@ -1,0 +1,16 @@
+jira.ObjectType IZT_Models_Model_Categories@uus {
+  name = "Model Categories"
+  displayName = "Model Categories"
+  type = 0
+  parentObjectTypeId = jira.ObjectType.instance.IZT_Models
+  inherited = false
+  abstractObjectType = false
+  parentObjectTypeInherited = false
+  schemaLabel = "IZT"
+  schemaDisplayLabel = "IZT"
+  iconId = "73"
+  _parent = [
+    jira.ObjectSchema.instance.IZT,
+  ]
+  _alias = "Model Categories"
+}

@@ -1,0 +1,8 @@
+jira.ObjectTypeOrder automationAdd_childOrder {
+  objectTypes = [
+    jira.ObjectType.instance.automationAdd_Role,
+  ]
+  _parent = [
+    jira.ObjectSchema.instance.automationAdd,
+  ]
+}

@@ -1,0 +1,16 @@
+jira.ObjectType ISS_restored_at_202403211012_Department_R_D_uuuuue_Team_Amit_uuuuuumus_forth@uuuuuuuuumu {
+  name = "forth"
+  displayName = "forth"
+  type = 0
+  parentObjectTypeId = jira.ObjectType.instance.ISS_restored_at_202403211012_Department_R_D_uuuuue_Team_Amit@uuuuuumus
+  inherited = false
+  abstractObjectType = false
+  parentObjectTypeInherited = false
+  schemaLabel = "ISS_restored_at_202403211012"
+  schemaDisplayLabel = "ISS_restored_at_202403211012"
+  iconId = "85"
+  _parent = [
+    jira.ObjectSchema.instance.ISS_restored_at_202403211012,
+  ]
+  _alias = "forth"
+}

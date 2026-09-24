@@ -1,0 +1,13 @@
+jira.Field CRANE_Annual_Review_ID__textfield__c@sssuuuu {
+  name = "CRANE Annual Review ID"
+  description = "Repro for INCIDENT-43094"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "CRANE Annual Review ID"
+  translatedDescription = "Repro for INCIDENT-43094"
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+  contexts = [
+    jira.CustomFieldContext.instance.CRANE_Annual_Review_ID__textfield__c_sssuuuu_Default_Configuration_Scheme_for_CRANE_Annual_Review_ID@uuuuuuumusssssss,
+  ]
+  _alias = "CRANE Annual Review ID"
+}

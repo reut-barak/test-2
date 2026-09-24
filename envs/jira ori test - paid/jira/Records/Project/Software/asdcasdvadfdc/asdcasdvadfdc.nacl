@@ -1,0 +1,15 @@
+jira.Project asdcasdvadfdc {
+  key = "SDCSDVDFDC"
+  description = ""
+  name = "asdcasdvadfdc"
+  projectTypeKey = "software"
+  entityId = "fbfd1e4a-a5ce-444a-829f-c53f72f62352"
+  uuid = "fbfd1e4a-a5ce-444a-829f-c53f72f62352"
+  issueSecurityScheme = jira.SecurityScheme.instance.SDCSDVDFDC__Simplified_Issue_Security_Scheme@fssss
+  leadAccountId = {
+    id = "712020:aed46758-f3a7-411f-aef5-374225430b96"
+    displayName = "Seggev Haimovich"
+  }
+  assigneeType = "UNASSIGNED"
+  priorityScheme = jira.PriorityScheme.instance.Default_priority_scheme@s
+}

@@ -1,0 +1,11 @@
+jira.ObjectSchemaStatus IT_Equipment__Missing {
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:214"
+  name = "Missing"
+  displayName = "Missing"
+  description = "Asset is not found in its expected location"
+  category = 0
+  _parent = [
+    jira.ObjectSchema.instance.IT_Equipment,
+  ]
+  _alias = "IT_Equipment:Missing"
+}

@@ -1,0 +1,9 @@
+jira.Filter Filter_for_SEG@s {
+  name = "Filter for SEG"
+  description = "null"
+  owner = {
+    id = "61d44bf59ee70a00685fa6b6"
+    displayName = "Testing salto"
+  }
+  jql = "${ jira.Field.instance.Project__project } = SEG ORDER BY ${ jira.Field.instance.Rank__gh_lexo_rank__c@uubbuu.name } ASC"
+}

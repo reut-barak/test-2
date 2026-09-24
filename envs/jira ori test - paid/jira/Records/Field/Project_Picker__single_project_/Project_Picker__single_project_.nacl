@@ -1,0 +1,14 @@
+jira.Field Project_Picker__single_project___project__c@ssjskuuuu {
+  name = "Project Picker (single project)"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:projectsearcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "Project Picker (single project)"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:project"
+  contexts = [
+    jira.CustomFieldContext.instance.Project_Picker__single_project___project__c_ssjskuuuu_Default_Configuration_Scheme_for_Project_Picker__single_project_@uuuuuuuuumussssssjsk,
+  ]
+  _alias = "Project Picker (single project)"
+}

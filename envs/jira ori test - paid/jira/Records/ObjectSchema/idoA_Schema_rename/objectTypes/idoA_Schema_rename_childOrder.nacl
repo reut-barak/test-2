@@ -1,0 +1,12 @@
+jira.ObjectTypeOrder idoA_Schema_rename_childOrder@ssu {
+  objectTypes = [
+    jira.ObjectType.instance.idoA_Schema_rename_s_Department@uumu,
+    jira.ObjectType.instance.idoA_Schema_rename_s_Employees@uumu,
+    jira.ObjectType.instance.idoA_Schema_rename_s_Department4@uumu,
+    jira.ObjectType.instance.idoA_Schema_rename_s_Role@uumu,
+    jira.ObjectType.instance.idoA_Schema_rename_s_idoOne@uumu,
+  ]
+  _parent = [
+    jira.ObjectSchema.instance.idoA_Schema_rename@s,
+  ]
+}

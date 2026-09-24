@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute IZO_Models_Hardware_Models_uus_Bar_code@uuumus {
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Bar code"
+  displayName = "Bar code"
+  objectType = jira.ObjectType.instance.IZO_Models_Hardware_Models@uus
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 0
+  _alias = "Bar code"
+}

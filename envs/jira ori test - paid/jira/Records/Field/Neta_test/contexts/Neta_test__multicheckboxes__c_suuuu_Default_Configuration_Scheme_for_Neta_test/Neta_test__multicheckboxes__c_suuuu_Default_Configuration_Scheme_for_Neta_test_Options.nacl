@@ -1,0 +1,21 @@
+jira.CustomFieldContextOption Neta_test__multicheckboxes__c_suuuu_Default_Configuration_Scheme_for_Neta_test_aaa@uuuuumusssssu {
+  value = "aaa"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Neta_test__multicheckboxes__c_suuuu_Default_Configuration_Scheme_for_Neta_test@uuuuumusssss,
+  ]
+}
+jira.CustomFieldContextOption Neta_test__multicheckboxes__c_suuuu_Default_Configuration_Scheme_for_Neta_test_bb@uuuuumusssssu {
+  value = "bb"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Neta_test__multicheckboxes__c_suuuu_Default_Configuration_Scheme_for_Neta_test@uuuuumusssss,
+  ]
+}
+jira.CustomFieldContextOption Neta_test__multicheckboxes__c_suuuu_Default_Configuration_Scheme_for_Neta_test_c@uuuuumusssssu {
+  value = "c"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Neta_test__multicheckboxes__c_suuuu_Default_Configuration_Scheme_for_Neta_test@uuuuumusssss,
+  ]
+}

@@ -1,0 +1,11 @@
+jira.CustomFieldContext shay_checkbox__multicheckboxes__c_suuuu_a@uuuuumu {
+  name = "a"
+  description = ""
+  defaultValue = {
+    type = "option.multiple"
+  }
+  _parent = [
+    jira.Field.instance.shay_checkbox__multicheckboxes__c@suuuu,
+  ]
+  _alias = "shay checkbox context in a"
+}

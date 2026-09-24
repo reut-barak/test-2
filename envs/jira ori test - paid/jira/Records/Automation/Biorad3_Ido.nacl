@@ -1,0 +1,287 @@
+jira.Automation Biorad3_Ido {
+  name = "Biorad3"
+  state = "ENABLED"
+  description = "When requested for is empty - populate the field with the user for Finance Project only2"
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "62d20c47a94a6f9c0eff9866"
+    displayName = "Ido Zak"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.event.trigger:created"
+    value = {
+      eventKey = "jira:issue_created"
+      issueEvent = "issue_created"
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "CONDITION"
+      type = "jira.condition.container.block"
+      conditions = [
+      ]
+      children = [
+        {
+          component = "CONDITION_BLOCK"
+          type = "jira.condition.if.block"
+          value = {
+            conditionMatchType = "ALL"
+          }
+          conditions = [
+            {
+              component = "CONDITION"
+              type = "jira.issue.condition"
+              value = {
+                selectedField = {
+                  type = "NAME"
+                  value = jira.Field.instance.asset_foeld__cmdb_object_cftype__c@suubbuu.name
+                }
+                selectedFieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+                comparison = "EMPTY"
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+            {
+              component = "CONDITION"
+              type = "jira.issue.condition"
+              value = {
+                selectedField = {
+                  type = "ID"
+                  value = jira.Field.instance.Issue_Type__issuetype@suu
+                }
+                selectedFieldType = "issuetype"
+                comparison = "NOT_ONE_OF"
+                compareFieldValue = {
+                  type = "ID"
+                  multiValue = true
+                  values = [
+                    jira.IssueType.instance.Sub_task@b,
+                    jira.IssueType.instance.Bug3,
+                    jira.IssueType.instance.Bug4,
+                  ]
+                }
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+          ]
+          children = [
+            {
+              component = "ACTION"
+              type = "cmdb.lookup.objects"
+              value = {
+                schemaId = jira.ObjectSchema.instance.IZ13
+                customSmartValue = {
+                  id = "_customsmartvalue_id_1715196098729"
+                  name = {
+                    type = "FREE"
+                    value = "lookupObjects"
+                  }
+                  type = "IQL"
+                  query = {
+                    type = "SMART"
+                    value = "\"Jira User\" = {{issue.${ jira.Field.instance.Reporter__user }}}"
+                  }
+                  lazy = false
+                }
+                searchResultsLimit = 100
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+            {
+              component = "ACTION"
+              type = "codebarrel.action.log"
+              conditions = [
+              ]
+              children = [
+              ]
+              rawValue = "lookupObjects {{lookupObjects}}"
+            },
+            {
+              component = "ACTION"
+              type = "codebarrel.action.log"
+              conditions = [
+              ]
+              children = [
+              ]
+              rawValue = "\"Jira User\" = {{issue.${ jira.Field.instance.Reporter__user }}}"
+            },
+            {
+              component = "ACTION"
+              type = "codebarrel.action.log"
+              conditions = [
+              ]
+              children = [
+              ]
+              rawValue = "key = {{lookupObjects.Location}}"
+            },
+            {
+              component = "CONDITION"
+              type = "jira.comparator.condition"
+              value = {
+                first = "{{lookupObjects}}"
+                second = ""
+                operator = "NOT_EQUALS"
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+            {
+              component = "ACTION"
+              type = "jira.issue.edit"
+              value = {
+                operations = [
+                  {
+                    field = {
+                      type = "NAME"
+                      value = jira.Field.instance.asset_foeld__cmdb_object_cftype__c@suubbuu.name
+                    }
+                    fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+                    type = "SET"
+                    rawValue = "key = {{lookupObjects.Location}}"
+                  },
+                  {
+                    field = {
+                      type = "NAME"
+                      value = jira.Field.instance.asset_foeld__cmdb_object_cftype__c@suubbuu.name
+                    }
+                    fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+                    type = "SET"
+                    rawValue = "\"Jira User\" = {{issue.${ jira.Field.instance.Reporter__user }}}"
+                  },
+                ]
+                sendNotifications = true
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+          ]
+        },
+        {
+          component = "CONDITION_BLOCK"
+          type = "jira.condition.if.block"
+          value = {
+            conditionMatchType = "ALL"
+          }
+          conditions = [
+            {
+              component = "CONDITION"
+              type = "jira.issue.condition"
+              value = {
+                selectedField = {
+                  type = "NAME"
+                  value = jira.Field.instance.asset_foeld__cmdb_object_cftype__c@suubbuu.name
+                }
+                selectedFieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+                comparison = "NOT_EMPTY"
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+          ]
+          children = [
+            {
+              component = "ACTION"
+              type = "codebarrel.action.log"
+              conditions = [
+              ]
+              children = [
+              ]
+              rawValue = "Requested For JiraID {{issue.${ jira.Field.instance.asset_foeld__cmdb_object_cftype__c@suubbuu.name }.Jira User}}"
+            },
+            {
+              component = "ACTION"
+              type = "codebarrel.action.log"
+              conditions = [
+              ]
+              children = [
+              ]
+              rawValue = "Requested For JiraID {{issue.${ jira.Field.instance.asset_foeld__cmdb_object_cftype__c@suubbuu.name }.Location}}"
+            },
+            {
+              component = "ACTION"
+              type = "jira.issue.edit"
+              value = {
+                operations = [
+                  {
+                    field = {
+                      type = "ID"
+                      value = jira.Field.instance.Reporter__user
+                    }
+                    fieldType = "reporter"
+                    type = "SET"
+                    value = {
+                      type = "SMART"
+                      value = "{{issue.Requested for.Jira User}}"
+                    }
+                  },
+                  {
+                    field = {
+                      type = "NAME"
+                      value = jira.Field.instance.asset_foeld__cmdb_object_cftype__c@suubbuu.name
+                    }
+                    fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+                    type = "SET"
+                    rawValue = "key = {{issue.Requested for.Location}}"
+                  },
+                ]
+                sendNotifications = true
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+          ]
+        },
+      ]
+    },
+  ]
+  projects = [
+    {
+      projectId = jira.Project.instance.Ido
+    },
+  ]
+  labels = [
+    jira.AutomationLabel.instance.bbbb,
+    jira.AutomationLabel.instance.bbb,
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "c7d2892561f7fc7b0199d2b37052011c59243eff503758e1ce16775cedd1dc24"
+  }
+  isAgentic = false
+  _alias = "Biorad3"
+}

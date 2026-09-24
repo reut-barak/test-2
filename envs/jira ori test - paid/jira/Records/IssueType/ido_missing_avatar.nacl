@@ -1,0 +1,7 @@
+jira.IssueType ido_missing_avatar@s {
+  description = ""
+  name = "ido missing avatar"
+  untranslatedName = "ido missing avatar"
+  hierarchyLevel = 0
+  avatar = file("jira/IssueType/ido_missing_avatar.s.png")
+}

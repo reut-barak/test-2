@@ -1,0 +1,21 @@
+jira.CustomFieldContextOption ___multicheckboxes__c__01489uuuu_Default_Configuration_Scheme_for___option1@uuuuumuussss_01489u {
+  value = "option1"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.___multicheckboxes__c__01489uuuu_Default_Configuration_Scheme_for__@uuuuumuussss_01489,
+  ]
+}
+jira.CustomFieldContextOption ___multicheckboxes__c__01489uuuu_Default_Configuration_Scheme_for___option2@uuuuumuussss_01489u {
+  value = "option2"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.___multicheckboxes__c__01489uuuu_Default_Configuration_Scheme_for__@uuuuumuussss_01489,
+  ]
+}
+jira.CustomFieldContextOption ___multicheckboxes__c__01489uuuu_Default_Configuration_Scheme_for___option3@uuuuumuussss_01489u {
+  value = "option3"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.___multicheckboxes__c__01489uuuu_Default_Configuration_Scheme_for__@uuuuumuussss_01489,
+  ]
+}

@@ -1,0 +1,14 @@
+jira.Field shay_select_list__select__c@ssuuuu {
+  name = "shay select list"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher"
+  areOptionsSupported = true
+  isOptionsCountOverLimit = false
+  translatedName = "shay select list"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:select"
+  contexts = [
+    jira.CustomFieldContext.instance.shay_select_list__select__c_ssuuuu_Default_Configuration_Scheme_for_shay_select_list@uuuuuumussssss,
+  ]
+  _alias = "shay select list"
+}

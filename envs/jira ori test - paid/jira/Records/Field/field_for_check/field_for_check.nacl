@@ -1,0 +1,14 @@
+jira.Field field_for_check__labels__c@bbuuuu {
+  name = "field-for-check"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:labelsearcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "field-for-check"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:labels"
+  contexts = [
+    jira.CustomFieldContext.instance.field_for_check__labels__c_bbuuuu_Default_Configuration_Scheme_for_field_for_check@uuuuuumussssbb,
+  ]
+  _alias = "field-for-check"
+}

@@ -1,0 +1,17 @@
+jira.Project Batel_project_11@b {
+  key = "BP1"
+  description = ""
+  name = "Batel-project-11"
+  projectTypeKey = "software"
+  workflowScheme = jira.WorkflowScheme.instance.BP1__Software_Simplified_Workflow_Scheme@fssss
+  permissionScheme = jira.PermissionScheme.instance.Default_software_scheme@s
+  notificationScheme = jira.NotificationScheme.instance.Default_Notification_Scheme@s
+  issueTypeScreenScheme = jira.IssueTypeScreenScheme.instance.BP1__Kanban_Issue_Type_Screen_Scheme@fsssss
+  issueTypeScheme = jira.IssueTypeScheme.instance.BP1__Kanban_Issue_Type_Scheme@fssss
+  leadAccountId = {
+    id = "63b1bac8741248746bf724dd"
+    displayName = "Batel Delaroz"
+  }
+  assigneeType = "UNASSIGNED"
+  priorityScheme = jira.PriorityScheme.instance.Default_priority_scheme@s
+}

@@ -1,0 +1,26 @@
+jira.ObjectTypeAttribute IT_Inventory__s_Hardware_Assets_uumus_Status@uuuuumu {
+  description = "Status of record"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Status"
+  displayName = "Status"
+  objectType = jira.ObjectType.instance.IT_Inventory__s_Hardware_Assets@uumus
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 7
+  typeValueMulti = [
+    jira.ObjectSchemaGlobalStatus.instance.Active,
+    jira.ObjectSchemaStatus.instance.IT_Inventory__s__Inactive@uumuu,
+  ]
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  _alias = "Status"
+}

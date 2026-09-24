@@ -1,0 +1,11 @@
+jira.FieldContextOptionsOrder NewCustomFieldLior__multicheckboxes__c_Default_Configuration_Scheme_for_NewCustomFieldLior_order_child@uuuuussssuu {
+  options = [
+    jira.CustomFieldContextOption.instance.NewCustomFieldLior__multicheckboxes__c_Default_Configuration_Scheme_for_NewCustomFieldLior_1@uuuuussssu,
+    jira.CustomFieldContextOption.instance.NewCustomFieldLior__multicheckboxes__c_Default_Configuration_Scheme_for_NewCustomFieldLior_2@uuuuussssu,
+    jira.CustomFieldContextOption.instance.NewCustomFieldLior__multicheckboxes__c_Default_Configuration_Scheme_for_NewCustomFieldLior_3@uuuuussssu,
+    jira.CustomFieldContextOption.instance.NewCustomFieldLior__multicheckboxes__c_Default_Configuration_Scheme_for_NewCustomFieldLior_4@uuuuussssu,
+  ]
+  _parent = [
+    jira.CustomFieldContext.instance.NewCustomFieldLior__multicheckboxes__c_Default_Configuration_Scheme_for_NewCustomFieldLior@uuuuussss,
+  ]
+}

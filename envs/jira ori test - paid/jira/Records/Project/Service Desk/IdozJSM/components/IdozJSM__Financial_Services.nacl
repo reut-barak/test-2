@@ -1,0 +1,9 @@
+jira.ProjectComponent IdozJSM__Financial_Services@uus {
+  description = "Created by Jira Service Management"
+  assigneeType = "PROJECT_DEFAULT"
+  name = "Financial Services"
+  _parent = [
+    jira.Project.instance.IdozJSM,
+  ]
+  _alias = "IdozJSM:Financial Services"
+}

@@ -1,0 +1,9 @@
+jira.ProjectComponent test__Billing_Services@uus {
+  name = "Billing Services"
+  description = "Created by Jira Service Management"
+  assigneeType = "PROJECT_DEFAULT"
+  _parent = [
+    jira.Project.instance.test,
+  ]
+  _alias = "test:Billing Services"
+}

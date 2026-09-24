@@ -1,0 +1,13 @@
+jira.Screen screen_19_02_4@sbs {
+  name = "screen 19-02 4"
+  description = ""
+  tabs = {
+    General = {
+      name = "General"
+      fields = [
+        jira.Field.instance.AAA_test_custom_field__multicheckboxes__c@sssuuuu,
+      ]
+      position = 0
+    }
+  }
+}

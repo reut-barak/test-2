@@ -1,0 +1,17 @@
+jira.ObjectType IZ13_AA_Constant@us {
+  name = "AA Constant"
+  displayName = "AA Constant"
+  type = 0
+  description = ""
+  inherited = false
+  abstractObjectType = false
+  parentObjectTypeInherited = false
+  schemaLabel = "IZ13"
+  schemaDisplayLabel = "IZ13"
+  iconId = "2"
+  parentObjectTypeId = jira.ObjectSchema.instance.IZ13
+  _parent = [
+    jira.ObjectSchema.instance.IZ13,
+  ]
+  _alias = "AA Constant"
+}

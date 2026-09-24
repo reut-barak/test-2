@@ -1,0 +1,93 @@
+jira.Automation shirIssueMoved_CreateVersion_logWork_AlonCompanyProject {
+  name = "shirIssueMoved_CreateVersion_logWork"
+  state = "ENABLED"
+  description = "tests issueMove option and create version option"
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "616e3f77e79ff6006f1eca7f"
+    displayName = "Shir Reifenberg"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.event.trigger:moved"
+    value = {
+      eventKey = "jira:issue_updated"
+      issueEvent = "issue_moved"
+      sourceProject = jira.Project.instance.Gil_s_Project@ts
+      targetProject = "-1999"
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      type = "jira.version.create"
+      value = {
+        versionName = "newVersion"
+        overrideReleaseDate = "SET_ON_EMPTY"
+        project = {
+          type = "ID"
+          value = jira.Project.instance.AlonCompanyProject
+          additional = "software"
+        }
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.worklog.add"
+      value = {
+        timeSpent = "10m"
+        dateStarted = {
+          type = "SMART"
+          value = "{{now}}"
+        }
+        description = "very important thing"
+        adjustEstimate = "ADJUST_AUTOMATICALLY"
+        visibility = {
+          label = "TPT-engineering (Group)"
+          value = "TPT-engineering"
+          identifier = "aa155d03-2f89-4405-ac72-92303b717406"
+          type = "group"
+        }
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  projects = [
+    {
+      projectId = jira.Project.instance.AlonCompanyProject
+    },
+  ]
+  labels = [
+    jira.AutomationLabel.instance.test_label@s,
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "8336535a0492320c2ff7ddc105844e00c9e118dd4e250b306370c7e15093f4af"
+  }
+  isAgentic = false
+  _alias = "shirIssueMoved_CreateVersion_logWork"
+}

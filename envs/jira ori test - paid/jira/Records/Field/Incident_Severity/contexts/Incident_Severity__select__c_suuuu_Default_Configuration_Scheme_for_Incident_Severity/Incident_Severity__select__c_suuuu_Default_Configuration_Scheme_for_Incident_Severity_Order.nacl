@@ -1,0 +1,10 @@
+jira.FieldContextOptionsOrder Incident_Severity__select__c_suuuu_Default_Configuration_Scheme_for_Incident_Severity_order_child@uuuuumusssssuu {
+  options = [
+    jira.CustomFieldContextOption.instance.Incident_Severity__select__c_suuuu_Default_Configuration_Scheme_for_Incident_Severity_SEV1@uuuuumusssssu,
+    jira.CustomFieldContextOption.instance.Incident_Severity__select__c_suuuu_Default_Configuration_Scheme_for_Incident_Severity_SEV2@uuuuumusssssu,
+    jira.CustomFieldContextOption.instance.Incident_Severity__select__c_suuuu_Default_Configuration_Scheme_for_Incident_Severity_SEV3@uuuuumusssssu,
+  ]
+  _parent = [
+    jira.CustomFieldContext.instance.Incident_Severity__select__c_suuuu_Default_Configuration_Scheme_for_Incident_Severity@uuuuumusssss,
+  ]
+}

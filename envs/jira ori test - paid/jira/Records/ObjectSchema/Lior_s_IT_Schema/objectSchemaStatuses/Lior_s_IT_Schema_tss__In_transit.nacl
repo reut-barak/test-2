@@ -1,0 +1,11 @@
+jira.ObjectSchemaStatus Lior_s_IT_Schema_tss__In_transit@uuumuus {
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:9"
+  name = "In transit"
+  displayName = "In transit"
+  description = "Asset is being transported"
+  category = 2
+  _parent = [
+    jira.ObjectSchema.instance.Lior_s_IT_Schema@tss,
+  ]
+  _alias = "Lior's IT Schema:In transit"
+}

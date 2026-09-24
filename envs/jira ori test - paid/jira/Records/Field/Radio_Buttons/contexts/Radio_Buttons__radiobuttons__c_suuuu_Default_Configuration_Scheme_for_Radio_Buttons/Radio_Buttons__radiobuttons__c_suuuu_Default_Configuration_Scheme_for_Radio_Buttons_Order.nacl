@@ -1,0 +1,8 @@
+jira.FieldContextOptionsOrder Radio_Buttons__radiobuttons__c_suuuu_Default_Configuration_Scheme_for_Radio_Buttons_order_child@uuuuumusssssuu {
+  options = [
+    jira.CustomFieldContextOption.instance.Radio_Buttons__radiobuttons__c_suuuu_Default_Configuration_Scheme_for_Radio_Buttons_aaa@uuuuumusssssu,
+  ]
+  _parent = [
+    jira.CustomFieldContext.instance.Radio_Buttons__radiobuttons__c_suuuu_Default_Configuration_Scheme_for_Radio_Buttons@uuuuumusssss,
+  ]
+}

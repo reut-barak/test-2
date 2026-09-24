@@ -1,0 +1,6 @@
+jira.Status proposal_review@s {
+  name = "Proposal Review"
+  statusCategory = jira.StatusCategory.instance.In_Progress@s
+  description = "Repro for INCIDENT-43094"
+  _alias = "Proposal Review"
+}

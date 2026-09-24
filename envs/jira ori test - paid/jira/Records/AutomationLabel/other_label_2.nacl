@@ -1,0 +1,5 @@
+jira.AutomationLabel other_label_2@s {
+  name = "other label 2"
+  color = "G300"
+  editable = true
+}

@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute Lior_s_IT_Schema_tss_Models_uuumu_Hardware_Models_uuuuumus_Updated@uuuuuuuumu {
+  editable = false
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 1
+  name = "Updated"
+  displayName = "Updated"
+  objectType = jira.ObjectType.instance.Lior_s_IT_Schema_tss_Models_uuumu_Hardware_Models@uuuuumus
+  options = ""
+  pendingCreation = false
+  removable = false
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 6
+  _alias = "Updated"
+}

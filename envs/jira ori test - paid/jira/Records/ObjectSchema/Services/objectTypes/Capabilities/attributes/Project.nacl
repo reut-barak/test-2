@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute Services_Capabilities_Project {
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Project"
+  displayName = "Project"
+  objectType = jira.ObjectType.instance.Services_Capabilities
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 6
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  _alias = "Project"
+}

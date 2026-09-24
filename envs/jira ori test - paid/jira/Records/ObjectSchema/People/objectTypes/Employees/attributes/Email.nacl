@@ -1,0 +1,22 @@
+jira.ObjectTypeAttribute People_Employees_Email {
+  description = "Employee's email"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Email"
+  displayName = "Email"
+  objectType = jira.ObjectType.instance.People_Employees
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 8
+  _alias = "Email"
+}

@@ -1,0 +1,16 @@
+jira.ObjectType People_Role {
+  name = "Role"
+  displayName = "Role"
+  type = 0
+  inherited = false
+  abstractObjectType = false
+  parentObjectTypeInherited = false
+  schemaLabel = "People"
+  schemaDisplayLabel = "People"
+  iconId = "94"
+  parentObjectTypeId = jira.ObjectSchema.instance.People
+  _parent = [
+    jira.ObjectSchema.instance.People,
+  ]
+  _alias = "Role"
+}

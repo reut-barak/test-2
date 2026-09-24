@@ -1,0 +1,7 @@
+jira.CustomFieldContextOption Select_List__single_choice___select__c_ssjskuuuu_Default_Configuration_Scheme_for_Select_List__single_choice__aaa@uuuuuuuuumussssssjsku {
+  value = "aaa"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Select_List__single_choice___select__c_ssjskuuuu_Default_Configuration_Scheme_for_Select_List__single_choice_@uuuuuuuuumussssssjsk,
+  ]
+}

@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute IZU_Hardware_Assets_us_PO_Number@uumus {
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "PO Number"
+  displayName = "PO Number"
+  objectType = jira.ObjectType.instance.IZU_Hardware_Assets@us
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 0
+  _alias = "PO Number"
+}

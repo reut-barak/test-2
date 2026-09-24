@@ -1,0 +1,11 @@
+jira.ObjectSchemaStatus IZT__Missing {
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:141"
+  name = "Missing"
+  displayName = "Missing"
+  description = "Asset is not found in its expected location"
+  category = 0
+  _parent = [
+    jira.ObjectSchema.instance.IZT,
+  ]
+  _alias = "IZT:Missing"
+}

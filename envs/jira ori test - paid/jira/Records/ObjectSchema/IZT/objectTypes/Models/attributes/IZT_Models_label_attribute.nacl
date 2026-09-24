@@ -1,0 +1,4 @@
+jira.ObjectTypeLabelAttribute IZT_Models_label_attribute {
+  labelAttribute = jira.ObjectTypeAttribute.instance.IZT_Models_Name
+  objectType = jira.ObjectType.instance.IZT_Models
+}

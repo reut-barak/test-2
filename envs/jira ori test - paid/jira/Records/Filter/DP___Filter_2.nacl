@@ -1,0 +1,52 @@
+jira.Filter DP___Filter_2@sbss {
+  name = "DP - Filter 2"
+  description = ""
+  owner = {
+    id = "6205b3c7d362410069133701"
+    displayName = "Dan Putman"
+  }
+  jql = "filter = \"DP - Filter 1\" AND ${ jira.Field.instance.Created__datetime } >= -1000d ORDER BY ${ jira.Field.instance.Created__datetime } DESC"
+  sharePermissions = [
+    {
+      type = "authenticated"
+    },
+  ]
+  editPermissions = [
+    {
+      type = "group"
+      group = {
+        name = jira.Group.instance.administrators
+      }
+    },
+  ]
+  columns = [
+    {
+      label = "Key"
+      value = "issuekey"
+    },
+    {
+      label = "Summary"
+      value = "summary"
+    },
+    {
+      label = "Reporter"
+      value = "reporter"
+    },
+    {
+      label = "Priority"
+      value = "priority"
+    },
+    {
+      label = "Status"
+      value = "status"
+    },
+    {
+      label = "Resolution"
+      value = "resolution"
+    },
+    {
+      label = "Updated"
+      value = "updated"
+    },
+  ]
+}

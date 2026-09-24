@@ -1,0 +1,53 @@
+jira.Automation testLinkTrigger {
+  name = "testLinkTrigger"
+  state = "ENABLED"
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "5fa91999b2633d0076583a61"
+    displayName = "Alon Stern"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.event.trigger:link"
+    value = {
+      linkTypes = [
+      ]
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      type = "codebarrel.action.log"
+      conditions = [
+      ]
+      children = [
+      ]
+      rawValue = "asd"
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "cabca2879186a6bd3a133f95b712cf4e46af76b517f16cdadcbbeb9db58c1400"
+  }
+  isAgentic = false
+  _alias = "testLinkTrigger"
+}

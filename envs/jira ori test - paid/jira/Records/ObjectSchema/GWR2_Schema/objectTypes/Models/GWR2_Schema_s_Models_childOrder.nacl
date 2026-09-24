@@ -1,0 +1,10 @@
+jira.ObjectTypeOrder GWR2_Schema_s_Models_childOrder@umuu {
+  objectTypes = [
+    jira.ObjectType.instance.GWR2_Schema_s_Models_umu_Hardware_Models@uuumus,
+    jira.ObjectType.instance.GWR2_Schema_s_Models_umu_Model_Categories@uuumus,
+    jira.ObjectType.instance.GWR2_Schema_s_Models_umu_Software_Models@uuumus,
+  ]
+  _parent = [
+    jira.ObjectType.instance.GWR2_Schema_s_Models@umu,
+  ]
+}

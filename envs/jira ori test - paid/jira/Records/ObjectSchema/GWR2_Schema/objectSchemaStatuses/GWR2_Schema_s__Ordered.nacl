@@ -1,0 +1,11 @@
+jira.ObjectSchemaStatus GWR2_Schema_s__Ordered@umuu {
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:235"
+  name = "Ordered"
+  displayName = "Ordered"
+  description = "Asset is deployed but no longer in use"
+  category = 2
+  _parent = [
+    jira.ObjectSchema.instance.GWR2_Schema@s,
+  ]
+  _alias = "GWR2 Schema:Ordered"
+}

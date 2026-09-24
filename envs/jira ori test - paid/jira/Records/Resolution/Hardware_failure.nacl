@@ -1,0 +1,4 @@
+jira.Resolution Hardware_failure@s {
+  description = ""
+  name = "Hardware failure"
+}

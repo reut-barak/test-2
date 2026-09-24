@@ -1,0 +1,14 @@
+jira.CustomFieldContext testGlobalIssues__multicheckboxes__c_testContext {
+  name = "testContext"
+  description = ""
+  defaultValue = {
+    type = "option.multiple"
+  }
+  projectIds = [
+    jira.Project.instance.AlonCompanyProject11,
+  ]
+  _parent = [
+    jira.Field.instance.testGlobalIssues__multicheckboxes__c,
+  ]
+  _alias = "testGlobalIssues context in testContext"
+}

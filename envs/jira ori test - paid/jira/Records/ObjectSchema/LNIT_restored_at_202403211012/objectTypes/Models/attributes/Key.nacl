@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute LNIT_restored_at_202403211012_Models_Key {
+  editable = false
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 1
+  name = "Key"
+  displayName = "Key"
+  objectType = jira.ObjectType.instance.LNIT_restored_at_202403211012_Models
+  options = ""
+  pendingCreation = false
+  removable = false
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 0
+  _alias = "Key"
+}

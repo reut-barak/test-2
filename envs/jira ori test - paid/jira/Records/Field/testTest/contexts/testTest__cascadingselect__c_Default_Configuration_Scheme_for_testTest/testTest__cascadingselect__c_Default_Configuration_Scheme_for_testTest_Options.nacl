@@ -1,0 +1,14 @@
+jira.CustomFieldContextOption testTest__cascadingselect__c_Default_Configuration_Scheme_for_testTest_a@uuuuussssu {
+  value = "a"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.testTest__cascadingselect__c_Default_Configuration_Scheme_for_testTest@uuuuussss,
+  ]
+}
+jira.CustomFieldContextOption testTest__cascadingselect__c_Default_Configuration_Scheme_for_testTest_a_b@uuuuussssuu {
+  value = "b"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContextOption.instance.testTest__cascadingselect__c_Default_Configuration_Scheme_for_testTest_a@uuuuussssu,
+  ]
+}

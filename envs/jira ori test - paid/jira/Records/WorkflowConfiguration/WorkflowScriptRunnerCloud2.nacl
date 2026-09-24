@@ -1,0 +1,451 @@
+jira.WorkflowConfiguration WorkflowScriptRunnerCloud2 {
+  scope = {
+    type = "GLOBAL"
+  }
+  name = "WorkflowScriptRunnerCloud2"
+  description = "ssss"
+  isEditable = true
+  startPointLayout = {
+    x = 1104
+    y = 15.630468750000006
+  }
+  statuses = [
+    {
+      statusReference = jira.Status.instance.closed
+      layout = {
+        x = 1072.078125
+        y = 167.4
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      deprecated = false
+      name = "Closed"
+    },
+    {
+      statusReference = jira.Status.instance.in_progress@s
+      layout = {
+        x = 1056.796875
+        y = 117.4
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      deprecated = false
+      name = "In Progress"
+    },
+    {
+      statusReference = jira.Status.instance.open
+      layout = {
+        x = 1079.40625
+        y = 67.4
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      deprecated = false
+      name = "Open"
+    },
+  ]
+  transitions = {
+    Create__From__none__Initial@fffsff = {
+      type = "INITIAL"
+      toStatusReference = jira.Status.instance.open
+      links = [
+        {
+          toPort = 7
+        },
+      ]
+      name = "Create"
+      description = ""
+      validators = [
+        {
+          ruleKey = "system:check-permission-validator"
+          parameters = {
+            permissionKey = "CREATE_ISSUES"
+          }
+        },
+      ]
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    }
+    Close__From__In_Progress__Directed@fffssff = {
+      type = "DIRECTED"
+      toStatusReference = jira.Status.instance.closed
+      links = [
+        {
+          fromStatusReference = jira.Status.instance.in_progress@s
+          fromPort = 7
+          toPort = 3
+        },
+      ]
+      name = "Close"
+      description = ""
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    }
+    Start__From__Open__Directed@fffsff = {
+      type = "DIRECTED"
+      toStatusReference = jira.Status.instance.in_progress@s
+      links = [
+        {
+          fromStatusReference = jira.Status.instance.open
+          fromPort = 3
+          toPort = 7
+        },
+      ]
+      name = "Start"
+      description = ""
+      actions = [
+        {
+          ruleKey = "connect:remote-workflow-function"
+          parameters = {
+            appKey = "com.onresolve.jira.groovy.groovyrunner__script-postfunction"
+            id = "6c72db1e-3387-4a14-b467-0067ac0cde92"
+            disabled = "false"
+            scriptRunner = {
+              className = "com.adaptavist.sr.cloud.workflow.RunScript"
+              uuid = "7464bf9d-cd56-4cf7-9a1d-b216506a26ff"
+              enabled = true
+              executionUser = "ADD_ON"
+              condition = file(
+                "jira/WorkflowConfiguration/WorkflowScriptRunnerCloud2.transitions.Start__From__Open__Directed.fffsff.actions.0.parameters.scriptRunner.condition.txt",
+                "template",
+              )
+              description = "In script reference - 1"
+              additionalCode = file(
+                "jira/WorkflowConfiguration/WorkflowScriptRunnerCloud2.transitions.Start__From__Open__Directed.fffsff.actions.0.parameters.scriptRunner.additionalCode.txt",
+                "utf-8",
+              )
+            }
+          }
+        },
+        {
+          ruleKey = "connect:remote-workflow-function"
+          parameters = {
+            appKey = "com.onresolve.jira.groovy.groovyrunner__script-postfunction"
+            id = "4a6e6a91-b78e-4161-85c7-91db2cfb1e4b"
+            disabled = "false"
+            scriptRunner = {
+              className = "com.adaptavist.sr.cloud.workflow.AssignToUserInGroup"
+              uuid = "e9c3d0ec-0d9d-4b1f-b010-3c0e3a18111a"
+              enabled = true
+              executionUser = "ADD_ON"
+              condition = file(
+                "jira/WorkflowConfiguration/WorkflowScriptRunnerCloud2.transitions.Start__From__Open__Directed.fffsff.actions.1.parameters.scriptRunner.condition.txt",
+                "utf-8",
+              )
+              description = "Assign Issue"
+              groupName = jira.Group.instance.site_admins@b
+              roleId = jira.ProjectRole.instance.atlassian_addons_project_access@b
+            }
+          }
+        },
+        {
+          ruleKey = "connect:remote-workflow-function"
+          parameters = {
+            appKey = "com.onresolve.jira.groovy.groovyrunner__script-postfunction"
+            id = "fc90e512-e4b7-4b0a-9b11-c14fa78f723e"
+            disabled = "false"
+            scriptRunner = {
+              className = "com.adaptavist.sr.cloud.workflow.SprintTransition"
+              uuid = "cdd9122d-d7c5-4fcb-8615-5944cce3d8c7"
+              enabled = true
+              executionUser = "ADD_ON"
+              boardId = jira.Board.instance.SFDC_board@s
+              condition = file(
+                "jira/WorkflowConfiguration/WorkflowScriptRunnerCloud2.transitions.Start__From__Open__Directed.fffsff.actions.2.parameters.scriptRunner.condition.txt",
+                "utf-8",
+              )
+              description = "Add remove from sprint"
+              action = "add"
+            }
+          }
+        },
+        {
+          ruleKey = "connect:remote-workflow-function"
+          parameters = {
+            appKey = "com.onresolve.jira.groovy.groovyrunner__script-postfunction"
+            id = "5dfa5d94-4565-4d7b-be90-65117d0be0d0"
+            disabled = "false"
+            scriptRunner = {
+              className = "com.adaptavist.sr.cloud.workflow.UpdateIssue"
+              uuid = "f1c65b9e-2074-4e18-b021-2998bf310816"
+              enabled = true
+              executionUser = "INITIATING_USER"
+              condition = file(
+                "jira/WorkflowConfiguration/WorkflowScriptRunnerCloud2.transitions.Start__From__Open__Directed.fffsff.actions.3.parameters.scriptRunner.condition.txt",
+                "utf-8",
+              )
+              description = "Modify issue"
+              additionalCode = file(
+                "jira/WorkflowConfiguration/WorkflowScriptRunnerCloud2.transitions.Start__From__Open__Directed.fffsff.actions.3.parameters.scriptRunner.additionalCode.txt",
+                "utf-8",
+              )
+              uniquePostFunctionId = "5dfa5d94-4565-4d7b-be90-65117d0be0d0"
+            }
+          }
+        },
+        {
+          ruleKey = "connect:remote-workflow-function"
+          parameters = {
+            appKey = "com.onresolve.jira.groovy.groovyrunner__script-postfunction"
+            id = "d3b97225-a3f4-49d3-9dc6-16869f6bc7aa"
+            disabled = "false"
+            scriptRunner = {
+              className = "com.adaptavist.sr.cloud.workflow.CreateSubtask"
+              uuid = "7f51cf15-017b-4fae-b905-7bd1cfd76e75"
+              enabled = true
+              executionUser = "ADD_ON"
+              condition = file(
+                "jira/WorkflowConfiguration/WorkflowScriptRunnerCloud2.transitions.Start__From__Open__Directed.fffsff.actions.4.parameters.scriptRunner.condition.txt",
+                "utf-8",
+              )
+              description = "create subtask"
+              issueTypeId = jira.IssueType.instance.Story
+              summary = "bla"
+              additionalCode = file(
+                "jira/WorkflowConfiguration/WorkflowScriptRunnerCloud2.transitions.Start__From__Open__Directed.fffsff.actions.4.parameters.scriptRunner.additionalCode.txt",
+                "utf-8",
+              )
+            }
+          }
+        },
+        {
+          ruleKey = "connect:remote-workflow-function"
+          parameters = {
+            appKey = "com.onresolve.jira.groovy.groovyrunner__script-postfunction"
+            id = "e0744425-cf02-4c0a-85d8-0f1c4e240be4"
+            disabled = "false"
+            scriptRunner = {
+              className = "com.adaptavist.sr.cloud.workflow.AssignToUserInGroup"
+              uuid = "36e3b17e-1cd7-4f22-85e0-91a18ffa9a9a"
+              enabled = true
+              executionUser = "INITIATING_USER"
+              condition = file(
+                "jira/WorkflowConfiguration/WorkflowScriptRunnerCloud2.transitions.Start__From__Open__Directed.fffsff.actions.5.parameters.scriptRunner.condition.txt",
+                "utf-8",
+              )
+              description = "Post description"
+              groupName = jira.Group.instance.atlassian_addons_admin@b
+              roleId = jira.ProjectRole.instance.aaa
+            }
+          }
+        },
+        {
+          ruleKey = "connect:remote-workflow-function"
+          parameters = {
+            appKey = "com.onresolve.jira.groovy.groovyrunner__script-postfunction"
+            id = "4e322414-c376-4a6c-a0fe-a93d9f037003"
+            disabled = "false"
+            scriptRunner = {
+              className = "com.adaptavist.sr.cloud.workflow.FastTrackIssue"
+              uuid = "2cf3f903-7be1-4a14-9b12-8136c07681c6"
+              enabled = true
+              executionUser = "ADD_ON"
+              condition = file(
+                "jira/WorkflowConfiguration/WorkflowScriptRunnerCloud2.transitions.Start__From__Open__Directed.fffsff.actions.6.parameters.scriptRunner.condition.txt",
+                "utf-8",
+              )
+              description = "Fast track transition issue"
+              additionalCode = file(
+                "jira/WorkflowConfiguration/WorkflowScriptRunnerCloud2.transitions.Start__From__Open__Directed.fffsff.actions.6.parameters.scriptRunner.additionalCode.txt",
+                "utf-8",
+              )
+              comment = "comment"
+              transitionId = jira.WorkflowConfiguration.instance.WorkflowScriptRunnerCloud2.transitions.Start__From__Open__Directed@fffsff
+              transitionName = ""
+            }
+          }
+        },
+        {
+          ruleKey = "connect:remote-workflow-function"
+          parameters = {
+            appKey = "com.onresolve.jira.groovy.groovyrunner__script-postfunction"
+            id = "34d3ea21-8c48-4b04-9633-4519bdd77763"
+            disabled = "false"
+            scriptRunner = {
+              className = "com.adaptavist.sr.cloud.workflow.TransitionParent"
+              uuid = "d873643e-8d32-4c90-9c96-c1ff882b8ebb"
+              enabled = true
+              executionUser = "ADD_ON"
+              condition = file(
+                "jira/WorkflowConfiguration/WorkflowScriptRunnerCloud2.transitions.Start__From__Open__Directed.fffsff.actions.7.parameters.scriptRunner.condition.txt",
+                "utf-8",
+              )
+              description = "Transition parent issue"
+              additionalCode = file(
+                "jira/WorkflowConfiguration/WorkflowScriptRunnerCloud2.transitions.Start__From__Open__Directed.fffsff.actions.7.parameters.scriptRunner.additionalCode.txt",
+                "utf-8",
+              )
+              comment = "Comment"
+              transitionId = jira.WorkflowConfiguration.instance.WorkflowScriptRunnerCloud2.transitions.Start__From__Open__Directed@fffsff
+              transitionName = "Close"
+            }
+          }
+        },
+        {
+          ruleKey = "connect:remote-workflow-function"
+          parameters = {
+            appKey = "com.onresolve.jira.groovy.groovyrunner__script-postfunction"
+            id = "be3739a9-53fa-49a3-afe4-76f72ca945a6"
+            disabled = "false"
+            scriptRunner = {
+              className = "com.adaptavist.sr.cloud.workflow.CloneIssue"
+              uuid = "faf02f5e-bbec-45e5-84e7-ff2a33614a7b"
+              enabled = true
+              executionUser = "ADD_ON"
+              condition = file(
+                "jira/WorkflowConfiguration/WorkflowScriptRunnerCloud2.transitions.Start__From__Open__Directed.fffsff.actions.8.parameters.scriptRunner.condition.txt",
+                "utf-8",
+              )
+              description = "Clone Issue"
+              issueTypeId = jira.IssueType.instance.Story
+              linkDirection = "Inward"
+              linkTypeId = jira.IssueLinkType.instance.Cloners
+              projectId = jira.Project.instance.test
+              additionalCode = file(
+                "jira/WorkflowConfiguration/WorkflowScriptRunnerCloud2.transitions.Start__From__Open__Directed.fffsff.actions.8.parameters.scriptRunner.additionalCode.txt",
+                "utf-8",
+              )
+            }
+          }
+        },
+        {
+          ruleKey = "connect:remote-workflow-function"
+          parameters = {
+            appKey = "com.onresolve.jira.groovy.groovyrunner__script-postfunction"
+            id = "cb55e42c-dc47-4d1b-8e04-cca3b523f720"
+            disabled = "false"
+            scriptRunner = {
+              className = "com.adaptavist.sr.cloud.workflow.SendNotification"
+              uuid = "e72d0899-584b-4bff-a150-12a99d0a7693"
+              enabled = true
+              executionUser = "ADD_ON"
+              description = "Send Notifications"
+              subject = "Subject"
+              additionalCode = file(
+                "jira/WorkflowConfiguration/WorkflowScriptRunnerCloud2.transitions.Start__From__Open__Directed.fffsff.actions.9.parameters.scriptRunner.additionalCode.txt",
+                "utf-8",
+              )
+              condition = file(
+                "jira/WorkflowConfiguration/WorkflowScriptRunnerCloud2.transitions.Start__From__Open__Directed.fffsff.actions.9.parameters.scriptRunner.condition.txt",
+                "utf-8",
+              )
+              accountIds = [
+                {
+                  id = "60e8b78784c9920071996842"
+                  displayName = "Lior Neudorfer"
+                },
+                {
+                  id = "60a60ff79b362f006919d5ff"
+                  displayName = "Former user"
+                },
+              ]
+              assignee = true
+              reporter = true
+              voters = true
+              watchers = true
+              groupName = [
+                jira.Group.instance.site_admins@b,
+                jira.Group.instance.atlassian_addons_admin@b,
+              ]
+              emailCode = file(
+                "jira/WorkflowConfiguration/WorkflowScriptRunnerCloud2.transitions.Start__From__Open__Directed.fffsff.actions.9.parameters.scriptRunner.emailCode.txt",
+                "utf-8",
+              )
+            }
+          }
+        },
+        {
+          ruleKey = "connect:remote-workflow-function"
+          parameters = {
+            appKey = "com.onresolve.jira.groovy.groovyrunner__script-postfunction"
+            id = "9ff6a60c-e043-49da-88cc-67eef11a01a3"
+            disabled = "false"
+            scriptRunner = {
+              className = "com.adaptavist.sr.cloud.workflow.RunScript"
+              uuid = "0436e17d-a45c-4080-84b1-b5cc2d7561a2"
+              enabled = true
+              executionUser = "ADD_ON"
+              condition = file(
+                "jira/WorkflowConfiguration/WorkflowScriptRunnerCloud2.transitions.Start__From__Open__Directed.fffsff.actions.10.parameters.scriptRunner.condition.txt",
+                "utf-8",
+              )
+              description = "Run Script2"
+              additionalCode = file(
+                "jira/WorkflowConfiguration/WorkflowScriptRunnerCloud2.transitions.Start__From__Open__Directed.fffsff.actions.10.parameters.scriptRunner.additionalCode.txt",
+                "utf-8",
+              )
+            }
+          }
+        },
+      ]
+      validators = [
+        {
+          ruleKey = "connect:expression-validator"
+          parameters = {
+            appKey = "com.onresolve.jira.groovy.groovyrunner__script-workflow-validators"
+            id = "058c7ca2-aaae-46d3-ae91-05bfa823f186"
+            disabled = "false"
+            scriptRunner = {
+              uuid = "b8de9e66-8248-4c6f-9160-0fad129ea88d"
+              enabled = true
+              description = "Validator123"
+              expression = file(
+                "jira/WorkflowConfiguration/WorkflowScriptRunnerCloud2.transitions.Start__From__Open__Directed.fffsff.validators.0.parameters.scriptRunner.expression.txt",
+                "utf-8",
+              )
+              errorMessage = "A ScriptRunner Script Validator is preventing this transition, please contact your Jira admin for more information."
+            }
+          }
+        },
+      ]
+      conditions = {
+        operation = "ALL"
+        conditions = [
+          {
+            ruleKey = "connect:expression-condition"
+            parameters = {
+              appKey = "com.onresolve.jira.groovy.groovyrunner__script-workflow-conditions"
+              id = "78479354-ec9f-4652-b26e-83f445cbe377"
+              disabled = "false"
+              scriptRunner = {
+                uuid = "45f3701c-5682-4ff1-ad8d-403dd4d2b3d6"
+                enabled = true
+                description = "Condition123"
+                expression = file(
+                  "jira/WorkflowConfiguration/WorkflowScriptRunnerCloud2.transitions.Start__From__Open__Directed.fffsff.conditions.conditions.0.parameters.scriptRunner.expression.txt",
+                  "utf-8",
+                )
+              }
+            }
+          },
+        ]
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+jira.ObjectTypeAttribute idoA_Schema_rename_s_Department_uumu_user_multy@uuuumus {
+  description = "ido"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "user multy"
+  displayName = "user multy"
+  objectType = jira.ObjectType.instance.idoA_Schema_rename_s_Department@uumu
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 2
+  typeValueMulti = [
+    jira.Group.instance.administrators,
+    jira.Group.instance.iso_27001_people,
+  ]
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  _alias = "user multy"
+}

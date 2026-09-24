@@ -1,0 +1,9 @@
+jira.ObjectTypeOrder GWR2_Schema_s_Hardware_Assets_umus_Servers_childOrder@uuuumuu {
+  objectTypes = [
+    jira.ObjectType.instance.GWR2_Schema_s_Hardware_Assets_umus_Servers_uuuumu_Red_Hat_Linux@uuuuuumuss,
+    jira.ObjectType.instance.GWR2_Schema_s_Hardware_Assets_umus_Servers_uuuumu_Windows_Server@uuuuuumus,
+  ]
+  _parent = [
+    jira.ObjectType.instance.GWR2_Schema_s_Hardware_Assets_umus_Servers@uuuumu,
+  ]
+}

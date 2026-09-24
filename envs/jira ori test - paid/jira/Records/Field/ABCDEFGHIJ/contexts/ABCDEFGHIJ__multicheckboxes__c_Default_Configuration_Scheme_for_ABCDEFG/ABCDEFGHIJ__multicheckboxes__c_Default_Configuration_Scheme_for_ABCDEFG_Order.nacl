@@ -1,0 +1,10 @@
+jira.FieldContextOptionsOrder ABCDEFGHIJ__multicheckboxes__c_Default_Configuration_Scheme_for_ABCDEFG_order_child@uuuuussssuu {
+  options = [
+    jira.CustomFieldContextOption.instance.ABCDEFGHIJ__multicheckboxes__c_Default_Configuration_Scheme_for_ABCDEFG_aa@uuuuussssu,
+    jira.CustomFieldContextOption.instance.ABCDEFGHIJ__multicheckboxes__c_Default_Configuration_Scheme_for_ABCDEFG_bb@uuuuussssu,
+    jira.CustomFieldContextOption.instance.ABCDEFGHIJ__multicheckboxes__c_Default_Configuration_Scheme_for_ABCDEFG_cc@uuuuussssu,
+  ]
+  _parent = [
+    jira.CustomFieldContext.instance.ABCDEFGHIJ__multicheckboxes__c_Default_Configuration_Scheme_for_ABCDEFG@uuuuussss,
+  ]
+}

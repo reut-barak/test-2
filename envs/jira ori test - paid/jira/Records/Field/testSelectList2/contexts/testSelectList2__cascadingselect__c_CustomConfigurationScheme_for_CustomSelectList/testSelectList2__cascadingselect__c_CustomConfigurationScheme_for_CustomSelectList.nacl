@@ -1,0 +1,19 @@
+jira.CustomFieldContext testSelectList2__cascadingselect__c_CustomConfigurationScheme_for_CustomSelectList@uuuuuss {
+  name = "CustomConfigurationScheme for CustomSelectList"
+  defaultValue = {
+    type = "option.cascading"
+  }
+  issueTypeIds = [
+    jira.IssueType.instance.Epic,
+    jira.IssueType.instance.Story,
+    jira.IssueType.instance.Custom_issue_type_two@s,
+  ]
+  projectIds = [
+    jira.Project.instance.test_proj_three@b,
+    jira.Project.instance.test_proj_two@b,
+  ]
+  _parent = [
+    jira.Field.instance.testSelectList2__cascadingselect__c,
+  ]
+  _alias = "testSelectList2 context in CustomConfigurationScheme for CustomSelectList"
+}

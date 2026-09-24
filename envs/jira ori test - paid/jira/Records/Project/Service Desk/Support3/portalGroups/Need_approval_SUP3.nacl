@@ -1,0 +1,11 @@
+jira.PortalGroup Need_approval_SUP3@su {
+  name = "Need approval"
+  ticketTypeIds = [
+    jira.RequestType.instance.missing_283,
+    jira.RequestType.instance.missing_284,
+  ]
+  _parent = [
+    jira.Project.instance.Support3,
+  ]
+  _alias = "Support3:Need approval"
+}

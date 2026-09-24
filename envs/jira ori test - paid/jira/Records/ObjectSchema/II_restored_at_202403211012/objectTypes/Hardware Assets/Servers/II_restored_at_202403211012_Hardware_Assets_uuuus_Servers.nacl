@@ -1,0 +1,16 @@
+jira.ObjectType II_restored_at_202403211012_Hardware_Assets_uuuus_Servers@uuuuumu {
+  name = "Servers"
+  displayName = "Servers"
+  type = 0
+  parentObjectTypeId = jira.ObjectType.instance.II_restored_at_202403211012_Hardware_Assets@uuuus
+  inherited = true
+  abstractObjectType = false
+  parentObjectTypeInherited = true
+  schemaLabel = "II_restored_at_202403211012"
+  schemaDisplayLabel = "II_restored_at_202403211012"
+  iconId = "107"
+  _parent = [
+    jira.ObjectSchema.instance.II_restored_at_202403211012,
+  ]
+  _alias = "Servers"
+}

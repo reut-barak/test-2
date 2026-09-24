@@ -1,0 +1,49 @@
+jira.CustomFieldContextOption shay_cascading_select__cascadingselect__c_ssuuuu_Default_Configuration_Scheme_for_shay_cascading_select_a@uuuuuumussssssu {
+  value = "a"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.shay_cascading_select__cascadingselect__c_ssuuuu_Default_Configuration_Scheme_for_shay_cascading_select@uuuuuumussssss,
+  ]
+}
+jira.CustomFieldContextOption shay_cascading_select__cascadingselect__c_ssuuuu_Default_Configuration_Scheme_for_shay_cascading_select_b@uuuuuumussssssu {
+  value = "b"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.shay_cascading_select__cascadingselect__c_ssuuuu_Default_Configuration_Scheme_for_shay_cascading_select@uuuuuumussssss,
+  ]
+}
+jira.CustomFieldContextOption shay_cascading_select__cascadingselect__c_ssuuuu_Default_Configuration_Scheme_for_shay_cascading_select_c@uuuuuumussssssu {
+  value = "c"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.shay_cascading_select__cascadingselect__c_ssuuuu_Default_Configuration_Scheme_for_shay_cascading_select@uuuuuumussssss,
+  ]
+}
+jira.CustomFieldContextOption shay_cascading_select__cascadingselect__c_ssuuuu_Default_Configuration_Scheme_for_shay_cascading_select_a_a1@uuuuuumussssssuu {
+  value = "a1"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContextOption.instance.shay_cascading_select__cascadingselect__c_ssuuuu_Default_Configuration_Scheme_for_shay_cascading_select_a@uuuuuumussssssu,
+  ]
+}
+jira.CustomFieldContextOption shay_cascading_select__cascadingselect__c_ssuuuu_Default_Configuration_Scheme_for_shay_cascading_select_a_a2@uuuuuumussssssuu {
+  value = "a2"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContextOption.instance.shay_cascading_select__cascadingselect__c_ssuuuu_Default_Configuration_Scheme_for_shay_cascading_select_a@uuuuuumussssssu,
+  ]
+}
+jira.CustomFieldContextOption shay_cascading_select__cascadingselect__c_ssuuuu_Default_Configuration_Scheme_for_shay_cascading_select_b_b1@uuuuuumussssssuu {
+  value = "b1"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContextOption.instance.shay_cascading_select__cascadingselect__c_ssuuuu_Default_Configuration_Scheme_for_shay_cascading_select_b@uuuuuumussssssu,
+  ]
+}
+jira.CustomFieldContextOption shay_cascading_select__cascadingselect__c_ssuuuu_Default_Configuration_Scheme_for_shay_cascading_select_b_b2@uuuuuumussssssuu {
+  value = "b2"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContextOption.instance.shay_cascading_select__cascadingselect__c_ssuuuu_Default_Configuration_Scheme_for_shay_cascading_select_b@uuuuuumussssssu,
+  ]
+}

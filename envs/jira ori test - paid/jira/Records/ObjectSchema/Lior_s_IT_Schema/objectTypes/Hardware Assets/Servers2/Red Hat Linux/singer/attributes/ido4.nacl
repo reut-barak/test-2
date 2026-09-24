@@ -1,0 +1,25 @@
+jira.ObjectTypeAttribute Lior_s_IT_Schema_tss_Hardware_Assets_uuumus_Servers2_uuuuuumu_Red_Hat_Linux_uuuuuuuumuss_singer_uuuuuuuuuuuumu_ido4@uuuuuuuuuuuuuumu {
+  description = ""
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "ido4"
+  displayName = "ido4"
+  objectType = jira.ObjectType.instance.Lior_s_IT_Schema_tss_Hardware_Assets_uuumus_Servers2_uuuuuumu_Red_Hat_Linux_uuuuuuuumuss_singer@uuuuuuuuuuuumu
+  options = ""
+  pendingCreation = false
+  qlQuery = ""
+  regexValidation = ""
+  removable = true
+  sortable = true
+  suffix = ""
+  summable = false
+  type = 0
+  uniqueAttribute = true
+  lockedConfiguration = false
+  defaultTypeId = 0
+  _alias = "ido4"
+}

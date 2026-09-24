@@ -1,0 +1,4 @@
+jira.ObjectTypeLabelAttribute IZW_Models_Software_Models_label_attribute@uusuu {
+  labelAttribute = jira.ObjectTypeAttribute.instance.IZW_Models_Software_Models_uus_Name@uuumu
+  objectType = jira.ObjectType.instance.IZW_Models_Software_Models@uus
+}

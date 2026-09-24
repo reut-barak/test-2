@@ -1,0 +1,10 @@
+jira.FieldContextOptionsOrder SLA_Level__select__c_suuuu_Default_Configuration_Scheme_for_SLA_Level_order_child@uuuuumusssssuu {
+  options = [
+    jira.CustomFieldContextOption.instance.SLA_Level__select__c_suuuu_Default_Configuration_Scheme_for_SLA_Level_Urgent_SLA@uuuuumusssssus,
+    jira.CustomFieldContextOption.instance.SLA_Level__select__c_suuuu_Default_Configuration_Scheme_for_SLA_Level_Gold_SLA@uuuuumusssssus,
+    jira.CustomFieldContextOption.instance.SLA_Level__select__c_suuuu_Default_Configuration_Scheme_for_SLA_Level_Normal_SLA@uuuuumusssssus,
+  ]
+  _parent = [
+    jira.CustomFieldContext.instance.SLA_Level__select__c_suuuu_Default_Configuration_Scheme_for_SLA_Level@uuuuumusssss,
+  ]
+}

@@ -1,0 +1,14 @@
+jira.Field SLA_Level__select__c@suuuu {
+  name = "SLA Level"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher"
+  areOptionsSupported = true
+  isOptionsCountOverLimit = false
+  translatedName = "SLA Level"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:select"
+  contexts = [
+    jira.CustomFieldContext.instance.SLA_Level__select__c_suuuu_Default_Configuration_Scheme_for_SLA_Level@uuuuumusssss,
+  ]
+  _alias = "SLA Level"
+}

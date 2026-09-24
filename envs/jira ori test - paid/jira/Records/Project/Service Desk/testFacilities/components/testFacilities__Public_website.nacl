@@ -1,0 +1,9 @@
+jira.ProjectComponent testFacilities__Public_website@uus {
+  description = "Issues related to the public website. Created by Jira Service Management."
+  assigneeType = "UNASSIGNED"
+  name = "Public website"
+  _parent = [
+    jira.Project.instance.testFacilities,
+  ]
+  _alias = "testFacilities:Public website"
+}

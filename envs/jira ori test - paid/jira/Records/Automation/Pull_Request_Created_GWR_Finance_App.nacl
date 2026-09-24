@@ -1,0 +1,67 @@
+jira.Automation Pull_Request_Created_GWR_Finance_App@ssuss {
+  name = "Pull Request Created"
+  state = "DISABLED"
+  description = ""
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "61980f073618cd006f48823b"
+    displayName = "Geoffrey Routledge"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "devops.pr.event.trigger:created"
+    value = {
+      tagValue = "PULL_REQUEST"
+      tagType = "USES_DEVOPS_INTEGRATION"
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      type = "jira.issue.comment"
+      value = {
+        comment = '''
+Title: {{pullrequest.title}}
+URL: {{pullrequest.url}}
+'''
+        publicComment = false
+        sendNotifications = true
+        addCommentOnce = true
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  projects = [
+    {
+      projectId = jira.Project.instance.GWR_Finance_App@s
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "eb38aa18b76df3f79989049ff7a8d066f1e7c17168d7218263c22217c3f8e7e9"
+  }
+  isAgentic = false
+  _alias = "Pull Request Created"
+}

@@ -1,0 +1,14 @@
+jira.Field shayProjectPicker__project__c {
+  name = "shayProjectPicker"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:projectsearcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "shayProjectPicker"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:project"
+  contexts = [
+    jira.CustomFieldContext.instance.shayProjectPicker__project__c_Default_Configuration_Scheme_for_shay_project_picker@uuuuussssss,
+  ]
+  _alias = "shayProjectPicker"
+}

@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute GWR_Schema_b_Hardware_Assets_umus_Maintenance_Contract@uuuumus {
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Maintenance Contract"
+  displayName = "Maintenance Contract"
+  objectType = jira.ObjectType.instance.GWR_Schema_b_Hardware_Assets@umus
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 0
+  _alias = "Maintenance Contract"
+}

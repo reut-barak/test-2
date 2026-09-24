@@ -1,0 +1,14 @@
+jira.Field guycheck6__multicheckboxes__c {
+  name = "guycheck6"
+  description = "eee"
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher"
+  areOptionsSupported = true
+  isOptionsCountOverLimit = false
+  translatedName = "guycheck6"
+  translatedDescription = "eee"
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes"
+  contexts = [
+    jira.CustomFieldContext.instance.guycheck6__multicheckboxes__c_Default_Configuration_Scheme_for_guycheck6@uuuuussss,
+  ]
+  _alias = "guycheck6"
+}

@@ -1,0 +1,7 @@
+jira.IssueType Support {
+  description = "For customer support issues. Created by Jira Service Desk."
+  name = "Support"
+  untranslatedName = "Support"
+  hierarchyLevel = 0
+  avatar = file("jira/IssueType/Support.png")
+}

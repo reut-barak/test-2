@@ -1,0 +1,8 @@
+jira.ScriptedField Shir_Test@s {
+  name = "Shir Test"
+  scriptedFieldType = "DATE_FIELD"
+  codeToRun = file(
+    "jira/ScriptedField/Shir_Test.s.codeToRun.txt",
+    "utf-8",
+  )
+}

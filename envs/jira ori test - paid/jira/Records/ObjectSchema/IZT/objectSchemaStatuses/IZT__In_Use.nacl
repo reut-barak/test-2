@@ -1,0 +1,11 @@
+jira.ObjectSchemaStatus IZT__In_Use@uus {
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:144"
+  name = "In Use"
+  displayName = "In Use"
+  description = "Asset is deployed and functioning"
+  category = 1
+  _parent = [
+    jira.ObjectSchema.instance.IZT,
+  ]
+  _alias = "IZT:In Use"
+}

@@ -1,0 +1,17 @@
+jira.ObjectType ISS_restored_at_202403211012_Department4_R_D@uuuuue {
+  name = "R&D"
+  displayName = "R&D"
+  type = 0
+  description = ""
+  parentObjectTypeId = jira.ObjectType.instance.ISS_restored_at_202403211012_Department4
+  inherited = false
+  abstractObjectType = false
+  parentObjectTypeInherited = false
+  schemaLabel = "ISS_restored_at_202403211012"
+  schemaDisplayLabel = "ISS_restored_at_202403211012"
+  iconId = "85"
+  _parent = [
+    jira.ObjectSchema.instance.ISS_restored_at_202403211012,
+  ]
+  _alias = "R&D"
+}

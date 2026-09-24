@@ -1,0 +1,11 @@
+jira.WorkflowScheme Jira_Service_Management_IT_Support_Workflow_Scheme_generated_for_Project_IZJSM@s {
+  name = "Jira Service Management IT Support Workflow Scheme generated for Project IZJSM"
+  description = "This Jira Service Management IT Support Workflow Scheme was generated for Project IZJSM"
+  defaultWorkflow = jira.WorkflowConfiguration.instance.DP_Service_Project_Workflow16@s
+  items = [
+    {
+      workflow = jira.WorkflowConfiguration.instance.IZJSM__General_request_workflow_for_Jira_Service_Management@fsssssss
+      issueType = jira.IssueType.instance.General_request@s
+    },
+  ]
+}

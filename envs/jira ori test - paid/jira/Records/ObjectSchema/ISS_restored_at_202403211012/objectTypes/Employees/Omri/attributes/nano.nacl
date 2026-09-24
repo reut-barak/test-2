@@ -1,0 +1,28 @@
+jira.ObjectTypeAttribute ISS_restored_at_202403211012_Employees_Omri_nano {
+  description = "check nano neno"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 5
+  minimumCardinality = 0
+  name = "nano"
+  displayName = "nano"
+  objectType = jira.ObjectType.instance.ISS_restored_at_202403211012_Employees_Omri
+  options = ""
+  pendingCreation = false
+  qlQuery = ""
+  regexValidation = ""
+  removable = true
+  sortable = true
+  suffix = ""
+  summable = false
+  type = 2
+  typeValueMulti = [
+    jira.Group.instance.administrators,
+  ]
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  _alias = "nano"
+}

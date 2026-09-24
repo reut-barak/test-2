@@ -1,0 +1,11 @@
+jira.ObjectSchemaStatus Lior_s_IT_Schema_tss__a_new_status@uuumuuss {
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:195"
+  name = "a new status"
+  displayName = "a new status"
+  description = "desc!"
+  category = 2
+  _parent = [
+    jira.ObjectSchema.instance.Lior_s_IT_Schema@tss,
+  ]
+  _alias = "Lior's IT Schema:a new status"
+}

@@ -1,0 +1,8 @@
+jira.ObjectSchemaGlobalStatus Stopped {
+  workspaceId = "68d020c3-b88e-47dc-9231-452f7dc63521"
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:6"
+  name = "Stopped"
+  displayName = "Stopped"
+  description = ""
+  category = 0
+}

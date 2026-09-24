@@ -1,0 +1,22 @@
+jira.ObjectTypeAttribute Facilities_Buildings_Postal_Code@uus {
+  description = "Postal code for building location"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Postal Code"
+  displayName = "Postal Code"
+  objectType = jira.ObjectType.instance.Facilities_Buildings
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 0
+  _alias = "Postal Code"
+}

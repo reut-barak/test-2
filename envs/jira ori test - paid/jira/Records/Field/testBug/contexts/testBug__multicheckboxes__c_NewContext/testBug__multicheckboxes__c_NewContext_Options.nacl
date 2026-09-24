@@ -1,0 +1,21 @@
+jira.CustomFieldContextOption testBug__multicheckboxes__c_NewContext_d {
+  value = "d"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.testBug__multicheckboxes__c_NewContext,
+  ]
+}
+jira.CustomFieldContextOption testBug__multicheckboxes__c_NewContext_e {
+  value = "e"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.testBug__multicheckboxes__c_NewContext,
+  ]
+}
+jira.CustomFieldContextOption testBug__multicheckboxes__c_NewContext_f {
+  value = "f"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.testBug__multicheckboxes__c_NewContext,
+  ]
+}

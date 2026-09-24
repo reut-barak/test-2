@@ -1,0 +1,24 @@
+jira.ObjectTypeAttribute Facilities_Rooms_Floor_Name@uus {
+  description = "Name of the associated floor"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Floor Name"
+  displayName = "Floor Name"
+  objectType = jira.ObjectType.instance.Facilities_Rooms
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 1
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  additionalValue = jira.ObjectSchemaDefaultReferenceType.instance.Dependency
+  typeValue = jira.ObjectType.instance.Facilities_Floors
+  _alias = "Floor Name"
+}

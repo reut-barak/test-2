@@ -1,0 +1,14 @@
+jira.Screen Nugets {
+  name = "Nugets"
+  description = ""
+  tabs = {
+    General = {
+      name = "General"
+      fields = [
+        jira.Field.instance.NewCustomFieldLior__multicheckboxes__c,
+        jira.Field.instance.AAA_test_custom_field__multicheckboxes__c@sssuuuu,
+      ]
+      position = 0
+    }
+  }
+}

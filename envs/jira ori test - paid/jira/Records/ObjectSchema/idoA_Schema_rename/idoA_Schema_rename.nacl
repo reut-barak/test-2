@@ -1,0 +1,14 @@
+jira.ObjectSchema idoA_Schema_rename@s {
+  name = "idoA Schema rename"
+  displayName = "idoA Schema rename"
+  objectSchemaKey = "ISS"
+  description = "This is for manage people or noise?"
+  status = "Ok"
+  crossSchemaReferencingAllowed = false
+  properties = {
+    quickCreateObjects = true
+    allowOtherObjectSchema = false
+    validateQuickCreate = false
+  }
+  _alias = "idoA Schema rename"
+}

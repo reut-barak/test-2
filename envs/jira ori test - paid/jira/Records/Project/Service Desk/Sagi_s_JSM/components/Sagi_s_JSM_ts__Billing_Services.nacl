@@ -1,0 +1,9 @@
+jira.ProjectComponent Sagi_s_JSM_ts__Billing_Services@uumuus {
+  description = "Created by Jira Service Management"
+  assigneeType = "PROJECT_DEFAULT"
+  name = "Billing Services"
+  _parent = [
+    jira.Project.instance.Sagi_s_JSM@ts,
+  ]
+  _alias = "Sagi's JSM:Billing Services"
+}

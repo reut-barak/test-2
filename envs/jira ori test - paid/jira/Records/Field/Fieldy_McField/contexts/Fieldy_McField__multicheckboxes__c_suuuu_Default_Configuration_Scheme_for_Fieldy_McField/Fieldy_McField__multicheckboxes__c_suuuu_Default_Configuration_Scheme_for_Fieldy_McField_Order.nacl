@@ -1,0 +1,9 @@
+jira.FieldContextOptionsOrder Fieldy_McField__multicheckboxes__c_suuuu_Default_Configuration_Scheme_for_Fieldy_McField_order_child@uuuuumusssssuu {
+  options = [
+    jira.CustomFieldContextOption.instance.Fieldy_McField__multicheckboxes__c_suuuu_Default_Configuration_Scheme_for_Fieldy_McField_fsdfsd@uuuuumusssssu,
+    jira.CustomFieldContextOption.instance.Fieldy_McField__multicheckboxes__c_suuuu_Default_Configuration_Scheme_for_Fieldy_McField_fsdfsdfsdfds@uuuuumusssssu,
+  ]
+  _parent = [
+    jira.CustomFieldContext.instance.Fieldy_McField__multicheckboxes__c_suuuu_Default_Configuration_Scheme_for_Fieldy_McField@uuuuumusssss,
+  ]
+}

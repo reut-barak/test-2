@@ -1,0 +1,85 @@
+jira.Automation Copy_of_My_____automation3_BUG1@sss_01488_01488_01488su {
+  name = "Copy of My אאא automation3"
+  state = "ENABLED"
+  description = "bla4"
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "5b8ed5177a33352bf10f7a48"
+    displayName = "Lior Neudorfer"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.event.trigger:created"
+    value = {
+      eventKey = "jira:issue_created"
+      issueEvent = "issue_created"
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "CONDITION"
+      type = "jira.issue.condition"
+      value = {
+        selectedField = {
+          type = "NAME"
+          value = jira.Field.instance.How_many_times_has_this_happened_before__float__c@ssssssuuuu.name
+        }
+        selectedFieldType = "com.atlassian.jira.plugin.system.customfieldtypes:float"
+        comparison = "GREATER_THAN"
+        compareFieldValue = {
+          type = "VALUE"
+          value = "0"
+          multiValue = false
+        }
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.issue.comment"
+      value = {
+        comment = "Warranty Expiry Date:* {{issue.${ jira.Field.instance.Date_Picker__datepicker__c@suuuu.name }}}"
+        publicComment = false
+        sendNotifications = true
+        addCommentOnce = true
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  projects = [
+    {
+      projectId = jira.Project.instance.BUG1
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "8f2ec38c0f628fba7ab21bcd658bd7f004c055801f4c1685388aa5538b6ecc92"
+  }
+  isAgentic = false
+  _alias = "Copy of My אאא automation3"
+}

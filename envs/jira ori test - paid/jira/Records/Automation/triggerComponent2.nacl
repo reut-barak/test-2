@@ -1,0 +1,66 @@
+jira.Automation triggerComponent2 {
+  name = "triggerComponent2"
+  state = "ENABLED"
+  description = ""
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "640a4787f00d095406f6727f"
+    displayName = "Ido Amit"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "cmdb.object.trigger"
+    value = {
+      operation = "CREATED"
+      schemaId = jira.ObjectSchema.instance.idoA_Schema_rename@s
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      type = "jira.issue.assign"
+      value = {
+        assignType = "LIST_VALUE"
+        jql = "statusCategory != Done"
+        listAssignMethod = "BALANCED"
+        excludedUsers = [
+        ]
+        userList = [
+          {
+            type = "ID"
+            value = "5fa91999b2633d0076583a61"
+          },
+        ]
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "fe5b6d7ab6bf99906700b6870a69120265f434681297aed21f24defc0e8bb6a2"
+  }
+  isAgentic = false
+  _alias = "triggerComponent2"
+}

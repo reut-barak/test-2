@@ -1,9 +1,9 @@
 envs {
   envs = [
     {
-      name = "Netsuite Dev 3"
+      name = "jira ori test - paid"
       accountToServiceName = {
-        netsuite = "netsuite"
+        jira = "jira"
       }
     },
   ]

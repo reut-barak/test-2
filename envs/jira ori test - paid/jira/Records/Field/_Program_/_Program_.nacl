@@ -1,0 +1,14 @@
+jira.Field _Program___multicheckboxes__c@hiuuuu {
+  name = "[Program]"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher"
+  areOptionsSupported = true
+  isOptionsCountOverLimit = false
+  translatedName = "[Program]"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes"
+  contexts = [
+    jira.CustomFieldContext.instance._Program___multicheckboxes__c_hiuuuu_Default_Configuration_Scheme_for__Program_@uuuuuumusssshi,
+  ]
+  _alias = "[Program]"
+}

@@ -1,0 +1,14 @@
+jira.Field DP___Priority__float__c@sbsuuuu {
+  name = "DP - Priority"
+  description = "For JSM Forms"
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:exactnumber"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "DP - Priority"
+  translatedDescription = "For JSM Forms"
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:float"
+  contexts = [
+    jira.CustomFieldContext.instance.DP___Priority__float__c_sbsuuuu_Default_Configuration_Scheme_for_DP___Priority@uuuuuuumusssssbs,
+  ]
+  _alias = "DP - Priority"
+}

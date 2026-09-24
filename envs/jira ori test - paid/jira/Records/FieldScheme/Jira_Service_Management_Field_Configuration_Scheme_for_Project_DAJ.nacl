@@ -1,0 +1,1941 @@
+jira.FieldScheme Jira_Service_Management_Field_Configuration_Scheme_for_Project_DAJ@s {
+  name = "Jira Service Management Field Configuration Scheme for Project DAJ"
+  description = "This Jira Service Management Field Configuration Scheme was generated for Project DAJ"
+  isDefault = false
+  fields = [
+    {
+      fieldId = jira.Field.instance.Assignee__user
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Attachment__array
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Comment__comments_page@uub
+      allowedOperations = [
+        "ADD",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "atlassian-wiki-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Components__array
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.development__devsummarycf__c
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Team__atlassian_team__c@uubuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Organizations__sd_customer_organizations__c@uubbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Approvers__multiuserpicker__c
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = "Contains users needed for approval. This custom field was created by Jira Service Desk."
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Impact__select__c
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Change_type__select__c@suuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Change_risk__select__c@suuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Change_reason__select__c@suuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Change_start_date__datetime__c@ssuuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Change_completion_date__datetime__c@ssuuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Request_Type__vp_origin__c@suubuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Epic_Name__gh_epic_label__c@suubbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      restrictedToWorkTypes = [
+        "10000",
+      ]
+      workTypeParameters = [
+        {
+          workTypeId = "10000"
+          isRequired = false
+          description = "Provide a short name to identify this epic."
+          rendererType = "jira-text-renderer"
+        },
+      ]
+    },
+    {
+      fieldId = jira.Field.instance.Epic_Status__gh_epic_status__c@suubbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      restrictedToWorkTypes = [
+        "10000",
+      ]
+      workTypeParameters = [
+        {
+          workTypeId = "10000"
+          isRequired = false
+          description = "Epic Status field for Jira use only."
+          rendererType = "jira-text-renderer"
+        },
+      ]
+    },
+    {
+      fieldId = jira.Field.instance.Epic_Color__gh_epic_color__c@suubbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      restrictedToWorkTypes = [
+        "10000",
+      ]
+      workTypeParameters = [
+        {
+          workTypeId = "10000"
+          isRequired = false
+          description = "Epic Color field for Jira Software use only."
+          rendererType = "jira-text-renderer"
+        },
+      ]
+    },
+    {
+      fieldId = jira.Field.instance.Epic_Link__gh_epic_link__c@suubbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Start_date__datepicker__c@suuuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Story_point_estimate__jsw_story_points__c@ssuubbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Issue_color__jsw_issue_color__c@suubbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Parent_Link__jpo_custom_field_parent__c@suubbbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Rank__gh_lexo_rank__c@uubbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = "Global rank field for Jira use only."
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Sprint__gh_sprint__c@uubuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Flagged__multicheckboxes__c
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Target_start__jpo_custom_field_baseline_start__c@suubbbbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Target_end__jpo_custom_field_baseline_end__c@suubbbbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance._CHART__Date_of_First_Response__firstresponsedate__c@hissssuuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance._CHART__Time_in_Status__timeinstatus__c@hisssuuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Location__location__c
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = "Adding both UUID and Location fields to a project, will enable JIRA Mobile Connect for that project."
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Story_Points__float__c@suuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      restrictedToWorkTypes = [
+        "10000",
+        "10007",
+      ]
+      workTypeParameters = [
+        {
+          workTypeId = "10000"
+          isRequired = false
+          description = ""
+          rendererType = "jira-text-renderer"
+        },
+        {
+          workTypeId = "10007"
+          isRequired = false
+          description = ""
+          rendererType = "jira-text-renderer"
+        },
+      ]
+    },
+    {
+      fieldId = jira.Field.instance.Work_category__work_category_field_cftype__c@suubbbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Request_participants__sd_request_participants__c@suubbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Satisfaction__sd_request_feedback__c@uubbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Satisfaction_date__sd_request_feedback_date__c@suubbbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Approvals__sd_approvals__c@uubuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = "Provides search options for Jira Service Management approvals information. This custom field is created programmatically and required by Jira Service Management."
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Request_language__sd_request_language__c@suubbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Urgency__select__c
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Pending_reason__select__c@suuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Product_categorization__cascadingselect__c@suuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Operational_categorization__cascadingselect__c@suuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Approver_groups__multigrouppicker__c@suuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Affected_hardware__textfield__c@suuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+        "CHANGE_RENDERER_TYPE",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Affected_services__service_entity_field_cftype__c@suubbbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Severity__select__c
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Source__select__c
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Implementation_plan__textarea__c@suuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+        "CHANGE_RENDERER_TYPE",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Backout_plan__textarea__c@suuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+        "CHANGE_RENDERER_TYPE",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Test_plan__textarea__c@suuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+        "CHANGE_RENDERER_TYPE",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Planned_start__datetime__c@suuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Planned_end__datetime__c@suuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Investigation_reason__select__c@suuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Root_cause__textarea__c@suuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+        "CHANGE_RENDERER_TYPE",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Workaround__textarea__c
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+        "CHANGE_RENDERER_TYPE",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Responders__responders_entity_field_cftype__c@uubbbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Major_incident__major_incident_entity_field_cftype__c@suubbbbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Time_to_resolution__sd_sla_field__c@ssuubbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Time_to_first_response__sd_sla_field__c@sssuubbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Time_to_close_after_resolution__sd_sla_field__c@ssssuubbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Time_to_review_normal_change__sd_sla_field__c@ssssuubbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Maintenance_type__select__c@suuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Maintenance_location__textfield__c@suuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+        "CHANGE_RENDERER_TYPE",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Move_date__datepicker__c@suuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Move_from__textfield__c@suuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+        "CHANGE_RENDERER_TYPE",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Move_to__textfield__c@suuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+        "CHANGE_RENDERER_TYPE",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Move_count__textfield__c@suuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+        "CHANGE_RENDERER_TYPE",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Who_is_moving___multiuserpicker__c@ssauuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Event_date__datepicker__c@suuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Event_location__textfield__c@suuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+        "CHANGE_RENDERER_TYPE",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Event_count__textfield__c@suuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+        "CHANGE_RENDERER_TYPE",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Date_of_First_Response__firstresponsedate__c@sssuuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Days_since_last_comment__dayslastcommented__c@sssuuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Domain_of_Assignee__assigneedomain__c@ssuuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Domain_of_Reporter__reporterdomain__c@ssuuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Global_Rank__gh_lexo_rank__c@suubbuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Last_commented_by_a_User_Flag__lastusercommented__c@sssssuuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Last_public_comment_date__LastCommentDate__c@sssuuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Message_Custom_Field__for_edit___message__c@sssjskuuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Number_of_attachments__attachments__c@ssuuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Number_of_comments__comments__c@ssuuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Participants_of_an_issue__participants__c@sssuuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Text_Field__read_only_asd__readonlyfield__c@ssjskuuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+        "CHANGE_RENDERER_TYPE",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Time_in_Status__timeinstatus__c@ssuuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.User_Property_Field____255_characters___userproperty__c@sssjxsskuuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Username_of_last_updater_or_commenter__lastupdaterorcommenter__c@sssssuuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Open_forms__forms_open_field_cftype__c@suubbbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Submitted_forms__forms_submitted_field_cftype__c@suubbbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Locked_forms__forms_locked_field_cftype__c@suubbbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Total_forms__forms_total_field_cftype__c@suubbbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = "customfield_11269"
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Category__jwm_category__c@uubuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.test__readonlyfield__c
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+        "CHANGE_RENDERER_TYPE",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.testReadOnly__readonlyfield__c
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+        "CHANGE_RENDERER_TYPE",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.my_test_SLA__sd_sla_field__c@ssuubbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Design__designcf__c
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.New_SLA__sd_sla_field__c@suubbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Vulnerability__vulnerabilitycf__c
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = "Security Vulnerability custom field"
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Project_overview_key__read_only_string_issue_field__c@ssuubbbbuu
+      allowedOperations = [
+        "ADD",
+        "CHANGE_REQUIRED",
+      ]
+      parameters = {
+        isRequired = false
+        description = "Key of Atlas project connected via Atlas for Jira Cloud"
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Project_overview_status__read_only_string_issue_field__c@ssuubbbbuu
+      allowedOperations = [
+        "ADD",
+        "CHANGE_REQUIRED",
+      ]
+      parameters = {
+        isRequired = false
+        description = "Status of Atlas project connected via Atlas for Jira Cloud"
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.AAA_test_custom_field__multicheckboxes__c@sssuuuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.ZGY_Assets_Objects__cmdb_object_cftype__c@ssuubbuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Ido_Assets_field__cmdb_object_cftype__c@ssuubbuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Simple_Assets2__cmdb_object_cftype__c@suubbuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.shay_assets_test__cmdb_object_cftype__c@ssuubbuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.shay_assets_objects_test__cmdb_object_cftype__c@sssuubbuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Sentiment__sd_sentiment__c@uubuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Goals__goals__c
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Batel_Assets_Objects__cmdb_object_cftype__c@ssuubbuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Batel3_Assets_Objects__cmdb_object_cftype__c@ssuubbuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Ido_Assets__cmdb_object_cftype__c@suubbuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Ido2_Assets__cmdb_object_cftype__c@suubbuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Ido3_Assets__cmdb_object_cftype__c@suubbuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.ido7Sand_assets__cmdb_object_cftype__c@suubbuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.batel_create_asset_field__cmdb_object_cftype__c@sssuubbuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Batel_new_asset_creation__cmdb_object_cftype__c@sssuubbuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.batel_testing__cmdb_object_cftype__c@suubbuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.DPJSM_Time_to_first_response__sd_sla_field__c@ssssuubbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.asset_foeld__cmdb_object_cftype__c@suubbuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Time_to_resolution4__sd_sla_field__c@ssuubbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Time_to_first_response2__sd_sla_field__c@sssuubbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.DP___Asset_Field_1__cmdb_object_cftype__c@sbsssuubbuu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.IdoConditionTest__sd_sla_field__c@uubbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.SLA1__sd_sla_field__c@uubbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.SLA2__sd_sla_field__c@uubbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Focus_Areas__focus_areas__c@suubuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Work_item_created_forms__proforma_forms_field_cftype__c@sssuubbbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.AgentSessions__agent_sessions__c@uubuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Incident_manager__userpicker__c@suuuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Status_pages__status_pages_entity_field_cftype__c@suubbbbuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = "dataclassification"
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Description__string
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "atlassian-wiki-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Due_date__date@suu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Environment__string
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = "For example operating system, software platform and/or hardware specifications (include as appropriate for the work item)."
+        rendererType = "atlassian-wiki-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Fix_versions__array@suu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Linked_Issues__array@suu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = "desc"
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Restrict_to__issuerestriction@suu
+      allowedOperations = [
+        "ADD",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = "desc"
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Issue_Type__issuetype@suu
+      allowedOperations = [
+        "ADD",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = true
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Labels__array
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Parent
+      allowedOperations = [
+        "ADD",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Priority__priority
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Reporter__user
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Resolution__resolution
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Security_Level__securitylevel@suu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Summary__string
+      allowedOperations = [
+        "ADD",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = true
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Time_tracking__timetracking@suu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = '''
+An estimate of how much work remains until this issue will be resolved.
+The format of this is ' *w *d *h *m ' (representing weeks, days, hours and minutes - where * can be any number).
+Examples: 4d, 5h 30m, 60m and 3w.
+'''
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Affects_versions__array@suu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = ""
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
+      fieldId = jira.Field.instance.Log_Work__array@suu
+      allowedOperations = [
+        "ADD",
+        "REMOVE",
+        "CHANGE_REQUIRED",
+        "CHANGE_DESCRIPTION",
+      ]
+      parameters = {
+        isRequired = false
+        description = "Allows work to be logged whilst creating, editing or transitioning issues."
+        rendererType = "atlassian-wiki-renderer"
+      }
+    },
+  ]
+}

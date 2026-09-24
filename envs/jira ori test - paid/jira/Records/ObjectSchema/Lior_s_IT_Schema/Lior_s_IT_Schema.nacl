@@ -1,0 +1,14 @@
+jira.ObjectSchema Lior_s_IT_Schema@tss {
+  name = "Lior's IT Schema"
+  displayName = "Lior's IT Schema"
+  objectSchemaKey = "LNIT"
+  description = "No Desc"
+  status = "Ok"
+  crossSchemaReferencingAllowed = false
+  properties = {
+    quickCreateObjects = true
+    allowOtherObjectSchema = false
+    validateQuickCreate = true
+  }
+  _alias = "Lior's IT Schema"
+}

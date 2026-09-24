@@ -1,0 +1,4 @@
+jira.ProjectRole POG_admin@s {
+  name = "POG admin"
+  description = "Repro for INCIDENT-43094"
+}

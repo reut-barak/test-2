@@ -1,0 +1,11 @@
+jira.ObjectTypeOrder II_restored_at_202403211012_Hardware_Assets_childOrder@uuuusu {
+  objectTypes = [
+    jira.ObjectType.instance.II_restored_at_202403211012_Hardware_Assets_uuuus_Laptops@uuuuumu,
+    jira.ObjectType.instance.II_restored_at_202403211012_Hardware_Assets_uuuus_Printers@uuuuumu,
+    jira.ObjectType.instance.II_restored_at_202403211012_Hardware_Assets_uuuus_Servers@uuuuumu,
+    jira.ObjectType.instance.II_restored_at_202403211012_Hardware_Assets_uuuus_Phones@uuuuumu,
+  ]
+  _parent = [
+    jira.ObjectType.instance.II_restored_at_202403211012_Hardware_Assets@uuuus,
+  ]
+}

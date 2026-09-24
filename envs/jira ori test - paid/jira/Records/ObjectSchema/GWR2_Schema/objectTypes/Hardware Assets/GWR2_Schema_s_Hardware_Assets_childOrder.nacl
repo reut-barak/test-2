@@ -1,0 +1,11 @@
+jira.ObjectTypeOrder GWR2_Schema_s_Hardware_Assets_childOrder@umusu {
+  objectTypes = [
+    jira.ObjectType.instance.GWR2_Schema_s_Hardware_Assets_umus_Phones@uuuumu,
+    jira.ObjectType.instance.GWR2_Schema_s_Hardware_Assets_umus_Laptops@uuuumu,
+    jira.ObjectType.instance.GWR2_Schema_s_Hardware_Assets_umus_Servers@uuuumu,
+    jira.ObjectType.instance.GWR2_Schema_s_Hardware_Assets_umus_Printers@uuuumu,
+  ]
+  _parent = [
+    jira.ObjectType.instance.GWR2_Schema_s_Hardware_Assets@umus,
+  ]
+}

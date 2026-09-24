@@ -1,0 +1,4 @@
+jira.IssueTypeScheme EmptyScheme {
+  name = "EmptyScheme"
+  description = ""
+}

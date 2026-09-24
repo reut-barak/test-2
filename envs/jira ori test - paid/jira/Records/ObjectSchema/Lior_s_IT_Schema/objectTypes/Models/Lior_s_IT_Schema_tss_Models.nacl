@@ -1,0 +1,16 @@
+jira.ObjectType Lior_s_IT_Schema_tss_Models@uuumu {
+  name = "Models"
+  displayName = "Models"
+  type = 0
+  inherited = false
+  abstractObjectType = true
+  parentObjectTypeInherited = false
+  schemaLabel = "Lior's IT Schema"
+  schemaDisplayLabel = "Lior's IT Schema"
+  iconId = "73"
+  parentObjectTypeId = jira.ObjectSchema.instance.Lior_s_IT_Schema@tss
+  _parent = [
+    jira.ObjectSchema.instance.Lior_s_IT_Schema@tss,
+  ]
+  _alias = "Models"
+}

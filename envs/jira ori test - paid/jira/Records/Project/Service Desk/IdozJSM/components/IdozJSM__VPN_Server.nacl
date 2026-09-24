@@ -1,0 +1,9 @@
+jira.ProjectComponent IdozJSM__VPN_Server@uus {
+  description = "Created by Jira Service Management"
+  assigneeType = "PROJECT_DEFAULT"
+  name = "VPN Server"
+  _parent = [
+    jira.Project.instance.IdozJSM,
+  ]
+  _alias = "IdozJSM:VPN Server"
+}

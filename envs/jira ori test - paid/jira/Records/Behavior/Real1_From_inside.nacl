@@ -1,0 +1,70 @@
+jira.Behavior Real1_From_inside@s {
+  description = "5"
+  name = "Real1 From inside"
+  enabled = true
+  config = [
+    {
+      event = [
+        "ONLOAD",
+        "ONCHANGE",
+      ]
+      fieldName = ""
+      javascript = file(
+        "jira/Behavior/Real1_From_inside.s.config.0.javascript.txt",
+        "utf-8",
+      )
+      typescript = file(
+        "jira/Behavior/Real1_From_inside.s.config.0.typescript.txt",
+        "utf-8",
+      )
+      affectedFields = [
+        jira.Field.instance.Description__string,
+        jira.Field.instance.Summary__string,
+        jira.Field.instance.Priority__priority,
+        jira.Field.instance.Assignee__user,
+        jira.Field.instance.Reporter__user,
+      ]
+    },
+    {
+      event = [
+        "ONLOAD",
+      ]
+      fieldName = ""
+      javascript = file(
+        "jira/Behavior/Real1_From_inside.s.config.1.javascript.txt",
+        "utf-8",
+      )
+      typescript = file(
+        "jira/Behavior/Real1_From_inside.s.config.1.typescript.txt",
+        "utf-8",
+      )
+      affectedFields = [
+        jira.Field.instance.Description__string,
+      ]
+      viewTypes = [
+        "GIC",
+      ]
+    },
+    {
+      event = [
+        "ONLOAD",
+      ]
+      fieldName = ""
+      javascript = file(
+        "jira/Behavior/Real1_From_inside.s.config.2.javascript.txt",
+        "utf-8",
+      )
+      typescript = file(
+        "jira/Behavior/Real1_From_inside.s.config.2.typescript.txt",
+        "utf-8",
+      )
+      affectedFields = [
+        jira.Field.instance.Summary__string,
+      ]
+      viewTypes = [
+        "GIC",
+      ]
+    },
+  ]
+  product = "jira"
+}

@@ -1,0 +1,7 @@
+jira.IssueType ZGY_Issue_Type@s {
+  description = ""
+  name = "ZGY Issue Type"
+  untranslatedName = "ZGY Issue Type"
+  hierarchyLevel = 0
+  avatar = file("jira/IssueType/ZGY_Issue_Type.s.png")
+}

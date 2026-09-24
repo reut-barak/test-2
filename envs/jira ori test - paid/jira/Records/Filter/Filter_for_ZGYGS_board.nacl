@@ -1,0 +1,16 @@
+jira.Filter Filter_for_ZGYGS_board@s {
+  name = "Filter for ZGYGS board"
+  owner = {
+    id = "712020:11a50858-05fa-43e4-9732-565d3aaacc2d"
+    displayName = "Zalary Young"
+  }
+  jql = "${ jira.Field.instance.Project__project } = ${ jira.Project.instance.ZGY_Group_Scrum@s.key } ORDER BY ${ jira.Field.instance.Rank__gh_lexo_rank__c@uubbuu.name } ASC"
+  sharePermissions = [
+    {
+      type = "project"
+      project = {
+        id = jira.Project.instance.ZGY_Group_Scrum@s
+      }
+    },
+  ]
+}

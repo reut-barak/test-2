@@ -1,0 +1,83 @@
+jira.Automation shirLinkIssueAction {
+  name = "shirLinkIssueAction"
+  state = "ENABLED"
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "616e3f77e79ff6006f1eca7f"
+    displayName = "Shir Reifenberg"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.event.trigger:commented"
+    value = {
+      eventTypes = [
+      ]
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "CONDITION"
+      type = "jira.issue.condition"
+      value = {
+        selectedField = {
+          type = "ID"
+          value = jira.Field.instance.Priority__priority
+        }
+        selectedFieldType = "priority"
+        comparison = "GREATER_THAN"
+        compareFieldValue = {
+          type = "ID"
+          value = jira.Priority.instance.Highest
+          multiValue = false
+        }
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.issue.link"
+      value = {
+        linkType = jira.IssueLinkType.instance.Post_Incident_Reviews@bs
+        issue = {
+          type = "COPY"
+          value = "trigger"
+        }
+        linkTypeDirection = "outward"
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  labels = [
+    jira.AutomationLabel.instance.jqlRules,
+    jira.AutomationLabel.instance.selectedFieldReference,
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "9bbb04f46e21ed1fc45a926c231259ef18ae8896f050c779548eca159baf44f5"
+  }
+  isAgentic = false
+  _alias = "shirLinkIssueAction"
+}

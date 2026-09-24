@@ -1,0 +1,8 @@
+jira.ObjectTypeOrder Icons_childOrder {
+  objectTypes = [
+    jira.ObjectType.instance.Icons_main_icon@us,
+  ]
+  _parent = [
+    jira.ObjectSchema.instance.Icons,
+  ]
+}

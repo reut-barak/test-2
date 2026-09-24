@@ -1,0 +1,253 @@
+jira.Automation DP___Smart_Values@sbss {
+  name = "DP - Smart Values"
+  state = "ENABLED"
+  description = ""
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "6205b3c7d362410069133701"
+    displayName = "Dan Putman"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.event.trigger:created"
+    value = {
+      eventKey = "jira:issue_created"
+      issueEvent = "issue_created"
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "CONDITION"
+      type = "jira.comparator.condition"
+      value = {
+        first = "{{issue.${ jira.Field.instance.DP___Date__datetime__c@sbsuuuu }.hours}}"
+        second = "12"
+        operator = "EQUALS"
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "CONDITION"
+      type = "jira.comparator.condition"
+      value = {
+        first = "{{issue.${ jira.Field.instance.DP___Date__datetime__c@sbsuuuu }.diff(issue.duedate).prettyPrint}}"
+        second = "something"
+        operator = "EQUALS"
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.issue.edit"
+      value = {
+        operations = [
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Due_date__date@suu
+            }
+            fieldType = "duedate"
+            type = "SET"
+            rawValue = "{{issue.${ jira.Field.instance.DP___Date__datetime__c@sbsuuuu }.diff(issue.duedate).prettyPrint}}"
+          },
+        ]
+        sendNotifications = true
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.issue.edit"
+      value = {
+        operations = [
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Description__string
+            }
+            fieldType = "description"
+            type = "SET"
+            rawValue = "{{issue.${ jira.Field.instance.DP___Date__datetime__c@sbsuuuu }.hours}}"
+          },
+        ]
+        sendNotifications = true
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "CONDITION"
+      type = "jira.issue.condition"
+      value = {
+        selectedField = {
+          type = "ID"
+          value = jira.Field.instance.Status__status
+        }
+        selectedFieldType = "status"
+        comparison = "ONE_OF"
+        compareFieldValue = {
+          type = "NAME"
+          multiValue = true
+          values = [
+            jira.Status.instance.in_staging@s.name,
+            jira.Status.instance.in_progress@s.name,
+            jira.Status.instance.resolved.name,
+          ]
+        }
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.issue.edit"
+      value = {
+        operations = [
+          {
+            field = {
+              type = "NAME"
+              value = jira.Field.instance.Batel3_Assets_Objects__cmdb_object_cftype__c@ssuubbuu.name
+            }
+            fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+            type = "SET"
+            rawValue = "test"
+          },
+          {
+            field = {
+              type = "NAME"
+              value = jira.Field.instance.Batel44_Assets_Objects__cmdb_object_cftype__c@ssuubbuu.name
+            }
+            fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+            type = "SET"
+            rawValue = "testtest"
+          },
+        ]
+        sendNotifications = true
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "BRANCH"
+      type = "jira.issue.related"
+      value = {
+        relatedType = "current"
+        jql = ""
+        linkTypes = [
+        ]
+        onlyUpdatedIssues = false
+        similarityLimit = 40
+        compareValue = 0
+      }
+      conditions = [
+      ]
+      children = [
+        {
+          component = "ACTION"
+          type = "jira.issue.edit"
+          value = {
+            operations = [
+              {
+                field = {
+                  type = "ID"
+                  value = jira.Field.instance.Assignee__user
+                }
+                fieldType = "assignee"
+                type = "SET"
+                value = {
+                  type = "CLEAR"
+                  value = "clear"
+                }
+              },
+              {
+                field = {
+                  type = "NAME"
+                  value = "CustomField"
+                }
+                fieldType = "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+                type = "SET"
+                rawValue = "{{issue.${ jira.Field.instance.DP___Date__datetime__c@sbsuuuu }.diff(issue.duedate).prettyPrint}}"
+              },
+            ]
+            sendNotifications = true
+          }
+          conditions = [
+          ]
+          children = [
+          ]
+        },
+        {
+          component = "CONDITION"
+          type = "jira.comparator.condition"
+          value = {
+            first = "{{issue.${ jira.Field.instance.Priority__priority }.diff(issue.duedate)}}"
+            second = "10"
+            operator = "GREATER_THAN"
+          }
+          conditions = [
+          ]
+          children = [
+          ]
+        },
+        {
+          component = "ACTION"
+          type = "jira.issue.transition"
+          value = {
+            operations = [
+            ]
+            sendNotifications = true
+            destinationStatus = {
+              type = "COPY"
+              value = "trigger"
+            }
+            transitionMatch = ""
+          }
+          conditions = [
+          ]
+          children = [
+          ]
+        },
+      ]
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "9ca492900ecec8d618ebec7f2480ddbe560ee08ed9bffb91578caeb926bab57d"
+  }
+  isAgentic = false
+  _alias = "DP - Smart Values"
+}

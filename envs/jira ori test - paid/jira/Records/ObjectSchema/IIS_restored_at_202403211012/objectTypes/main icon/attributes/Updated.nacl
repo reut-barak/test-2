@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute IIS_restored_at_202403211012_main_icon_uuuus_Updated@uuuuumu {
+  editable = false
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 1
+  name = "Updated"
+  displayName = "Updated"
+  objectType = jira.ObjectType.instance.IIS_restored_at_202403211012_main_icon@uuuus
+  options = ""
+  pendingCreation = false
+  removable = false
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 6
+  _alias = "Updated"
+}

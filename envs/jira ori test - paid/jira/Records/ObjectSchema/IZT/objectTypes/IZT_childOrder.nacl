@@ -1,0 +1,8 @@
+jira.ObjectTypeOrder IZT_childOrder {
+  objectTypes = [
+    jira.ObjectType.instance.IZT_Models,
+  ]
+  _parent = [
+    jira.ObjectSchema.instance.IZT,
+  ]
+}

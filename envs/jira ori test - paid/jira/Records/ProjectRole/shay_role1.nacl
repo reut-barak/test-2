@@ -1,0 +1,4 @@
+jira.ProjectRole shay_role1@s {
+  name = "shay role1"
+  description = "ff"
+}

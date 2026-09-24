@@ -1,0 +1,16 @@
+jira.ObjectType IZ13_Models_Software_Models@uus {
+  name = "Software Models"
+  displayName = "Software Models"
+  type = 0
+  parentObjectTypeId = jira.ObjectType.instance.IZ13_Models
+  inherited = false
+  abstractObjectType = false
+  parentObjectTypeInherited = false
+  schemaLabel = "IZ13"
+  schemaDisplayLabel = "IZ13"
+  iconId = "73"
+  _parent = [
+    jira.ObjectSchema.instance.IZ13,
+  ]
+  _alias = "Software Models"
+}

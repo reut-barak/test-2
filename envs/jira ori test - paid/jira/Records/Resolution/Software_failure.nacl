@@ -1,0 +1,4 @@
+jira.Resolution Software_failure@s {
+  description = ""
+  name = "Software failure"
+}

@@ -1,0 +1,9 @@
+jira.ProjectComponent ITSM_sample_space_s__Public_Website@uumuus {
+  name = "Public Website"
+  description = "Created by Jira Service Management"
+  assigneeType = "PROJECT_DEFAULT"
+  _parent = [
+    jira.Project.instance.ITSM_sample_space@s,
+  ]
+  _alias = "ITSM sample space:Public Website"
+}

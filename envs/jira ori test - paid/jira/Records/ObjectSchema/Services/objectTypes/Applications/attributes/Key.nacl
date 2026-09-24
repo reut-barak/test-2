@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute Services_Applications_Key {
+  editable = false
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 1
+  name = "Key"
+  displayName = "Key"
+  objectType = jira.ObjectType.instance.Services_Applications
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 0
+  _alias = "Key"
+}

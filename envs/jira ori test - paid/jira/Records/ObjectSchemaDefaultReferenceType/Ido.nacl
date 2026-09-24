@@ -1,0 +1,7 @@
+jira.ObjectSchemaDefaultReferenceType Ido {
+  name = "Ido"
+  displayName = "Ido"
+  description = "ido amit"
+  color = "8777D9"
+  removable = true
+}

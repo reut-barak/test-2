@@ -1,0 +1,4 @@
+jira.ObjectTypeLabelAttribute automationAdd_Role_label_attribute {
+  labelAttribute = jira.ObjectTypeAttribute.instance.automationAdd_Role_Name
+  objectType = jira.ObjectType.instance.automationAdd_Role
+}

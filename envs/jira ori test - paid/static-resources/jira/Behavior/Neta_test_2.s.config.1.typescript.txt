@@ -1,0 +1,7 @@
+/* 
+* Note: You should run this script by selecting "On load" in the check box above. 
+* Note: Only run this example on the Create View as it is not possible on the Issue View.
+* Make sure to change the summary field in your script if you are affecting a different field. 
+*/
+
+getFieldById("summary").setDescription("Include invoice number in your issue summary 222");

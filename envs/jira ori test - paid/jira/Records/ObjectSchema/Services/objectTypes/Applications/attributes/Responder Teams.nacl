@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute Services_Applications_Responder_Teams@uus {
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 100
+  minimumCardinality = 0
+  name = "Responder Teams"
+  displayName = "Responder Teams"
+  objectType = jira.ObjectType.instance.Services_Applications
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 9
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  _alias = "Responder Teams"
+}

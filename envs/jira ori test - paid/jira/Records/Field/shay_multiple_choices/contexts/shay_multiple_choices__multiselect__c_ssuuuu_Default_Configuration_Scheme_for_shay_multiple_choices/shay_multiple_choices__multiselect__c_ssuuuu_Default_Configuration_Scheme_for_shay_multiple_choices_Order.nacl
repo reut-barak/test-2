@@ -1,0 +1,10 @@
+jira.FieldContextOptionsOrder shay_multiple_choices__multiselect__c_ssuuuu_Default_Configuration_Scheme_for_shay_multiple_choices_order_child@uuuuuumussssssuu {
+  options = [
+    jira.CustomFieldContextOption.instance.shay_multiple_choices__multiselect__c_ssuuuu_Default_Configuration_Scheme_for_shay_multiple_choices_a@uuuuuumussssssu,
+    jira.CustomFieldContextOption.instance.shay_multiple_choices__multiselect__c_ssuuuu_Default_Configuration_Scheme_for_shay_multiple_choices_b@uuuuuumussssssu,
+    jira.CustomFieldContextOption.instance.shay_multiple_choices__multiselect__c_ssuuuu_Default_Configuration_Scheme_for_shay_multiple_choices_c@uuuuuumussssssu,
+  ]
+  _parent = [
+    jira.CustomFieldContext.instance.shay_multiple_choices__multiselect__c_ssuuuu_Default_Configuration_Scheme_for_shay_multiple_choices@uuuuuumussssss,
+  ]
+}

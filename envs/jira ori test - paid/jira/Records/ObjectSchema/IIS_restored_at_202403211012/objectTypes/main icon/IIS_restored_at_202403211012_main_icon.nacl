@@ -1,0 +1,17 @@
+jira.ObjectType IIS_restored_at_202403211012_main_icon@uuuus {
+  name = "main icon"
+  displayName = "main icon"
+  type = 0
+  description = ""
+  inherited = false
+  abstractObjectType = false
+  parentObjectTypeInherited = false
+  schemaLabel = "IIS_restored_at_202403211012"
+  schemaDisplayLabel = "IIS_restored_at_202403211012"
+  iconId = jira.ObjectTypeIcon.instance.myAvatari
+  parentObjectTypeId = jira.ObjectSchema.instance.IIS_restored_at_202403211012
+  _parent = [
+    jira.ObjectSchema.instance.IIS_restored_at_202403211012,
+  ]
+  _alias = "main icon"
+}

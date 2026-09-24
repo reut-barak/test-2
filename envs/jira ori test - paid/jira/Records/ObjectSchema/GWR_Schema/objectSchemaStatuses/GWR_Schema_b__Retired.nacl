@@ -1,0 +1,10 @@
+jira.ObjectSchemaStatus GWR_Schema_b__Retired@umuu {
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:226"
+  name = "Retired"
+  displayName = "Retired"
+  category = 0
+  _parent = [
+    jira.ObjectSchema.instance.GWR_Schema@b,
+  ]
+  _alias = "GWR-Schema:Retired"
+}

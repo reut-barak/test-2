@@ -1,0 +1,24 @@
+jira.ObjectTypeAttribute DP___People_sbs_Department_uuumu_DP_Attribute@uuuuumuu {
+  description = "For DP testing"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "DP_Attribute"
+  displayName = "DP_Attribute"
+  objectType = jira.ObjectType.instance.DP___People_sbs_Department@uuumu
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 1
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  additionalValue = jira.ObjectSchemaReferenceType.instance.DP___People_sbs__Member_of@uuumuus
+  typeValue = jira.ObjectType.instance.DP___People_sbs_Employees@uuumu
+  _alias = "DP_Attribute"
+}

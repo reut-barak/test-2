@@ -1,0 +1,9 @@
+jira.ObjectTypeOrder All_Serial_Numbers_childOrder@ssu {
+  objectTypes = [
+    jira.ObjectType.instance.All_Serial_Numbers_s_Models@uumu,
+    jira.ObjectType.instance.All_Serial_Numbers_s_Hardware_Assets@uumus,
+  ]
+  _parent = [
+    jira.ObjectSchema.instance.All_Serial_Numbers@s,
+  ]
+}

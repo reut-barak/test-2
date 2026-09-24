@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute LNIT_restored_at_202403211012_Models_Hardware_Models_uuuuus_Hardware_Assets_uuuuuumus_Support_Group@uuuuuuuuumus {
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Support Group"
+  displayName = "Support Group"
+  objectType = jira.ObjectType.instance.LNIT_restored_at_202403211012_Models_Hardware_Models_uuuuus_Hardware_Assets@uuuuuumus
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 0
+  _alias = "Support Group"
+}

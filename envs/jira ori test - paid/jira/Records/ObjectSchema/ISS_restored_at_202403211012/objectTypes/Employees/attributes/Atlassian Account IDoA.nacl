@@ -1,0 +1,22 @@
+jira.ObjectTypeAttribute ISS_restored_at_202403211012_Employees_Atlassian_Account_IDoA@uuuuuss {
+  description = "User"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Atlassian Account IDoA"
+  displayName = "Atlassian Account IDoA"
+  objectType = jira.ObjectType.instance.ISS_restored_at_202403211012_Employees
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 2
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  _alias = "Atlassian Account IDoA"
+}

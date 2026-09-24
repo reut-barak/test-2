@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute ISS_restored_at_202403211012_Employees_IdoA_idoA1_Updated {
+  editable = false
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 1
+  name = "Updated"
+  displayName = "Updated"
+  objectType = jira.ObjectType.instance.ISS_restored_at_202403211012_Employees_IdoA_idoA1
+  options = ""
+  pendingCreation = false
+  removable = false
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 6
+  _alias = "Updated"
+}

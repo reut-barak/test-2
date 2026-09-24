@@ -1,8 +1,8 @@
 envs {
   envsCloud = [
     {
-      uuid = "7795f9d8-cb93-482e-b843-91b029be79ef"
-      folderName = "Netsuite Dev 3"
+      uuid = "8e7d448e-0710-4e05-9b6f-545efcd2b1f7"
+      folderName = "jira ori test - paid"
     },
   ]
 }

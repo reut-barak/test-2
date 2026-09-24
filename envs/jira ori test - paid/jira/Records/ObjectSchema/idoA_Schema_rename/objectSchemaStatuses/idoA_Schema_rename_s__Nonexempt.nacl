@@ -1,0 +1,10 @@
+jira.ObjectSchemaStatus idoA_Schema_rename_s__Nonexempt@uumuu {
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:26"
+  name = "Nonexempt"
+  displayName = "Nonexempt"
+  category = 2
+  _parent = [
+    jira.ObjectSchema.instance.idoA_Schema_rename@s,
+  ]
+  _alias = "idoA Schema rename:Nonexempt"
+}

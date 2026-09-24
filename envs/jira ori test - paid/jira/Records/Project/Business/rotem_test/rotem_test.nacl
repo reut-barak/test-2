@@ -1,0 +1,14 @@
+jira.Project rotem_test@b {
+  key = "RT"
+  description = ""
+  name = "rotem-test"
+  projectTypeKey = "business"
+  entityId = "437ecf12-eeee-4b5a-976a-261ad95bb018"
+  uuid = "437ecf12-eeee-4b5a-976a-261ad95bb018"
+  leadAccountId = {
+    id = "61d44bf59ee70a00685fa6b6"
+    displayName = "Testing salto"
+  }
+  assigneeType = "UNASSIGNED"
+  priorityScheme = jira.PriorityScheme.instance.Default_priority_scheme@s
+}

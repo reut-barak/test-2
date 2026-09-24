@@ -1,0 +1,14 @@
+jira.Field Team2__multiselect__c {
+  name = "Team2"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher"
+  areOptionsSupported = true
+  isOptionsCountOverLimit = false
+  translatedName = "Team2"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:multiselect"
+  contexts = [
+    jira.CustomFieldContext.instance.Team2__multiselect__c_Default_Configuration_Scheme_for_Team2@uuuuussss,
+  ]
+  _alias = "Team2"
+}

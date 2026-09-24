@@ -1,0 +1,9 @@
+jira.ObjectSchemaReferenceType All_Serial_Numbers_s__Assigned_to@uumuus {
+  name = "Assigned to"
+  displayName = "Assigned to"
+  color = "5243AA"
+  removable = false
+  _parent = [
+    jira.ObjectSchema.instance.All_Serial_Numbers@s,
+  ]
+}

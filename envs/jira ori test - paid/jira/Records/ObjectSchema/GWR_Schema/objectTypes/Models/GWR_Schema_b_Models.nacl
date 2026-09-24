@@ -1,0 +1,16 @@
+jira.ObjectType GWR_Schema_b_Models@umu {
+  name = "Models"
+  displayName = "Models"
+  type = 0
+  inherited = false
+  abstractObjectType = true
+  parentObjectTypeInherited = false
+  schemaLabel = "GWR-Schema"
+  schemaDisplayLabel = "GWR-Schema"
+  iconId = "73"
+  parentObjectTypeId = jira.ObjectSchema.instance.GWR_Schema@b
+  _parent = [
+    jira.ObjectSchema.instance.GWR_Schema@b,
+  ]
+  _alias = "Models"
+}

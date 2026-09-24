@@ -1,0 +1,14 @@
+jira.Field project_A_field__labels__c@bbuuuu {
+  name = "project-A-field"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:labelsearcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "project-A-field"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:labels"
+  contexts = [
+    jira.CustomFieldContext.instance.project_A_field__labels__c_bbuuuu_Default_Configuration_Scheme_for_project_A_field@uuuuuumussssbb,
+  ]
+  _alias = "project-A-field"
+}

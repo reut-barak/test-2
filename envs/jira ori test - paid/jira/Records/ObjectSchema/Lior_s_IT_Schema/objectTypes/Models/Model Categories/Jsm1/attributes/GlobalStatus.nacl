@@ -1,0 +1,25 @@
+jira.ObjectTypeAttribute Lior_s_IT_Schema_tss_Models_uuumu_Model_Categories_uuuuumus_Jsm1_uuuuuuuumu_GlobalStatus@uuuuuuuuuumu {
+  description = ""
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "GlobalStatus"
+  displayName = "GlobalStatus"
+  objectType = jira.ObjectType.instance.Lior_s_IT_Schema_tss_Models_uuumu_Model_Categories_uuuuumus_Jsm1@uuuuuuuumu
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 7
+  typeValueMulti = [
+    jira.ObjectSchemaGlobalStatus.instance.zombiezombie,
+  ]
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  _alias = "GlobalStatus"
+}

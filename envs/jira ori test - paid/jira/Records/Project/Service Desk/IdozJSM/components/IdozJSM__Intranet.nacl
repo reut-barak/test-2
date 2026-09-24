@@ -1,0 +1,9 @@
+jira.ProjectComponent IdozJSM__Intranet {
+  description = "Created by Jira Service Management"
+  assigneeType = "PROJECT_DEFAULT"
+  name = "Intranet"
+  _parent = [
+    jira.Project.instance.IdozJSM,
+  ]
+  _alias = "IdozJSM:Intranet"
+}

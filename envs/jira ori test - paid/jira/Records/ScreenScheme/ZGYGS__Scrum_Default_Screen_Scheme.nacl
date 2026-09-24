@@ -1,0 +1,7 @@
+jira.ScreenScheme ZGYGS__Scrum_Default_Screen_Scheme@fssss {
+  name = "ZGYGS: Scrum Default Screen Scheme"
+  description = ""
+  screens = {
+    default = jira.Screen.instance.ZGYGS__Scrum_Default_Issue_Screen@fssss
+  }
+}

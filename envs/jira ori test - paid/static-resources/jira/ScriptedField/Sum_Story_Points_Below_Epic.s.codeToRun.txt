@@ -1,0 +1,41 @@
+/*
+* Note: This field should be configured to use a 'Number' return type.
+* Get the story points for all story issues in the Epic and display a sum of them on the parent Epic issue.
+* This example shows how you can get all of the story issues in the Epic and display a sum of them on the parent Epic issue.
+*/
+
+// Check if the issue is an Epic issue
+    if (issue.fields.issuetype.name == "Epic") {
+        
+    // Get the field ids
+        def fields = get('/rest/api/2/field')
+            .asObject(List)
+            .body as List<Map>
+                        
+            
+    // Get the Story Points custom field to use in the script
+        def storyPointsField = fields.find { it.name == "Story Points" }?.id
+        
+    // Handle if the Story Points Field does not exist
+        if (storyPointsField == null) {
+            logger.info("Story Points field does not exist");
+                return;
+            }
+            
+    // Get all issues below the the Epic Issue
+        def allStories = get("/rest/agile/1.0/epic/${issue.key}/issue")
+    // The JQL query to return all stories, modify this if you wish to return other issue types inside of the epic as well.
+            .queryString("jql", "parentEpic =${issue.key} and issuetype = 'Story'")
+            .queryString("fields", "parent,$storyPointsField")
+            .asObject(Map)
+            .body
+            .issues as List<Map>
+            
+    // Sum the Story Points for all the Story issues returned
+        def estimate = allStories.collect { Map story ->
+            story.fields[storyPointsField] ?: 0
+        }.sum()
+        
+    // return the estimate value if it is not null and return 0 if it has no value
+        return estimate ?: 0;
+    }

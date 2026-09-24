@@ -1,0 +1,17 @@
+def fields = get('/rest/api/2/field')
+        .asObject(List)
+        .body as List<Map>
+
+def customFieldId = fields.find { it.name == 'TextFieldB' }.id as String
+def customFieldValue = (issue.fields[customFieldId] as Map)?.value
+
+"""Dear ${issue.fields.assignee?.displayName},
+
+The ${issue.fields.issuetype.name} ${issue.key} with priority ${issue.fields.priority?.name} has been assigned to you.
+
+Description: ${issue.fields.description}
+
+Custom field value: ${customFieldValue}
+
+Regards,
+${issue.fields.reporter?.displayName}"""

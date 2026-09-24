@@ -1,0 +1,9 @@
+jira.ProjectComponent Sagi_s_JSM_ts__Printers@uumuu {
+  description = "Created by Jira Service Management"
+  assigneeType = "PROJECT_DEFAULT"
+  name = "Printers"
+  _parent = [
+    jira.Project.instance.Sagi_s_JSM@ts,
+  ]
+  _alias = "Sagi's JSM:Printers"
+}

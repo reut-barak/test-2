@@ -1,0 +1,7 @@
+jira.Priority _Crucial_@hi {
+  statusColor = "#ff1234"
+  description = "urgentttt"
+  iconUrl = "/images/icons/priorities/trivial_new.svg"
+  name = "[Crucial]"
+  _alias = "[Crucial]"
+}

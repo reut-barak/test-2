@@ -1,0 +1,26 @@
+jira.ObjectTypeAttribute People_Employees_Employee_Status@uus {
+  description = "Employment status of employee"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Employee Status"
+  displayName = "Employee Status"
+  objectType = jira.ObjectType.instance.People_Employees
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 7
+  typeValueMulti = [
+    jira.ObjectSchemaStatus.instance.People__Exempt,
+    jira.ObjectSchemaStatus.instance.People__Nonexempt,
+  ]
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  _alias = "Employee Status"
+}

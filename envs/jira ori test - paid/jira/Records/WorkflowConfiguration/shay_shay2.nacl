@@ -1,0 +1,115 @@
+jira.WorkflowConfiguration shay_shay2@s {
+  scope = {
+    type = "GLOBAL"
+  }
+  name = "shay shay2"
+  description = ""
+  isEditable = true
+  statuses = [
+    {
+      statusReference = jira.Status.instance.approved
+      layout = {
+        x = 351.068359375
+        y = 206.29999877929689
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      deprecated = false
+      name = "Approved"
+    },
+    {
+      statusReference = jira.Status.instance.authorize
+      layout = {
+        x = 575.91796875
+        y = 206.29999877929689
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      deprecated = false
+      name = "Authorize"
+    },
+    {
+      statusReference = jira.Status.instance.open
+      layout = {
+        x = 592.41015625
+        y = 117.4
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      deprecated = false
+      name = "Open"
+    },
+  ]
+  transitions = {
+    Create__From__none__Initial@fffsff = {
+      type = "INITIAL"
+      toStatusReference = jira.Status.instance.open
+      name = "Create"
+      description = "change"
+      validators = [
+        {
+          ruleKey = "system:check-permission-validator"
+          parameters = {
+            permissionKey = "CREATE_ISSUES"
+          }
+        },
+      ]
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    }
+    b__From__Authorize__Directed@fffsff = {
+      type = "DIRECTED"
+      toStatusReference = jira.Status.instance.approved
+      links = [
+        {
+          fromStatusReference = jira.Status.instance.authorize
+          fromPort = 7
+          toPort = 3
+        },
+      ]
+      name = "b"
+      description = ""
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    }
+    a__From__Open__Directed@fffsff = {
+      type = "DIRECTED"
+      toStatusReference = jira.Status.instance.authorize
+      links = [
+        {
+          fromStatusReference = jira.Status.instance.open
+          fromPort = 5
+          toPort = 1
+        },
+      ]
+      name = "a"
+      description = ""
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    }
+  }
+}

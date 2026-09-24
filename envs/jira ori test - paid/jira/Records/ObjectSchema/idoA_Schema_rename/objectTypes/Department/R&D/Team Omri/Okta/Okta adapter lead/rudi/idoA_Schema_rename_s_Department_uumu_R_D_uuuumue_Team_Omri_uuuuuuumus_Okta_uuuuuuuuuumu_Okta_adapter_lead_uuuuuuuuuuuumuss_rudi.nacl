@@ -1,0 +1,17 @@
+jira.ObjectType idoA_Schema_rename_s_Department_uumu_R_D_uuuumue_Team_Omri_uuuuuuumus_Okta_uuuuuuuuuumu_Okta_adapter_lead_uuuuuuuuuuuumuss_rudi@uuuuuuuuuuuuuuuumu {
+  name = "rudi"
+  displayName = "rudi"
+  type = 0
+  description = ""
+  parentObjectTypeId = jira.ObjectType.instance.idoA_Schema_rename_s_Department_uumu_R_D_uuuumue_Team_Omri_uuuuuuumus_Okta_uuuuuuuuuumu_Okta_adapter_lead@uuuuuuuuuuuumuss
+  inherited = false
+  abstractObjectType = false
+  parentObjectTypeInherited = false
+  schemaLabel = "idoA Schema rename"
+  schemaDisplayLabel = "idoA Schema rename"
+  iconId = "85"
+  _parent = [
+    jira.ObjectSchema.instance.idoA_Schema_rename@s,
+  ]
+  _alias = "rudi"
+}

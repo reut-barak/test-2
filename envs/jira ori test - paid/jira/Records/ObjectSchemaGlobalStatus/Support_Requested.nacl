@@ -1,0 +1,8 @@
+jira.ObjectSchemaGlobalStatus Support_Requested@s {
+  workspaceId = "68d020c3-b88e-47dc-9231-452f7dc63521"
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:7"
+  name = "Support Requested"
+  displayName = "Support Requested"
+  description = ""
+  category = 2
+}

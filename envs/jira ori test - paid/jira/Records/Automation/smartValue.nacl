@@ -1,0 +1,58 @@
+jira.Automation smartValue {
+  name = "smartValue"
+  state = "ENABLED"
+  description = "aaaa"
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "5fa91999b2633d0076583a61"
+    displayName = "Alon Stern"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.manual.trigger.issue"
+    value = {
+      inputFromUsers = false
+      inputPrompts = [
+      ]
+      groups = [
+        jira.Group.instance.administrators,
+      ]
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      type = "codebarrel.action.log"
+      conditions = [
+      ]
+      children = [
+      ]
+      rawValue = "Manual log {{bbb}} {{{}}}"
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "ecd3b4862d3db86658770aebd5681703f2d47db644e853d4e76f704e10694a32"
+  }
+  isAgentic = false
+  _alias = "smartValue"
+}

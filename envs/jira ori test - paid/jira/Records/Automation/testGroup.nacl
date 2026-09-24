@@ -1,0 +1,90 @@
+jira.Automation testGroup {
+  name = "testGroup"
+  state = "ENABLED"
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "5fa91999b2633d0076583a61"
+    displayName = "Alon Stern"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.event.trigger:commented"
+    value = {
+      eventTypes = [
+      ]
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "CONDITION"
+      type = "jira.user.condition"
+      value = {
+        conditions = [
+          {
+            field = jira.Field.instance.Reporter__user
+            check = "IN_GROUP"
+            criteria = [
+              {
+                type = "GROUP_ID"
+                value = jira.Group.instance.administrators
+              },
+              {
+                type = "GROUP_ID"
+                value = jira.Group.instance.trusted_users@b
+              },
+            ]
+          },
+        ]
+        operator = "OR"
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.issue.assign"
+      value = {
+        assignType = "SPECIFY_USER"
+        assignee = {
+          type = "SMART"
+          value = "{{initiator}}"
+        }
+        excludedUsers = [
+        ]
+        userList = [
+        ]
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "0ec47fc340115e08980370f19b6b1415a76063fa16c9147dff132e765b6a3fa7"
+  }
+  isAgentic = false
+  _alias = "testGroup"
+}

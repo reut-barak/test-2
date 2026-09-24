@@ -1,0 +1,14 @@
+jira.CustomFieldContextOption Select_List__multiple_choices___multiselect__c_ssjskuuuu_Default_Configuration_Scheme_for_Select_List__multiple_choices__aaa@uuuuuuuuumussssssjsku {
+  value = "aaa"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Select_List__multiple_choices___multiselect__c_ssjskuuuu_Default_Configuration_Scheme_for_Select_List__multiple_choices_@uuuuuuuuumussssssjsk,
+  ]
+}
+jira.CustomFieldContextOption Select_List__multiple_choices___multiselect__c_ssjskuuuu_Default_Configuration_Scheme_for_Select_List__multiple_choices__bbb@uuuuuuuuumussssssjsku {
+  value = "bbb"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Select_List__multiple_choices___multiselect__c_ssjskuuuu_Default_Configuration_Scheme_for_Select_List__multiple_choices_@uuuuuuuuumussssssjsk,
+  ]
+}

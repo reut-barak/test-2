@@ -1,0 +1,14 @@
+jira.Field shay_cascading_select__cascadingselect__c@ssuuuu {
+  name = "shay cascading select"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:cascadingselectsearcher"
+  areOptionsSupported = true
+  isOptionsCountOverLimit = false
+  translatedName = "shay cascading select"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:cascadingselect"
+  contexts = [
+    jira.CustomFieldContext.instance.shay_cascading_select__cascadingselect__c_ssuuuu_Default_Configuration_Scheme_for_shay_cascading_select@uuuuuumussssss,
+  ]
+  _alias = "shay cascading select"
+}

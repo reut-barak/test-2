@@ -1,0 +1,9 @@
+jira.ProjectComponent Salto__Solution_Engineering@uus {
+  name = "Solution Engineering"
+  description = "For scripts or other solutions that we build and are not part of the product"
+  assigneeType = "PROJECT_DEFAULT"
+  _parent = [
+    jira.Project.instance.Salto,
+  ]
+  _alias = "Salto:Solution Engineering"
+}

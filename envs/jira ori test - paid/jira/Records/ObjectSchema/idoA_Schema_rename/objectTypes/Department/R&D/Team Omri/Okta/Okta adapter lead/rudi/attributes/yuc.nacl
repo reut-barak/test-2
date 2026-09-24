@@ -1,0 +1,22 @@
+jira.ObjectTypeAttribute idoA_Schema_rename_s_Department_uumu_R_D_uuuumue_Team_Omri_uuuuuuumus_Okta_uuuuuuuuuumu_Okta_adapter_lead_uuuuuuuuuuuumuss_rudi_uuuuuuuuuuuuuuuumu_yuc@uuuuuuuuuuuuuuuuuumu {
+  description = ""
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "yuc"
+  displayName = "yuc"
+  objectType = jira.ObjectType.instance.idoA_Schema_rename_s_Department_uumu_R_D_uuuumue_Team_Omri_uuuuuuumus_Okta_uuuuuuuuuumu_Okta_adapter_lead_uuuuuuuuuuuumuss_rudi@uuuuuuuuuuuuuuuumu
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 3
+  _alias = "yuc"
+}

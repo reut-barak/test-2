@@ -1,0 +1,10 @@
+jira.FieldContextOptionsOrder shay_select_list__select__c_ssuuuu_Default_Configuration_Scheme_for_shay_select_list_order_child@uuuuuumussssssuu {
+  options = [
+    jira.CustomFieldContextOption.instance.shay_select_list__select__c_ssuuuu_Default_Configuration_Scheme_for_shay_select_list_a@uuuuuumussssssu,
+    jira.CustomFieldContextOption.instance.shay_select_list__select__c_ssuuuu_Default_Configuration_Scheme_for_shay_select_list_b@uuuuuumussssssu,
+    jira.CustomFieldContextOption.instance.shay_select_list__select__c_ssuuuu_Default_Configuration_Scheme_for_shay_select_list_c@uuuuuumussssssu,
+  ]
+  _parent = [
+    jira.CustomFieldContext.instance.shay_select_list__select__c_ssuuuu_Default_Configuration_Scheme_for_shay_select_list@uuuuuumussssss,
+  ]
+}

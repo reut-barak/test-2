@@ -1,0 +1,10 @@
+jira.ObjectSchemaStatus Lior_s_IT_Schema_tss__Retired@uuumuu {
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:11"
+  name = "Retired"
+  displayName = "Retired"
+  category = 0
+  _parent = [
+    jira.ObjectSchema.instance.Lior_s_IT_Schema@tss,
+  ]
+  _alias = "Lior's IT Schema:Retired"
+}

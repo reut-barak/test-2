@@ -1,0 +1,7 @@
+jira.CustomFieldContextOption testetst__multicheckboxes__c_Default_Configuration_Scheme_for_testetst_a@uuuuussssu {
+  value = "a"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.testetst__multicheckboxes__c_Default_Configuration_Scheme_for_testetst@uuuuussss,
+  ]
+}

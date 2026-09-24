@@ -1,0 +1,24 @@
+jira.ObjectTypeAttribute IZS_Hardware_Assets_us_Phones_uumu_gOne@uuuumu {
+  description = ""
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "gOne"
+  displayName = "gOne"
+  objectType = jira.ObjectType.instance.IZS_Hardware_Assets_us_Phones@uumu
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 1
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  additionalValue = jira.ObjectSchemaDefaultReferenceType.instance.g_Three@s
+  typeValue = jira.ObjectType.instance.IZS_Hardware_Assets_us_Phones@uumu
+  _alias = "gOne"
+}

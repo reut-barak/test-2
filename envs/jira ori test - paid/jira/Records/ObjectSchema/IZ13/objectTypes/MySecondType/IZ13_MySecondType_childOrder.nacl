@@ -1,0 +1,8 @@
+jira.ObjectTypeOrder IZ13_MySecondType_childOrder {
+  objectTypes = [
+    jira.ObjectType.instance.IZ13_MySecondType_BlaBla,
+  ]
+  _parent = [
+    jira.ObjectType.instance.IZ13_MySecondType,
+  ]
+}

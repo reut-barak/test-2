@@ -1,0 +1,11 @@
+jira.ObjectSchemaStatus Lior_s_IT_Schema_tss__Inactive@uuumuu {
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:8"
+  name = "Inactive"
+  displayName = "Inactive"
+  description = ""
+  category = 0
+  _parent = [
+    jira.ObjectSchema.instance.Lior_s_IT_Schema@tss,
+  ]
+  _alias = "Lior's IT Schema:Inactive"
+}

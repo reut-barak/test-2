@@ -1,0 +1,266 @@
+jira.ProjectRole atlassian_addons_project_access@b {
+  name = "atlassian-addons-project-access"
+  description = "A project role that represents Connect add-ons declaring a scope that requires more than read issue permissions"
+  actors = [
+    {
+      displayName = "Atlas for Jira Cloud"
+      type = "atlassian-user-role-actor"
+      actorUser = {
+        accountId = {
+          id = "630db2cd9796033b256bc349"
+          displayName = "Atlas for Jira Cloud"
+        }
+      }
+    },
+    {
+      displayName = "Atlassian Assist"
+      type = "atlassian-user-role-actor"
+      actorUser = {
+        accountId = {
+          id = "5cb4ae0e4b97ab11a18e00c7"
+          displayName = "Atlassian Assist"
+        }
+      }
+    },
+    {
+      displayName = "Automation for Jira"
+      type = "atlassian-user-role-actor"
+      actorUser = {
+        accountId = {
+          id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+          displayName = "Automation for Jira"
+        }
+      }
+    },
+    {
+      displayName = "Behaviours - ScriptRunner for Jira Cloud"
+      type = "atlassian-user-role-actor"
+      actorUser = {
+        accountId = {
+          id = "627e5f2798eae500689fee1b"
+          displayName = "Behaviours - ScriptRunner for Jira Cloud"
+        }
+      }
+    },
+    {
+      displayName = "Configuration Manager for Jira (CMJ)"
+      type = "atlassian-user-role-actor"
+      actorUser = {
+        accountId = {
+          id = "5ffe30c134847e006944f3f5"
+          displayName = "Configuration Manager for Jira (CMJ)"
+        }
+      }
+    },
+    {
+      displayName = "GitHub (production)"
+      type = "atlassian-user-role-actor"
+      actorUser = {
+        accountId = {
+          id = "5b69ff2b85ee4d3d958602b0"
+          displayName = "GitHub (production)"
+        }
+      }
+    },
+    {
+      displayName = "GitHub for Atlassian"
+      type = "atlassian-user-role-actor"
+      actorUser = {
+        accountId = {
+          id = "712020:be3b7824-c9c8-42f1-91bc-7d06aff2df14"
+          displayName = "GitHub for Atlassian"
+        }
+      }
+    },
+    {
+      displayName = "JSU Automation Suite for Jira Workflows"
+      type = "atlassian-user-role-actor"
+      actorUser = {
+        accountId = {
+          id = "5c93b4a191f5f92e0c896dee"
+          displayName = "JSU Automation Suite for Jira Workflows"
+        }
+      }
+    },
+    {
+      displayName = "Jenkins for Jira (Official)"
+      type = "atlassian-user-role-actor"
+      actorUser = {
+        accountId = {
+          id = "6201c60bc4e2c9006ae5c8e9"
+          displayName = "Jenkins for Jira (Official)"
+        }
+      }
+    },
+    {
+      displayName = "Jira Misc Workflow Extensions (JMWE)"
+      type = "atlassian-user-role-actor"
+      actorUser = {
+        accountId = {
+          id = "557058:472c64c9-2567-4213-839b-86bf21558300"
+          displayName = "Jira Misc Workflow Extensions (JMWE)"
+        }
+      }
+    },
+    {
+      displayName = "Jira Outlook"
+      type = "atlassian-user-role-actor"
+      actorUser = {
+        accountId = {
+          id = "5d53f3cbc6b9320d9ea5bdc2"
+          displayName = "Jira Outlook"
+        }
+      }
+    },
+    {
+      displayName = "Jira Service Management Widget"
+      type = "atlassian-user-role-actor"
+      actorUser = {
+        accountId = {
+          id = "557058:950f9f5b-3d6d-4e1d-954a-21367ae9ac75"
+          displayName = "Jira Service Management Widget"
+        }
+      }
+    },
+    {
+      displayName = "Jira Spreadsheets"
+      type = "atlassian-user-role-actor"
+      actorUser = {
+        accountId = {
+          id = "5cf112d31552030f1e3a5905"
+          displayName = "Jira Spreadsheets"
+        }
+      }
+    },
+    {
+      displayName = "Microsoft Teams for Jira Cloud"
+      type = "atlassian-user-role-actor"
+      actorUser = {
+        accountId = {
+          id = "60e5a86a471e61006a4c51fd"
+          displayName = "Microsoft Teams for Jira Cloud"
+        }
+      }
+    },
+    {
+      displayName = "PlanApply for Jira Cloud - Configuration Management"
+      type = "atlassian-user-role-actor"
+      actorUser = {
+        accountId = {
+          id = "712020:d018898a-83b7-4f18-8229-f234f5dc91fa"
+          displayName = "PlanApply for Jira Cloud - Configuration Management"
+        }
+      }
+    },
+    {
+      displayName = "Proforma Migrator"
+      type = "atlassian-user-role-actor"
+      actorUser = {
+        accountId = {
+          id = "63a22fb348b367d78a14c15b"
+          displayName = "Proforma Migrator"
+        }
+      }
+    },
+    {
+      displayName = "Revyz Configuration Manager for Jira"
+      type = "atlassian-user-role-actor"
+      actorUser = {
+        accountId = {
+          id = "712020:2b10dceb-03a0-4229-8c5a-22b9248455aa"
+          displayName = "Revyz Configuration Manager for Jira"
+        }
+      }
+    },
+    {
+      displayName = "Revyz Configuration Manager for Jira (Deploy, Sandbox)"
+      type = "atlassian-user-role-actor"
+      actorUser = {
+        accountId = {
+          id = "712020:b32c96b5-98f5-4fd2-a663-aaf0d1a0f03f"
+          displayName = "Revyz Configuration Manager for Jira (Deploy, Sandbox)"
+        }
+      }
+    },
+    {
+      displayName = "Rich Text Gadget for Jira"
+      type = "atlassian-user-role-actor"
+      actorUser = {
+        accountId = {
+          id = "712020:de2c49b4-40ef-4afc-aec1-1b17329d9a1e"
+          displayName = "Rich Text Gadget for Jira"
+        }
+      }
+    },
+    {
+      displayName = "ScriptRunner for Jira"
+      type = "atlassian-user-role-actor"
+      actorUser = {
+        accountId = {
+          id = "557058:d2e5bd5c-dc49-41eb-a6f0-5e01093666c1"
+          displayName = "ScriptRunner for Jira"
+        }
+      }
+    },
+    {
+      displayName = "Slack"
+      type = "atlassian-user-role-actor"
+      actorUser = {
+        accountId = {
+          id = "557058:0867a421-a9ee-4659-801a-bc0ee4a4487e"
+          displayName = "Slack"
+        }
+      }
+    },
+    {
+      displayName = "Statuspage for Jira"
+      type = "atlassian-user-role-actor"
+      actorUser = {
+        accountId = {
+          id = "5b6c7b3afbc68529c6c47967"
+          displayName = "Statuspage for Jira"
+        }
+      }
+    },
+    {
+      displayName = "System"
+      type = "atlassian-user-role-actor"
+      actorUser = {
+        accountId = {
+          id = "5dd64082af96bc0efbe55103"
+          displayName = "System"
+        }
+      }
+    },
+    {
+      displayName = "Trello"
+      type = "atlassian-user-role-actor"
+      actorUser = {
+        accountId = {
+          id = "557058:214cdd6a-ff93-4d8b-838b-62dfcf1a2a71"
+          displayName = "Trello"
+        }
+      }
+    },
+    {
+      displayName = "Who's Looking for Jira Cloud"
+      type = "atlassian-user-role-actor"
+      actorUser = {
+        accountId = {
+          id = "62034873d3624100691228dd"
+          displayName = "Who's Looking for Jira Cloud"
+        }
+      }
+    },
+    {
+      displayName = "Workflow Enhancer for Jira"
+      type = "atlassian-user-role-actor"
+      actorUser = {
+        accountId = {
+          id = "62d53246ed468633b40c3539"
+          displayName = "Workflow Enhancer for Jira"
+        }
+      }
+    },
+  ]
+}

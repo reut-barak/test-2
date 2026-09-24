@@ -1,0 +1,8 @@
+jira.FieldContextOptionsOrder Select_List__single_choice___select__c_ssjskuuuu_Default_Configuration_Scheme_for_Select_List__single_choice__order_child@uuuuuuuuumussssssjskuu {
+  options = [
+    jira.CustomFieldContextOption.instance.Select_List__single_choice___select__c_ssjskuuuu_Default_Configuration_Scheme_for_Select_List__single_choice__aaa@uuuuuuuuumussssssjsku,
+  ]
+  _parent = [
+    jira.CustomFieldContext.instance.Select_List__single_choice___select__c_ssjskuuuu_Default_Configuration_Scheme_for_Select_List__single_choice_@uuuuuuuuumussssssjsk,
+  ]
+}

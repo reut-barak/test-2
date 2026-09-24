@@ -1,0 +1,11 @@
+jira.ObjectSchemaStatus IZW__Ordered {
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:167"
+  name = "Ordered"
+  displayName = "Ordered"
+  description = "Asset is deployed but no longer in use"
+  category = 2
+  _parent = [
+    jira.ObjectSchema.instance.IZW,
+  ]
+  _alias = "IZW:Ordered"
+}

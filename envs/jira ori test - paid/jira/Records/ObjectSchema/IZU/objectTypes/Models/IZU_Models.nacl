@@ -1,0 +1,16 @@
+jira.ObjectType IZU_Models {
+  name = "Models"
+  displayName = "Models"
+  type = 0
+  inherited = false
+  abstractObjectType = true
+  parentObjectTypeInherited = false
+  schemaLabel = "IZU"
+  schemaDisplayLabel = "IZU"
+  iconId = "73"
+  parentObjectTypeId = jira.ObjectSchema.instance.IZU
+  _parent = [
+    jira.ObjectSchema.instance.IZU,
+  ]
+  _alias = "Models"
+}

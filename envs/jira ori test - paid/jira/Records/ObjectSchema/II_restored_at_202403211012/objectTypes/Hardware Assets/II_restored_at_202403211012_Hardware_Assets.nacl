@@ -1,0 +1,16 @@
+jira.ObjectType II_restored_at_202403211012_Hardware_Assets@uuuus {
+  name = "Hardware Assets"
+  displayName = "Hardware Assets"
+  type = 0
+  inherited = true
+  abstractObjectType = true
+  parentObjectTypeInherited = false
+  schemaLabel = "II_restored_at_202403211012"
+  schemaDisplayLabel = "II_restored_at_202403211012"
+  iconId = "141"
+  parentObjectTypeId = jira.ObjectSchema.instance.II_restored_at_202403211012
+  _parent = [
+    jira.ObjectSchema.instance.II_restored_at_202403211012,
+  ]
+  _alias = "Hardware Assets"
+}

@@ -1,0 +1,10 @@
+jira.ObjectSchemaStatus IZR__Inactive {
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:123"
+  name = "Inactive"
+  displayName = "Inactive"
+  category = 0
+  _parent = [
+    jira.ObjectSchema.instance.IZR,
+  ]
+  _alias = "IZR:Inactive"
+}

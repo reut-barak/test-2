@@ -1,0 +1,10 @@
+jira.Webhook Bad_Webhook_5_@ssl {
+  name = "Bad Webhook 5!"
+  url = "https://WRONGPROD.salto.com/rest/webhooks/webhook5"
+  excludeBody = true
+  filters = {
+    issue_related_events_section = ""
+  }
+  enabled = true
+  isSigned = false
+}

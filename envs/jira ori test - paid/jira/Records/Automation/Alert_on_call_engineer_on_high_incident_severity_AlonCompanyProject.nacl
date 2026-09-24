@@ -1,0 +1,102 @@
+jira.Automation Alert_on_call_engineer_on_high_incident_severity_AlonCompanyProject@sbsssssu {
+  name = "Alert on-call engineer on high incident severity"
+  state = "ENABLED"
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "605c3da2109af10068b38c4e"
+    displayName = "Sagi Bracha"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.field.changed"
+    value = {
+      changeType = "ANY_CHANGE"
+      fields = [
+        {
+          value = jira.Field.instance.Incident_Severity__select__c@suuuu.name
+          type = "fieldName"
+        },
+      ]
+      actions = [
+      ]
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      type = "jira.issue.edit"
+      value = {
+        operations = [
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Assignee__user
+            }
+            fieldType = "assignee"
+            type = "SET"
+            value = {
+              type = "CLEAR"
+              value = "clear"
+            }
+          },
+        ]
+        sendNotifications = true
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.issue.assign"
+      value = {
+        assignType = "GROUP"
+        listAssignMethod = "ROUNDROBIN"
+        group = {
+          type = "GROUP_ID"
+          value = jira.Group.instance.customer_engineers
+        }
+        excludedUsers = [
+        ]
+        userList = [
+        ]
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  projects = [
+    {
+      projectId = jira.Project.instance.AlonCompanyProject
+    },
+  ]
+  labels = [
+    jira.AutomationLabel.instance.Incidents,
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "c514da9c2a89670ff8b61dbc6802c04d66df46181758360a12608b76f1ae067f"
+  }
+  isAgentic = false
+  _alias = "Alert on-call engineer on high incident severity"
+}

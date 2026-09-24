@@ -1,0 +1,9 @@
+jira.ProjectComponent IdozJSM__Data_Center_Services@uuss {
+  description = "Created by Jira Service Management"
+  assigneeType = "PROJECT_DEFAULT"
+  name = "Data Center Services"
+  _parent = [
+    jira.Project.instance.IdozJSM,
+  ]
+  _alias = "IdozJSM:Data Center Services"
+}

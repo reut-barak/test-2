@@ -1,0 +1,14 @@
+jira.CustomFieldContextOption For_Jira_PCS_180060__select__c_ssbuuuu_label_a@uuuuuuumuu {
+  value = "a"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.For_Jira_PCS_180060__select__c_ssbuuuu_label@uuuuuuumu,
+  ]
+}
+jira.CustomFieldContextOption For_Jira_PCS_180060__select__c_ssbuuuu_label_b@uuuuuuumuu {
+  value = "b"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.For_Jira_PCS_180060__select__c_ssbuuuu_label@uuuuuuumu,
+  ]
+}

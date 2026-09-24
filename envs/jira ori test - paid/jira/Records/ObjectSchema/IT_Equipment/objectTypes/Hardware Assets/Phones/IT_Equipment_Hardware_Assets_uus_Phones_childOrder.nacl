@@ -1,0 +1,9 @@
+jira.ObjectTypeOrder IT_Equipment_Hardware_Assets_uus_Phones_childOrder@uuumuu {
+  objectTypes = [
+    jira.ObjectType.instance.IT_Equipment_Hardware_Assets_uus_Phones_uuumu_iPhone@uuuuumu,
+    jira.ObjectType.instance.IT_Equipment_Hardware_Assets_uus_Phones_uuumu_Android@uuuuumu,
+  ]
+  _parent = [
+    jira.ObjectType.instance.IT_Equipment_Hardware_Assets_uus_Phones@uuumu,
+  ]
+}

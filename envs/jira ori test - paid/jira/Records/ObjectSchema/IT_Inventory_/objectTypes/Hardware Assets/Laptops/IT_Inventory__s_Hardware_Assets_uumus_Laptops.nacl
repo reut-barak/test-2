@@ -1,0 +1,16 @@
+jira.ObjectType IT_Inventory__s_Hardware_Assets_uumus_Laptops@uuuuumu {
+  name = "Laptops"
+  displayName = "Laptops"
+  type = 0
+  parentObjectTypeId = jira.ObjectType.instance.IT_Inventory__s_Hardware_Assets@uumus
+  inherited = true
+  abstractObjectType = false
+  parentObjectTypeInherited = true
+  schemaLabel = "IT Inventory "
+  schemaDisplayLabel = "IT Inventory "
+  iconId = "62"
+  _parent = [
+    jira.ObjectSchema.instance.IT_Inventory_@s,
+  ]
+  _alias = "Laptops"
+}

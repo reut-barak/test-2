@@ -1,0 +1,10 @@
+jira.IssueTypeScheme DPJSM__Jira_Service_Management_Issue_Type_Scheme@fssssss {
+  name = "DPJSM: Jira Service Management Issue Type Scheme"
+  description = "This Jira Service Management Issue Type Scheme was generated automatically"
+  issueTypeIds = [
+    jira.IssueType.instance.Task,
+    jira.IssueType.instance.Sub_task@b,
+    jira.IssueType.instance.General_request@s,
+    jira.IssueType.instance.Email_Issue_Type@s,
+  ]
+}

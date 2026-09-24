@@ -1,0 +1,4 @@
+jira.NotificationScheme shir_deployment_test_2@b {
+  name = "shir-deployment-test-2"
+  description = "test deployment"
+}

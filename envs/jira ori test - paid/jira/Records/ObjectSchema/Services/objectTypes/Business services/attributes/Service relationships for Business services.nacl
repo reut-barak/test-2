@@ -1,0 +1,23 @@
+jira.ObjectTypeAttribute Services_Business_services_us_Service_relationships_for_Business_services@uumussss {
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = -1
+  minimumCardinality = 0
+  name = "Service relationships for Business services"
+  displayName = "Service relationships for Business services"
+  objectType = jira.ObjectType.instance.Services_Business_services@us
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 1
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  additionalValue = jira.ObjectSchemaReferenceType.instance.Services__Depends_on@uus
+  typeValue = jira.ObjectType.instance.Services_Business_services@us
+  _alias = "Service relationships for Business services"
+}

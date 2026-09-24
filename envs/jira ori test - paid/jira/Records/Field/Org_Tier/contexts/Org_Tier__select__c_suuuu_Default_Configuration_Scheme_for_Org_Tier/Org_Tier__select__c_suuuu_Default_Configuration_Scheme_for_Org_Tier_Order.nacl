@@ -1,0 +1,12 @@
+jira.FieldContextOptionsOrder Org_Tier__select__c_suuuu_Default_Configuration_Scheme_for_Org_Tier_order_child@uuuuumusssssuu {
+  options = [
+    jira.CustomFieldContextOption.instance.Org_Tier__select__c_suuuu_Default_Configuration_Scheme_for_Org_Tier_Paying@uuuuumusssssu,
+    jira.CustomFieldContextOption.instance.Org_Tier__select__c_suuuu_Default_Configuration_Scheme_for_Org_Tier_Pro@uuuuumusssssu,
+    jira.CustomFieldContextOption.instance.Org_Tier__select__c_suuuu_Default_Configuration_Scheme_for_Org_Tier_Trial@uuuuumusssssu,
+    jira.CustomFieldContextOption.instance.Org_Tier__select__c_suuuu_Default_Configuration_Scheme_for_Org_Tier_Free@uuuuumusssssu,
+    jira.CustomFieldContextOption.instance.Org_Tier__select__c_suuuu_Default_Configuration_Scheme_for_Org_Tier_NA@uuuuumusssssu,
+  ]
+  _parent = [
+    jira.CustomFieldContext.instance.Org_Tier__select__c_suuuu_Default_Configuration_Scheme_for_Org_Tier@uuuuumusssss,
+  ]
+}

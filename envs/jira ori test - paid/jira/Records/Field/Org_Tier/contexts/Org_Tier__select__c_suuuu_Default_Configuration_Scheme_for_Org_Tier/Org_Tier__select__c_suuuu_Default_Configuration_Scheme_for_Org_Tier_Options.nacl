@@ -1,0 +1,35 @@
+jira.CustomFieldContextOption Org_Tier__select__c_suuuu_Default_Configuration_Scheme_for_Org_Tier_Paying@uuuuumusssssu {
+  value = "Paying"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Org_Tier__select__c_suuuu_Default_Configuration_Scheme_for_Org_Tier@uuuuumusssss,
+  ]
+}
+jira.CustomFieldContextOption Org_Tier__select__c_suuuu_Default_Configuration_Scheme_for_Org_Tier_Pro@uuuuumusssssu {
+  value = "Pro"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Org_Tier__select__c_suuuu_Default_Configuration_Scheme_for_Org_Tier@uuuuumusssss,
+  ]
+}
+jira.CustomFieldContextOption Org_Tier__select__c_suuuu_Default_Configuration_Scheme_for_Org_Tier_Trial@uuuuumusssssu {
+  value = "Trial"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Org_Tier__select__c_suuuu_Default_Configuration_Scheme_for_Org_Tier@uuuuumusssss,
+  ]
+}
+jira.CustomFieldContextOption Org_Tier__select__c_suuuu_Default_Configuration_Scheme_for_Org_Tier_Free@uuuuumusssssu {
+  value = "Free"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Org_Tier__select__c_suuuu_Default_Configuration_Scheme_for_Org_Tier@uuuuumusssss,
+  ]
+}
+jira.CustomFieldContextOption Org_Tier__select__c_suuuu_Default_Configuration_Scheme_for_Org_Tier_NA@uuuuumusssssu {
+  value = "NA"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Org_Tier__select__c_suuuu_Default_Configuration_Scheme_for_Org_Tier@uuuuumusssss,
+  ]
+}

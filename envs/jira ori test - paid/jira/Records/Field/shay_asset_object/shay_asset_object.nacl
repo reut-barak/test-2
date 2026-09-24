@@ -1,0 +1,15 @@
+jira.Field shay_asset_object__cmdb_object_cftype__c@ssuubbuu {
+  name = "shay asset object"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugins.cmdb:cmdb-object-searcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "shay asset object"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+  _alias = "shay asset object"
+  contexts = [
+    jira.CustomFieldContext.instance.shay_asset_object__cmdb_object_cftype__c_ssuubbuu_Default_Configuration_Scheme_for_shay_asset_object_uuuuuuuumussssss_14711@uuuuuuuuuuuuuuuumu,
+    jira.CustomFieldContext.instance.shay_asset_object__cmdb_object_cftype__c_ssuubbuu_Default_Configuration_Scheme_for_shay_asset_object_uuuuuuuumussssss_15492@uuuuuuuuuuuuuuuumu,
+  ]
+}

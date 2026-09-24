@@ -1,0 +1,13 @@
+jira.Field Event_location__textfield__c@suuuu {
+  name = "Event location"
+  description = ""
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "Event location"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+  contexts = [
+    jira.CustomFieldContext.instance.Event_location__textfield__c_suuuu_Default_Configuration_Scheme_for_Event_location@uuuuumusssss,
+  ]
+  _alias = "Event location"
+}

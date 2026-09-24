@@ -1,0 +1,15 @@
+jira.PortalGroup General_SUP3 {
+  name = "General"
+  ticketTypeIds = [
+    jira.RequestType.instance.missing_285,
+    jira.RequestType.instance.missing_277,
+    jira.RequestType.instance.missing_278,
+    jira.RequestType.instance.missing_279,
+    jira.RequestType.instance.missing_280,
+    jira.RequestType.instance.missing_281,
+  ]
+  _parent = [
+    jira.Project.instance.Support3,
+  ]
+  _alias = "Support3:General"
+}

@@ -1,0 +1,10 @@
+jira.ObjectTypeOrder ISS_restored_at_202403211012_Role_childOrder {
+  objectTypes = [
+    jira.ObjectType.instance.ISS_restored_at_202403211012_Role_shir2,
+    jira.ObjectType.instance.ISS_restored_at_202403211012_Role_Shir,
+    jira.ObjectType.instance.ISS_restored_at_202403211012_Role_IdoA,
+  ]
+  _parent = [
+    jira.ObjectType.instance.ISS_restored_at_202403211012_Role,
+  ]
+}

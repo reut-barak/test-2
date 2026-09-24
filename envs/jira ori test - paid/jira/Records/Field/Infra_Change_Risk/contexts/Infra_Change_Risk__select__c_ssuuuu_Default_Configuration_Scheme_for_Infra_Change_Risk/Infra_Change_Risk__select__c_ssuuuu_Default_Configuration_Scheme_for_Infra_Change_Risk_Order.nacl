@@ -1,0 +1,10 @@
+jira.FieldContextOptionsOrder Infra_Change_Risk__select__c_ssuuuu_Default_Configuration_Scheme_for_Infra_Change_Risk_order_child@uuuuuumussssssuu {
+  options = [
+    jira.CustomFieldContextOption.instance.Infra_Change_Risk__select__c_ssuuuu_Default_Configuration_Scheme_for_Infra_Change_Risk_Low@uuuuuumussssssu,
+    jira.CustomFieldContextOption.instance.Infra_Change_Risk__select__c_ssuuuu_Default_Configuration_Scheme_for_Infra_Change_Risk_Medium@uuuuuumussssssu,
+    jira.CustomFieldContextOption.instance.Infra_Change_Risk__select__c_ssuuuu_Default_Configuration_Scheme_for_Infra_Change_Risk_High@uuuuuumussssssu,
+  ]
+  _parent = [
+    jira.CustomFieldContext.instance.Infra_Change_Risk__select__c_ssuuuu_Default_Configuration_Scheme_for_Infra_Change_Risk@uuuuuumussssss,
+  ]
+}

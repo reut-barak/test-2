@@ -1,0 +1,23 @@
+jira.ObjectTypeAttribute IZW_Hardware_Assets_us_Model_Name@uumus {
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Model Name"
+  displayName = "Model Name"
+  objectType = jira.ObjectType.instance.IZW_Hardware_Assets@us
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 1
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  additionalValue = jira.ObjectSchemaDefaultReferenceType.instance.Reference
+  typeValue = jira.ObjectType.instance.IZW_Models_Hardware_Models@uus
+  _alias = "Model Name"
+}

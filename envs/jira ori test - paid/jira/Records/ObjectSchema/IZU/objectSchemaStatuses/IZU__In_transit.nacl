@@ -1,0 +1,11 @@
+jira.ObjectSchemaStatus IZU__In_transit@uus {
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:148"
+  name = "In transit"
+  displayName = "In transit"
+  description = "Asset is being transported"
+  category = 2
+  _parent = [
+    jira.ObjectSchema.instance.IZU,
+  ]
+  _alias = "IZU:In transit"
+}

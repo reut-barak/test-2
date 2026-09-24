@@ -1,0 +1,23 @@
+jira.ObjectTypeAttribute Services_Applications_Service_relationships_for_Software_services@uussss {
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = -1
+  minimumCardinality = 0
+  name = "Service relationships for Software services"
+  displayName = "Service relationships for Software services"
+  objectType = jira.ObjectType.instance.Services_Applications
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 1
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  additionalValue = jira.ObjectSchemaReferenceType.instance.Services__Depends_on@uus
+  typeValue = jira.ObjectType.instance.Services_Software_services@us
+  _alias = "Service relationships for Software services"
+}

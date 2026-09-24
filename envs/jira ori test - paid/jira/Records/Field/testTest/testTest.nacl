@@ -1,0 +1,14 @@
+jira.Field testTest__cascadingselect__c {
+  name = "testTest"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:cascadingselectsearcher"
+  areOptionsSupported = true
+  isOptionsCountOverLimit = false
+  translatedName = "testTest"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:cascadingselect"
+  contexts = [
+    jira.CustomFieldContext.instance.testTest__cascadingselect__c_Default_Configuration_Scheme_for_testTest@uuuuussss,
+  ]
+  _alias = "testTest"
+}

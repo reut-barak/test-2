@@ -1,0 +1,8 @@
+jira.ObjectSchemaGlobalStatus Closed {
+  workspaceId = "68d020c3-b88e-47dc-9231-452f7dc63521"
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:3"
+  name = "Closed"
+  displayName = "Closed"
+  description = ""
+  category = 0
+}

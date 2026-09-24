@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute GWR_Schema_b_Hardware_Assets_umus_Device_Type@uuuumus {
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Device Type"
+  displayName = "Device Type"
+  objectType = jira.ObjectType.instance.GWR_Schema_b_Hardware_Assets@umus
+  options = "Physical,Virtual"
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 10
+  _alias = "Device Type"
+}

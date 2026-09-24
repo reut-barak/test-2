@@ -1,0 +1,9 @@
+jira.ProjectComponent AlonITSM3__Active_Directory@uus {
+  name = "Active Directory"
+  description = "Created by Jira Service Management"
+  assigneeType = "PROJECT_DEFAULT"
+  _parent = [
+    jira.Project.instance.AlonITSM3,
+  ]
+  _alias = "AlonITSM3:Active Directory"
+}

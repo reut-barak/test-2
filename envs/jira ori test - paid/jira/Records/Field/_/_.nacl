@@ -1,0 +1,28 @@
+jira.Field ___multicheckboxes__c@_01488uuuu {
+  name = "א"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher"
+  areOptionsSupported = true
+  isOptionsCountOverLimit = false
+  translatedName = "א"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes"
+  contexts = [
+    jira.CustomFieldContext.instance.___multicheckboxes__c__01488uuuu_Default_Configuration_Scheme_for__@uuuuumuussss_01488,
+  ]
+  _alias = "א"
+}
+jira.Field ___multicheckboxes__c@_01489uuuu {
+  name = "ב"
+  description = "The second Hebrew one"
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher"
+  areOptionsSupported = true
+  isOptionsCountOverLimit = false
+  translatedName = "ב"
+  translatedDescription = "The second Hebrew one"
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes"
+  contexts = [
+    jira.CustomFieldContext.instance.___multicheckboxes__c__01489uuuu_Default_Configuration_Scheme_for__@uuuuumuussss_01489,
+  ]
+  _alias = "ב"
+}

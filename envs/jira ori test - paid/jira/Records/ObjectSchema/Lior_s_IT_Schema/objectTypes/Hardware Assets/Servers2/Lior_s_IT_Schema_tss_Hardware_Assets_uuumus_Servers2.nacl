@@ -1,0 +1,16 @@
+jira.ObjectType Lior_s_IT_Schema_tss_Hardware_Assets_uuumus_Servers2@uuuuuumu {
+  name = "Servers2"
+  displayName = "Servers2"
+  type = 0
+  parentObjectTypeId = jira.ObjectType.instance.Lior_s_IT_Schema_tss_Hardware_Assets@uuumus
+  inherited = true
+  abstractObjectType = false
+  parentObjectTypeInherited = true
+  schemaLabel = "Lior's IT Schema"
+  schemaDisplayLabel = "Lior's IT Schema"
+  iconId = "107"
+  _parent = [
+    jira.ObjectSchema.instance.Lior_s_IT_Schema@tss,
+  ]
+  _alias = "Servers2"
+}

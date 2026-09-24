@@ -1,0 +1,120 @@
+jira.Automation shirIssueTransitioned_createSubTasks_AlonCompanyProject {
+  name = "shirIssueTransitioned_createSubTasks"
+  state = "ENABLED"
+  description = "tests issue transition between statuses and the sub task creation2"
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "616e3f77e79ff6006f1eca7f"
+    displayName = "Shir Reifenberg"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.event.trigger:transitioned"
+    value = {
+      fromStatus = [
+        {
+          type = "NAME"
+          value = jira.Status.instance.a_shared_status3@s.name
+        },
+      ]
+      toStatus = [
+        {
+          type = "NAME"
+          value = jira.Status.instance.done.name
+        },
+      ]
+      eventKey = "jira:issue_updated"
+      issueEvent = "issue_generic"
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      type = "jira.issue.create.subtasks"
+      value = {
+        subtasks = [
+          {
+            type = jira.IssueType.instance.Sub_task@b
+            summary = "create a new task"
+          },
+          {
+            type = jira.IssueType.instance.AnIssueSubType
+            summary = "another new task"
+          },
+        ]
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.issue.link"
+      value = {
+        linkType = jira.IssueLinkType.instance.Duplicate
+        issue = {
+          type = "COPY"
+          value = "trigger"
+        }
+        linkTypeDirection = "outward"
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.lookup.issues"
+      value = {
+        id = "_customsmartvalue_id_166080756221912123"
+        name = {
+          type = "FREE"
+          value = "lookupIssues"
+        }
+        type = "JQL"
+        query = {
+          type = "SMART"
+          value = "${ jira.Field.instance.Status__status } = '${ jira.Status.instance.done1.name }' AND ${ jira.Field.instance.Project__project } != 'AlonCompanyProject8'"
+        }
+        lazy = false
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  projects = [
+    {
+      projectId = jira.Project.instance.AlonCompanyProject
+    },
+  ]
+  labels = [
+    jira.AutomationLabel.instance.jqlRules,
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "dcd5e7aeb665d307e7f201cf509c0727917b796a2230b76c0091bcc4bd265827"
+  }
+  isAgentic = false
+  _alias = "shirIssueTransitioned_createSubTasks"
+}

@@ -1,0 +1,22 @@
+jira.ObjectTypeAttribute idoA_Schema_rename_s_Employees_uumu_Email@uuuumu {
+  description = "Employee's email it is"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Email"
+  displayName = "Email"
+  objectType = jira.ObjectType.instance.idoA_Schema_rename_s_Employees@uumu
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 8
+  _alias = "Email"
+}

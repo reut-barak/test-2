@@ -1,0 +1,16 @@
+jira.ObjectType IZS_Hardware_Assets_us_Servers@uumu {
+  name = "Servers"
+  displayName = "Servers"
+  type = 0
+  parentObjectTypeId = jira.ObjectType.instance.IZS_Hardware_Assets@us
+  inherited = true
+  abstractObjectType = false
+  parentObjectTypeInherited = true
+  schemaLabel = "IZS"
+  schemaDisplayLabel = "IZS"
+  iconId = "107"
+  _parent = [
+    jira.ObjectSchema.instance.IZS,
+  ]
+  _alias = "Servers"
+}

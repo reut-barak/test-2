@@ -1,0 +1,14 @@
+jira.IssueTypeScreenScheme SEG__Jira_Service_Management_Issue_Type_Screen_Scheme@fsssssss {
+  name = "SEG: Jira Service Management Issue Type Screen Scheme"
+  description = "This Jira Service Management Issue Type Screen Scheme was generated automatically"
+  issueTypeMappings = [
+    {
+      issueTypeId = jira.IssueType.instance.Developer_escalation@s
+      screenSchemeId = jira.ScreenScheme.instance.SEG__Jira_Service_Management__Developer_Escalation_Screen_Scheme@fsssfssss
+    },
+    {
+      issueTypeId = "default"
+      screenSchemeId = jira.ScreenScheme.instance.SEG__Jira_Service_Management_Screen_Scheme@fsssss
+    },
+  ]
+}

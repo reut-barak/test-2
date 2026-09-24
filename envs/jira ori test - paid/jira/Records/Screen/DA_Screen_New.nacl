@@ -1,0 +1,27 @@
+jira.Screen DA_Screen_New {
+  name = "DA_Screen_New"
+  description = "DA_Screen_New"
+  tabs = {
+    General = {
+      name = "General"
+      fields = [
+        jira.Field.instance.Actual_end__datetime__c@suuuu,
+        jira.Field.instance.Compliance_Type__select__c@suuuu,
+        jira.Field.instance.Approvers__multiuserpicker__c,
+        jira.Field.instance.Assignee__user,
+        jira.Field.instance.testTest__cascadingselect__c,
+        jira.Field.instance.AAA_test_custom_field__multicheckboxes__c@sssuuuu,
+      ]
+      position = 0
+    }
+    NewTab = {
+      name = "NewTab"
+      fields = [
+        jira.Field.instance.Resolution__resolution,
+        jira.Field.instance.Team2__multiselect__c,
+        jira.Field.instance.Urgency__select__c,
+      ]
+      position = 1
+    }
+  }
+}

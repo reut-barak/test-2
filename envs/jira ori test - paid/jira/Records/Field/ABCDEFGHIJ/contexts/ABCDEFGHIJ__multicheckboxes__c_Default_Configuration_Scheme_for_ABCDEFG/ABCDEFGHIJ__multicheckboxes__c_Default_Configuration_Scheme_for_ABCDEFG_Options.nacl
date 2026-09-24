@@ -1,0 +1,21 @@
+jira.CustomFieldContextOption ABCDEFGHIJ__multicheckboxes__c_Default_Configuration_Scheme_for_ABCDEFG_aa@uuuuussssu {
+  value = "aa"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.ABCDEFGHIJ__multicheckboxes__c_Default_Configuration_Scheme_for_ABCDEFG@uuuuussss,
+  ]
+}
+jira.CustomFieldContextOption ABCDEFGHIJ__multicheckboxes__c_Default_Configuration_Scheme_for_ABCDEFG_bb@uuuuussssu {
+  value = "bb"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.ABCDEFGHIJ__multicheckboxes__c_Default_Configuration_Scheme_for_ABCDEFG@uuuuussss,
+  ]
+}
+jira.CustomFieldContextOption ABCDEFGHIJ__multicheckboxes__c_Default_Configuration_Scheme_for_ABCDEFG_cc@uuuuussssu {
+  value = "cc"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.ABCDEFGHIJ__multicheckboxes__c_Default_Configuration_Scheme_for_ABCDEFG@uuuuussss,
+  ]
+}

@@ -1,0 +1,14 @@
+jira.ObjectSchema People {
+  name = "People"
+  displayName = "People"
+  objectSchemaKey = "PEOPSAND"
+  description = "people's in sabx"
+  status = "Ok"
+  crossSchemaReferencingAllowed = false
+  properties = {
+    quickCreateObjects = true
+    allowOtherObjectSchema = false
+    validateQuickCreate = true
+  }
+  _alias = "People"
+}

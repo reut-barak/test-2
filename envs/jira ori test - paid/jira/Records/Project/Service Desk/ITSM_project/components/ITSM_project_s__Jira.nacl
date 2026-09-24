@@ -1,0 +1,9 @@
+jira.ProjectComponent ITSM_project_s__Jira@umuu {
+  name = "Jira"
+  description = "Created by Jira Service Management"
+  assigneeType = "PROJECT_DEFAULT"
+  _parent = [
+    jira.Project.instance.ITSM_project@s,
+  ]
+  _alias = "ITSM project:Jira"
+}

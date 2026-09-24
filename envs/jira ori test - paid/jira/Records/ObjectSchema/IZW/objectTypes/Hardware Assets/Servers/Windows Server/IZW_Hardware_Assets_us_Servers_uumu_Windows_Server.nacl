@@ -1,0 +1,16 @@
+jira.ObjectType IZW_Hardware_Assets_us_Servers_uumu_Windows_Server@uuuumus {
+  name = "Windows Server"
+  displayName = "Windows Server"
+  type = 0
+  parentObjectTypeId = jira.ObjectType.instance.IZW_Hardware_Assets_us_Servers@uumu
+  inherited = true
+  abstractObjectType = false
+  parentObjectTypeInherited = true
+  schemaLabel = "IZW"
+  schemaDisplayLabel = "IZW"
+  iconId = "140"
+  _parent = [
+    jira.ObjectSchema.instance.IZW,
+  ]
+  _alias = "Windows Server"
+}

@@ -1,0 +1,14 @@
+jira.Field Text_Field__read_only_asd__readonlyfield__c@ssjskuuuu {
+  name = "Text Field (read only)asd"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:textsearcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "Text Field (read only)asd"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:readonlyfield"
+  contexts = [
+    jira.CustomFieldContext.instance.Text_Field__read_only_asd__readonlyfield__c_ssjskuuuu_Default_Configuration_Scheme_for_Text_Field__read_only_asd@uuuuuuuuumussssssjsk,
+  ]
+  _alias = "Text Field (read only)asd"
+}

@@ -1,0 +1,24 @@
+jira.ObjectTypeAttribute People_Employees_Department {
+  description = "Employee's department"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Department"
+  displayName = "Department"
+  objectType = jira.ObjectType.instance.People_Employees
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 1
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  additionalValue = jira.ObjectSchemaReferenceType.instance.People__Member_of@uus
+  typeValue = jira.ObjectType.instance.People_Department
+  _alias = "Department"
+}

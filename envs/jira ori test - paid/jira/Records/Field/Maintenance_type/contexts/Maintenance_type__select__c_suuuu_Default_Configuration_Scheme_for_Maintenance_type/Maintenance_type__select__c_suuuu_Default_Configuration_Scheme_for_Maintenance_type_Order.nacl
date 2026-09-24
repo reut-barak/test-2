@@ -1,0 +1,11 @@
+jira.FieldContextOptionsOrder Maintenance_type__select__c_suuuu_Default_Configuration_Scheme_for_Maintenance_type_order_child@uuuuumusssssuu {
+  options = [
+    jira.CustomFieldContextOption.instance.Maintenance_type__select__c_suuuu_Default_Configuration_Scheme_for_Maintenance_type_Minor_repair@uuuuumusssssus,
+    jira.CustomFieldContextOption.instance.Maintenance_type__select__c_suuuu_Default_Configuration_Scheme_for_Maintenance_type_Major_repair@uuuuumusssssus,
+    jira.CustomFieldContextOption.instance.Maintenance_type__select__c_suuuu_Default_Configuration_Scheme_for_Maintenance_type_A_safety_hazard@uuuuumusssssuss,
+    jira.CustomFieldContextOption.instance.Maintenance_type__select__c_suuuu_Default_Configuration_Scheme_for_Maintenance_type_Replacement_required@uuuuumusssssus,
+  ]
+  _parent = [
+    jira.CustomFieldContext.instance.Maintenance_type__select__c_suuuu_Default_Configuration_Scheme_for_Maintenance_type@uuuuumusssss,
+  ]
+}

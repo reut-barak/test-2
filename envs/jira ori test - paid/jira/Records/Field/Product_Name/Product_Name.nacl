@@ -1,0 +1,13 @@
+jira.Field Product_Name__textfield__c@suuuu {
+  name = "Product Name"
+  description = "Repro for INCIDENT-43094"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "Product Name"
+  translatedDescription = "Repro for INCIDENT-43094"
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+  contexts = [
+    jira.CustomFieldContext.instance.Product_Name__textfield__c_suuuu_Default_Configuration_Scheme_for_Product_Name@uuuuumusssss,
+  ]
+  _alias = "Product Name"
+}

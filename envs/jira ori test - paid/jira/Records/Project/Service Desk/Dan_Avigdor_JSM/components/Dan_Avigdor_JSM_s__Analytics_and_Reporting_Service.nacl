@@ -1,0 +1,9 @@
+jira.ProjectComponent Dan_Avigdor_JSM_s__Analytics_and_Reporting_Service@uumuusss {
+  name = "Analytics and Reporting Service"
+  description = "Created by Jira Service Management"
+  assigneeType = "PROJECT_DEFAULT"
+  _parent = [
+    jira.Project.instance.Dan_Avigdor_JSM@s,
+  ]
+  _alias = "Dan Avigdor JSM:Analytics and Reporting Service"
+}

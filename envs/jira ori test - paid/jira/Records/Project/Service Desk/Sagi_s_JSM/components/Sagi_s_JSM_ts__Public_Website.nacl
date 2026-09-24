@@ -1,0 +1,9 @@
+jira.ProjectComponent Sagi_s_JSM_ts__Public_Website@uumuus {
+  description = "Created by Jira Service Management"
+  assigneeType = "PROJECT_DEFAULT"
+  name = "Public Website"
+  _parent = [
+    jira.Project.instance.Sagi_s_JSM@ts,
+  ]
+  _alias = "Sagi's JSM:Public Website"
+}

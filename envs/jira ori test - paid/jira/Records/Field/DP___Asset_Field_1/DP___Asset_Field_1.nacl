@@ -1,0 +1,14 @@
+jira.Field DP___Asset_Field_1__cmdb_object_cftype__c@sbsssuubbuu {
+  name = "DP - Asset Field 1"
+  description = "For Testing"
+  searcherKey = "com.atlassian.jira.plugins.cmdb:cmdb-object-searcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "DP - Asset Field 1"
+  translatedDescription = "For Testing"
+  type = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+  contexts = [
+    jira.CustomFieldContext.instance.DP___Asset_Field_1__cmdb_object_cftype__c_sbsssuubbuu_Default_Configuration_Scheme_for_DP___Asset_Field_1@uuuuuuuuuuumusssssbsss,
+  ]
+  _alias = "DP - Asset Field 1"
+}

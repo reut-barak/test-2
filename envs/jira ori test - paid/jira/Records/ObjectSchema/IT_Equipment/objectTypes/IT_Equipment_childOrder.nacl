@@ -1,0 +1,9 @@
+jira.ObjectTypeOrder IT_Equipment_childOrder {
+  objectTypes = [
+    jira.ObjectType.instance.IT_Equipment_Hardware_Assets@uus,
+    jira.ObjectType.instance.IT_Equipment_Models,
+  ]
+  _parent = [
+    jira.ObjectSchema.instance.IT_Equipment,
+  ]
+}

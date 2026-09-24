@@ -1,0 +1,71 @@
+jira.Automation Biorad311_IZJSM {
+  name = "Biorad311"
+  state = "ENABLED"
+  description = "When requested for is empty - populate the field with the user for Finance Project only"
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "62d20c47a94a6f9c0eff9866"
+    displayName = "Ido Zak"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.event.trigger:created"
+    value = {
+      eventKey = "jira:issue_created"
+      issueEvent = "issue_created"
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      type = "jira.issue.assign"
+      value = {
+        assignType = "SPECIFY_USER"
+        assignee = {
+          type = "SMART"
+          value = "{{initiator}}"
+        }
+        excludedUsers = [
+        ]
+        userList = [
+        ]
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  projects = [
+    {
+      projectId = jira.Project.instance.IZJSM
+    },
+  ]
+  labels = [
+    jira.AutomationLabel.instance.bbbb,
+    jira.AutomationLabel.instance.bbb,
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "932dd3516bb307c6383430caed165d866ee7a4a7dbf83b87658171c29fadad21"
+  }
+  isAgentic = false
+  _alias = "Biorad311"
+}

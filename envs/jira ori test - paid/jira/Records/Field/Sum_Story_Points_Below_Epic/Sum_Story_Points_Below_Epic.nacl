@@ -1,0 +1,14 @@
+jira.Field Sum_Story_Points_Below_Epic__float__c@ssssuuuu {
+  name = "Sum Story Points Below Epic"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:exactnumber"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "Sum Story Points Below Epic"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:float"
+  contexts = [
+    jira.CustomFieldContext.instance.Sum_Story_Points_Below_Epic__float__c_ssssuuuu_Default_Configuration_Scheme_for_Sum_Story_Points_Below_Epic@uuuuuuuumussssssss,
+  ]
+  _alias = "Sum Story Points Below Epic"
+}

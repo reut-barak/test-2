@@ -1,0 +1,28 @@
+jira.ObjectTypeAttribute idoA_Schema_rename_s_Employees_uumu_Omri_uuuumu_nano@uuuuuumu {
+  description = "check nano neno"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 5
+  minimumCardinality = 1
+  name = "nano"
+  displayName = "nano"
+  objectType = jira.ObjectType.instance.idoA_Schema_rename_s_Employees_uumu_Omri@uuuumu
+  options = ""
+  pendingCreation = false
+  qlQuery = ""
+  regexValidation = ""
+  removable = true
+  sortable = true
+  suffix = ""
+  summable = false
+  type = 2
+  typeValueMulti = [
+    jira.Group.instance.administrators,
+  ]
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  _alias = "nano"
+}

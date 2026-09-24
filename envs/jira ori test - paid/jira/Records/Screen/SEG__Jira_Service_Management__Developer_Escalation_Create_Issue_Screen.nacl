@@ -1,0 +1,24 @@
+jira.Screen SEG__Jira_Service_Management__Developer_Escalation_Create_Issue_Screen@fsssfsssss {
+  name = "SEG: Jira Service Management: Developer Escalation Create Issue Screen"
+  description = ""
+  tabs = {
+    Default = {
+      name = "Default"
+      fields = [
+        jira.Field.instance.Summary__string,
+        jira.Field.instance.Issue_Type__issuetype@suu,
+        jira.Field.instance.Components__array,
+        jira.Field.instance.Attachment__array,
+        jira.Field.instance.Due_date__date@suu,
+        jira.Field.instance.Description__string,
+        jira.Field.instance.Reporter__user,
+        jira.Field.instance.Linked_Issues__array@suu,
+        jira.Field.instance.Assignee__user,
+        jira.Field.instance.Priority__priority,
+        jira.Field.instance.Team__atlassian_team__c@uubuu,
+        jira.Field.instance.Labels__array,
+      ]
+      position = 0
+    }
+  }
+}

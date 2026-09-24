@@ -1,0 +1,14 @@
+jira.Field AAA_seggev_multiple_choice__multiselect__c@sssuuuu {
+  name = "AAA seggev multiple choice"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher"
+  areOptionsSupported = true
+  isOptionsCountOverLimit = false
+  translatedName = "AAA seggev multiple choice"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:multiselect"
+  contexts = [
+    jira.CustomFieldContext.instance.AAA_seggev_multiple_choice__multiselect__c_sssuuuu_Default_Configuration_Scheme_for_AAA_seggev_multiple_choice@uuuuuuumusssssss,
+  ]
+  _alias = "AAA seggev multiple choice"
+}

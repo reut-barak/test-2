@@ -1,0 +1,16 @@
+jira.Filter Filter_for_SUP3@s {
+  name = "Filter for SUP3"
+  owner = {
+    id = "640a4787f00d095406f6727f"
+    displayName = "Ido Amit"
+  }
+  jql = "${ jira.Field.instance.Project__project } = ${ jira.Project.instance.Support3.key } ORDER BY ${ jira.Field.instance.Rank__gh_lexo_rank__c@uubbuu.name } ASC"
+  sharePermissions = [
+    {
+      type = "project"
+      project = {
+        id = jira.Project.instance.Support3
+      }
+    },
+  ]
+}

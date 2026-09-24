@@ -1,0 +1,17 @@
+jira.ObjectType IZ13_Constant {
+  name = "Constant"
+  displayName = "Constant"
+  type = 0
+  description = ""
+  inherited = false
+  abstractObjectType = false
+  parentObjectTypeInherited = false
+  schemaLabel = "IZ13"
+  schemaDisplayLabel = "IZ13"
+  iconId = "6"
+  parentObjectTypeId = jira.ObjectSchema.instance.IZ13
+  _parent = [
+    jira.ObjectSchema.instance.IZ13,
+  ]
+  _alias = "Constant"
+}

@@ -1,0 +1,4 @@
+jira.ObjectTypeLabelAttribute IIS_restored_at_202403211012_main_icon_uuuus_sub_icon_label_attribute@uuuuumusuu {
+  labelAttribute = jira.ObjectTypeAttribute.instance.IIS_restored_at_202403211012_main_icon_uuuus_sub_icon_uuuuumus_Name@uuuuuuuumu
+  objectType = jira.ObjectType.instance.IIS_restored_at_202403211012_main_icon_uuuus_sub_icon@uuuuumus
+}

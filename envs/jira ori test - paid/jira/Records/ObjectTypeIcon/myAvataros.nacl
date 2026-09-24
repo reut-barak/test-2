@@ -1,0 +1,4 @@
+jira.ObjectTypeIcon myAvataros {
+  name = "myAvataros"
+  icon = file("jira/ObjectTypeIcon/myAvataros.png")
+}

@@ -1,0 +1,21 @@
+jira.CustomFieldContextOption AAA_seggev_multiple_choice__multiselect__c_sssuuuu_Default_Configuration_Scheme_for_AAA_seggev_multiple_choice_option1@uuuuuuumusssssssu {
+  value = "option1"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.AAA_seggev_multiple_choice__multiselect__c_sssuuuu_Default_Configuration_Scheme_for_AAA_seggev_multiple_choice@uuuuuuumusssssss,
+  ]
+}
+jira.CustomFieldContextOption AAA_seggev_multiple_choice__multiselect__c_sssuuuu_Default_Configuration_Scheme_for_AAA_seggev_multiple_choice_option2@uuuuuuumusssssssu {
+  value = "option2"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.AAA_seggev_multiple_choice__multiselect__c_sssuuuu_Default_Configuration_Scheme_for_AAA_seggev_multiple_choice@uuuuuuumusssssss,
+  ]
+}
+jira.CustomFieldContextOption AAA_seggev_multiple_choice__multiselect__c_sssuuuu_Default_Configuration_Scheme_for_AAA_seggev_multiple_choice_option3@uuuuuuumusssssssu {
+  value = "option3"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.AAA_seggev_multiple_choice__multiselect__c_sssuuuu_Default_Configuration_Scheme_for_AAA_seggev_multiple_choice@uuuuuuumusssssss,
+  ]
+}

@@ -1,0 +1,15 @@
+jira.Field Incident_manager__userpicker__c@suuuu {
+  name = "Incident manager"
+  description = "The assigned team member managing the incident end-to-end, from response through resolution."
+  isLocked = true
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:userpickergroupsearcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "Incident manager"
+  translatedDescription = "The assigned team member managing the incident end-to-end, from response through resolution."
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:userpicker"
+  contexts = [
+    jira.CustomFieldContext.instance.Incident_manager__userpicker__c_suuuu_Default_Configuration_Scheme_for_Incident_manager@uuuuumusssss,
+  ]
+  _alias = "Incident manager"
+}

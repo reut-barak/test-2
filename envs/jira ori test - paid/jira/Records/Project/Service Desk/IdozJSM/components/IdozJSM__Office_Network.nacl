@@ -1,0 +1,9 @@
+jira.ProjectComponent IdozJSM__Office_Network@uus {
+  description = "Created by Jira Service Management"
+  assigneeType = "PROJECT_DEFAULT"
+  name = "Office Network"
+  _parent = [
+    jira.Project.instance.IdozJSM,
+  ]
+  _alias = "IdozJSM:Office Network"
+}

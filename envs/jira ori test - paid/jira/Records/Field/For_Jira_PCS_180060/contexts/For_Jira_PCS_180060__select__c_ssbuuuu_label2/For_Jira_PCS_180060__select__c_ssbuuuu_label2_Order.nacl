@@ -1,0 +1,8 @@
+jira.FieldContextOptionsOrder For_Jira_PCS_180060__select__c_ssbuuuu_label2_order_child@uuuuuuumuuu {
+  options = [
+    jira.CustomFieldContextOption.instance.For_Jira_PCS_180060__select__c_ssbuuuu_label2__@uuuuuuumuu_01499,
+  ]
+  _parent = [
+    jira.CustomFieldContext.instance.For_Jira_PCS_180060__select__c_ssbuuuu_label2@uuuuuuumu,
+  ]
+}

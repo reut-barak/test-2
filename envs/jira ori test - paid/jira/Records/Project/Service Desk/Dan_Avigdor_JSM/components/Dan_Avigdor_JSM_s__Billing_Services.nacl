@@ -1,0 +1,9 @@
+jira.ProjectComponent Dan_Avigdor_JSM_s__Billing_Services@uumuus {
+  name = "Billing Services"
+  description = "Created by Jira Service Management"
+  assigneeType = "PROJECT_DEFAULT"
+  _parent = [
+    jira.Project.instance.Dan_Avigdor_JSM@s,
+  ]
+  _alias = "Dan Avigdor JSM:Billing Services"
+}

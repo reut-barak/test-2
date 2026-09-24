@@ -1,0 +1,28 @@
+jira.CustomFieldContextOption NewCustomFieldLior__multicheckboxes__c_Default_Configuration_Scheme_for_NewCustomFieldLior_1@uuuuussssu {
+  value = "1"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.NewCustomFieldLior__multicheckboxes__c_Default_Configuration_Scheme_for_NewCustomFieldLior@uuuuussss,
+  ]
+}
+jira.CustomFieldContextOption NewCustomFieldLior__multicheckboxes__c_Default_Configuration_Scheme_for_NewCustomFieldLior_2@uuuuussssu {
+  value = "2"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.NewCustomFieldLior__multicheckboxes__c_Default_Configuration_Scheme_for_NewCustomFieldLior@uuuuussss,
+  ]
+}
+jira.CustomFieldContextOption NewCustomFieldLior__multicheckboxes__c_Default_Configuration_Scheme_for_NewCustomFieldLior_3@uuuuussssu {
+  value = "3"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.NewCustomFieldLior__multicheckboxes__c_Default_Configuration_Scheme_for_NewCustomFieldLior@uuuuussss,
+  ]
+}
+jira.CustomFieldContextOption NewCustomFieldLior__multicheckboxes__c_Default_Configuration_Scheme_for_NewCustomFieldLior_4@uuuuussssu {
+  value = "4"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.NewCustomFieldLior__multicheckboxes__c_Default_Configuration_Scheme_for_NewCustomFieldLior@uuuuussss,
+  ]
+}

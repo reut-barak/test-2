@@ -1,0 +1,14 @@
+jira.ObjectSchema IZR {
+  name = "IZR"
+  displayName = "IZR"
+  objectSchemaKey = "IZR"
+  description = ""
+  status = "Ok"
+  crossSchemaReferencingAllowed = false
+  properties = {
+    quickCreateObjects = true
+    allowOtherObjectSchema = false
+    validateQuickCreate = true
+  }
+  _alias = "IZR"
+}

@@ -1,0 +1,5 @@
+jira.AutomationLabel ww {
+  name = "ww"
+  color = "Y300"
+  editable = true
+}

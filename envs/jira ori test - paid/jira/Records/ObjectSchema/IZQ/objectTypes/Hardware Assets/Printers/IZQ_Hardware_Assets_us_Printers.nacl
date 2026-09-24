@@ -1,0 +1,16 @@
+jira.ObjectType IZQ_Hardware_Assets_us_Printers@uumu {
+  name = "Printers"
+  displayName = "Printers"
+  type = 0
+  parentObjectTypeId = jira.ObjectType.instance.IZQ_Hardware_Assets@us
+  inherited = true
+  abstractObjectType = false
+  parentObjectTypeInherited = true
+  schemaLabel = "IZQ"
+  schemaDisplayLabel = "IZQ"
+  iconId = "89"
+  _parent = [
+    jira.ObjectSchema.instance.IZQ,
+  ]
+  _alias = "Printers"
+}

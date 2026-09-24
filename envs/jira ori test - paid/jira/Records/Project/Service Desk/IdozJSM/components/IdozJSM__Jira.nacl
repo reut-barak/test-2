@@ -1,0 +1,9 @@
+jira.ProjectComponent IdozJSM__Jira {
+  description = "Created by Jira Service Management"
+  assigneeType = "PROJECT_DEFAULT"
+  name = "Jira"
+  _parent = [
+    jira.Project.instance.IdozJSM,
+  ]
+  _alias = "IdozJSM:Jira"
+}

@@ -1,0 +1,16 @@
+jira.Field Ido_Assets_field__cmdb_object_cftype__c@ssuubbuu {
+  name = "Ido Assets field"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugins.cmdb:cmdb-object-searcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "Ido Assets field"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+  contexts = [
+    jira.CustomFieldContext.instance.Ido_Assets_field__cmdb_object_cftype__c_ssuubbuu_Default_Configuration_Scheme_for_Ido_Assets_field@uuuuuuuumussssss,
+    jira.CustomFieldContext.instance.Ido_Assets_field__cmdb_object_cftype__c_ssuubbuu_My_second_context@uuuuuuuumuss,
+    jira.CustomFieldContext.instance.Ido_Assets_field__cmdb_object_cftype__c_ssuubbuu_shay_context@uuuuuuuumus,
+  ]
+  _alias = "Ido Assets field"
+}

@@ -1,0 +1,7 @@
+jira.Priority test8 {
+  statusColor = "#ffffff"
+  description = ""
+  iconUrl = "/images/icons/priorities/medium.svg"
+  name = "test8"
+  _alias = "test8"
+}

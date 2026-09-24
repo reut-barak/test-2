@@ -1,0 +1,16 @@
+jira.FieldContextOptionsOrder testTest__cascadingselect__c_Default_Configuration_Scheme_for_testTest_order_child@uuuuussssuu {
+  options = [
+    jira.CustomFieldContextOption.instance.testTest__cascadingselect__c_Default_Configuration_Scheme_for_testTest_a@uuuuussssu,
+  ]
+  _parent = [
+    jira.CustomFieldContext.instance.testTest__cascadingselect__c_Default_Configuration_Scheme_for_testTest@uuuuussss,
+  ]
+}
+jira.FieldContextOptionsOrder testTest__cascadingselect__c_Default_Configuration_Scheme_for_testTest_a_order_child@uuuuussssuuu {
+  options = [
+    jira.CustomFieldContextOption.instance.testTest__cascadingselect__c_Default_Configuration_Scheme_for_testTest_a_b@uuuuussssuu,
+  ]
+  _parent = [
+    jira.CustomFieldContextOption.instance.testTest__cascadingselect__c_Default_Configuration_Scheme_for_testTest_a@uuuuussssu,
+  ]
+}

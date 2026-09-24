@@ -1,0 +1,17 @@
+jira.ObjectType ISS_restored_at_202403211012_Employees_Shay {
+  name = "Shay"
+  displayName = "Shay"
+  type = 0
+  description = "Shir is our okta leader"
+  parentObjectTypeId = jira.ObjectType.instance.ISS_restored_at_202403211012_Employees
+  inherited = false
+  abstractObjectType = false
+  parentObjectTypeInherited = false
+  schemaLabel = "ISS_restored_at_202403211012"
+  schemaDisplayLabel = "ISS_restored_at_202403211012"
+  iconId = "131"
+  _parent = [
+    jira.ObjectSchema.instance.ISS_restored_at_202403211012,
+  ]
+  _alias = "Shay"
+}

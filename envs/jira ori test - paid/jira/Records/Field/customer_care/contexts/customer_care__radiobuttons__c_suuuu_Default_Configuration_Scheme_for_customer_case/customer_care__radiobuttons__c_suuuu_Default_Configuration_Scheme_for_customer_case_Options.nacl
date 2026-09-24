@@ -1,0 +1,14 @@
+jira.CustomFieldContextOption customer_care__radiobuttons__c_suuuu_Default_Configuration_Scheme_for_customer_case_in_focus@uuuuumusssssus {
+  value = "in focus"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.customer_care__radiobuttons__c_suuuu_Default_Configuration_Scheme_for_customer_case@uuuuumusssss,
+  ]
+}
+jira.CustomFieldContextOption customer_care__radiobuttons__c_suuuu_Default_Configuration_Scheme_for_customer_case_regular@uuuuumusssssu {
+  value = "regular"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.customer_care__radiobuttons__c_suuuu_Default_Configuration_Scheme_for_customer_case@uuuuumusssss,
+  ]
+}

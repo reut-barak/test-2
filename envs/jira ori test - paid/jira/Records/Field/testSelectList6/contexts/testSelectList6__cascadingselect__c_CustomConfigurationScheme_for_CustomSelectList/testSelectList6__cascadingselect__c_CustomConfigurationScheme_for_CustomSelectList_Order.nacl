@@ -1,0 +1,28 @@
+jira.FieldContextOptionsOrder testSelectList6__cascadingselect__c_CustomConfigurationScheme_for_CustomSelectList_order_child@uuuuussuu {
+  options = [
+    jira.CustomFieldContextOption.instance.testSelectList6__cascadingselect__c_CustomConfigurationScheme_for_CustomSelectList_p1@uuuuussu,
+    jira.CustomFieldContextOption.instance.testSelectList6__cascadingselect__c_CustomConfigurationScheme_for_CustomSelectList_p2@uuuuussu,
+    jira.CustomFieldContextOption.instance.testSelectList6__cascadingselect__c_CustomConfigurationScheme_for_CustomSelectList_p3@uuuuussu,
+    jira.CustomFieldContextOption.instance.testSelectList6__cascadingselect__c_CustomConfigurationScheme_for_CustomSelectList_p4@uuuuussu,
+  ]
+  _parent = [
+    jira.CustomFieldContext.instance.testSelectList6__cascadingselect__c_CustomConfigurationScheme_for_CustomSelectList@uuuuuss,
+  ]
+}
+jira.FieldContextOptionsOrder testSelectList6__cascadingselect__c_CustomConfigurationScheme_for_CustomSelectList_p1_order_child@uuuuussuuu {
+  options = [
+    jira.CustomFieldContextOption.instance.testSelectList6__cascadingselect__c_CustomConfigurationScheme_for_CustomSelectList_p1_c11@uuuuussuu,
+    jira.CustomFieldContextOption.instance.testSelectList6__cascadingselect__c_CustomConfigurationScheme_for_CustomSelectList_p1_c12@uuuuussuu,
+  ]
+  _parent = [
+    jira.CustomFieldContextOption.instance.testSelectList6__cascadingselect__c_CustomConfigurationScheme_for_CustomSelectList_p1@uuuuussu,
+  ]
+}
+jira.FieldContextOptionsOrder testSelectList6__cascadingselect__c_CustomConfigurationScheme_for_CustomSelectList_p2_order_child@uuuuussuuu {
+  options = [
+    jira.CustomFieldContextOption.instance.testSelectList6__cascadingselect__c_CustomConfigurationScheme_for_CustomSelectList_p2_c22@uuuuussuu,
+  ]
+  _parent = [
+    jira.CustomFieldContextOption.instance.testSelectList6__cascadingselect__c_CustomConfigurationScheme_for_CustomSelectList_p2@uuuuussu,
+  ]
+}

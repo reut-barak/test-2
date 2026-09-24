@@ -1,0 +1,5 @@
+jira.AutomationLabel label_label@s {
+  name = "label label"
+  color = "B500"
+  editable = true
+}

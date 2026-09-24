@@ -1,0 +1,8 @@
+jira.ObjectTypeOrder IIS_restored_at_202403211012_childOrder {
+  objectTypes = [
+    jira.ObjectType.instance.IIS_restored_at_202403211012_main_icon@uuuus,
+  ]
+  _parent = [
+    jira.ObjectSchema.instance.IIS_restored_at_202403211012,
+  ]
+}

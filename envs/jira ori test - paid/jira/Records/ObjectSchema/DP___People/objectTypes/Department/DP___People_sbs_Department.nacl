@@ -1,0 +1,16 @@
+jira.ObjectType DP___People_sbs_Department@uuumu {
+  name = "Department"
+  displayName = "Department"
+  type = 0
+  inherited = false
+  abstractObjectType = false
+  parentObjectTypeInherited = false
+  schemaLabel = "DP - People"
+  schemaDisplayLabel = "DP - People"
+  iconId = "85"
+  parentObjectTypeId = jira.ObjectSchema.instance.DP___People@sbs
+  _parent = [
+    jira.ObjectSchema.instance.DP___People@sbs,
+  ]
+  _alias = "Department"
+}

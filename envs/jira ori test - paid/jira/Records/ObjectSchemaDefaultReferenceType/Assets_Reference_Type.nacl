@@ -1,0 +1,7 @@
+jira.ObjectSchemaDefaultReferenceType Assets_Reference_Type@s {
+  name = "Assets Reference Type"
+  displayName = "Assets Reference Type"
+  description = ""
+  color = "var(--ds-text-discovery, 8777D9)"
+  removable = false
+}

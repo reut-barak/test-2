@@ -1,0 +1,17 @@
+jira.ObjectType idoA_Schema_rename_s_Department_uumu_Marketing@uuuumu {
+  name = "Marketing"
+  displayName = "Marketing"
+  type = 0
+  description = ""
+  parentObjectTypeId = jira.ObjectType.instance.idoA_Schema_rename_s_Department@uumu
+  inherited = false
+  abstractObjectType = false
+  parentObjectTypeInherited = false
+  schemaLabel = "idoA Schema rename"
+  schemaDisplayLabel = "idoA Schema rename"
+  iconId = "85"
+  _parent = [
+    jira.ObjectSchema.instance.idoA_Schema_rename@s,
+  ]
+  _alias = "Marketing"
+}

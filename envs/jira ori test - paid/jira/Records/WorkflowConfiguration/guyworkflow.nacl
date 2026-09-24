@@ -1,0 +1,246 @@
+jira.WorkflowConfiguration guyworkflow {
+  scope = {
+    type = "GLOBAL"
+  }
+  name = "guyworkflow"
+  description = "this is mine(guy's)3"
+  isEditable = true
+  startPointLayout = {
+    x = 617
+    y = -132.6
+  }
+  statuses = [
+    {
+      statusReference = jira.Status.instance.build_broken@s
+      layout = {
+        x = 565.83203125
+        y = 17.400000000000006
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      deprecated = false
+      name = "Build Broken"
+    },
+    {
+      statusReference = jira.Status.instance.building
+      layout = {
+        x = 581.41796875
+        y = -32.599999999999994
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      deprecated = false
+      name = "Building"
+    },
+    {
+      statusReference = jira.Status.instance.closed
+      layout = {
+        x = 585.078125
+        y = 267.4
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      deprecated = false
+      name = "Closed"
+    },
+    {
+      statusReference = jira.Status.instance.in_progress@s
+      layout = {
+        x = 569.796875
+        y = 217.4
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      deprecated = false
+      name = "In Progress"
+    },
+    {
+      statusReference = jira.Status.instance.open
+      layout = {
+        x = 592.41015625
+        y = -82.6
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      deprecated = false
+      name = "Open"
+    },
+    {
+      statusReference = jira.Status.instance.reopened
+      layout = {
+        x = 577.12890625
+        y = 167.4
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      deprecated = false
+      name = "Reopened"
+    },
+    {
+      statusReference = jira.Status.instance.resolved
+      layout = {
+        x = 578.15234375
+        y = 317.4
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      deprecated = false
+      name = "Resolved"
+    },
+    {
+      statusReference = jira.Status.instance.under_investigation@s
+      layout = {
+        x = 544.54296875
+        y = 67.4
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      deprecated = false
+      name = "Under investigation"
+    },
+    {
+      statusReference = jira.Status.instance.won_t_fix@ts
+      layout = {
+        x = 579.8046875
+        y = 117.4
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      deprecated = false
+      name = "Won't Fix"
+    },
+  ]
+  transitions = {
+    Create__From__none__Initial@fffsff = {
+      type = "INITIAL"
+      toStatusReference = jira.Status.instance.open
+      links = [
+        {
+          toPort = 7
+        },
+      ]
+      name = "Create"
+      description = ""
+      validators = [
+        {
+          ruleKey = "system:check-permission-validator"
+          parameters = {
+            permissionKey = "CREATE_ISSUES"
+          }
+        },
+      ]
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    }
+    transition_2__From__Reopened__Directed@sfffsff = {
+      type = "DIRECTED"
+      toStatusReference = jira.Status.instance.reopened
+      links = [
+        {
+          fromStatusReference = jira.Status.instance.reopened
+          fromPort = 1
+          toPort = 3
+        },
+      ]
+      name = "transition 2"
+      description = "hjgfgvj"
+      validators = [
+        {
+          ruleKey = "system:validate-field-value"
+          parameters = {
+            ruleType = "fieldHasSingleValue"
+            fieldKey = jira.Field.instance.Creator__user
+            excludeSubtasks = "false"
+          }
+        },
+      ]
+      transitionScreen = {
+        ruleKey = "system:transition-screen"
+        parameters = {
+          screenId = jira.Screen.instance.GUYT__Kanban_Bug_Screen@fsss
+        }
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    }
+    transition_1__From__In_Progress__Directed@sfffssff = {
+      type = "DIRECTED"
+      toStatusReference = jira.Status.instance.in_progress@s
+      links = [
+        {
+          fromStatusReference = jira.Status.instance.in_progress@s
+          fromPort = 1
+          toPort = 3
+        },
+      ]
+      name = "transition 1"
+      description = "i dont know"
+      validators = [
+        {
+          ruleKey = "system:validate-field-value"
+          parameters = {
+            ruleType = "fieldHasSingleValue"
+            fieldKey = jira.Field.instance.Creator__user
+            excludeSubtasks = "false"
+          }
+        },
+      ]
+      transitionScreen = {
+        ruleKey = "system:transition-screen"
+        parameters = {
+          screenId = jira.Screen.instance.stress71
+        }
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+    }
+  }
+}

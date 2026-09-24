@@ -1,0 +1,14 @@
+jira.CustomFieldContextOption Team__multiselect__c_Default_Configuration_Scheme_for_Team_a@uuuuussssu {
+  value = "a"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Team__multiselect__c_Default_Configuration_Scheme_for_Team@uuuuussss,
+  ]
+}
+jira.CustomFieldContextOption Team__multiselect__c_Default_Configuration_Scheme_for_Team_b@uuuuussssu {
+  value = "b"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Team__multiselect__c_Default_Configuration_Scheme_for_Team@uuuuussss,
+  ]
+}

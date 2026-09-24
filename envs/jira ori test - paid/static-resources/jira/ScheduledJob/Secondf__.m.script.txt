@@ -1,0 +1,33 @@
+def cal = Calendar.getInstance()
+cal.add(Calendar.HOUR_OF_DAY, -1)
+def timestamp = Math.ceil(cal.getTimeInMillis() / 1000)
+
+def projectKey = 'DEMO'
+def taskType = get('/rest/api/2/issuetype')
+        .asObject(List)
+        .body
+        .find { it['name'] == 'External Task' }['id']
+
+// TODO - add authentication with remote system
+def results = get("https://external.system/rest/api/1/results?since=${timestamp}")
+    .asObject(List)
+    .body
+
+results.forEach { Map result ->
+    // TODO - I've assumed thatCDSDS each result from the remote system has a 'name' and a 'message' property
+    post('/rest/api/2/issue')
+            .header('Content-Type', 'application/json')
+            .body([
+                    fields: [
+                            summary    : result.name,
+                            description: result.message,
+                            project    : [
+                                    key: projectKey
+                            ],
+                            issuetype  : [
+                                    id: taskType
+                            ]
+                    ]
+            ])
+            .asString().body
+}

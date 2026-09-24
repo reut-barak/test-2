@@ -1,0 +1,22 @@
+jira.ObjectTypeAttribute Icons_main_icon_us_Idoa@uumu {
+  description = "a as amit"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Idoa"
+  displayName = "Idoa"
+  objectType = jira.ObjectType.instance.Icons_main_icon@us
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 0
+  _alias = "Idoa"
+}

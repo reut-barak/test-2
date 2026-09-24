@@ -1,0 +1,10 @@
+jira.Screen AGS_Roadmap_Initiative_Screen@s {
+  name = "AGS Roadmap Initiative Screen"
+  description = ""
+  tabs = {
+    General = {
+      name = "General"
+      position = 0
+    }
+  }
+}

@@ -1,0 +1,17 @@
+jira.ObjectType LNIT_restored_at_202403211012_new_Root@uuuus {
+  name = "new Root"
+  displayName = "new Root"
+  type = 0
+  description = ""
+  inherited = false
+  abstractObjectType = false
+  parentObjectTypeInherited = false
+  schemaLabel = "LNIT_restored_at_202403211012"
+  schemaDisplayLabel = "LNIT_restored_at_202403211012"
+  iconId = "1"
+  parentObjectTypeId = jira.ObjectSchema.instance.LNIT_restored_at_202403211012
+  _parent = [
+    jira.ObjectSchema.instance.LNIT_restored_at_202403211012,
+  ]
+  _alias = "new Root"
+}

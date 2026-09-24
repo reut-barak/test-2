@@ -1,0 +1,15 @@
+jira.Field a_b__float__c@ruuuu {
+  name = "a\"b"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:exactnumber"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "a\"b"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:float"
+  _alias = "a\"b"
+  contexts = [
+    jira.CustomFieldContext.instance.a_b__float__c_ruuuu_Default_Configuration_Scheme_for_a_b@uuuuumussssr,
+    jira.CustomFieldContext.instance.a_b__float__c_ruuuu_Default_Configuration_Scheme_for_a_b_uuuuumussssr_15483@uuuuuuuuuuuumu,
+  ]
+}

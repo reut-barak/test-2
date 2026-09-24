@@ -1,0 +1,16 @@
+jira.ObjectType IZO_Hardware_Assets_us_Phones@uumu {
+  name = "Phones"
+  displayName = "Phones"
+  type = 0
+  parentObjectTypeId = jira.ObjectType.instance.IZO_Hardware_Assets@us
+  inherited = true
+  abstractObjectType = false
+  parentObjectTypeInherited = true
+  schemaLabel = "IZO"
+  schemaDisplayLabel = "IZO"
+  iconId = "86"
+  _parent = [
+    jira.ObjectSchema.instance.IZO,
+  ]
+  _alias = "Phones"
+}

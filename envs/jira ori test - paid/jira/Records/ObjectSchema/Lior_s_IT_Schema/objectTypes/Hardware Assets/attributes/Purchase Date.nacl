@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute Lior_s_IT_Schema_tss_Hardware_Assets_uuumus_Purchase_Date@uuuuuumus {
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Purchase Date"
+  displayName = "Purchase Date"
+  objectType = jira.ObjectType.instance.Lior_s_IT_Schema_tss_Hardware_Assets@uuumus
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 4
+  _alias = "Purchase Date"
+}

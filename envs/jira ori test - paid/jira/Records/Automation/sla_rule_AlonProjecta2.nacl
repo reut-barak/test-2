@@ -1,0 +1,138 @@
+jira.Automation sla_rule_AlonProjecta2@su {
+  name = "sla rule"
+  state = "ENABLED"
+  description = "bla"
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "62ebc187e50f2f2a395557cc"
+    displayName = "Shay Cohen"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.sla.threshold.trigger"
+    value = {
+      customFieldId = jira.Field.instance.SLA1__sd_sla_field__c@uubbuu
+      thresholdType = "WILL_BREACH"
+      thresholdValue = 1800000
+      scheduleConfigIdSet = [
+        1,
+      ]
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      type = "jira.issue.create"
+      value = {
+        operations = [
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Summary__string
+            }
+            fieldType = "summary"
+            type = "SET"
+            rawValue = "bla"
+          },
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Description__string
+            }
+            fieldType = "description"
+            type = "SET"
+          },
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Project__project
+            }
+            fieldType = "project"
+            type = "SET"
+            value = {
+              value = "current"
+              type = "COPY"
+            }
+          },
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Issue_Type__issuetype@suu
+            }
+            fieldType = "issuetype"
+            type = "SET"
+            value = {
+              type = "COPY"
+              value = "current"
+            }
+          },
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Parent
+            }
+            fieldType = "parent"
+            type = "SET"
+            value = {
+              type = "COPY"
+              value = "current"
+            }
+          },
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Attachment__array
+            }
+            fieldType = "attachment"
+            type = "COPY"
+            value = {
+              copyOptions = [
+              ]
+              sourceIssue = "current"
+              sourceField = {
+                type = "ID"
+                value = "attachment"
+                fieldType = "attachment"
+              }
+            }
+          },
+        ]
+        sendNotifications = false
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  projects = [
+    {
+      projectId = jira.Project.instance.AlonProjecta2
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "ad45d3c1ddf6c6a5ad182b2e85788c610313c78850f91590c883af6613cc211e"
+  }
+  isAgentic = false
+  _alias = "sla rule"
+}

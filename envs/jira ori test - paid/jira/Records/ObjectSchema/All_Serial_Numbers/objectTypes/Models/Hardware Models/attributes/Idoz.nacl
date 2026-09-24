@@ -1,0 +1,22 @@
+jira.ObjectTypeAttribute All_Serial_Numbers_s_Models_uumu_Hardware_Models_uuuumus_Idoz@uuuuuuumu {
+  description = ""
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Idoz"
+  displayName = "Idoz"
+  objectType = jira.ObjectType.instance.All_Serial_Numbers_s_Models_uumu_Hardware_Models@uuuumus
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 0
+  _alias = "Idoz"
+}

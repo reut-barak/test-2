@@ -1,0 +1,316 @@
+jira.Automation biorad2_Ido {
+  name = "biorad2"
+  state = "DISABLED"
+  description = '''
+https://jira-infra-global.atlassian.net/browse/SM-1792
+https://jira-infra-global.atlassian.net/browse/SM-345
+'''
+  canOtherRuleTrigger = true
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "62d20c47a94a6f9c0eff9866"
+    displayName = "Ido Zak"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.event.trigger:transitioned"
+    value = {
+      fromStatus = [
+        {
+          type = "NAME"
+          value = jira.Status.instance.backlog.name
+        },
+        {
+          type = "NAME"
+          value = jira.Status.instance.blocked.name
+        },
+      ]
+      toStatus = [
+        {
+          type = "NAME"
+          value = jira.Status.instance.building.name
+        },
+      ]
+      eventKey = "jira:issue_updated"
+      issueEvent = "issue_generic"
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "CONDITION"
+      type = "jira.issue.condition"
+      value = {
+        selectedField = {
+          type = "ID"
+          value = jira.Field.instance.Issue_Type__issuetype@suu
+        }
+        selectedFieldType = "issuetype"
+        comparison = "ONE_OF"
+        compareFieldValue = {
+          type = "ID"
+          multiValue = true
+          values = [
+            jira.IssueType.instance.Bug,
+            jira.IssueType.instance.Bug3,
+            jira.IssueType.instance.Story,
+          ]
+        }
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.issue.create"
+      value = {
+        operations = [
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Project__project
+            }
+            fieldType = "project"
+            type = "SET"
+            value = {
+              type = "ID"
+              value = jira.Project.instance.Ido
+            }
+          },
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Issue_Type__issuetype@suu
+            }
+            fieldType = "issuetype"
+            type = "SET"
+            value = {
+              type = "ID"
+              value = jira.IssueType.instance.Bug3
+            }
+          },
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Parent
+            }
+            fieldType = "parent"
+            type = "SET"
+            value = {
+              type = "COPY"
+              value = "trigger"
+            }
+          },
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Summary__string
+            }
+            fieldType = "summary"
+            type = "SET"
+            rawValue = "Implement Change"
+          },
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Description__string
+            }
+            fieldType = "description"
+            type = "SET"
+            rawValue = '''
+Deploy the change as per the Implementation plan into the Live environment 
+Fill in the Close Code.
+'''
+          },
+          {
+            field = {
+              type = "NAME"
+              value = jira.Field.instance.asset_foeld__cmdb_object_cftype__c@suubbuu
+            }
+            fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+            type = "COPY"
+            value = {
+              copyOptions = [
+              ]
+              sourceIssue = "trigger"
+              sourceField = {
+                type = "NAME"
+                value = "Assignment Group"
+                fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+              }
+            }
+          },
+          {
+            field = {
+              type = "NAME"
+              value = jira.Field.instance.asset_foeld__cmdb_object_cftype__c@suubbuu
+            }
+            fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+            type = "COPY"
+            value = {
+              copyOptions = [
+              ]
+              sourceIssue = "trigger"
+              sourceField = {
+                type = "NAME"
+                value = "Service"
+                fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+              }
+            }
+          },
+          {
+            field = {
+              type = "NAME"
+              value = jira.Field.instance.asset_foeld__cmdb_object_cftype__c@suubbuu
+            }
+            fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+            type = "COPY"
+            value = {
+              copyOptions = [
+              ]
+              sourceIssue = "trigger"
+              sourceField = {
+                type = "NAME"
+                value = "Configuration Item"
+                fieldType = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+              }
+            }
+          },
+          {
+            field = {
+              type = "NAME"
+              value = jira.Field.instance.Actual_end__datetime__c@suuuu.name
+            }
+            fieldType = "com.atlassian.jira.plugin.system.customfieldtypes:datetime"
+            type = "COPY"
+            value = {
+              copyOptions = [
+              ]
+              sourceIssue = "trigger"
+              sourceField = {
+                type = "NAME"
+                value = "Planned end"
+                fieldType = "com.atlassian.jira.plugin.system.customfieldtypes:datetime"
+              }
+            }
+          },
+        ]
+        sendNotifications = false
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "BRANCH"
+      type = "jira.issue.related"
+      value = {
+        relatedType = "recentlycreated"
+        jql = ""
+        linkTypes = [
+        ]
+        onlyUpdatedIssues = false
+        similarityLimit = 40
+        compareValue = 0
+      }
+      conditions = [
+      ]
+      children = [
+        {
+          component = "ACTION"
+          type = "jira.issue.edit"
+          value = {
+            operations = [
+              {
+                field = {
+                  type = "NAME"
+                  value = jira.Field.instance.Approvers__multiuserpicker__c.name
+                }
+                fieldType = "com.atlassian.jira.plugin.system.customfieldtypes:multiuserpicker"
+                type = "COPY"
+                value = {
+                  copyOptions = [
+                    "ADD",
+                  ]
+                  sourceIssue = "trigger"
+                  sourceField = {
+                    type = "NAME"
+                    value = "Assignable Users"
+                    fieldType = "com.atlassian.jira.plugin.system.customfieldtypes:multiuserpicker"
+                  }
+                }
+              },
+            ]
+            sendNotifications = true
+          }
+          conditions = [
+          ]
+          children = [
+          ]
+        },
+        {
+          component = "ACTION"
+          type = "jira.issue.edit"
+          value = {
+            operations = [
+              {
+                field = {
+                  type = "ID"
+                  value = jira.Field.instance.Assignee__user
+                }
+                fieldType = "assignee"
+                type = "COPY"
+                value = {
+                  copyOptions = [
+                  ]
+                  sourceIssue = "trigger"
+                  sourceField = {
+                    type = "ID"
+                    value = "assignee"
+                    fieldType = "assignee"
+                  }
+                }
+              },
+            ]
+            sendNotifications = true
+          }
+          conditions = [
+          ]
+          children = [
+          ]
+        },
+      ]
+    },
+  ]
+  projects = [
+    {
+      projectId = jira.Project.instance.Ido
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "0c9f07c3906dd4d980a2f647df0f4e221c05aa2d9bdb285ff485599fb8d46697"
+  }
+  isAgentic = false
+  _alias = "biorad2"
+}

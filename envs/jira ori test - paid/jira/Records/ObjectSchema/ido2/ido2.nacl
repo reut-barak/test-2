@@ -1,0 +1,14 @@
+jira.ObjectSchema ido2 {
+  name = "ido2"
+  displayName = "ido2"
+  objectSchemaKey = "ID2"
+  description = "This is for manage people kol right or left or inside?"
+  status = "Ok"
+  crossSchemaReferencingAllowed = false
+  properties = {
+    quickCreateObjects = true
+    allowOtherObjectSchema = false
+    validateQuickCreate = true
+  }
+  _alias = "ido2"
+}

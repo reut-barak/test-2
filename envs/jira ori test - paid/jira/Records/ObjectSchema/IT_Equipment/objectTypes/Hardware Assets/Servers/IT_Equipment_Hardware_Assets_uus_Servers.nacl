@@ -1,0 +1,16 @@
+jira.ObjectType IT_Equipment_Hardware_Assets_uus_Servers@uuumu {
+  name = "Servers"
+  displayName = "Servers"
+  type = 0
+  parentObjectTypeId = jira.ObjectType.instance.IT_Equipment_Hardware_Assets@uus
+  inherited = true
+  abstractObjectType = false
+  parentObjectTypeInherited = true
+  schemaLabel = "IT_Equipment"
+  schemaDisplayLabel = "IT_Equipment"
+  iconId = "107"
+  _parent = [
+    jira.ObjectSchema.instance.IT_Equipment,
+  ]
+  _alias = "Servers"
+}

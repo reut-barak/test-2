@@ -1,0 +1,14 @@
+jira.Field Compliance_Type__select__c@suuuu {
+  name = "Compliance Type"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher"
+  areOptionsSupported = true
+  isOptionsCountOverLimit = false
+  translatedName = "Compliance Type"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:select"
+  contexts = [
+    jira.CustomFieldContext.instance.Compliance_Type__select__c_suuuu_Default_Configuration_Scheme_for_Compliance_Type@uuuuumusssss,
+  ]
+  _alias = "Compliance Type"
+}

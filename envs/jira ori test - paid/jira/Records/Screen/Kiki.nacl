@@ -1,0 +1,13 @@
+jira.Screen Kiki {
+  name = "Kiki"
+  description = "xs"
+  tabs = {
+    General = {
+      name = "General"
+      fields = [
+        jira.Field.instance.AAA_test_custom_field__multicheckboxes__c@sssuuuu,
+      ]
+      position = 0
+    }
+  }
+}

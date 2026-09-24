@@ -1,0 +1,16 @@
+jira.ObjectType GWR2_Schema_s_Models_umu_Hardware_Models@uuumus {
+  name = "Hardware Models"
+  displayName = "Hardware Models"
+  type = 0
+  parentObjectTypeId = jira.ObjectType.instance.GWR2_Schema_s_Models@umu
+  inherited = false
+  abstractObjectType = false
+  parentObjectTypeInherited = false
+  schemaLabel = "GWR2 Schema"
+  schemaDisplayLabel = "GWR2 Schema"
+  iconId = "73"
+  _parent = [
+    jira.ObjectSchema.instance.GWR2_Schema@s,
+  ]
+  _alias = "Hardware Models"
+}

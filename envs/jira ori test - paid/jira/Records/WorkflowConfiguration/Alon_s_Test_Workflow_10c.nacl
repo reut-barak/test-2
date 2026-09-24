@@ -1,0 +1,191 @@
+jira.WorkflowConfiguration Alon_s_Test_Workflow_10c@tsss {
+  scope = {
+    type = "GLOBAL"
+  }
+  name = "Alon's Test Workflow 10c"
+  description = "desc75"
+  isEditable = true
+  startPointLayout = {
+    x = 720
+    y = -82.6
+  }
+  statuses = [
+    {
+      statusReference = jira.Status.instance.in_progress@s
+      layout = {
+        x = 672.796875
+        y = 167.4
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      deprecated = false
+      name = "In Progress"
+    },
+    {
+      statusReference = jira.Status.instance.in_review@s
+      layout = {
+        x = 682.2734375
+        y = 267.4
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+        {
+          key = "testKey"
+          value = "testValue"
+        },
+      ]
+      deprecated = false
+      name = "In Review"
+    },
+    {
+      statusReference = jira.Status.instance.open
+      layout = {
+        x = 695.41015625
+        y = -32.599999999999994
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      deprecated = false
+      name = "Open"
+    },
+    {
+      statusReference = jira.Status.instance.resolved
+      layout = {
+        x = 681.15234375
+        y = 217.4
+      }
+      properties = [
+        {
+          key = "jira.issue.editable"
+          value = "true"
+        },
+      ]
+      deprecated = false
+      name = "Resolved"
+    },
+  ]
+  transitions = {
+    Build_Broken__From__any_status__Global@sfffssff = {
+      type = "GLOBAL"
+      toStatusReference = jira.Status.instance.resolved
+      name = "Build Broken"
+      description = ""
+    }
+    bbbb__From__any_status__Global@fffssff = {
+      type = "GLOBAL"
+      toStatusReference = jira.Status.instance.in_progress@s
+      name = "bbbb"
+      description = ""
+    }
+    ttttt__From__any_status__Global@fffssff = {
+      type = "GLOBAL"
+      toStatusReference = jira.Status.instance.in_review@s
+      name = "ttttt"
+      description = ""
+      actions = [
+        {
+          ruleKey = "system:change-assignee"
+          parameters = {
+            type = "to-lead"
+          }
+        },
+      ]
+      conditions = {
+        operation = "ALL"
+        conditions = [
+          {
+            ruleKey = "system:restrict-from-all-users"
+            parameters = {
+              restrictMode = "usersAndAPI"
+            }
+          },
+        ]
+      }
+    }
+    Create__From__none__Initial@fffsff = {
+      type = "INITIAL"
+      toStatusReference = jira.Status.instance.open
+      links = [
+        {
+          toPort = 7
+        },
+      ]
+      name = "Create"
+      description = ""
+      actions = [
+        {
+          ruleKey = "system:update-field"
+          parameters = {
+            field = jira.Field.instance.Environment__string
+          }
+        },
+        {
+          ruleKey = "system:copy-value-from-other-field"
+          parameters = {
+            sourceFieldKey = jira.Field.instance.Assignee__user
+            targetFieldKey = jira.Field.instance.Creator__user
+            issueSource = "PARENT"
+          }
+        },
+        {
+          ruleKey = "system:set-security-level-from-role"
+          parameters = {
+            roleId = jira.ProjectRole.instance.Administrators
+            issueSecurityLevelId = "none"
+          }
+        },
+        {
+          ruleKey = "system:update-field"
+          parameters = {
+            field = jira.Field.instance.Approvers__multiuserpicker__c
+            value = "ww"
+            mode = "replace"
+          }
+        },
+        {
+          ruleKey = "system:change-assignee"
+          parameters = {
+            type = "to-unassigned"
+          }
+        },
+        {
+          ruleKey = "system:change-assignee"
+          parameters = {
+            type = "to-current-user"
+          }
+        },
+        {
+          ruleKey = "system:change-assignee"
+          parameters = {
+            type = "to-lead"
+          }
+        },
+        {
+          ruleKey = "system:change-assignee"
+          parameters = {
+            type = "to-reporter"
+          }
+        },
+      ]
+      validators = [
+        {
+          ruleKey = "system:check-permission-validator"
+          parameters = {
+            permissionKey = "CREATE_ISSUES"
+          }
+        },
+      ]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+jira.FieldContextOptionsOrder testDesc1__multicheckboxes__c_Default_Configuration_Scheme_for_testDesc1_order_child@uuuuussssuu {
+  options = [
+    jira.CustomFieldContextOption.instance.testDesc1__multicheckboxes__c_Default_Configuration_Scheme_for_testDesc1_aa@uuuuussssu,
+  ]
+  _parent = [
+    jira.CustomFieldContext.instance.testDesc1__multicheckboxes__c_Default_Configuration_Scheme_for_testDesc1@uuuuussss,
+  ]
+}

@@ -1,0 +1,15 @@
+jira.Field MultipleContextTestField__radiobuttons__c {
+  name = "MultipleContextTestField"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher"
+  areOptionsSupported = true
+  isOptionsCountOverLimit = false
+  translatedName = "MultipleContextTestField"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:radiobuttons"
+  contexts = [
+    jira.CustomFieldContext.instance.MultipleContextTestField__radiobuttons__c_Default_Configuration_Scheme_for_MultipleContextTestField@uuuuussss,
+    jira.CustomFieldContext.instance.MultipleContextTestField__radiobuttons__c_ANewConfigruationScehemeContexForMultipleContextField,
+  ]
+  _alias = "MultipleContextTestField"
+}

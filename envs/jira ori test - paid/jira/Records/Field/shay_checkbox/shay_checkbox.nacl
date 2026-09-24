@@ -1,0 +1,14 @@
+jira.Field shay_checkbox__multicheckboxes__c@suuuu {
+  name = "shay checkbox"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher"
+  areOptionsSupported = true
+  isOptionsCountOverLimit = false
+  translatedName = "shay checkbox"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes"
+  contexts = [
+    jira.CustomFieldContext.instance.shay_checkbox__multicheckboxes__c_suuuu_a@uuuuumu,
+  ]
+  _alias = "shay checkbox"
+}

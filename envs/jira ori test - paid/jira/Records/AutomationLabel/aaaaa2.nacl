@@ -1,0 +1,5 @@
+jira.AutomationLabel aaaaa2 {
+  name = "aaaaa2"
+  color = "T400"
+  editable = true
+}

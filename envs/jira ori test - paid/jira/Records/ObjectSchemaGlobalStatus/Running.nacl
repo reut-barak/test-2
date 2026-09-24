@@ -1,0 +1,8 @@
+jira.ObjectSchemaGlobalStatus Running {
+  workspaceId = "68d020c3-b88e-47dc-9231-452f7dc63521"
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:5"
+  name = "Running"
+  displayName = "Running"
+  description = ""
+  category = 1
+}

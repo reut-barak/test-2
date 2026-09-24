@@ -1,0 +1,10 @@
+jira.FieldContextOptionsOrder testBug__multicheckboxes__c_NewContext_order_child {
+  options = [
+    jira.CustomFieldContextOption.instance.testBug__multicheckboxes__c_NewContext_d,
+    jira.CustomFieldContextOption.instance.testBug__multicheckboxes__c_NewContext_e,
+    jira.CustomFieldContextOption.instance.testBug__multicheckboxes__c_NewContext_f,
+  ]
+  _parent = [
+    jira.CustomFieldContext.instance.testBug__multicheckboxes__c_NewContext,
+  ]
+}

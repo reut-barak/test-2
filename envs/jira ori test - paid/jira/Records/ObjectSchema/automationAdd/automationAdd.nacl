@@ -1,0 +1,14 @@
+jira.ObjectSchema automationAdd {
+  name = "automationAdd"
+  displayName = "automationAdd"
+  objectSchemaKey = "AA"
+  description = "This is for manage people or noise?"
+  status = "Ok"
+  crossSchemaReferencingAllowed = false
+  properties = {
+    quickCreateObjects = true
+    allowOtherObjectSchema = false
+    validateQuickCreate = false
+  }
+  _alias = "automationAdd"
+}

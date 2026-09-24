@@ -1,0 +1,16 @@
+jira.ObjectType IT_Equipment_Models {
+  name = "Models"
+  displayName = "Models"
+  type = 0
+  inherited = false
+  abstractObjectType = true
+  parentObjectTypeInherited = false
+  schemaLabel = "IT_Equipment"
+  schemaDisplayLabel = "IT_Equipment"
+  iconId = "73"
+  parentObjectTypeId = jira.ObjectSchema.instance.IT_Equipment
+  _parent = [
+    jira.ObjectSchema.instance.IT_Equipment,
+  ]
+  _alias = "Models"
+}

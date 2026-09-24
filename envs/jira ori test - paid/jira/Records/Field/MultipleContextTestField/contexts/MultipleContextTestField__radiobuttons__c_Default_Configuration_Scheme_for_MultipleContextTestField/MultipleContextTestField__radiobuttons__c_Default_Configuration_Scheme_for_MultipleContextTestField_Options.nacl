@@ -1,0 +1,14 @@
+jira.CustomFieldContextOption MultipleContextTestField__radiobuttons__c_Default_Configuration_Scheme_for_MultipleContextTestField_1@uuuuussssu {
+  value = "1"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.MultipleContextTestField__radiobuttons__c_Default_Configuration_Scheme_for_MultipleContextTestField@uuuuussss,
+  ]
+}
+jira.CustomFieldContextOption MultipleContextTestField__radiobuttons__c_Default_Configuration_Scheme_for_MultipleContextTestField_2@uuuuussssu {
+  value = "2"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.MultipleContextTestField__radiobuttons__c_Default_Configuration_Scheme_for_MultipleContextTestField@uuuuussss,
+  ]
+}

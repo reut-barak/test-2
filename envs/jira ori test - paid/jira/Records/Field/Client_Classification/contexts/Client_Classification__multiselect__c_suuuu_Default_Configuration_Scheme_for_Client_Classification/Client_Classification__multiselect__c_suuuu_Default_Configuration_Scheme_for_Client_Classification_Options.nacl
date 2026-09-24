@@ -1,0 +1,14 @@
+jira.CustomFieldContextOption Client_Classification__multiselect__c_suuuu_Default_Configuration_Scheme_for_Client_Classification_Consumer@uuuuumusssssu {
+  value = "Consumer"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Client_Classification__multiselect__c_suuuu_Default_Configuration_Scheme_for_Client_Classification@uuuuumusssss,
+  ]
+}
+jira.CustomFieldContextOption Client_Classification__multiselect__c_suuuu_Default_Configuration_Scheme_for_Client_Classification_Professional@uuuuumusssssu {
+  value = "Professional"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Client_Classification__multiselect__c_suuuu_Default_Configuration_Scheme_for_Client_Classification@uuuuumusssss,
+  ]
+}

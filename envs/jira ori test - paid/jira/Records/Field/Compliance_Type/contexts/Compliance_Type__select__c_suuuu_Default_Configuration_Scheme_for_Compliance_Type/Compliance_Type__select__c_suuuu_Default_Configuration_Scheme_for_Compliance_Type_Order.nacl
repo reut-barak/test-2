@@ -1,0 +1,13 @@
+jira.FieldContextOptionsOrder Compliance_Type__select__c_suuuu_Default_Configuration_Scheme_for_Compliance_Type_order_child@uuuuumusssssuu {
+  options = [
+    jira.CustomFieldContextOption.instance.Compliance_Type__select__c_suuuu_Default_Configuration_Scheme_for_Compliance_Type_None@uuuuumusssssu,
+    jira.CustomFieldContextOption.instance.Compliance_Type__select__c_suuuu_Default_Configuration_Scheme_for_Compliance_Type_GDPR@uuuuumusssssu,
+    jira.CustomFieldContextOption.instance.Compliance_Type__select__c_suuuu_Default_Configuration_Scheme_for_Compliance_Type_HIPAA@uuuuumusssssu,
+    jira.CustomFieldContextOption.instance.Compliance_Type__select__c_suuuu_Default_Configuration_Scheme_for_Compliance_Type_ISO_27001@uuuuumusssssus,
+    jira.CustomFieldContextOption.instance.Compliance_Type__select__c_suuuu_Default_Configuration_Scheme_for_Compliance_Type_SOC2@uuuuumusssssu,
+    jira.CustomFieldContextOption.instance.Compliance_Type__select__c_suuuu_Default_Configuration_Scheme_for_Compliance_Type_FEDRAMP@uuuuumusssssu,
+  ]
+  _parent = [
+    jira.CustomFieldContext.instance.Compliance_Type__select__c_suuuu_Default_Configuration_Scheme_for_Compliance_Type@uuuuumusssss,
+  ]
+}

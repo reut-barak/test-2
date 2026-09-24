@@ -1,0 +1,110 @@
+jira.Automation w5_automation@s {
+  name = "w5 automation"
+  state = "ENABLED"
+  description = "w automation"
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "640a4787f00d095406f6727f"
+    displayName = "Ido Amit"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.comment.event.trigger:updated"
+    value = {
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "BRANCH"
+      type = "jira.issue.related"
+      value = {
+        relatedType = "current"
+        jql = ""
+        linkTypes = [
+        ]
+        onlyUpdatedIssues = false
+        similarityLimit = 40
+        compareValue = 0
+      }
+      conditions = [
+      ]
+      children = [
+        {
+          component = "ACTION"
+          type = "cmdb.object.create"
+          value = {
+            schemaId = jira.ObjectSchema.instance.idoA_Schema_rename@s
+            objectTypeId = jira.ObjectType.instance.idoA_Schema_rename_s_Department_uumu_R_D_uuuumue_Team_Omri_uuuuuuumus_Okta_uuuuuuuuuumu_Okta_adapter_lead_uuuuuuuuuuuumuss_bono@uuuuuuuuuuuuuuuumu
+            attributes = [
+              {
+                name = "Name"
+                value = "bononbono"
+                isLabel = true
+              },
+            ]
+          }
+          conditions = [
+          ]
+          children = [
+          ]
+        },
+      ]
+    },
+    {
+      component = "BRANCH"
+      type = "cmdb.object.related"
+      value = {
+        schemaId = jira.ObjectSchema.instance.idoA_Schema_rename@s
+        cmdbQuery = "say yo"
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "cmdb.object.create"
+      value = {
+        schemaId = jira.ObjectSchema.instance.idoA_Schema_rename@s
+        objectTypeId = jira.ObjectType.instance.idoA_Schema_rename_s_Department_uumu_R_D_uuuumue_Team_Omri_uuuuuuumus_Okta_uuuuuuuuuumu_Okta_adapter_lead_uuuuuuuuuuuumuss_bono@uuuuuuuuuuuuuuuumu
+        attributes = [
+          {
+            name = "Name"
+            value = "idii"
+            isLabel = true
+          },
+        ]
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "f9f34955e151d9d3c06cca438a0d6f96d9d8391694e542fe3bb5a61eaa172709"
+  }
+  isAgentic = false
+  _alias = "w5 automation"
+}

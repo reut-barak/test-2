@@ -1,0 +1,4 @@
+jira.ObjectTypeIcon ido2 {
+  name = "ido2"
+  icon = file("jira/ObjectTypeIcon/ido2.png")
+}

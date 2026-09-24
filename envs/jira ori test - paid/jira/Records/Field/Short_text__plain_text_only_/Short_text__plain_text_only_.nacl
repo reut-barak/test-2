@@ -1,0 +1,14 @@
+jira.Field Short_text__plain_text_only___textfield__c@ssjsskuuuu {
+  name = "Short text (plain text only)"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:textsearcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "Short text (plain text only)"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+  contexts = [
+    jira.CustomFieldContext.instance.Short_text__plain_text_only___textfield__c_ssjsskuuuu_Default_Configuration_Scheme_for_Short_text__plain_text_only_@uuuuuuuuuumussssssjssk,
+  ]
+  _alias = "Short text (plain text only)"
+}

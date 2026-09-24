@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute All_Serial_Numbers_s_Models_uumu_Created@uuuumu {
+  editable = false
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 1
+  name = "Created"
+  displayName = "Created"
+  objectType = jira.ObjectType.instance.All_Serial_Numbers_s_Models@uumu
+  options = ""
+  pendingCreation = false
+  removable = false
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 6
+  _alias = "Created"
+}

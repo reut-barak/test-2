@@ -1,0 +1,14 @@
+jira.Field shay_test__labels__c@suuuu {
+  name = "shay test"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:labelsearcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "shay test"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:labels"
+  contexts = [
+    jira.CustomFieldContext.instance.shay_test__labels__c_suuuu_Default_Configuration_Scheme_for_shay_test@uuuuumusssss,
+  ]
+  _alias = "shay test"
+}

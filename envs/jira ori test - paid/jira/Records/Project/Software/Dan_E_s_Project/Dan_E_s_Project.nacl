@@ -1,0 +1,18 @@
+jira.Project Dan_E_s_Project@bts {
+  key = "DGE"
+  description = ""
+  name = "Dan-E's Project"
+  projectTypeKey = "software"
+  workflowScheme = jira.WorkflowScheme.instance.DGE__Software_Simplified_Workflow_Scheme@fssss
+  permissionScheme = jira.PermissionScheme.instance.Default_software_scheme@s
+  notificationScheme = jira.NotificationScheme.instance.Default_Notification_Scheme@s
+  issueSecurityScheme = jira.SecurityScheme.instance.DGE__Simplified_Issue_Security_Scheme@fssss
+  issueTypeScreenScheme = jira.IssueTypeScreenScheme.instance.DGE__Scrum_Issue_Type_Screen_Scheme@fsssss
+  issueTypeScheme = jira.IssueTypeScheme.instance.DGE__Scrum_Issue_Type_Scheme@fssss
+  leadAccountId = {
+    id = "712020:f12c0bf7-5d75-427b-b149-5ddd2da2ab8e"
+    displayName = "Former user"
+  }
+  assigneeType = "PROJECT_LEAD"
+  priorityScheme = jira.PriorityScheme.instance.Default_priority_scheme@s
+}

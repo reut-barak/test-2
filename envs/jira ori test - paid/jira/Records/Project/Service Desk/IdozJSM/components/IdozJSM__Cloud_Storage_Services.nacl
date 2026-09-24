@@ -1,0 +1,9 @@
+jira.ProjectComponent IdozJSM__Cloud_Storage_Services@uuss {
+  description = "Created by Jira Service Management"
+  assigneeType = "PROJECT_DEFAULT"
+  name = "Cloud Storage Services"
+  _parent = [
+    jira.Project.instance.IdozJSM,
+  ]
+  _alias = "IdozJSM:Cloud Storage Services"
+}

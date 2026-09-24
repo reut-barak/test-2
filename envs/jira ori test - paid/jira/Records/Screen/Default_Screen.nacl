@@ -1,0 +1,43 @@
+jira.Screen Default_Screen@s {
+  name = "Default Screen"
+  description = "Allows to update all system fields."
+  tabs = {
+    General = {
+      name = "General"
+      fields = [
+        jira.Field.instance.Summary__string,
+        jira.Field.instance.Issue_Type__issuetype@suu,
+        jira.Field.instance.Security_Level__securitylevel@suu,
+        jira.Field.instance.Priority__priority,
+        jira.Field.instance.Due_date__date@suu,
+        jira.Field.instance.Components__array,
+        jira.Field.instance.Affects_versions__array@suu,
+        jira.Field.instance.Fix_versions__array@suu,
+        jira.Field.instance.Assignee__user,
+        jira.Field.instance.Reporter__user,
+        jira.Field.instance.Environment__string,
+        jira.Field.instance.Description__string,
+        jira.Field.instance.Time_tracking__timetracking@suu,
+        jira.Field.instance.Attachment__array,
+        jira.Field.instance.Labels__array,
+        jira.Field.instance.Request_participants__sd_request_participants__c@suubbuu,
+        jira.Field.instance.Approvers__multiuserpicker__c,
+        jira.Field.instance.Organizations__sd_customer_organizations__c@uubbuu,
+        jira.Field.instance.NewCustomFieldLior__multicheckboxes__c,
+        jira.Field.instance.Satisfaction__sd_request_feedback__c@uubbuu,
+        jira.Field.instance.Request_Type__vp_origin__c@suubuu,
+        jira.Field.instance.Request_language__sd_request_language__c@suubbuu,
+        jira.Field.instance.Approver_groups__multigrouppicker__c@suuuu,
+        jira.Field.instance.AAA_test_custom_field__multicheckboxes__c@sssuuuu,
+        jira.Field.instance.Linked_Issues__array@suu,
+        jira.Field.instance.DP___Priority__float__c@sbsuuuu,
+        jira.Field.instance.shay_cascading_select__cascadingselect__c@ssuuuu,
+        jira.Field.instance.Urgency__select__c,
+        jira.Field.instance.Impact__select__c,
+        jira.Field.instance.Affected_services__service_entity_field_cftype__c@suubbbuu,
+        jira.Field.instance.Team__atlassian_team__c@uubuu,
+      ]
+      position = 0
+    }
+  }
+}

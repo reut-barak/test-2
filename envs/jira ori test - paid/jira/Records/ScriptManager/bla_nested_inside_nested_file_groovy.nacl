@@ -1,0 +1,12 @@
+jira.ScriptManager bla_nested_inside_nested_file_groovy@dduuv {
+  name = "inside_nested_file.groovy"
+  type = "file"
+  path = "bla/nested/inside_nested_file.groovy"
+  content = file(
+    "jira/ScriptManager/bla/nested/inside_nested_file.groovy",
+    "utf-8",
+  )
+  _parent = [
+    jira.ScriptManager.instance.bla_nested@d,
+  ]
+}

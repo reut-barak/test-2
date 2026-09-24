@@ -1,0 +1,14 @@
+jira.Field Change_completion_date__datetime__c@ssuuuu {
+  name = "Change completion date"
+  description = "Specify the completion time for the change request"
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:datetimerange"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "Change completion date"
+  translatedDescription = "Specify the completion time for the change request"
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:datetime"
+  contexts = [
+    jira.CustomFieldContext.instance.Change_completion_date__datetime__c_ssuuuu_Default_Configuration_Scheme_for_Change_completion_date@uuuuuumussssss,
+  ]
+  _alias = "Change completion date"
+}

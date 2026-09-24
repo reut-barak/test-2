@@ -1,0 +1,13 @@
+jira.Screen INCIDENT_43094_Edit_Key_Fields_Screen@sssss {
+  name = "INCIDENT 43094 Edit Key Fields Screen"
+  description = "Repro for INCIDENT-43094"
+  tabs = {
+    General = {
+      name = "General"
+      fields = [
+        jira.Field.instance.Labels__array,
+      ]
+      position = 0
+    }
+  }
+}

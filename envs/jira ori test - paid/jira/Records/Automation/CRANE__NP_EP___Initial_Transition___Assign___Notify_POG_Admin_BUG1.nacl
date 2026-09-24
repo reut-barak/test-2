@@ -1,0 +1,468 @@
+jira.Automation CRANE__NP_EP___Initial_Transition___Assign___Notify_POG_Admin_BUG1@fsdsbsssbssesssu {
+  name = "CRANE: NP/EP - Initial Transition - Assign & Notify POG Admin"
+  state = "ENABLED"
+  description = "Sets the Issue type == to a POG submission task upon creating issue"
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "61d44bf59ee70a00685fa6b6"
+    displayName = "Testing salto"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.event.trigger:created"
+    value = {
+      eventKey = "jira:issue_created"
+      issueEvent = "issue_created"
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      type = "jira.create.variable"
+      value = {
+        id = "_customsmartvalue_id_1770385566465"
+        name = {
+          type = "FREE"
+          value = "deadline"
+        }
+        type = "SMART"
+        query = {
+          type = "SMART"
+          value = "{{now.plusDays(5).format(\"dd-MM-yyyy\")}}"
+        }
+        lazy = false
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "CONDITION"
+      type = "jira.condition.container.block"
+      conditions = [
+      ]
+      children = [
+        {
+          component = "CONDITION_BLOCK"
+          type = "jira.condition.if.block"
+          value = {
+            conditionMatchType = "ALL"
+          }
+          conditions = [
+            {
+              component = "CONDITION"
+              type = "jira.issue.condition"
+              value = {
+                selectedField = {
+                  type = "ID"
+                  value = jira.Field.instance.Issue_Type__issuetype@suu
+                }
+                selectedFieldType = "issuetype"
+                comparison = "EQUALS"
+                compareFieldValue = {
+                  type = "ID"
+                  value = jira.IssueType.instance.CRANE__New_Product_Workflow@fsss
+                  multiValue = false
+                }
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+          ]
+          children = [
+            {
+              component = "ACTION"
+              type = "jira.issue.transition"
+              value = {
+                operations = [
+                ]
+                sendNotifications = true
+                destinationStatus = {
+                  type = "NAME"
+                  value = jira.Status.instance.proposal_review@s.name
+                }
+                transitionMatch = ""
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+            {
+              component = "ACTION"
+              type = "jira.issue.assign"
+              value = {
+                assignType = "ROLE"
+                jql = "statusCategory != Done"
+                role = {
+                  type = "NAME"
+                  value = jira.ProjectRole.instance.POG_admin@s.name
+                }
+                excludedUsers = [
+                ]
+                userList = [
+                ]
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+            {
+              component = "ACTION"
+              type = "jira.issue.refresh.issue"
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+            {
+              component = "ACTION"
+              type = "jira.issue.outgoing.webhook"
+              value = {
+                url = "https://example.com/incident-43094"
+                urlSecure = false
+                headers = [
+                  {
+                    id = "_header_1696590082225"
+                    name = "Content-Type"
+                    value = "application/json"
+                    headerSecure = false
+                  },
+                  {
+                    id = "_header_1770286726387"
+                    name = "Authorization"
+                    value = "<SECRET_TOKEN>"
+                    headerSecure = true
+                  },
+                ]
+                sendIssue = false
+                contentType = "custom"
+                customBody = '''
+{
+  "channel": "convex-product-governance-test",
+  "blocks": [
+    {
+      "type": "header",
+      "text": {
+        "type": "plain_text",
+        "text": ":cranebird: New POG Review :memo:",
+        "emoji": true
+      }
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "plain_text",
+        "text": "A new POG review has been created and needs to be reviewed.",
+        "emoji": true
+      }
+    },
+    { "type": "divider" },
+    {
+      "type": "section",
+      "fields": [
+        {
+          "type": "mrkdwn",
+          "text": "*POG Admin:* <@{{${ jira.Field.instance.Assignee__user }.properties.slack_metadata.slack_id}}>"
+        },
+        {
+          "type": "mrkdwn",
+          "text": "*POG Reference:* {{issue.key}}"
+        }
+      ]
+    },
+    { "type": "divider" },
+    {
+      "type": "section",
+      "fields": [
+        {
+          "type": "mrkdwn",
+          "text": "*Product Name:* {{issue.fields.${ jira.Field.instance.Product_Name__textfield__c@suuuu }}}"
+        },
+        {
+          "type": "mrkdwn",
+          "text": "*POG Approval Type:* {{issue.fields.${ jira.Field.instance.Client_Classification__multiselect__c@suuuu }}}"
+        }
+      ]
+    },
+    { "type": "divider" },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "*Review Deadline:* {{deadline}}"
+      }
+    },
+    { "type": "divider" },
+    {
+      "type": "section",
+      "block_id": "sectionBlockOnlyPlainText",
+      "text": {
+        "type": "plain_text",
+        "text": "Use this link to complete/update the task.",
+        "emoji": true
+      }
+    },
+    {
+      "type": "actions",
+      "elements": [
+        {
+          "type": "button",
+          "text": {
+            "type": "plain_text",
+            "text": "Link to Issue",
+            "emoji": false
+          },
+          "value": "click_me_123",
+          "url": "{{issue.url}}",
+          "action_id": "actionId-0"
+        }
+      ]
+    }
+  ]
+}
+
+'''
+                method = "POST"
+                responseEnabled = false
+                continueOnErrorEnabled = false
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+          ]
+        },
+        {
+          component = "CONDITION_BLOCK"
+          type = "jira.condition.if.block"
+          value = {
+            conditionMatchType = "ALL"
+          }
+          conditions = [
+            {
+              component = "CONDITION"
+              type = "jira.issue.condition"
+              value = {
+                selectedField = {
+                  type = "ID"
+                  value = jira.Field.instance.Issue_Type__issuetype@suu
+                }
+                selectedFieldType = "issuetype"
+                comparison = "EQUALS"
+                compareFieldValue = {
+                  type = "ID"
+                  value = jira.IssueType.instance.CRANE__Existing_Product_Workflow@fsss
+                  multiValue = false
+                }
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+          ]
+          children = [
+            {
+              component = "ACTION"
+              type = "jira.issue.transition"
+              value = {
+                operations = [
+                ]
+                sendNotifications = true
+                destinationStatus = {
+                  type = "NAME"
+                  value = jira.Status.instance.data_review@s.name
+                }
+                transitionMatch = "Auto"
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+            {
+              component = "ACTION"
+              type = "jira.issue.assign"
+              value = {
+                assignType = "ISSUE_VALUE"
+                fieldToCopy = "REPORTER"
+                excludedUsers = [
+                ]
+                userList = [
+                ]
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+            {
+              component = "ACTION"
+              type = "jira.issue.refresh.issue"
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+            {
+              component = "ACTION"
+              type = "jira.issue.outgoing.webhook"
+              value = {
+                url = "https://example.com/incident-43094"
+                urlSecure = false
+                headers = [
+                  {
+                    id = "_header_1732104130468"
+                    name = ""
+                    value = ""
+                    headerSecure = false
+                  },
+                  {
+                    id = "_header_1732104191248"
+                    name = "Authorization"
+                    value = "<SECRET_TOKEN>"
+                    headerSecure = true
+                  },
+                ]
+                sendIssue = false
+                contentType = "custom"
+                customBody = '''
+{
+	"channel": "convex-product-governance-test",
+	"blocks": [
+		{
+			"type": "header",
+			"text": {
+				"type": "plain_text",
+				"text": ":cranebird: Annual POG Review :memo:",
+				"emoji": true
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "plain_text",
+				"text": "An existing product review has been created and needs to be reviewed.",
+				"emoji": true
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"fields": [
+				{
+					"type": "mrkdwn",
+					"text": "*POG Admin:* <@{{${ jira.Field.instance.Assignee__user }.properties.slack_metadata.slack_id}}>"
+				},
+				{
+					"type": "mrkdwn",
+					"text": "*POG Reference:* {{issue.key}}"
+				}
+			]
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"fields": [
+				{
+					"type": "mrkdwn",
+					"text": "*Product Name:* {{issue.fields.${ jira.Field.instance.CRANE_Annual_Review_ID__textfield__c@sssuuuu }}}"
+				}
+			]
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "*Review Deadline:* {{deadline}}"
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"block_id": "sectionBlockOnlyPlainText",
+			"text": {
+				"type": "plain_text",
+				"text": "Use this link to complete/update the task.",
+				"emoji": true
+			}
+		},
+		{
+			"type": "actions",
+			"elements": [
+				{
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"text": "Link to Issue",
+						"emoji": false
+					},
+					"value": "click_me_123",
+					"url": "{{issue.url}}",
+					"action_id": "actionId-0"
+				}
+			]
+		}
+	]
+}
+'''
+                method = "POST"
+                responseEnabled = false
+                continueOnErrorEnabled = false
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+          ]
+        },
+      ]
+    },
+  ]
+  projects = [
+    {
+      projectId = jira.Project.instance.BUG1
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 3
+    value = "b102d1644d751dd899b23da61fe17702fe99443288d1e7667db4ea6c7fffca24"
+  }
+  isAgentic = false
+  _alias = "CRANE: NP/EP - Initial Transition - Assign & Notify POG Admin"
+}

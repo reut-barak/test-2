@@ -1,0 +1,14 @@
+jira.Field CustomMultiSelect__multiselect__c {
+  name = "CustomMultiSelect"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher"
+  areOptionsSupported = true
+  isOptionsCountOverLimit = false
+  translatedName = "CustomMultiSelect"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:multiselect"
+  contexts = [
+    jira.CustomFieldContext.instance.CustomMultiSelect__multiselect__c_Default_Configuration_Scheme_for_CustomMultiSelect@uuuuussss,
+  ]
+  _alias = "CustomMultiSelect"
+}

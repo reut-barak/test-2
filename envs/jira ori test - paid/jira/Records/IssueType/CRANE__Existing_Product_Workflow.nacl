@@ -1,0 +1,7 @@
+jira.IssueType CRANE__Existing_Product_Workflow@fsss {
+  description = "Repro for INCIDENT-43094"
+  name = "CRANE: Existing Product Workflow"
+  untranslatedName = "CRANE: Existing Product Workflow"
+  hierarchyLevel = 0
+  avatar = file("jira/IssueType/CRANE__Existing_Product_Workflow.fsss.png")
+}

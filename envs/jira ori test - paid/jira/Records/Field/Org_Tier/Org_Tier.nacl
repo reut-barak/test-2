@@ -1,0 +1,14 @@
+jira.Field Org_Tier__select__c@suuuu {
+  name = "Org Tier"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher"
+  areOptionsSupported = true
+  isOptionsCountOverLimit = false
+  translatedName = "Org Tier"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:select"
+  contexts = [
+    jira.CustomFieldContext.instance.Org_Tier__select__c_suuuu_Default_Configuration_Scheme_for_Org_Tier@uuuuumusssss,
+  ]
+  _alias = "Org Tier"
+}

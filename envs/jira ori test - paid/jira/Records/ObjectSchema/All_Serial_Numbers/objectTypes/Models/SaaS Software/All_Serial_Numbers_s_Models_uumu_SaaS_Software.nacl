@@ -1,0 +1,17 @@
+jira.ObjectType All_Serial_Numbers_s_Models_uumu_SaaS_Software@uuuumus {
+  name = "SaaS Software"
+  displayName = "SaaS Software"
+  type = 0
+  description = ""
+  parentObjectTypeId = jira.ObjectType.instance.All_Serial_Numbers_s_Models@uumu
+  inherited = false
+  abstractObjectType = false
+  parentObjectTypeInherited = false
+  schemaLabel = "All Serial Numbers"
+  schemaDisplayLabel = "All Serial Numbers"
+  iconId = "73"
+  _parent = [
+    jira.ObjectSchema.instance.All_Serial_Numbers@s,
+  ]
+  _alias = "SaaS Software"
+}

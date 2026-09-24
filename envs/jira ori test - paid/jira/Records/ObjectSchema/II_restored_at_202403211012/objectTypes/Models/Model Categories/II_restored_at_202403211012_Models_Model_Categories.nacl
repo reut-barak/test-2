@@ -1,0 +1,16 @@
+jira.ObjectType II_restored_at_202403211012_Models_Model_Categories@uuuuus {
+  name = "Model Categories"
+  displayName = "Model Categories"
+  type = 0
+  parentObjectTypeId = jira.ObjectType.instance.II_restored_at_202403211012_Models
+  inherited = false
+  abstractObjectType = false
+  parentObjectTypeInherited = false
+  schemaLabel = "II_restored_at_202403211012"
+  schemaDisplayLabel = "II_restored_at_202403211012"
+  iconId = "73"
+  _parent = [
+    jira.ObjectSchema.instance.II_restored_at_202403211012,
+  ]
+  _alias = "Model Categories"
+}

@@ -1,0 +1,4 @@
+jira.ObjectTypeLabelAttribute IZ13_AA_Constant_label_attribute@usuu {
+  labelAttribute = jira.ObjectTypeAttribute.instance.IZ13_AA_Constant_us_Name@uumu
+  objectType = jira.ObjectType.instance.IZ13_AA_Constant@us
+}

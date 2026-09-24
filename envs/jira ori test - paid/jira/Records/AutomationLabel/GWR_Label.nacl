@@ -1,0 +1,5 @@
+jira.AutomationLabel GWR_Label@s {
+  name = "GWR Label"
+  color = "B500"
+  editable = true
+}

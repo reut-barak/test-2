@@ -1,0 +1,17 @@
+jira.ObjectType Lior_s_IT_Schema_tss_Models_uuumu_Model_Categories_uuuuumus_Jsm1@uuuuuuuumu {
+  name = "Jsm1"
+  displayName = "Jsm1"
+  type = 0
+  description = ""
+  parentObjectTypeId = jira.ObjectType.instance.Lior_s_IT_Schema_tss_Models_uuumu_Model_Categories@uuuuumus
+  inherited = false
+  abstractObjectType = false
+  parentObjectTypeInherited = false
+  schemaLabel = "Lior's IT Schema"
+  schemaDisplayLabel = "Lior's IT Schema"
+  iconId = "73"
+  _parent = [
+    jira.ObjectSchema.instance.Lior_s_IT_Schema@tss,
+  ]
+  _alias = "Jsm1"
+}

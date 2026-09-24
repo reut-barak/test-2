@@ -1,0 +1,16 @@
+jira.ObjectType IZT_Models_Hardware_Models@uus {
+  name = "Hardware Models"
+  displayName = "Hardware Models"
+  type = 0
+  parentObjectTypeId = jira.ObjectType.instance.IZT_Models
+  inherited = false
+  abstractObjectType = false
+  parentObjectTypeInherited = false
+  schemaLabel = "IZT"
+  schemaDisplayLabel = "IZT"
+  iconId = "73"
+  _parent = [
+    jira.ObjectSchema.instance.IZT,
+  ]
+  _alias = "Hardware Models"
+}

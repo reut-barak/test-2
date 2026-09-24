@@ -1,0 +1,79 @@
+jira.Automation eee_AlonCompanyProject10_guytestproject {
+  name = "eee"
+  state = "ENABLED"
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "60a60ff79b362f006919d5ff"
+    displayName = "Former user"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.approval.required.trigger"
+    value = {
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      type = "jira.issue.edit"
+      value = {
+        operations = [
+        ]
+        sendNotifications = true
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.issue.link"
+      value = {
+        linkType = jira.IssueLinkType.instance.Post_Incident_Reviews@bs
+        issue = {
+          type = "COPY"
+          value = "trigger"
+        }
+        linkTypeDirection = "outward"
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  projects = [
+    {
+      projectId = jira.Project.instance.AlonCompanyProject10
+    },
+    {
+      projectId = jira.Project.instance.guytestproject
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "c10ab31fdabd44feb8e8146870da47604914a2172c33c6dadf6f012d05ccb869"
+  }
+  isAgentic = false
+  _alias = "eee"
+}

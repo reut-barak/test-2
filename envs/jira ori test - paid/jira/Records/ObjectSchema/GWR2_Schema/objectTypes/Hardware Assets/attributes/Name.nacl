@@ -1,0 +1,22 @@
+jira.ObjectTypeAttribute GWR2_Schema_s_Hardware_Assets_umus_Name@uuuumu {
+  description = "The name of the object"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 1
+  name = "Name"
+  displayName = "Name"
+  objectType = jira.ObjectType.instance.GWR2_Schema_s_Hardware_Assets@umus
+  options = ""
+  pendingCreation = false
+  removable = false
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 0
+  _alias = "Name"
+}

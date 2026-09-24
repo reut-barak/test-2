@@ -1,0 +1,3 @@
+jira.Group jira_servicemanagement_stakeholders_ori_salto_test@b {
+  name = "jira-servicemanagement-stakeholders-ori-salto-test"
+}

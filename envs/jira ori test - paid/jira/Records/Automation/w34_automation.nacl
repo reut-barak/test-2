@@ -1,0 +1,68 @@
+jira.Automation w34_automation@s {
+  name = "w34 automation"
+  state = "DISABLED"
+  description = "w34 automation"
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "640a4787f00d095406f6727f"
+    displayName = "Ido Amit"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.comment.event.trigger:updated"
+    value = {
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      type = "cmdb.lookup.objects"
+      value = {
+        schemaId = jira.ObjectSchema.instance.idoA_Schema_rename@s
+        customSmartValue = {
+          id = "_customsmartvalue_id_1705919174621"
+          name = {
+            type = "FREE"
+            value = "lookupObjects"
+          }
+          type = "IQL"
+          query = {
+            type = "SMART"
+            value = "'john smith'"
+          }
+          lazy = false
+        }
+        searchResultsLimit = 100
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "be1400b6338bf0e0f5410c6f9f801cd5ea97a2eb2a3aa4e5f64ee57ecb4c52e4"
+  }
+  isAgentic = false
+  _alias = "w34 automation"
+}

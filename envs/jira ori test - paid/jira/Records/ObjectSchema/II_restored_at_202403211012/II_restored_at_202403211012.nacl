@@ -1,0 +1,14 @@
+jira.ObjectSchema II_restored_at_202403211012 {
+  name = "II_restored_at_202403211012"
+  displayName = "II_restored_at_202403211012"
+  objectSchemaKey = "ANVYZPR"
+  description = ""
+  status = "Ok"
+  crossSchemaReferencingAllowed = false
+  properties = {
+    quickCreateObjects = true
+    allowOtherObjectSchema = false
+    validateQuickCreate = true
+  }
+  _alias = "II_restored_at_202403211012"
+}

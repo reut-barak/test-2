@@ -1,0 +1,14 @@
+jira.Field shay_multiple_choices__multiselect__c@ssuuuu {
+  name = "shay multiple choices"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher"
+  areOptionsSupported = true
+  isOptionsCountOverLimit = false
+  translatedName = "shay multiple choices"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:multiselect"
+  contexts = [
+    jira.CustomFieldContext.instance.shay_multiple_choices__multiselect__c_ssuuuu_Default_Configuration_Scheme_for_shay_multiple_choices@uuuuuumussssss,
+  ]
+  _alias = "shay multiple choices"
+}

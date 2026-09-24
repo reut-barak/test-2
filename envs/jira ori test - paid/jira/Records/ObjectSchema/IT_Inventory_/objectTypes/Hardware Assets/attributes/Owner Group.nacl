@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute IT_Inventory__s_Hardware_Assets_uumus_Owner_Group@uuuuumus {
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Owner Group"
+  displayName = "Owner Group"
+  objectType = jira.ObjectType.instance.IT_Inventory__s_Hardware_Assets@uumus
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 0
+  _alias = "Owner Group"
+}

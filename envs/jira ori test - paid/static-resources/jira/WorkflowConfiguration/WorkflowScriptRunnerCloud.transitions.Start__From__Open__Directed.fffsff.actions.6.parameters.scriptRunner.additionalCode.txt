@@ -1,0 +1,2 @@
+Map addComment = transition.update.comment[0].add as Map
+addComment.body = "${issue.key} updated by ScriptRunner"

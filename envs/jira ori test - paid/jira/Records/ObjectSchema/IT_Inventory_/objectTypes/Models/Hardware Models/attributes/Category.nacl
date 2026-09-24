@@ -1,0 +1,23 @@
+jira.ObjectTypeAttribute IT_Inventory__s_Models_uumu_Hardware_Models_uuuumus_Category@uuuuuuumu {
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Category"
+  displayName = "Category"
+  objectType = jira.ObjectType.instance.IT_Inventory__s_Models_uumu_Hardware_Models@uuuumus
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 1
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  additionalValue = jira.ObjectSchemaReferenceType.instance.IT_Inventory__s__Assigned_to@uumuus
+  typeValue = jira.ObjectType.instance.IT_Inventory__s_Models_uumu_Model_Categories@uuuumus
+  _alias = "Category"
+}

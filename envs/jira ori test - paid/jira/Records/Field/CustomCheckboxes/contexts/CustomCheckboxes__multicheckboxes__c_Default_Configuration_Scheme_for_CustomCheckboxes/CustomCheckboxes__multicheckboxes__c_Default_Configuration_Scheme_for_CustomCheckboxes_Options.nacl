@@ -1,0 +1,21 @@
+jira.CustomFieldContextOption CustomCheckboxes__multicheckboxes__c_Default_Configuration_Scheme_for_CustomCheckboxes_opt1@uuuuussssu {
+  value = "opt1"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.CustomCheckboxes__multicheckboxes__c_Default_Configuration_Scheme_for_CustomCheckboxes@uuuuussss,
+  ]
+}
+jira.CustomFieldContextOption CustomCheckboxes__multicheckboxes__c_Default_Configuration_Scheme_for_CustomCheckboxes_opt2@uuuuussssu {
+  value = "opt2"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.CustomCheckboxes__multicheckboxes__c_Default_Configuration_Scheme_for_CustomCheckboxes@uuuuussss,
+  ]
+}
+jira.CustomFieldContextOption CustomCheckboxes__multicheckboxes__c_Default_Configuration_Scheme_for_CustomCheckboxes_opt3@uuuuussssu {
+  value = "opt3"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.CustomCheckboxes__multicheckboxes__c_Default_Configuration_Scheme_for_CustomCheckboxes@uuuuussss,
+  ]
+}

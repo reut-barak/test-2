@@ -1,0 +1,9 @@
+jira.ObjectSchemaReferenceType IZT__Assigned_to@uus {
+  name = "Assigned to"
+  displayName = "Assigned to"
+  color = "5243AA"
+  removable = false
+  _parent = [
+    jira.ObjectSchema.instance.IZT,
+  ]
+}

@@ -1,0 +1,10 @@
+jira.Webhook EnvVarWebhook {
+  name = "EnvVarWebhook"
+  url = "https://example.com/restprod/webhooks/webhook1"
+  excludeBody = true
+  filters = {
+    issue_related_events_section = ""
+  }
+  enabled = true
+  isSigned = false
+}

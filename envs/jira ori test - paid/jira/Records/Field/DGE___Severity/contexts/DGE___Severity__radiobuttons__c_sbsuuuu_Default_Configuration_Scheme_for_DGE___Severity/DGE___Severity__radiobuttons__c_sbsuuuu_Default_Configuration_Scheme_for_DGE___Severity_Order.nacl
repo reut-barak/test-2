@@ -1,0 +1,9 @@
+jira.FieldContextOptionsOrder DGE___Severity__radiobuttons__c_sbsuuuu_Default_Configuration_Scheme_for_DGE___Severity_order_child@uuuuuuumusssssbsuu {
+  options = [
+    jira.CustomFieldContextOption.instance.DGE___Severity__radiobuttons__c_sbsuuuu_Default_Configuration_Scheme_for_DGE___Severity_Option_One@uuuuuuumusssssbsus,
+    jira.CustomFieldContextOption.instance.DGE___Severity__radiobuttons__c_sbsuuuu_Default_Configuration_Scheme_for_DGE___Severity_Option_Two@uuuuuuumusssssbsus,
+  ]
+  _parent = [
+    jira.CustomFieldContext.instance.DGE___Severity__radiobuttons__c_sbsuuuu_Default_Configuration_Scheme_for_DGE___Severity@uuuuuuumusssssbs,
+  ]
+}

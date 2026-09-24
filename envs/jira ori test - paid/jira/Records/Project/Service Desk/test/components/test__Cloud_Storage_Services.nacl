@@ -1,0 +1,9 @@
+jira.ProjectComponent test__Cloud_Storage_Services@uuss {
+  name = "Cloud Storage Services"
+  description = "Created by Jira Service Management"
+  assigneeType = "PROJECT_DEFAULT"
+  _parent = [
+    jira.Project.instance.test,
+  ]
+  _alias = "test:Cloud Storage Services"
+}

@@ -1,0 +1,31 @@
+jira.ObjectTypeAttribute IT_Inventory__s_Hardware_Assets_uumus_Asset_Status@uuuuumus {
+  description = "Status of asset (e.g., In stock, In use, etc.)"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Asset Status"
+  displayName = "Asset Status"
+  objectType = jira.ObjectType.instance.IT_Inventory__s_Hardware_Assets@uumus
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 7
+  typeValueMulti = [
+    jira.ObjectSchemaStatus.instance.IT_Inventory__s__Disposed@uumuu,
+    jira.ObjectSchemaStatus.instance.IT_Inventory__s__In_Stock@uumuus,
+    jira.ObjectSchemaStatus.instance.IT_Inventory__s__In_Use@uumuus,
+    jira.ObjectSchemaStatus.instance.IT_Inventory__s__Ordered@uumuu,
+    jira.ObjectSchemaStatus.instance.IT_Inventory__s__Retired@uumuu,
+    jira.ObjectSchemaStatus.instance.IT_Inventory__s__Missing@uumuu,
+    jira.ObjectSchemaStatus.instance.IT_Inventory__s__In_transit@uumuus,
+  ]
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  _alias = "Asset Status"
+}

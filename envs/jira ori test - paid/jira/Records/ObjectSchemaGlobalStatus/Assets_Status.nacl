@@ -1,0 +1,8 @@
+jira.ObjectSchemaGlobalStatus Assets_Status@s {
+  workspaceId = "68d020c3-b88e-47dc-9231-452f7dc63521"
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:16"
+  name = "Assets Status"
+  displayName = "Assets Status"
+  description = ""
+  category = 2
+}

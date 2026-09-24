@@ -1,0 +1,15 @@
+jira.Webhook AI_Hour_Test@b {
+  name = "AI-Hour-Test"
+  url = "https://oeprxal7ctulxyx5it3gxkuhfe0eryfa.lambda-url.eu-north-1.on.aws/"
+  description = "Webhook test to test AI hour"
+  excludeBody = false
+  filters = {
+    issue_related_events_section = "${ jira.Field.instance.Labels__array } = ai-hour AND ${ jira.Field.instance.Updated__datetime } >= -5m"
+  }
+  events = [
+    "jira:issue_updated",
+    "jira:issue_created",
+  ]
+  enabled = true
+  isSigned = false
+}

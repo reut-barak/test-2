@@ -1,0 +1,22 @@
+jira.ObjectTypeAttribute idoA_Schema_rename_s_Employees_uumu_Atlassian_Account_IDoA@uuuumuss {
+  description = "User"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Atlassian Account IDoA"
+  displayName = "Atlassian Account IDoA"
+  objectType = jira.ObjectType.instance.idoA_Schema_rename_s_Employees@uumu
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 2
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  _alias = "Atlassian Account IDoA"
+}

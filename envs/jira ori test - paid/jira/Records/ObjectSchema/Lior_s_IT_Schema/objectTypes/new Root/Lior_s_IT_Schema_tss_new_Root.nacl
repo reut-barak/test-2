@@ -1,0 +1,17 @@
+jira.ObjectType Lior_s_IT_Schema_tss_new_Root@uuumus {
+  name = "new Root"
+  displayName = "new Root"
+  type = 0
+  description = ""
+  inherited = false
+  abstractObjectType = false
+  parentObjectTypeInherited = false
+  schemaLabel = "Lior's IT Schema"
+  schemaDisplayLabel = "Lior's IT Schema"
+  iconId = "1"
+  parentObjectTypeId = jira.ObjectSchema.instance.Lior_s_IT_Schema@tss
+  _parent = [
+    jira.ObjectSchema.instance.Lior_s_IT_Schema@tss,
+  ]
+  _alias = "new Root"
+}

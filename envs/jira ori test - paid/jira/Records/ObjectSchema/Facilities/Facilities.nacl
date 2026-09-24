@@ -1,0 +1,14 @@
+jira.ObjectSchema Facilities {
+  name = "Facilities"
+  displayName = "Facilities"
+  objectSchemaKey = "FACSAND"
+  description = "This is a facilities description"
+  status = "Ok"
+  crossSchemaReferencingAllowed = false
+  properties = {
+    quickCreateObjects = true
+    allowOtherObjectSchema = false
+    validateQuickCreate = true
+  }
+  _alias = "Facilities"
+}

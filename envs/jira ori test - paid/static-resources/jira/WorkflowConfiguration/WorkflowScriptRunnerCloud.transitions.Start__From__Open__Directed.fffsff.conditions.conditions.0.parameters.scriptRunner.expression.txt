@@ -1,0 +1,1 @@
+issue.fields.assignee != null && ${ jira.Field.instance.For_ACE__datepicker__c@suuuu }

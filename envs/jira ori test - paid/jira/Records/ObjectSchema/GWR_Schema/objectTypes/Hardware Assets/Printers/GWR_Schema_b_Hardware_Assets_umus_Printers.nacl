@@ -1,0 +1,16 @@
+jira.ObjectType GWR_Schema_b_Hardware_Assets_umus_Printers@uuuumu {
+  name = "Printers"
+  displayName = "Printers"
+  type = 0
+  parentObjectTypeId = jira.ObjectType.instance.GWR_Schema_b_Hardware_Assets@umus
+  inherited = true
+  abstractObjectType = false
+  parentObjectTypeInherited = true
+  schemaLabel = "GWR-Schema"
+  schemaDisplayLabel = "GWR-Schema"
+  iconId = "89"
+  _parent = [
+    jira.ObjectSchema.instance.GWR_Schema@b,
+  ]
+  _alias = "Printers"
+}

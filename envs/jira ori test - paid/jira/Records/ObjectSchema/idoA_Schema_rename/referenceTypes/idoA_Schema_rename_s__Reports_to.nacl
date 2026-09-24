@@ -1,0 +1,10 @@
+jira.ObjectSchemaReferenceType idoA_Schema_rename_s__Reports_to@uumuus {
+  name = "Reports to"
+  displayName = "Reports to"
+  description = ""
+  color = "57D9A3"
+  removable = false
+  _parent = [
+    jira.ObjectSchema.instance.idoA_Schema_rename@s,
+  ]
+}

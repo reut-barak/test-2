@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute IT_Inventory__s_Hardware_Assets_uumus_Ownership_Type@uuuuumus {
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Ownership Type"
+  displayName = "Ownership Type"
+  objectType = jira.ObjectType.instance.IT_Inventory__s_Hardware_Assets@uumus
+  options = "BYOD,Company owned"
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 10
+  _alias = "Ownership Type"
+}

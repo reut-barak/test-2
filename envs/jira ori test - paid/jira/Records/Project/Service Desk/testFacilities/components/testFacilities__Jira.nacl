@@ -1,0 +1,9 @@
+jira.ProjectComponent testFacilities__Jira {
+  description = "Issues related to Jira. Created by Jira Service Management."
+  assigneeType = "UNASSIGNED"
+  name = "Jira"
+  _parent = [
+    jira.Project.instance.testFacilities,
+  ]
+  _alias = "testFacilities:Jira"
+}

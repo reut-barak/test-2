@@ -1,0 +1,10 @@
+jira.ScreenScheme IDOZJSM__Jira_Service_Management__Incident_Management_Screen_Scheme@fsssfssss {
+  name = "IDOZJSM: Jira Service Management: Incident Management Screen Scheme"
+  description = ""
+  screens = {
+    default = jira.Screen.instance.IDOZJSM__Jira_Service_Management__Incident_Create_Issue_Screen@fsssfssss
+    edit = jira.Screen.instance.IDOZJSM__Jira_Service_Management__Incident_View_Edit_Screen@fsssfssds
+    create = jira.Screen.instance.IDOZJSM__Jira_Service_Management__Incident_Create_Issue_Screen@fsssfssss
+    view = jira.Screen.instance.IDOZJSM__Jira_Service_Management__Incident_View_Edit_Screen@fsssfssds
+  }
+}

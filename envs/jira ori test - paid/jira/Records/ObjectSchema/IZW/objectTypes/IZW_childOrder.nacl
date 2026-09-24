@@ -1,0 +1,9 @@
+jira.ObjectTypeOrder IZW_childOrder {
+  objectTypes = [
+    jira.ObjectType.instance.IZW_Models,
+    jira.ObjectType.instance.IZW_Hardware_Assets@us,
+  ]
+  _parent = [
+    jira.ObjectSchema.instance.IZW,
+  ]
+}

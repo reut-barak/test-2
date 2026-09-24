@@ -1,0 +1,16 @@
+jira.ObjectType LNIT_restored_at_202403211012_Models_Hardware_Models_uuuuus_Hardware_Assets_uuuuuumus_Servers_uuuuuuuuumu_Windows_Server@uuuuuuuuuuumus {
+  name = "Windows Server"
+  displayName = "Windows Server"
+  type = 0
+  parentObjectTypeId = jira.ObjectType.instance.LNIT_restored_at_202403211012_Models_Hardware_Models_uuuuus_Hardware_Assets_uuuuuumus_Servers@uuuuuuuuumu
+  inherited = true
+  abstractObjectType = false
+  parentObjectTypeInherited = true
+  schemaLabel = "LNIT_restored_at_202403211012"
+  schemaDisplayLabel = "LNIT_restored_at_202403211012"
+  iconId = "140"
+  _parent = [
+    jira.ObjectSchema.instance.LNIT_restored_at_202403211012,
+  ]
+  _alias = "Windows Server"
+}

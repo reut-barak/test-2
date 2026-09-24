@@ -1,0 +1,10 @@
+jira.Screen z0mg {
+  name = "z0mg"
+  description = "my amazing screen yes yes"
+  tabs = {
+    General = {
+      name = "General"
+      position = 0
+    }
+  }
+}

@@ -1,0 +1,8 @@
+jira.IssueTypeScheme ZGY_Scheme@s {
+  name = "ZGY Scheme"
+  description = ""
+  defaultIssueTypeId = jira.IssueType.instance.ZGY_Issue_Type@s
+  issueTypeIds = [
+    jira.IssueType.instance.ZGY_Issue_Type@s,
+  ]
+}

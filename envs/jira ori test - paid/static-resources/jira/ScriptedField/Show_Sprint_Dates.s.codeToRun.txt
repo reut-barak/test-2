@@ -1,0 +1,30 @@
+/*
+* Note: This field should be configured to use a 'Text' return type.
+* Get the start and end dates for the active sprint and display these inside of a scripted field.
+* This example shows how you can get the start and end date for the active sprint and display these inside a Scripted Field on the issue.
+*/
+
+// Fetch the issue object from the key using the Jira Software API
+    def issue = get("/rest/agile/1.0/issue/${issue.key}")
+        .header('Content-Type', 'application/json')
+        .asObject(Map)
+        .body
+        
+// Check if the issue is in a sprint and if so if the sprint is an active sprint
+    if (issue.fields.sprint && issue.fields.sprint.state == 'active') {
+        
+        // Get the sprint start and end date strings from the API
+        String sprintStartDate = issue.fields.sprint.startDate
+        String sprintEndDate = issue.fields.sprint.endDate
+        
+// Format the date strings into a nicer format
+    String formattedSprintStartDate = sprintStartDate.substring(0, 10)
+    String formatterSprintEndDate = sprintEndDate.substring(0, 10)
+    
+// Set the dates in the scripted field
+    return "Sprint Start Date: ${formattedSprintStartDate} Sprint End Date: ${formatterSprintEndDate}"
+    
+// Return a default message if the issue is not in active sprint
+    } else {
+        return "The ${issue.key} issue is not currently in an active sprint"
+    }

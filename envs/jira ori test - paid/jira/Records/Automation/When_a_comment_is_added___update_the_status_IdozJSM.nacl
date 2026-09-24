@@ -1,0 +1,221 @@
+jira.Automation When_a_comment_is_added___update_the_status_IdozJSM@sssss_08594sssu {
+  name = "When a comment is added → update the status"
+  state = "ENABLED"
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "62d20c47a94a6f9c0eff9866"
+    displayName = "Ido Zak"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "62d20c47a94a6f9c0eff9866"
+      displayName = "Ido Zak"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.event.trigger:commented"
+    value = {
+      eventTypes = [
+        "PRIMARY_ACTION",
+      ]
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "CONDITION"
+      type = "jira.comparator.condition"
+      value = {
+        first = "{{${ jira.Field.instance.Comment__comments_page@uub }.internal}}"
+        second = "false"
+        operator = "EQUALS"
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "CONDITION"
+      type = "jira.condition.container.block"
+      conditions = [
+      ]
+      children = [
+        {
+          component = "CONDITION_BLOCK"
+          type = "jira.condition.if.block"
+          value = {
+            conditionMatchType = "ALL"
+          }
+          conditions = [
+            {
+              component = "CONDITION"
+              type = "jira.user.condition"
+              value = {
+                conditions = [
+                  {
+                    field = "initiator"
+                    check = "IN_ROLE"
+                    criteria = [
+                      {
+                        type = "NAME"
+                        value = "Service Desk Team"
+                      },
+                    ]
+                  },
+                ]
+                operator = "AND"
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+            {
+              component = "CONDITION"
+              type = "jira.issue.condition"
+              value = {
+                selectedField = {
+                  type = "ID"
+                  value = jira.Field.instance.Status__status
+                }
+                selectedFieldType = "status"
+                comparison = "EQUALS"
+                compareFieldValue = {
+                  type = "NAME"
+                  value = jira.Status.instance.waiting_for_support@s.name
+                  multiValue = false
+                }
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+          ]
+          children = [
+            {
+              component = "ACTION"
+              type = "jira.issue.transition"
+              value = {
+                operations = [
+                ]
+                sendNotifications = true
+                destinationStatus = {
+                  type = "NAME"
+                  value = jira.Status.instance.waiting_for_customer@s.name
+                }
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+          ]
+        },
+        {
+          component = "CONDITION_BLOCK"
+          type = "jira.condition.if.block"
+          value = {
+            conditionMatchType = "ALL"
+          }
+          conditions = [
+            {
+              component = "CONDITION"
+              type = "jira.user.condition"
+              value = {
+                conditions = [
+                  {
+                    field = "initiator"
+                    check = "NOT_IN_ROLE"
+                    criteria = [
+                      {
+                        type = "NAME"
+                        value = "Service Desk Team"
+                      },
+                    ]
+                  },
+                ]
+                operator = "AND"
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+            {
+              component = "CONDITION"
+              type = "jira.issue.condition"
+              value = {
+                selectedField = {
+                  type = "ID"
+                  value = jira.Field.instance.Status__status
+                }
+                selectedFieldType = "status"
+                comparison = "EQUALS"
+                compareFieldValue = {
+                  type = "NAME"
+                  value = jira.Status.instance.waiting_for_customer@s.name
+                  multiValue = false
+                }
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+          ]
+          children = [
+            {
+              component = "ACTION"
+              type = "jira.issue.transition"
+              value = {
+                operations = [
+                ]
+                sendNotifications = true
+                destinationStatus = {
+                  type = "NAME"
+                  value = jira.Status.instance.waiting_for_support@s.name
+                }
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+          ]
+        },
+      ]
+    },
+  ]
+  projects = [
+    {
+      projectId = jira.Project.instance.IdozJSM
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "SYSTEM"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "06f10d09dd1de84d21ee73ca05de614c4456d2d6383972ccda247d261e328f84"
+  }
+  ruleArchetype = "SYSTEM_JSM"
+  editRestrictions = {
+    trigger = "CONFIG_ONLY"
+    components = "CONFIG_ONLY"
+    allowConversionToNormalRule = false
+  }
+  isAgentic = false
+  _alias = "When a comment is added → update the status"
+}

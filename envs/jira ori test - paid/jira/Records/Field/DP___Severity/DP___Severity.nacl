@@ -1,0 +1,14 @@
+jira.Field DP___Severity__select__c@sbsuuuu {
+  name = "DP - Severity"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher"
+  areOptionsSupported = true
+  isOptionsCountOverLimit = false
+  translatedName = "DP - Severity"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:select"
+  contexts = [
+    jira.CustomFieldContext.instance.DP___Severity__select__c_sbsuuuu_Default_Configuration_Scheme_for_DP___Severity@uuuuuuumusssssbs,
+  ]
+  _alias = "DP - Severity"
+}

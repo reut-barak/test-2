@@ -1,0 +1,47 @@
+jira.Filter Filter_for_important_issues@s {
+  name = "Filter for important issues"
+  description = ""
+  owner = {
+    id = "60e8b78784c9920071996842"
+    displayName = "Lior Neudorfer"
+  }
+  jql = "${ jira.Field.instance.Project__project } = ${ jira.Project.instance.A_test_project_for_Lior___@sssslll.key }  and ${ jira.Field.instance.Project__project } = ${ jira.Project.instance.A_test_project_for_Lior___@sssslll.key }"
+  sharePermissions = [
+    {
+      type = "project"
+      project = {
+        id = jira.Project.instance.A_test_project_for_Lior___@sssslll
+      }
+    },
+  ]
+  columns = [
+    {
+      label = "Key"
+      value = "issuekey"
+    },
+    {
+      label = "Summary"
+      value = "summary"
+    },
+    {
+      label = "Reporter"
+      value = "reporter"
+    },
+    {
+      label = "Priority"
+      value = "priority"
+    },
+    {
+      label = "Status"
+      value = "status"
+    },
+    {
+      label = "Resolution"
+      value = "resolution"
+    },
+    {
+      label = "Updated"
+      value = "updated"
+    },
+  ]
+}

@@ -1,0 +1,175 @@
+jira.WorkflowConfiguration davdav_workflow_test@s {
+  scope = {
+    type = "GLOBAL"
+  }
+  name = "davdav workflow test"
+  description = "some different description"
+  isEditable = true
+  startPointLayout = {
+    x = 1104
+    y = 92.4
+  }
+  statuses = [
+    {
+      statusReference = jira.Status.instance.next
+      layout = {
+        x = 778.65625
+        y = -27.700001220703115
+      }
+      deprecated = false
+      name = "next"
+    },
+    {
+      statusReference = jira.Status.instance.open
+      layout = {
+        x = 1079.40625
+        y = 117.4
+      }
+      deprecated = false
+      name = "Open"
+    },
+  ]
+  transitions = {
+    Create__From__none__Initial@fffsff = {
+      type = "INITIAL"
+      toStatusReference = jira.Status.instance.next
+      links = [
+        {
+          toPort = 7
+        },
+      ]
+      name = "Create"
+      description = ""
+      validators = [
+        {
+          ruleKey = "system:check-permission-validator"
+          parameters = {
+            permissionKey = "CREATE_ISSUES"
+          }
+        },
+      ]
+    }
+    eee__From__next__Directed@fffsff = {
+      type = "DIRECTED"
+      toStatusReference = jira.Status.instance.open
+      links = [
+        {
+          fromStatusReference = jira.Status.instance.next
+          fromPort = 1
+          toPort = 3
+        },
+      ]
+      name = "eee"
+      description = "aa"
+      actions = [
+        {
+          ruleKey = "connect:remote-workflow-function"
+          parameters = {
+            appKey = "com.innovalog.jmwe.jira-misc-workflow-extensions__ClearFieldsFunction"
+            id = "fe6edfc4-bc98-4abb-8161-f57c715d1a55"
+            disabled = "false"
+            jsu = {
+              runAsType = "thisUser"
+              runAs = {
+                id = "61d44bf59ee70a00685fa6b6"
+                displayName = "Testing salto"
+              }
+              targetIssue = "currentIssue:*"
+              fields = jira.Field.instance.Actual_end__datetime__c@suuuu
+              conditionalExecution = false
+              _modified = "2026-07-01T11:48:25.688Z"
+            }
+          }
+        },
+      ]
+      validators = [
+        {
+          ruleKey = "connect:expression-validator"
+          parameters = {
+            appKey = "com.innovalog.jmwe.jira-misc-workflow-extensions__UserValidator"
+            id = "2862b150-b2d3-49fa-babf-7dadaddcb3a1"
+            disabled = "false"
+            jsu = {
+              errorMessage = "eeeeeeee"
+              skipValidationOnCreate = false
+              conditionalValidation = false
+              conditionalValidationExpression = ""
+              fromUserType = "userInField"
+              userField = jira.Field.instance.Request_participants__sd_request_participants__c@suubbuu
+              conditionMode = "all-user-condition"
+              userCriteria = {
+                isReporter = false
+                isAssignee = false
+                isWatcher = false
+                isVoter = false
+                rolesToCheck = [
+                ]
+                groupsToCheck = [
+                ]
+                usersToCheck = [
+                ]
+                userFieldsToCheck = [
+                ]
+                usersConditionScript = "or"
+                reverse = false
+              }
+              expression = "let selectedUser = !!issue && !!issue.${ jira.Field.instance.Request_participants__sd_request_participants__c@suubbuu } && issue.${ jira.Field.instance.Request_participants__sd_request_participants__c@suubbuu }; ((!!issue && !!issue.${ jira.Field.instance.Request_participants__sd_request_participants__c@suubbuu } && (false || (issue.${ jira.Field.instance.Request_participants__sd_request_participants__c@suubbuu }.every(selectedUser => or)))))"
+              _modified = "2026-06-28T13:00:29.464Z"
+            }
+          }
+        },
+        {
+          ruleKey = "system:check-permission-validator"
+          parameters = {
+            permissionKey = "ADMINISTER_PROJECTS"
+          }
+        },
+        {
+          ruleKey = "system:proforma-forms-attached"
+        },
+        {
+          ruleKey = "system:proforma-forms-submitted"
+        },
+        {
+          ruleKey = "system:proforma-forms-attached"
+        },
+        {
+          ruleKey = "forge:expression-validator"
+          parameters = {
+            key = "ari:cloud:ecosystem::extension/c29b3bd9-8290-400f-9592-57547fb0eca5/f7ed2dfd-fb19-40a2-a13f-3d0ec2c84fe5/static/workflow-enhancer-validator"
+            config = "{\"expression\":\"(app.license == null || app.license.active == true) && (issue.assignee.accountId.includes('dav'))\",\"errorMessage\":\"'blah'\"}"
+            id = "2a033252-27a5-4a12-8c96-496a3c8d62b2"
+          }
+        },
+      ]
+      conditions = {
+        operation = "ALL"
+        conditions = [
+          {
+            ruleKey = "system:restrict-issue-transition"
+            parameters = {
+              denyUserCustomFields = jira.Field.instance.Affected_hardware__textfield__c@suuuu
+            }
+          },
+          {
+            ruleKey = "system:check-field-value"
+            parameters = {
+              fieldId = jira.Field.instance.a_b__float__c@ruuuu
+              fieldValue = "[\"\"]"
+              comparator = "="
+              comparisonType = "NUMBER"
+            }
+          },
+          {
+            ruleKey = "forge:expression-condition"
+            parameters = {
+              key = "ari:cloud:ecosystem::extension/c29b3bd9-8290-400f-9592-57547fb0eca5/f7ed2dfd-fb19-40a2-a13f-3d0ec2c84fe5/static/workflow-enhancer-condition"
+              config = "{\"expression\":\"issue.assignee.accountId.includes('dav')\"}"
+              id = "2e4b104d-487d-4f8d-a8e2-53e77769fd03"
+            }
+          },
+        ]
+      }
+    }
+  }
+}

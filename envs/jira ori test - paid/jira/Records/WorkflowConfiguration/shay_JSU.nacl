@@ -1,0 +1,145 @@
+jira.WorkflowConfiguration shay_JSU@s {
+  scope = {
+    type = "GLOBAL"
+  }
+  name = "shay JSU"
+  description = "bla"
+  isEditable = true
+  startPointLayout = {
+    x = 968
+    y = 4
+  }
+  statuses = [
+    {
+      statusReference = jira.Status.instance.approved
+      layout = {
+        x = 913.125
+        y = 212.60000244140622
+      }
+      deprecated = false
+      name = "Approved"
+    },
+    {
+      statusReference = jira.Status.instance.open
+      layout = {
+        x = 928.40625
+        y = 117.4
+      }
+      deprecated = false
+      name = "Open"
+    },
+  ]
+  transitions = {
+    Create__From__none__Initial@fffsff = {
+      type = "INITIAL"
+      toStatusReference = jira.Status.instance.open
+      links = [
+        {
+          toPort = 1
+        },
+      ]
+      name = "Create"
+      description = ""
+    }
+    bla__From__Open__Directed@fffsff = {
+      type = "DIRECTED"
+      toStatusReference = jira.Status.instance.approved
+      links = [
+        {
+          fromStatusReference = jira.Status.instance.open
+          fromPort = 5
+          toPort = 1
+        },
+      ]
+      name = "bla"
+      description = ""
+      actions = [
+        {
+          ruleKey = "forge:workflow-post-function"
+          parameters = {
+            key = "ari:cloud:ecosystem::extension/9d89ad3b-8f94-4105-a0c8-99e6241f77ba/a6c7cf4a-8ece-4e62-9bdc-b164156c3c52/static/updateanyissuefield-function"
+            config = "{\"preconditions\":[],\"preconditionAwareFunctionMode-textValue\":\"TRUE\",\"runAsUser-user\":\"INITIATING_USER\",\"field.name\":\"customfield_10192\",\"field.value\":\"bla\",\"append.value\":true,\"jsuCloudWorkflowParamsVersion-textValue\":\"20241119031340\",\"scopeType\":\"EPIC\",\"source-scopeTarget\":\"ISSUE_IN_TRANSITION\",\"destination-scopeTarget\":\"ISSUE_IN_EPIC\"}"
+            id = "6dfb39fa-5a15-4da1-a1d3-3119a63e4138"
+          }
+        },
+        {
+          ruleKey = "forge:workflow-post-function"
+          parameters = {
+            key = "ari:cloud:ecosystem::extension/9d89ad3b-8f94-4105-a0c8-99e6241f77ba/a6c7cf4a-8ece-4e62-9bdc-b164156c3c52/static/linkedtransition-function"
+            config = "{\"preconditions\":[],\"preconditionAwareFunctionMode-textValue\":\"TRUE\",\"runAsUser-user\":\"ADDON_USER\",\"status\":\"10035\",\"statusName\":\"Completed\",\"workflowName-textValue\":\"Alon's Test Workflow 10c\",\"integerValue\":\"11\",\"textValue\":\"10000\",\"jsuCloudWorkflowParamsVersion-textValue\":\"20241119031340\",\"field.copyFieldSource1\":\"customfield_10192\",\"field.copyFieldDestination1\":\"customfield_11281\",\"field.copyFieldMode1\":\"PREPEND\",\"field.copyFieldSeparator1\":\"\",\"field.createTargetValue1\":false,\"scopeType\":\"ISSUE_LINKING\",\"source-scopeTarget\":\"ISSUE_IN_TRANSITION\",\"destination-scopeTarget\":\"LINK_END\",\"scopeSource-linkEnd\":\"\",\"scopeDestination-linkEnd\":\"10028:INWARD\"}"
+            id = "03ad98dd-ffc6-47db-af04-04b9738e8f4e"
+          }
+        },
+        {
+          ruleKey = "forge:workflow-post-function"
+          parameters = {
+            key = "ari:cloud:ecosystem::extension/9d89ad3b-8f94-4105-a0c8-99e6241f77ba/a6c7cf4a-8ece-4e62-9bdc-b164156c3c52/static/followuptransition-function"
+            config = "undefined"
+            id = "b587d0f5-2b7b-48cb-8e5d-4391f539d282"
+          }
+        },
+        {
+          ruleKey = "forge:workflow-post-function"
+          parameters = {
+            key = "ari:cloud:ecosystem::extension/9d89ad3b-8f94-4105-a0c8-99e6241f77ba/a6c7cf4a-8ece-4e62-9bdc-b164156c3c52/static/createlinkedissue-function"
+            config = "{\"preconditions\":[{\"type\":\"dateCompare-precondition-function\",\"enabled\":true,\"config\":{\"preconditionMode-textValue\":\"AND\",\"preconditionNegateResult-booleanValue\":false,\"conditionList\":3,\"date1Selected\":\"customfield_14081\",\"date2Selected\":\"customfield_14144\"}},{\"type\":\"dateExpressionCompare-precondition-function\",\"enabled\":true,\"config\":{\"preconditionMode-textValue\":\"AND\",\"preconditionNegateResult-booleanValue\":false,\"conditionList\":3,\"date1Selected\":\"created\",\"conditionSelected\":1,\"expressionSelected\":\"2d\"}},{\"type\":\"windowsDate-precondition-function\",\"enabled\":true,\"config\":{\"preconditionMode-textValue\":\"AND\",\"preconditionNegateResult-booleanValue\":false,\"date1Selected\":\"customfield_10033\",\"windowDays\":\"4\"}},{\"type\":\"fieldsRequired-precondition-function\",\"enabled\":true,\"config\":{\"preconditionMode-textValue\":\"AND\",\"preconditionNegateResult-booleanValue\":true,\"ignoreContext\":true,\"hidFieldsList\":\"customfield_11310@@customfield_14165\"}}],\"preconditionAwareFunctionMode-textValue\":\"TRUE\",\"targetProjectSelectedCustomField\":\"customfield_10192\",\"targetIssueTypeDefinedByCfSelection\":\"customfield_10192\",\"currentProjectType\":\"DEFINED_BY_CF\",\"currentProjectId\":\"\",\"currentIssueTypeId\":\"10039\",\"targetIssueType\":\"DEFINED_BY_CF_SELECTION\",\"jsuCloudWorkflowParamsVersion-textValue\":\"20241119031340\",\"field.issueAssignTo\":\"REPORTER\",\"runAsUser-user\":\"62ebc187e50f2f2a395557cc\",\"subFunctions\":[{\"type\":\"CopyFieldFromOriginToNew\",\"enabled\":true,\"config\":{\"concatenationMode\":\"OVERWRITE\",\"sourceFieldId\":\"EMPTY\",\"destinationFieldId\":\"customfield_11280\"}},{\"type\":\"CopyFieldFromOriginToOrigin\",\"enabled\":true,\"config\":{\"concatenationMode\":\"OVERWRITE\",\"sourceFieldId\":\"aggregateprogress\",\"destinationFieldId\":\"customfield_14149\"}},{\"type\":\"SetField\",\"enabled\":true,\"config\":{\"concatenationMode\":\"OVERWRITE\",\"sourceValue\":\"bla\",\"destinationFieldId\":\"customfield_14160\"}}],\"scopeType\":\"PARENT\",\"source-scopeTarget\":\"\",\"destination-scopeTarget\":\"\",\"field.attachmentEnablingCustomFieldId\":\"ALWAYS\",\"field.existingAttachmentEnablingCustomFieldId\":\"ALWAYS\",\"transitionAttachmentsOperation\":\"copy\"}"
+            id = "90e07214-8317-473f-8ce1-ae4d2c28e864"
+          }
+        },
+        {
+          ruleKey = "forge:workflow-post-function"
+          parameters = {
+            key = "ari:cloud:ecosystem::extension/9d89ad3b-8f94-4105-a0c8-99e6241f77ba/a6c7cf4a-8ece-4e62-9bdc-b164156c3c52/static/copyValueFromOtherField-function"
+            config = "{\"preconditions\":[],\"preconditionAwareFunctionMode-textValue\":\"TRUE\",\"field.copyFieldSource1\":\"customfield_10192\",\"field.copyFieldDestination1\":\"customfield_11281\",\"field.copyFieldMode1\":\"APPEND\",\"field.copyFieldSeparator1\":\"\",\"field.createTargetValue1\":false,\"field.copyFieldSource2\":\"customfield_11272\",\"field.copyFieldDestination2\":\"components\",\"field.copyFieldMode2\":\"PREPEND\",\"field.copyFieldSeparator2\":\"\",\"field.createTargetValue2\":true,\"field.copyFieldSource3\":\"aggregatetimeoriginalestimate\",\"field.copyFieldDestination3\":\"customfield_10185\",\"field.copyFieldMode3\":\"OVERWRITE\",\"field.copyFieldSeparator3\":\"\",\"field.createTargetValue3\":false,\"jsuCloudWorkflowParamsVersion-textValue\":\"20241119031340\",\"scopeType\":\"SAME\",\"source-scopeTarget\":\"ISSUE_IN_TRANSITION\",\"destination-scopeTarget\":\"ISSUE_IN_TRANSITION\",\"runAsUser-user\":\"62ebc187e50f2f2a395557cc\"}"
+            id = "044f954c-79e6-4dc2-88b0-694d2f9cba7b"
+          }
+        },
+        {
+          ruleKey = "forge:workflow-post-function"
+          parameters = {
+            key = "ari:cloud:ecosystem::extension/9d89ad3b-8f94-4105-a0c8-99e6241f77ba/a6c7cf4a-8ece-4e62-9bdc-b164156c3c52/static/copymoveattachments-function"
+            config = "{\"preconditions\":[],\"preconditionAwareFunctionMode-textValue\":\"FALSE\",\"runAsUser-user\":\"ADDON_USER\",\"field.attachmentEnablingCustomFieldId\":\"NEVER\",\"field.existingAttachmentEnablingCustomFieldId\":\"customfield_10195\",\"transitionAttachmentsOperation\":\"move\",\"jsuCloudWorkflowParamsVersion-textValue\":\"20241119031340\",\"scopeType\":\"ISSUE_LINKING\",\"source-scopeTarget\":\"LINK_END\",\"destination-scopeTarget\":\"ISSUE_IN_TRANSITION\",\"scopeSource-linkEnd\":\"\",\"scopeDestination-linkEnd\":\"\"}"
+            id = "27709a7c-e284-4c4c-83f8-0b7bb90511ab"
+          }
+        },
+        {
+          ruleKey = "forge:workflow-post-function"
+          parameters = {
+            key = "ari:cloud:ecosystem::extension/9d89ad3b-8f94-4105-a0c8-99e6241f77ba/a6c7cf4a-8ece-4e62-9bdc-b164156c3c52/static/clearFieldValue-function"
+            config = "{\"preconditions\":[],\"preconditionAwareFunctionMode-textValue\":\"TRUE\",\"field\":\"parent\",\"field2\":\"customfield_11281\",\"field3\":\"customfield_10195\",\"jsuCloudWorkflowParamsVersion-textValue\":\"20241119031340\",\"scopeType\":\"ISSUE_LINKING\",\"source-scopeTarget\":\"LINK_END\",\"destination-scopeTarget\":\"ISSUE_IN_TRANSITION\",\"scopeSource-linkEnd\":\"10028:INWARD\",\"scopeDestination-linkEnd\":\"\",\"runAsUser-user\":\"INITIATING_USER\"}"
+            id = "33b754d9-9878-4cfd-8da3-9d662772f3c2"
+          }
+        },
+        {
+          ruleKey = "forge:workflow-post-function"
+          parameters = {
+            key = "ari:cloud:ecosystem::extension/9d89ad3b-8f94-4105-a0c8-99e6241f77ba/a6c7cf4a-8ece-4e62-9bdc-b164156c3c52/static/calculatedField-function"
+            config = "{\"preconditions\":[],\"preconditionAwareFunctionMode-textValue\":\"FALSE\",\"calculatedField\":{\"customFieldId\":\"customfield_10175\",\"formula\":\"7 * 7 + avg(7, 7, 7) * \\\"customfield_14120\\\"\",\"projects\":[],\"type\":\"POSTFUNCTION\"},\"scopeType\":\"EPIC\",\"source-scopeTarget\":\"ISSUE_IN_TRANSITION\",\"destination-scopeTarget\":\"EPIC\"}"
+            id = "1dc96f12-f3b4-4e65-b72f-f676af42298c"
+          }
+        },
+        {
+          ruleKey = "forge:workflow-post-function"
+          parameters = {
+            key = "ari:cloud:ecosystem::extension/9d89ad3b-8f94-4105-a0c8-99e6241f77ba/a6c7cf4a-8ece-4e62-9bdc-b164156c3c52/static/jsu-universal-function"
+            config = "{\"version\":1,\"config\":[{\"when\":[{\"operation\":\"AND\",\"statement\":{\"type\":\"RELATED_ISSUE_STATUS\",\"statusIds\":[\"10004\",\"10019\"],\"statusNames\":[\"Approved\",\"An Inactive Status\"],\"operator\":\"IN\",\"scope\":{\"type\":\"PARENT\",\"source\":\"ISSUE_IN_TRANSITION\",\"destination\":\"SIBLINGS\"}},\"negate\":false,\"componentId\":\"e9a1e43b-941c-41c0-8a07-7a99348ad114\"}],\"then\":[{\"type\":\"TRANSITION_ISSUE\",\"scope\":{\"type\":\"PARENT\",\"source\":\"ISSUE_IN_TRANSITION\",\"destination\":\"SUB_TASK\"},\"transitionId\":\"1\",\"destinationStatusId\":\"10004\",\"componentId\":\"f30d2049-2905-4ac0-8ba8-ae812dc297fc\"}]},{\"type\":\"UPDATE_FIELD\",\"fieldConfigurations\":[{\"value\":[\"bla\"],\"destinationFieldId\":\"customfield_11289\"},{\"value\":[\"PREVIOUS_USER\"],\"destinationFieldId\":\"assignee\"},{\"value\":[\"bla bla\"],\"destinationFieldId\":\"customfield_10180\"}],\"componentId\":\"e2d0aeac-b76a-459f-8eb0-ddbc596313d6\"},{\"type\":\"CLEAR_FIELD\",\"destinationFieldId\":[\"customfield_10031\",\"description\"],\"componentId\":\"36a8b07e-38c8-4889-8003-3141b88e8f56\"}],\"name\":\"shay was here\",\"createdBy\":\"62ebc187e50f2f2a395557cc\",\"createdAt\":0,\"updatedBy\":\"62ebc187e50f2f2a395557cc\",\"updatedAt\":1732018585867}"
+            id = "853db15b-bf4c-4846-8e59-3473b67b8c8a"
+          }
+        },
+      ]
+      conditions = {
+        operation = "ALL"
+        conditions = [
+          {
+            ruleKey = "forge:expression-condition"
+            parameters = {
+              key = "ari:cloud:ecosystem::extension/9d89ad3b-8f94-4105-a0c8-99e6241f77ba/a6c7cf4a-8ece-4e62-9bdc-b164156c3c52/static/userisinanyusers-condition"
+              config = "{\"users\":[\"62ebc187e50f2f2a395557cc\",\"5fa91999b2633d0076583a61\"]}"
+              id = "68ad00e6-4e52-41da-8c78-7dcdea80910d"
+            }
+          },
+        ]
+      }
+    }
+  }
+}

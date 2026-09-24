@@ -1,0 +1,14 @@
+jira.Field shay_multi_group_picker__multigrouppicker__c@sssuuuu {
+  name = "shay multi group picker"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:grouppickersearcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "shay multi group picker"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:multigrouppicker"
+  contexts = [
+    jira.CustomFieldContext.instance.shay_multi_group_picker__multigrouppicker__c_sssuuuu_Default_Configuration_Scheme_for_shay_multi_group_picker@uuuuuuumusssssss,
+  ]
+  _alias = "shay multi group picker"
+}

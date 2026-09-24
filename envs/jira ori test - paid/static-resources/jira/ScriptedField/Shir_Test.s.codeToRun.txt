@@ -1,0 +1,1 @@
+issue.projectObject.key == XYZ17

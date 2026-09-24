@@ -1,0 +1,14 @@
+jira.Field ABCDEFGHIJ__multicheckboxes__c {
+  name = "ABCDEFGHIJ"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher"
+  areOptionsSupported = true
+  isOptionsCountOverLimit = false
+  translatedName = "ABCDEFGHIJ"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes"
+  contexts = [
+    jira.CustomFieldContext.instance.ABCDEFGHIJ__multicheckboxes__c_Default_Configuration_Scheme_for_ABCDEFG@uuuuussss,
+  ]
+  _alias = "ABCDEFGHIJ"
+}

@@ -1,0 +1,16 @@
+jira.Filter Filter_for_DGE_board@s {
+  name = "Filter for DGE board"
+  owner = {
+    id = "712020:f12c0bf7-5d75-427b-b149-5ddd2da2ab8e"
+    displayName = "Former user"
+  }
+  jql = "${ jira.Field.instance.Project__project } = ${ jira.Project.instance.Dan_E_s_Project@bts.key } ORDER BY ${ jira.Field.instance.Rank__gh_lexo_rank__c@uubbuu.name } ASC"
+  sharePermissions = [
+    {
+      type = "project"
+      project = {
+        id = jira.Project.instance.Dan_E_s_Project@bts
+      }
+    },
+  ]
+}

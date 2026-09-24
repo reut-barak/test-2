@@ -1,0 +1,4 @@
+jira.ObjectTypeLabelAttribute IT_Equipment_Models_Model_Categories_label_attribute@uuusuu {
+  labelAttribute = jira.ObjectTypeAttribute.instance.IT_Equipment_Models_Model_Categories_uuus_Name@uuuumu
+  objectType = jira.ObjectType.instance.IT_Equipment_Models_Model_Categories@uuus
+}

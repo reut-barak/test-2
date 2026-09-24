@@ -1,0 +1,9 @@
+jira.ProjectComponent IdozJSM__Printers {
+  description = "Created by Jira Service Management"
+  assigneeType = "PROJECT_DEFAULT"
+  name = "Printers"
+  _parent = [
+    jira.Project.instance.IdozJSM,
+  ]
+  _alias = "IdozJSM:Printers"
+}

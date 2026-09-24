@@ -1,0 +1,16 @@
+jira.ObjectType IZQ_Hardware_Assets_us_Servers_uumu_Red_Hat_Linux@uuuumuss {
+  name = "Red Hat Linux"
+  displayName = "Red Hat Linux"
+  type = 0
+  parentObjectTypeId = jira.ObjectType.instance.IZQ_Hardware_Assets_us_Servers@uumu
+  inherited = true
+  abstractObjectType = false
+  parentObjectTypeInherited = true
+  schemaLabel = "IZQ"
+  schemaDisplayLabel = "IZQ"
+  iconId = "97"
+  _parent = [
+    jira.ObjectSchema.instance.IZQ,
+  ]
+  _alias = "Red Hat Linux"
+}

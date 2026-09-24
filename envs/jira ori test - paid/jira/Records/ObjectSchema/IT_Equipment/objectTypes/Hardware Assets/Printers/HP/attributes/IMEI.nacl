@@ -1,0 +1,22 @@
+jira.ObjectTypeAttribute IT_Equipment_Hardware_Assets_uus_Printers_uuumu_HP_uuuuumu_IMEI@uuuuuuumu {
+  description = "Your phone IMEI"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "IMEI"
+  displayName = "IMEI"
+  objectType = jira.ObjectType.instance.IT_Equipment_Hardware_Assets_uus_Printers_uuumu_HP@uuuuumu
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 1
+  _alias = "IMEI"
+}

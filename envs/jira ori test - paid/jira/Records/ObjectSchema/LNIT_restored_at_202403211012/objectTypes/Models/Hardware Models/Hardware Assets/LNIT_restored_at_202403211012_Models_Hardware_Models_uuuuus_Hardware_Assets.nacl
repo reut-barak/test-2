@@ -1,0 +1,17 @@
+jira.ObjectType LNIT_restored_at_202403211012_Models_Hardware_Models_uuuuus_Hardware_Assets@uuuuuumus {
+  name = "Hardware Assets"
+  displayName = "Hardware Assets"
+  type = 0
+  description = ""
+  parentObjectTypeId = jira.ObjectType.instance.LNIT_restored_at_202403211012_Models_Hardware_Models@uuuuus
+  inherited = true
+  abstractObjectType = true
+  parentObjectTypeInherited = false
+  schemaLabel = "LNIT_restored_at_202403211012"
+  schemaDisplayLabel = "LNIT_restored_at_202403211012"
+  iconId = "141"
+  _parent = [
+    jira.ObjectSchema.instance.LNIT_restored_at_202403211012,
+  ]
+  _alias = "Hardware Assets"
+}

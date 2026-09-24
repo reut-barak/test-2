@@ -1,0 +1,56 @@
+jira.DashboardGadget Custom_dashboard_s__Filter_counts_0_0@umuusuu {
+  moduleKey = "com.atlassian.servicedesk.dashboard-items-plugin:filter-count-dashboard-item"
+  color = "blue"
+  position = {
+    row = 0
+    column = 0
+  }
+  title = "Filter counts"
+  properties = [
+    {
+      key = "countOptions"
+      value = [
+        {
+          name = "Total"
+          jql = "assignee in (EMPTY)"
+          hasTrigger = false
+          trigger = {
+            display = "warning"
+            triggerEquality = "above"
+            triggerOn = "undefined"
+          }
+          id = "c563"
+        },
+      ]
+    },
+    {
+      key = "isConfigured"
+      value = true
+    },
+    {
+      key = "projectFilterDetails"
+      values = [
+        {
+          key = "name"
+          value = "test-proj-one"
+        },
+        {
+          key = "type"
+          value = "project"
+        },
+        {
+          key = "id"
+          value = jira.Project.instance.test_proj_one@b
+        },
+      ]
+    },
+    {
+      key = "refresh"
+      value = "15"
+    },
+  ]
+  _parent = [
+    jira.Dashboard.instance.Custom_dashboard@s,
+  ]
+  _alias = "Filter counts"
+}

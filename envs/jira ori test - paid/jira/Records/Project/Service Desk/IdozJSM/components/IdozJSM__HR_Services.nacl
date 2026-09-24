@@ -1,0 +1,9 @@
+jira.ProjectComponent IdozJSM__HR_Services@uus {
+  description = "Created by Jira Service Management"
+  assigneeType = "PROJECT_DEFAULT"
+  name = "HR Services"
+  _parent = [
+    jira.Project.instance.IdozJSM,
+  ]
+  _alias = "IdozJSM:HR Services"
+}

@@ -1,0 +1,11 @@
+jira.CustomFieldContext Category__jwm_category__c_uubuu_Category_Field_Config_Scheme_for_Project__shay_JWM@uuuuumusssssfss {
+  name = "Category Field Config Scheme for Project: shay JWM"
+  description = "Category Field Options"
+  projectIds = [
+    jira.Project.instance.shay_JWM@s,
+  ]
+  _parent = [
+    jira.Field.instance.Category__jwm_category__c@uubuu,
+  ]
+  _alias = "Category context in Category Field Config Scheme for Project: shay JWM"
+}

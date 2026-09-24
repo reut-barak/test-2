@@ -1,0 +1,22 @@
+jira.ObjectTypeAttribute LNIT_restored_at_202403211012_Models_Hardware_Models_uuuuus_Parent@uuuuuumu {
+  description = ""
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Parent"
+  displayName = "Parent"
+  objectType = jira.ObjectType.instance.LNIT_restored_at_202403211012_Models_Hardware_Models@uuuuus
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 0
+  _alias = "Parent"
+}

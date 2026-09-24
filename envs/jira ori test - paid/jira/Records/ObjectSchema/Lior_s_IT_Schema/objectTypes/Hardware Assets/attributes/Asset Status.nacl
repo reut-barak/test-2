@@ -1,0 +1,31 @@
+jira.ObjectTypeAttribute Lior_s_IT_Schema_tss_Hardware_Assets_uuumus_Asset_Status@uuuuuumus {
+  description = "Status of asset (e.g., In stock, In use, etc.)"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Asset Status"
+  displayName = "Asset Status"
+  objectType = jira.ObjectType.instance.Lior_s_IT_Schema_tss_Hardware_Assets@uuumus
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 7
+  typeValueMulti = [
+    jira.ObjectSchemaStatus.instance.Lior_s_IT_Schema_tss__Disposed@uuumuu,
+    jira.ObjectSchemaStatus.instance.Lior_s_IT_Schema_tss__In_Stock@uuumuus,
+    jira.ObjectSchemaStatus.instance.Lior_s_IT_Schema_tss__In_Use@uuumuus,
+    jira.ObjectSchemaStatus.instance.Lior_s_IT_Schema_tss__Ordered@uuumuu,
+    jira.ObjectSchemaStatus.instance.Lior_s_IT_Schema_tss__Retired@uuumuu,
+    jira.ObjectSchemaStatus.instance.Lior_s_IT_Schema_tss__Missing@uuumuu,
+    jira.ObjectSchemaStatus.instance.Lior_s_IT_Schema_tss__In_transit@uuumuus,
+  ]
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  _alias = "Asset Status"
+}

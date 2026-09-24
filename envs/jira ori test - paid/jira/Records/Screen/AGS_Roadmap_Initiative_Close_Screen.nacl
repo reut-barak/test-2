@@ -1,0 +1,10 @@
+jira.Screen AGS_Roadmap_Initiative_Close_Screen@s {
+  name = "AGS Roadmap Initiative Close Screen"
+  description = ""
+  tabs = {
+    Field_Tab@s = {
+      name = "Field Tab"
+      position = 0
+    }
+  }
+}

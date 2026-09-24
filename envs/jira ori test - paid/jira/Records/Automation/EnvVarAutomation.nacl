@@ -1,0 +1,81 @@
+jira.Automation EnvVarAutomation {
+  name = "EnvVarAutomation"
+  state = "ENABLED"
+  description = ""
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "6160b007a707100069ce5ed3"
+    displayName = "Daniel Tal"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.version.event.trigger:deleted"
+    value = {
+      versionNameFilter = ""
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      type = "jira.issue.outgoing.webhook"
+      value = {
+        url = "http://salto-sandbox.com/bla/bla"
+        urlSecure = false
+        headers = [
+          {
+            id = "_header_1730891329507"
+            name = "f"
+            value = "{{triggerIssue.changelog.status}}"
+            headerSecure = false
+          },
+          {
+            id = "_header_1730891330324"
+            name = "44"
+            value = "3"
+            headerSecure = false
+          },
+          {
+            id = "_header_1730891331191"
+            name = "fsdf"
+            value = "{{object.objectType}}"
+            headerSecure = false
+          },
+        ]
+        sendIssue = false
+        contentType = "empty"
+        method = "POST"
+        responseEnabled = false
+        continueOnErrorEnabled = false
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "8930f460f61a4f597cd69d81332c9f8310cade950787981550801537a6cc3647"
+  }
+  isAgentic = false
+  _alias = "EnvVarAutomation"
+}

@@ -1,0 +1,10 @@
+jira.FieldContextOptionsOrder Neta_test__multicheckboxes__c_suuuu_Default_Configuration_Scheme_for_Neta_test_order_child@uuuuumusssssuu {
+  options = [
+    jira.CustomFieldContextOption.instance.Neta_test__multicheckboxes__c_suuuu_Default_Configuration_Scheme_for_Neta_test_aaa@uuuuumusssssu,
+    jira.CustomFieldContextOption.instance.Neta_test__multicheckboxes__c_suuuu_Default_Configuration_Scheme_for_Neta_test_bb@uuuuumusssssu,
+    jira.CustomFieldContextOption.instance.Neta_test__multicheckboxes__c_suuuu_Default_Configuration_Scheme_for_Neta_test_c@uuuuumusssssu,
+  ]
+  _parent = [
+    jira.CustomFieldContext.instance.Neta_test__multicheckboxes__c_suuuu_Default_Configuration_Scheme_for_Neta_test@uuuuumusssss,
+  ]
+}

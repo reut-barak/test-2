@@ -1,0 +1,4 @@
+jira.ObjectTypeIcon Visitor {
+  name = "Visitor"
+  icon = file("jira/ObjectTypeIcon/Visitor.png")
+}

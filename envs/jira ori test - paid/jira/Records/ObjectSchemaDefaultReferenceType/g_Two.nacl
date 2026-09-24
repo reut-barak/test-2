@@ -1,0 +1,7 @@
+jira.ObjectSchemaDefaultReferenceType g_Two@s {
+  name = "g Two"
+  displayName = "g Two"
+  description = ""
+  color = "8777D9"
+  removable = true
+}

@@ -1,0 +1,9 @@
+jira.ProjectComponent IdozJSM__Webstore_Purchasing_Services@uuss {
+  description = "Created by Jira Service Management"
+  assigneeType = "PROJECT_DEFAULT"
+  name = "Webstore Purchasing Services"
+  _parent = [
+    jira.Project.instance.IdozJSM,
+  ]
+  _alias = "IdozJSM:Webstore Purchasing Services"
+}

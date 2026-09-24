@@ -1,0 +1,5 @@
+jira.WorkflowScheme SUP2__Simple_Issue_Tracking_Workflow_Scheme@fsssss {
+  name = "SUP2: Simple Issue Tracking Workflow Scheme"
+  description = ""
+  defaultWorkflow = jira.WorkflowConfiguration.instance.SUP2__Simple_Issue_Tracking_Workflow@fssss
+}

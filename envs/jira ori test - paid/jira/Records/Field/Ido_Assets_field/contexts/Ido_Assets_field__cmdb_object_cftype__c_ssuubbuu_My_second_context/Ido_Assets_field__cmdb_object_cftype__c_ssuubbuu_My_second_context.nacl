@@ -1,0 +1,15 @@
+jira.CustomFieldContext Ido_Assets_field__cmdb_object_cftype__c_ssuubbuu_My_second_context@uuuuuuuumuss {
+  name = "My second context"
+  projectIds = [
+    jira.Project.instance.idoA,
+  ]
+  assetsObjectFieldConfiguration = {
+    multiple = false
+    shouldSetDefaultValuesFromEmptySearch = false
+    assignStrict = false
+  }
+  _parent = [
+    jira.Field.instance.Ido_Assets_field__cmdb_object_cftype__c@ssuubbuu,
+  ]
+  _alias = "Ido Assets field context in My second context"
+}

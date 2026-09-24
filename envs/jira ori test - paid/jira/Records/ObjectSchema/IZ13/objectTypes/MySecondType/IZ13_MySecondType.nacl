@@ -1,0 +1,17 @@
+jira.ObjectType IZ13_MySecondType {
+  name = "MySecondType"
+  displayName = "MySecondType"
+  type = 0
+  description = ""
+  inherited = false
+  abstractObjectType = false
+  parentObjectTypeInherited = false
+  schemaLabel = "IZ13"
+  schemaDisplayLabel = "IZ13"
+  iconId = "2"
+  parentObjectTypeId = jira.ObjectSchema.instance.IZ13
+  _parent = [
+    jira.ObjectSchema.instance.IZ13,
+  ]
+  _alias = "MySecondType"
+}

@@ -1,0 +1,9 @@
+jira.ProjectComponent ITSM_sample_space_s__Cloud_Storage_Services@uumuuss {
+  name = "Cloud Storage Services"
+  description = "Created by Jira Service Management"
+  assigneeType = "PROJECT_DEFAULT"
+  _parent = [
+    jira.Project.instance.ITSM_sample_space@s,
+  ]
+  _alias = "ITSM sample space:Cloud Storage Services"
+}

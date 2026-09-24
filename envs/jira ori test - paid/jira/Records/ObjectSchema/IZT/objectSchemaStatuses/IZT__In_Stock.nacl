@@ -1,0 +1,11 @@
+jira.ObjectSchemaStatus IZT__In_Stock@uus {
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:145"
+  name = "In Stock"
+  displayName = "In Stock"
+  description = "Asset is in stock but not in use"
+  category = 2
+  _parent = [
+    jira.ObjectSchema.instance.IZT,
+  ]
+  _alias = "IZT:In Stock"
+}

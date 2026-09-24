@@ -1,0 +1,14 @@
+jira.Field shay_assets_test__cmdb_object_cftype__c@ssuubbuu {
+  name = "shay assets test"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugins.cmdb:cmdb-object-searcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "shay assets test"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugins.cmdb:cmdb-object-cftype"
+  contexts = [
+    jira.CustomFieldContext.instance.shay_assets_test__cmdb_object_cftype__c_ssuubbuu_Default_Configuration_Scheme_for_shay_assets_test@uuuuuuuumussssss,
+  ]
+  _alias = "shay assets test"
+}

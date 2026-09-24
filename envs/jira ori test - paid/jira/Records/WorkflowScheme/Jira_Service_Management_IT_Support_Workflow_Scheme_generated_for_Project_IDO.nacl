@@ -1,0 +1,19 @@
+jira.WorkflowScheme Jira_Service_Management_IT_Support_Workflow_Scheme_generated_for_Project_IDO@s {
+  name = "Jira Service Management IT Support Workflow Scheme generated for Project IDO"
+  description = "This Jira Service Management IT Support Workflow Scheme was generated for Project IDO"
+  defaultWorkflow = jira.WorkflowConfiguration.instance.jira
+  items = [
+    {
+      workflow = jira.WorkflowConfiguration.instance.IDO__Jira_Service_Management_default_workflow@fsssss
+      issueType = jira.IssueType.instance.Bug
+    },
+    {
+      workflow = jira.WorkflowConfiguration.instance.IDO__Jira_Service_Management_default_workflow@fsssss
+      issueType = jira.IssueType.instance.New_Feature@s
+    },
+    {
+      workflow = jira.WorkflowConfiguration.instance.IDO__Service_Request_Fulfilment_workflow_for_Jira_Service_Management@fssssssss
+      issueType = jira.IssueType.instance.Support
+    },
+  ]
+}

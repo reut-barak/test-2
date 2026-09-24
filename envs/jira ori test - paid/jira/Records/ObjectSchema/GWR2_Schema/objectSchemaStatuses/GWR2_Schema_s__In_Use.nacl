@@ -1,0 +1,11 @@
+jira.ObjectSchemaStatus GWR2_Schema_s__In_Use@umuus {
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:236"
+  name = "In Use"
+  displayName = "In Use"
+  description = "Asset is deployed and functioning"
+  category = 1
+  _parent = [
+    jira.ObjectSchema.instance.GWR2_Schema@s,
+  ]
+  _alias = "GWR2 Schema:In Use"
+}

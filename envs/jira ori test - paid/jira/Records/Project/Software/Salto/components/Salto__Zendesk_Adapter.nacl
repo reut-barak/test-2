@@ -1,0 +1,8 @@
+jira.ProjectComponent Salto__Zendesk_Adapter@uus {
+  name = "Zendesk Adapter"
+  assigneeType = "PROJECT_DEFAULT"
+  _parent = [
+    jira.Project.instance.Salto,
+  ]
+  _alias = "Salto:Zendesk Adapter"
+}

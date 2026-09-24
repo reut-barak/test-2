@@ -1,0 +1,11 @@
+jira.ObjectSchemaStatus Lior_s_IT_Schema_tss__Ordered@uuumuu {
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:12"
+  name = "Ordered"
+  displayName = "Ordered"
+  description = "Asset is deployed but no longer in use"
+  category = 2
+  _parent = [
+    jira.ObjectSchema.instance.Lior_s_IT_Schema@tss,
+  ]
+  _alias = "Lior's IT Schema:Ordered"
+}

@@ -1,0 +1,110 @@
+jira.Automation w6_automation@s {
+  name = "w6 automation"
+  state = "ENABLED"
+  description = "w automation"
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "640a4787f00d095406f6727f"
+    displayName = "Ido Amit"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.comment.event.trigger:updated"
+    value = {
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "BRANCH"
+      type = "jira.issue.related"
+      value = {
+        relatedType = "current"
+        jql = ""
+        linkTypes = [
+        ]
+        onlyUpdatedIssues = false
+        similarityLimit = 40
+        compareValue = 0
+      }
+      conditions = [
+      ]
+      children = [
+        {
+          component = "ACTION"
+          type = "cmdb.object.create"
+          value = {
+            schemaId = jira.ObjectSchema.instance.idoA_Schema_rename@s
+            objectTypeId = jira.ObjectType.instance.idoA_Schema_rename_s_idoOne@uumu
+            attributes = [
+              {
+                name = "Name"
+                value = "bononbono"
+                isLabel = true
+              },
+            ]
+          }
+          conditions = [
+          ]
+          children = [
+          ]
+        },
+      ]
+    },
+    {
+      component = "BRANCH"
+      type = "cmdb.object.related"
+      value = {
+        schemaId = jira.ObjectSchema.instance.idoA_Schema_rename@s
+        cmdbQuery = "say yo"
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "cmdb.object.create"
+      value = {
+        schemaId = jira.ObjectSchema.instance.idoA_Schema_rename@s
+        objectTypeId = jira.ObjectType.instance.idoA_Schema_rename_s_idoOne@uumu
+        attributes = [
+          {
+            name = "Name"
+            value = "idii"
+            isLabel = true
+          },
+        ]
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "17c5e0443b5adc14b7c008037cf95c4d99319dd4ba053ca06c20a349f7ca86c9"
+  }
+  isAgentic = false
+  _alias = "w6 automation"
+}

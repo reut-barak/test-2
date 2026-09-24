@@ -1,0 +1,11 @@
+jira.PriorityScheme NewOne {
+  name = "NewOne"
+  description = "lsdkmf"
+  defaultPriorityId = jira.Priority.instance.Highest
+  priorities = [
+    jira.Priority.instance.Highest,
+    jira.Priority.instance.Low,
+    jira.Priority.instance.test4,
+    jira.Priority.instance.test5,
+  ]
+}

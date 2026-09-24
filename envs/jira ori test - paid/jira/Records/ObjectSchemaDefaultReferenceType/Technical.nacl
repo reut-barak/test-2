@@ -1,0 +1,7 @@
+jira.ObjectSchemaDefaultReferenceType Technical {
+  name = "Technical"
+  displayName = "Technical"
+  description = "Technical"
+  color = "f51844"
+  removable = false
+}

@@ -1,0 +1,21 @@
+jira.CustomFieldContextOption testCheckbox4__multicheckboxes__c_Default_Configuration_Scheme_for_testCheckbox4_a@uuuuussssu {
+  value = "a"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.testCheckbox4__multicheckboxes__c_Default_Configuration_Scheme_for_testCheckbox4@uuuuussss,
+  ]
+}
+jira.CustomFieldContextOption testCheckbox4__multicheckboxes__c_Default_Configuration_Scheme_for_testCheckbox4_b@uuuuussssu {
+  value = "b"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.testCheckbox4__multicheckboxes__c_Default_Configuration_Scheme_for_testCheckbox4@uuuuussss,
+  ]
+}
+jira.CustomFieldContextOption testCheckbox4__multicheckboxes__c_Default_Configuration_Scheme_for_testCheckbox4_c@uuuuussssu {
+  value = "c"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.testCheckbox4__multicheckboxes__c_Default_Configuration_Scheme_for_testCheckbox4@uuuuussss,
+  ]
+}

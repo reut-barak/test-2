@@ -1,0 +1,14 @@
+jira.Field iljhlhj__labels__c {
+  name = "iljhlhj"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:labelsearcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "iljhlhj"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:labels"
+  contexts = [
+    jira.CustomFieldContext.instance.iljhlhj__labels__c_Default_Configuration_Scheme_for_iljhlhj@uuuuussss,
+  ]
+  _alias = "iljhlhj"
+}

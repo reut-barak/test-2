@@ -1,0 +1,16 @@
+jira.ObjectType IZU_Hardware_Assets@us {
+  name = "Hardware Assets"
+  displayName = "Hardware Assets"
+  type = 0
+  inherited = true
+  abstractObjectType = true
+  parentObjectTypeInherited = false
+  schemaLabel = "IZU"
+  schemaDisplayLabel = "IZU"
+  iconId = "141"
+  parentObjectTypeId = jira.ObjectSchema.instance.IZU
+  _parent = [
+    jira.ObjectSchema.instance.IZU,
+  ]
+  _alias = "Hardware Assets"
+}

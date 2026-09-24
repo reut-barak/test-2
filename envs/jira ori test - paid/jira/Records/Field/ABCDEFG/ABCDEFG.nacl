@@ -1,0 +1,15 @@
+jira.Field ABCDEFG__labels__c {
+  name = "ABCDEFG"
+  description = "abcdefg dield"
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:labelsearcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "ABCDEFG"
+  translatedDescription = "abcdefg dield"
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:labels"
+  _alias = "ABCDEFG"
+  contexts = [
+    jira.CustomFieldContext.instance.ABCDEFG__labels__c_Default_Configuration_Scheme_for_ABCDEFG_uuuuussss_14589@uuuuuuuuumu,
+    jira.CustomFieldContext.instance.ABCDEFG__labels__c_Default_Configuration_Scheme_for_ABCDEFG_uuuuussss_15495@uuuuuuuuumu,
+  ]
+}

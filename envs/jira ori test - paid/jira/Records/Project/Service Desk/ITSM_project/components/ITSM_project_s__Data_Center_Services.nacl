@@ -1,0 +1,9 @@
+jira.ProjectComponent ITSM_project_s__Data_Center_Services@umuuss {
+  name = "Data Center Services"
+  description = "Created by Jira Service Management"
+  assigneeType = "PROJECT_DEFAULT"
+  _parent = [
+    jira.Project.instance.ITSM_project@s,
+  ]
+  _alias = "ITSM project:Data Center Services"
+}

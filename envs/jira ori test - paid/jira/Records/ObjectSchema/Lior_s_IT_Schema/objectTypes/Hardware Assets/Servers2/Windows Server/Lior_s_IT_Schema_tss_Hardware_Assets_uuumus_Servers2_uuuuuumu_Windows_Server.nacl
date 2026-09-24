@@ -1,0 +1,16 @@
+jira.ObjectType Lior_s_IT_Schema_tss_Hardware_Assets_uuumus_Servers2_uuuuuumu_Windows_Server@uuuuuuuumus {
+  name = "Windows Server"
+  displayName = "Windows Server"
+  type = 0
+  parentObjectTypeId = jira.ObjectType.instance.Lior_s_IT_Schema_tss_Hardware_Assets_uuumus_Servers2@uuuuuumu
+  inherited = true
+  abstractObjectType = false
+  parentObjectTypeInherited = true
+  schemaLabel = "Lior's IT Schema"
+  schemaDisplayLabel = "Lior's IT Schema"
+  iconId = "140"
+  _parent = [
+    jira.ObjectSchema.instance.Lior_s_IT_Schema@tss,
+  ]
+  _alias = "Windows Server"
+}

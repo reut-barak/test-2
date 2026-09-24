@@ -1,0 +1,7 @@
+jira.CustomFieldContextOption ___multicheckboxes__c__01488uuuu_Default_Configuration_Scheme_for_____@uuuuumuussss_01488u_01488_01488 {
+  value = "אא"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.___multicheckboxes__c__01488uuuu_Default_Configuration_Scheme_for__@uuuuumuussss_01488,
+  ]
+}

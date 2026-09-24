@@ -1,0 +1,9 @@
+jira.ProjectComponent Some_Words_Project_s__Jira@uumuu {
+  name = "Jira"
+  description = "Issues related to Jira. Created by Jira Service Management."
+  assigneeType = "UNASSIGNED"
+  _parent = [
+    jira.Project.instance.Some_Words_Project@s,
+  ]
+  _alias = "Some Words Project:Jira"
+}

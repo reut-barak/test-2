@@ -1,0 +1,9 @@
+jira.ObjectTypeOrder ISS_restored_at_202403211012_Department_SALES_childOrder {
+  objectTypes = [
+    jira.ObjectType.instance.ISS_restored_at_202403211012_Department_SALES_shiran,
+    jira.ObjectType.instance.ISS_restored_at_202403211012_Department_SALES_shir,
+  ]
+  _parent = [
+    jira.ObjectType.instance.ISS_restored_at_202403211012_Department_SALES,
+  ]
+}

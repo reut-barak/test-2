@@ -1,0 +1,8 @@
+jira.FieldContextOptionsOrder field_13_12_23__multicheckboxes__c_bbbuuuu_Default_Configuration_Scheme_for_field_13_12_23_order_child@uuuuuuumussssbbbuu {
+  options = [
+    jira.CustomFieldContextOption.instance.field_13_12_23__multicheckboxes__c_bbbuuuu_Default_Configuration_Scheme_for_field_13_12_23_1@uuuuuuumussssbbbu,
+  ]
+  _parent = [
+    jira.CustomFieldContext.instance.field_13_12_23__multicheckboxes__c_bbbuuuu_Default_Configuration_Scheme_for_field_13_12_23@uuuuuuumussssbbb,
+  ]
+}

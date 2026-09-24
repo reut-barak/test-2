@@ -1,0 +1,16 @@
+jira.ObjectType All_Serial_Numbers_s_Models@uumu {
+  name = "Models"
+  displayName = "Models"
+  type = 0
+  inherited = false
+  abstractObjectType = true
+  parentObjectTypeInherited = false
+  schemaLabel = "All Serial Numbers"
+  schemaDisplayLabel = "All Serial Numbers"
+  iconId = "73"
+  parentObjectTypeId = jira.ObjectSchema.instance.All_Serial_Numbers@s
+  _parent = [
+    jira.ObjectSchema.instance.All_Serial_Numbers@s,
+  ]
+  _alias = "Models"
+}

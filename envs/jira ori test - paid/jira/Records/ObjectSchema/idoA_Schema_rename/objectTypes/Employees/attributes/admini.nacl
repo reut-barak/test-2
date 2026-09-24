@@ -1,0 +1,25 @@
+jira.ObjectTypeAttribute idoA_Schema_rename_s_Employees_uumu_admini@uuuumu {
+  description = ""
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "admini"
+  displayName = "admini"
+  objectType = jira.ObjectType.instance.idoA_Schema_rename_s_Employees@uumu
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 2
+  typeValueMulti = [
+    jira.Group.instance.administrators,
+  ]
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  _alias = "admini"
+}

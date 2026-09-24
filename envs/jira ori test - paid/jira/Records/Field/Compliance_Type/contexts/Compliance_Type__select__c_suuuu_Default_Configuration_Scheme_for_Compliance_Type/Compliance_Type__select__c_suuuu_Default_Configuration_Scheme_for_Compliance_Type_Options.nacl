@@ -1,0 +1,42 @@
+jira.CustomFieldContextOption Compliance_Type__select__c_suuuu_Default_Configuration_Scheme_for_Compliance_Type_None@uuuuumusssssu {
+  value = "None"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Compliance_Type__select__c_suuuu_Default_Configuration_Scheme_for_Compliance_Type@uuuuumusssss,
+  ]
+}
+jira.CustomFieldContextOption Compliance_Type__select__c_suuuu_Default_Configuration_Scheme_for_Compliance_Type_GDPR@uuuuumusssssu {
+  value = "GDPR"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Compliance_Type__select__c_suuuu_Default_Configuration_Scheme_for_Compliance_Type@uuuuumusssss,
+  ]
+}
+jira.CustomFieldContextOption Compliance_Type__select__c_suuuu_Default_Configuration_Scheme_for_Compliance_Type_HIPAA@uuuuumusssssu {
+  value = "HIPAA"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Compliance_Type__select__c_suuuu_Default_Configuration_Scheme_for_Compliance_Type@uuuuumusssss,
+  ]
+}
+jira.CustomFieldContextOption Compliance_Type__select__c_suuuu_Default_Configuration_Scheme_for_Compliance_Type_ISO_27001@uuuuumusssssus {
+  value = "ISO 27001"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Compliance_Type__select__c_suuuu_Default_Configuration_Scheme_for_Compliance_Type@uuuuumusssss,
+  ]
+}
+jira.CustomFieldContextOption Compliance_Type__select__c_suuuu_Default_Configuration_Scheme_for_Compliance_Type_SOC2@uuuuumusssssu {
+  value = "SOC2"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Compliance_Type__select__c_suuuu_Default_Configuration_Scheme_for_Compliance_Type@uuuuumusssss,
+  ]
+}
+jira.CustomFieldContextOption Compliance_Type__select__c_suuuu_Default_Configuration_Scheme_for_Compliance_Type_FEDRAMP@uuuuumusssssu {
+  value = "FEDRAMP"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Compliance_Type__select__c_suuuu_Default_Configuration_Scheme_for_Compliance_Type@uuuuumusssss,
+  ]
+}

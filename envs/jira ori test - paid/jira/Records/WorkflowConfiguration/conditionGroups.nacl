@@ -1,0 +1,89 @@
+jira.WorkflowConfiguration conditionGroups {
+  scope = {
+    type = "GLOBAL"
+  }
+  name = "conditionGroups"
+  description = ""
+  isEditable = true
+  startPointLayout = {
+    x = 968
+    y = 4
+  }
+  statuses = [
+    {
+      statusReference = jira.Status.instance.approved
+      layout = {
+        x = 1199.234375
+        y = 117.4
+      }
+      deprecated = false
+      name = "Approved"
+    },
+    {
+      statusReference = jira.Status.instance.open
+      layout = {
+        x = 928.40625
+        y = 117.4
+      }
+      deprecated = false
+      name = "Open"
+    },
+  ]
+  transitions = {
+    Create__From__none__Initial@fffsff = {
+      type = "INITIAL"
+      toStatusReference = jira.Status.instance.open
+      links = [
+        {
+          toPort = 1
+        },
+      ]
+      name = "Create"
+      description = ""
+    }
+    first__From__Open__Directed@fffsff = {
+      type = "DIRECTED"
+      toStatusReference = jira.Status.instance.approved
+      links = [
+        {
+          fromStatusReference = jira.Status.instance.open
+          fromPort = 3
+          toPort = 7
+        },
+      ]
+      name = "first"
+      description = ""
+      conditions = {
+        operation = "ALL"
+        conditionGroups = [
+          {
+            operation = "ALL"
+            conditions = [
+              {
+                ruleKey = "system:previous-status-condition"
+                parameters = {
+                  previousStatusIds = jira.Status.instance.approved
+                  not = "false"
+                  mostRecentStatusOnly = "false"
+                  includeCurrentStatus = "false"
+                  ignoreLoopTransitions = "false"
+                }
+              },
+              {
+                ruleKey = "system:restrict-issue-transition"
+                parameters = {
+                  roleIds = [
+                    jira.ProjectRole.instance.Ido2Collide,
+                    jira.ProjectRole.instance.IdoTeamRole,
+                    jira.ProjectRole.instance.rrrfffr,
+                    jira.ProjectRole.instance.Service_Desk_Customers@s,
+                  ]
+                }
+              },
+            ]
+          },
+        ]
+      }
+    }
+  }
+}

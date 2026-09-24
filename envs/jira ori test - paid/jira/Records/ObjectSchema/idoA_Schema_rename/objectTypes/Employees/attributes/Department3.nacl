@@ -1,0 +1,27 @@
+jira.ObjectTypeAttribute idoA_Schema_rename_s_Employees_uumu_Department3@uuuumu {
+  description = "Employee's department ido Amit Amit Kal"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Department3"
+  displayName = "Department3"
+  objectType = jira.ObjectType.instance.idoA_Schema_rename_s_Employees@uumu
+  options = ""
+  pendingCreation = false
+  qlQuery = ""
+  regexValidation = ""
+  removable = true
+  sortable = true
+  suffix = ""
+  summable = false
+  type = 1
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  additionalValue = jira.ObjectSchemaReferenceType.instance.idoA_Schema_rename_s__Member_of@uumuus
+  typeValue = jira.ObjectType.instance.idoA_Schema_rename_s_Employees@uumu
+  _alias = "Department3"
+}

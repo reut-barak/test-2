@@ -1,0 +1,17 @@
+jira.ObjectType idoA_Schema_rename_s_Employees_uumu_Omri@uuuumu {
+  name = "Omri"
+  displayName = "Omri"
+  type = 0
+  description = ""
+  parentObjectTypeId = jira.ObjectType.instance.idoA_Schema_rename_s_Employees@uumu
+  inherited = false
+  abstractObjectType = false
+  parentObjectTypeInherited = false
+  schemaLabel = "idoA Schema rename"
+  schemaDisplayLabel = "idoA Schema rename"
+  iconId = "131"
+  _parent = [
+    jira.ObjectSchema.instance.idoA_Schema_rename@s,
+  ]
+  _alias = "Omri"
+}

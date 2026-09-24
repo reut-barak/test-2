@@ -1,0 +1,9 @@
+jira.ObjectTypeOrder IT_Equipment_Hardware_Assets_uus_Laptops_childOrder@uuumuu {
+  objectTypes = [
+    jira.ObjectType.instance.IT_Equipment_Hardware_Assets_uus_Laptops_uuumu_Macbook@uuuuumu,
+    jira.ObjectType.instance.IT_Equipment_Hardware_Assets_uus_Laptops_uuumu_iMac@uuuuumu,
+  ]
+  _parent = [
+    jira.ObjectType.instance.IT_Equipment_Hardware_Assets_uus_Laptops@uuumu,
+  ]
+}

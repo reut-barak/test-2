@@ -1,0 +1,242 @@
+jira.Automation When_a_comment_is_added___update_the_status_ITSM_project@sssss_08594sssus {
+  name = "When a comment is added → update the status"
+  state = "ENABLED"
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "60e8b78784c9920071996842"
+    displayName = "Lior Neudorfer"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.event.trigger:commented"
+    value = {
+      eventTypes = [
+      ]
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "CONDITION"
+      type = "jira.comparator.condition"
+      value = {
+        first = "{{${ jira.Field.instance.Comment__comments_page@uub }.internal}}"
+        second = "false"
+        operator = "EQUALS"
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "CONDITION"
+      type = "jira.condition.container.block"
+      conditions = [
+      ]
+      children = [
+        {
+          component = "CONDITION_BLOCK"
+          type = "jira.condition.if.block"
+          value = {
+            conditionMatchType = "ALL"
+          }
+          conditions = [
+            {
+              component = "CONDITION"
+              type = "jira.user.condition"
+              value = {
+                conditions = [
+                  {
+                    field = "initiator"
+                    check = "IS_NOT_CUSTOMER"
+                    criteria = [
+                    ]
+                  },
+                ]
+                operator = "AND"
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+            {
+              component = "CONDITION"
+              type = "jira.issue.condition"
+              value = {
+                selectedField = {
+                  type = "ID"
+                  value = jira.Field.instance.Status__status
+                }
+                selectedFieldType = "status"
+                comparison = "EQUALS"
+                compareFieldValue = {
+                  type = "NAME"
+                  value = jira.Status.instance.waiting_for_support@s.name
+                  multiValue = false
+                }
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+          ]
+          children = [
+            {
+              component = "ACTION"
+              type = "jira.issue.transition"
+              value = {
+                operations = [
+                ]
+                sendNotifications = true
+                destinationStatus = {
+                  type = "NAME"
+                  value = jira.Status.instance.waiting_for_customer@s.name
+                }
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+            {
+              component = "ACTION"
+              type = "jira.issue.transition"
+              value = {
+                operations = [
+                ]
+                sendNotifications = true
+                destinationStatus = {
+                  type = "NAME"
+                  value = jira.Status.instance.published.name
+                }
+                transitionMatch = ""
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+            {
+              component = "ACTION"
+              type = "jira.issue.transition"
+              value = {
+                operations = [
+                ]
+                sendNotifications = true
+                destinationStatus = {
+                  type = "NAME"
+                  value = jira.Status.instance.implementing.name
+                }
+                transitionMatch = ""
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+          ]
+        },
+        {
+          component = "CONDITION_BLOCK"
+          type = "jira.condition.if.block"
+          value = {
+            conditionMatchType = "ALL"
+          }
+          conditions = [
+            {
+              component = "CONDITION"
+              type = "jira.user.condition"
+              value = {
+                conditions = [
+                  {
+                    field = "initiator"
+                    check = "IS_CUSTOMER"
+                    criteria = [
+                    ]
+                  },
+                ]
+                operator = "AND"
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+            {
+              component = "CONDITION"
+              type = "jira.issue.condition"
+              value = {
+                selectedField = {
+                  type = "ID"
+                  value = jira.Field.instance.Status__status
+                }
+                selectedFieldType = "status"
+                comparison = "EQUALS"
+                compareFieldValue = {
+                  type = "NAME"
+                  value = jira.Status.instance.waiting_for_customer@s.name
+                  multiValue = false
+                }
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+          ]
+          children = [
+            {
+              component = "ACTION"
+              type = "jira.issue.transition"
+              value = {
+                operations = [
+                ]
+                sendNotifications = true
+                destinationStatus = {
+                  type = "NAME"
+                  value = jira.Status.instance.waiting_for_support@s.name
+                }
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+          ]
+        },
+      ]
+    },
+  ]
+  projects = [
+    {
+      projectId = jira.Project.instance.ITSM_project@s
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "9af725ab286bcfa918583da7af2d08164cf189b51177329ad207fda9206f8cda"
+  }
+  isAgentic = false
+  _alias = "When a comment is added → update the status"
+}

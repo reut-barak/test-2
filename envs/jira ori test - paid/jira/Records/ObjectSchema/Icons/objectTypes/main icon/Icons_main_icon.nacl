@@ -1,0 +1,17 @@
+jira.ObjectType Icons_main_icon@us {
+  name = "main icon"
+  displayName = "main icon"
+  type = 0
+  description = ""
+  inherited = false
+  abstractObjectType = false
+  parentObjectTypeInherited = false
+  schemaLabel = "Icons"
+  schemaDisplayLabel = "Icons"
+  iconId = jira.ObjectTypeIcon.instance.myAvatari
+  parentObjectTypeId = jira.ObjectSchema.instance.Icons
+  _parent = [
+    jira.ObjectSchema.instance.Icons,
+  ]
+  _alias = "main icon"
+}

@@ -1,0 +1,281 @@
+jira.Automation When_a_deployment_is_completed__failed_or_canceled___then_transition_request_accordingly_AlonITSM3@sssszdssss_08594ssssu {
+  name = "When a deployment is completed, failed or canceled → then transition request accordingly"
+  state = "ENABLED"
+  description = "Transitions a change request to completed, failed, or canceled, based on the outcome of a deployment."
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "640a4787f00d095406f6727f"
+    displayName = "Ido Amit"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "640a4787f00d095406f6727f"
+      displayName = "Ido Amit"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "devops.deploy.event.trigger:statechange"
+    value = {
+      environments = [
+        "production",
+      ]
+      states = [
+        "successful",
+        "failed",
+        "cancelled",
+        "in_progress",
+      ]
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "CONDITION"
+      type = "jira.jql.condition"
+      conditions = [
+      ]
+      children = [
+      ]
+      rawValue = "\"Ticket category\" = Changes"
+    },
+    {
+      component = "CONDITION"
+      type = "jira.condition.container.block"
+      conditions = [
+      ]
+      children = [
+        {
+          component = "CONDITION_BLOCK"
+          type = "jira.condition.if.block"
+          value = {
+            conditionMatchType = "ALL"
+          }
+          conditions = [
+            {
+              component = "CONDITION"
+              type = "jira.comparator.condition"
+              value = {
+                first = "{{deployment.state}}"
+                second = "successful"
+                operator = "EQUALS"
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+          ]
+          children = [
+            {
+              component = "ACTION"
+              type = "jira.issue.transition"
+              value = {
+                operations = [
+                  {
+                    field = {
+                      type = "ID"
+                      value = jira.Field.instance.Resolution__resolution
+                    }
+                    fieldType = "resolution"
+                    type = "SET"
+                    value = {
+                      type = "ID"
+                      value = jira.Resolution.instance.Done
+                    }
+                  },
+                ]
+                sendNotifications = true
+                destinationStatus = {
+                  type = "ID"
+                  value = jira.Status.instance.completed
+                }
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+          ]
+        },
+        {
+          component = "CONDITION_BLOCK"
+          type = "jira.condition.if.block"
+          value = {
+            conditionMatchType = "ALL"
+          }
+          conditions = [
+            {
+              component = "CONDITION"
+              type = "jira.comparator.condition"
+              value = {
+                first = "{{deployment.state}}"
+                second = "failed"
+                operator = "EQUALS"
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+          ]
+          children = [
+            {
+              component = "ACTION"
+              type = "jira.issue.transition"
+              value = {
+                operations = [
+                  {
+                    field = {
+                      type = "ID"
+                      value = jira.Field.instance.Resolution__resolution
+                    }
+                    fieldType = "resolution"
+                    type = "SET"
+                    value = {
+                      type = "ID"
+                      value = jira.Resolution.instance.Done
+                    }
+                  },
+                ]
+                sendNotifications = true
+                destinationStatus = {
+                  type = "ID"
+                  value = jira.Status.instance.failed
+                }
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+          ]
+        },
+        {
+          component = "CONDITION_BLOCK"
+          type = "jira.condition.if.block"
+          value = {
+            conditionMatchType = "ALL"
+          }
+          conditions = [
+            {
+              component = "CONDITION"
+              type = "jira.comparator.condition"
+              value = {
+                first = "{{deployment.state}}"
+                second = "cancelled"
+                operator = "EQUALS"
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+          ]
+          children = [
+            {
+              component = "ACTION"
+              type = "jira.issue.transition"
+              value = {
+                operations = [
+                  {
+                    field = {
+                      type = "ID"
+                      value = jira.Field.instance.Resolution__resolution
+                    }
+                    fieldType = "resolution"
+                    type = "SET"
+                    value = {
+                      type = "ID"
+                      value = jira.Resolution.instance.Done
+                    }
+                  },
+                ]
+                sendNotifications = true
+                destinationStatus = {
+                  type = "ID"
+                  value = jira.Status.instance.canceled
+                }
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+          ]
+        },
+        {
+          component = "CONDITION_BLOCK"
+          type = "jira.condition.if.block"
+          value = {
+            conditionMatchType = "ALL"
+          }
+          conditions = [
+            {
+              component = "CONDITION"
+              type = "jira.comparator.condition"
+              value = {
+                first = "{{deployment.state}}"
+                second = "in_progress"
+                operator = "EQUALS"
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+          ]
+          children = [
+            {
+              component = "ACTION"
+              type = "jira.issue.transition"
+              value = {
+                operations = [
+                ]
+                sendNotifications = true
+                destinationStatus = {
+                  type = "ID"
+                  value = jira.Status.instance.implementing
+                }
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+          ]
+        },
+      ]
+    },
+  ]
+  projects = [
+    {
+      projectId = jira.Project.instance.AlonITSM3
+    },
+  ]
+  labels = [
+    jira.AutomationLabel.instance.Change_management@s,
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "SYSTEM"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 2
+    value = "4538cbd872bf3e5928ce28e90ca872da03e190edcfa409d34638a6fa103d09b6"
+  }
+  ruleArchetype = "SYSTEM_JSM"
+  editRestrictions = {
+    trigger = "CONFIG_ONLY"
+    components = "CONFIG_ONLY"
+    allowConversionToNormalRule = false
+  }
+  isAgentic = false
+  _alias = "When a deployment is completed, failed or canceled → then transition request accordingly"
+}

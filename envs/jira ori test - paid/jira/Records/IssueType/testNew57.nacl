@@ -1,0 +1,7 @@
+jira.IssueType testNew57 {
+  description = "description"
+  name = "testNew57"
+  untranslatedName = "testNew57"
+  hierarchyLevel = 0
+  avatar = file("jira/IssueType/testNew57.png")
+}

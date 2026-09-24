@@ -1,0 +1,9 @@
+jira.FieldContextOptionsOrder Client_Classification__multiselect__c_suuuu_Default_Configuration_Scheme_for_Client_Classification_order_child@uuuuumusssssuu {
+  options = [
+    jira.CustomFieldContextOption.instance.Client_Classification__multiselect__c_suuuu_Default_Configuration_Scheme_for_Client_Classification_Consumer@uuuuumusssssu,
+    jira.CustomFieldContextOption.instance.Client_Classification__multiselect__c_suuuu_Default_Configuration_Scheme_for_Client_Classification_Professional@uuuuumusssssu,
+  ]
+  _parent = [
+    jira.CustomFieldContext.instance.Client_Classification__multiselect__c_suuuu_Default_Configuration_Scheme_for_Client_Classification@uuuuumusssss,
+  ]
+}

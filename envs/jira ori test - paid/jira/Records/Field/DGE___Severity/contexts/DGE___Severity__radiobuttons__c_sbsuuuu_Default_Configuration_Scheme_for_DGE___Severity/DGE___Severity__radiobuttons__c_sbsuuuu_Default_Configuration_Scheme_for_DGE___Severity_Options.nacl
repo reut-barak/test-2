@@ -1,0 +1,14 @@
+jira.CustomFieldContextOption DGE___Severity__radiobuttons__c_sbsuuuu_Default_Configuration_Scheme_for_DGE___Severity_Option_One@uuuuuuumusssssbsus {
+  value = "Option One"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.DGE___Severity__radiobuttons__c_sbsuuuu_Default_Configuration_Scheme_for_DGE___Severity@uuuuuuumusssssbs,
+  ]
+}
+jira.CustomFieldContextOption DGE___Severity__radiobuttons__c_sbsuuuu_Default_Configuration_Scheme_for_DGE___Severity_Option_Two@uuuuuuumusssssbsus {
+  value = "Option Two"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.DGE___Severity__radiobuttons__c_sbsuuuu_Default_Configuration_Scheme_for_DGE___Severity@uuuuuuumusssssbs,
+  ]
+}

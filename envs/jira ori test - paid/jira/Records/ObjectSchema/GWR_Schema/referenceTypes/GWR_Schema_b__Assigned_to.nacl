@@ -1,0 +1,9 @@
+jira.ObjectSchemaReferenceType GWR_Schema_b__Assigned_to@umuus {
+  name = "Assigned to"
+  displayName = "Assigned to"
+  color = "5243AA"
+  removable = false
+  _parent = [
+    jira.ObjectSchema.instance.GWR_Schema@b,
+  ]
+}

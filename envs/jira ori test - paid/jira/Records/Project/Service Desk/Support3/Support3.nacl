@@ -1,0 +1,16 @@
+jira.Project Support3 {
+  key = "SUP3"
+  description = ""
+  name = "Support3"
+  projectTypeKey = "service_desk"
+  workflowScheme = jira.WorkflowScheme.instance.SUP3__Simple_Issue_Tracking_Workflow_Scheme@fsssss
+  permissionScheme = jira.PermissionScheme.instance.Jira_Service_Management_Permission_Scheme_for_Project_SUP3_2@s
+  issueTypeScreenScheme = jira.IssueTypeScreenScheme.instance.Default_Issue_Type_Screen_Scheme@s
+  issueTypeScheme = jira.IssueTypeScheme.instance.Default_Issue_Type_Scheme@s
+  leadAccountId = {
+    id = "62d20c47a94a6f9c0eff9866"
+    displayName = "Ido Zak"
+  }
+  assigneeType = "PROJECT_LEAD"
+  priorityScheme = jira.PriorityScheme.instance.Default_priority_scheme@s
+}

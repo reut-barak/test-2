@@ -1,0 +1,30 @@
+jira.Form SUP3_check_form@us {
+  design = {
+    conditions = {
+    }
+    layout = [
+      {
+        version = 1
+        type = "doc"
+        content = [
+        ]
+      },
+    ]
+    questions = {
+    }
+    sections = {
+    }
+    settings = {
+      name = "check form"
+      submit = {
+        lock = false
+        pdf = false
+      }
+      primaryLocale = "en-US"
+      translatedLocale = "en-US"
+    }
+  }
+  _parent = [
+    jira.Project.instance.Support3,
+  ]
+}

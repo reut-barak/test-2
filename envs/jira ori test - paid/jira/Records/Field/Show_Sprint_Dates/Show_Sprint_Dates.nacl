@@ -1,0 +1,14 @@
+jira.Field Show_Sprint_Dates__textfield__c@ssuuuu {
+  name = "Show Sprint Dates"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:textsearcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "Show Sprint Dates"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+  contexts = [
+    jira.CustomFieldContext.instance.Show_Sprint_Dates__textfield__c_ssuuuu_Default_Configuration_Scheme_for_Show_Sprint_Dates@uuuuuumussssss,
+  ]
+  _alias = "Show Sprint Dates"
+}

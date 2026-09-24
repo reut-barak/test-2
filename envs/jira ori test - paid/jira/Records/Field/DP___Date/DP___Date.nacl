@@ -1,0 +1,14 @@
+jira.Field DP___Date__datetime__c@sbsuuuu {
+  name = "DP - Date"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:datetimerange"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "DP - Date"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:datetime"
+  contexts = [
+    jira.CustomFieldContext.instance.DP___Date__datetime__c_sbsuuuu_Default_Configuration_Scheme_for_DP___Date@uuuuuuumusssssbs,
+  ]
+  _alias = "DP - Date"
+}

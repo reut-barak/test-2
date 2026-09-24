@@ -1,0 +1,15 @@
+jira.CustomFieldContext shay_date_picker__datepicker__c_ssuuuu_bla@uuuuuumu {
+  name = "bla"
+  description = ""
+  defaultValue = {
+    type = "datepicker"
+    useCurrent = false
+  }
+  projectIds = [
+    jira.Project.instance.test,
+  ]
+  _parent = [
+    jira.Field.instance.shay_date_picker__datepicker__c@ssuuuu,
+  ]
+  _alias = "shay date picker context in bla"
+}

@@ -1,0 +1,17 @@
+jira.Project Help_Center_Example_Project@s {
+  key = "HELP"
+  description = ""
+  name = "Help Center Example Project"
+  projectTypeKey = "software"
+  workflowScheme = jira.WorkflowScheme.instance.HELP__Software_Simplified_Workflow_Scheme@fssss
+  permissionScheme = jira.PermissionScheme.instance.Default_software_scheme@s
+  notificationScheme = jira.NotificationScheme.instance.Default_Notification_Scheme@s
+  issueTypeScreenScheme = jira.IssueTypeScreenScheme.instance.HELP__Kanban_Issue_Type_Screen_Scheme@fsssss
+  issueTypeScheme = jira.IssueTypeScheme.instance.HELP__Kanban_Issue_Type_Scheme@fssss
+  leadAccountId = {
+    id = "60e8b78784c9920071996842"
+    displayName = "Lior Neudorfer"
+  }
+  assigneeType = "UNASSIGNED"
+  priorityScheme = jira.PriorityScheme.instance.Default_priority_scheme@s
+}

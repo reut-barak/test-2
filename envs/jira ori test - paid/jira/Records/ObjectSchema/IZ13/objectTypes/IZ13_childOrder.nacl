@@ -1,0 +1,12 @@
+jira.ObjectTypeOrder IZ13_childOrder {
+  objectTypes = [
+    jira.ObjectType.instance.IZ13_Models,
+    jira.ObjectType.instance.IZ13_Constant,
+    jira.ObjectType.instance.IZ13_AA_Constant@us,
+    jira.ObjectType.instance.IZ13_MyType,
+    jira.ObjectType.instance.IZ13_MySecondType,
+  ]
+  _parent = [
+    jira.ObjectSchema.instance.IZ13,
+  ]
+}

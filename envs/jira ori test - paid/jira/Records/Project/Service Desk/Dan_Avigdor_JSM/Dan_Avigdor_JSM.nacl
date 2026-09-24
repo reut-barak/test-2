@@ -1,0 +1,35 @@
+jira.Project Dan_Avigdor_JSM@s {
+  key = "DAJ"
+  description = ""
+  name = "Dan Avigdor JSM"
+  projectTypeKey = "service_desk"
+  components = [
+    jira.ProjectComponent.instance.Dan_Avigdor_JSM_s__Active_Directory@uumuus,
+    jira.ProjectComponent.instance.Dan_Avigdor_JSM_s__Analytics_and_Reporting_Service@uumuusss,
+    jira.ProjectComponent.instance.Dan_Avigdor_JSM_s__Billing_Services@uumuus,
+    jira.ProjectComponent.instance.Dan_Avigdor_JSM_s__Cloud_Storage_Services@uumuuss,
+    jira.ProjectComponent.instance.Dan_Avigdor_JSM_s__Data_Center_Services@uumuuss,
+    jira.ProjectComponent.instance.Dan_Avigdor_JSM_s__Email_and_Collaboration_Services@uumuusss,
+    jira.ProjectComponent.instance.Dan_Avigdor_JSM_s__Financial_Services@uumuus,
+    jira.ProjectComponent.instance.Dan_Avigdor_JSM_s__HR_Services@uumuus,
+    jira.ProjectComponent.instance.Dan_Avigdor_JSM_s__Intranet@uumuu,
+    jira.ProjectComponent.instance.Dan_Avigdor_JSM_s__Jira@uumuu,
+    jira.ProjectComponent.instance.Dan_Avigdor_JSM_s__Office_Network@uumuus,
+    jira.ProjectComponent.instance.Dan_Avigdor_JSM_s__Payroll_Services@uumuus,
+    jira.ProjectComponent.instance.Dan_Avigdor_JSM_s__Printers@uumuu,
+    jira.ProjectComponent.instance.Dan_Avigdor_JSM_s__Public_Website@uumuus,
+    jira.ProjectComponent.instance.Dan_Avigdor_JSM_s__VPN_Server@uumuus,
+    jira.ProjectComponent.instance.Dan_Avigdor_JSM_s__Webstore_Purchasing_Services@uumuuss,
+  ]
+  workflowScheme = jira.WorkflowScheme.instance.Jira_Service_Management_IT_Support_Workflow_Scheme_generated_for_Project_DAJ@s
+  permissionScheme = jira.PermissionScheme.instance.Jira_Service_Management_Permission_Scheme_for_Project_DAJ@s
+  notificationScheme = jira.NotificationScheme.instance.Default_Notification_Scheme@s
+  issueTypeScreenScheme = jira.IssueTypeScreenScheme.instance.DAJ__Jira_Service_Management_Issue_Type_Screen_Scheme@fsssssss
+  issueTypeScheme = jira.IssueTypeScheme.instance.DAJ__Jira_Service_Management_Issue_Type_Scheme@fssssss
+  leadAccountId = {
+    id = "61f8f548c6bd1a00691cc091"
+    displayName = "Dan Avigdor"
+  }
+  assigneeType = "UNASSIGNED"
+  priorityScheme = jira.PriorityScheme.instance.Default_priority_scheme@s
+}

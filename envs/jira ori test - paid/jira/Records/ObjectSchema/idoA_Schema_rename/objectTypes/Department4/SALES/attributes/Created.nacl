@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute idoA_Schema_rename_s_Department4_uumu_SALES_uuuumu_Created@uuuuuumu {
+  editable = false
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 1
+  name = "Created"
+  displayName = "Created"
+  objectType = jira.ObjectType.instance.idoA_Schema_rename_s_Department4_uumu_SALES@uuuumu
+  options = ""
+  pendingCreation = false
+  removable = false
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 6
+  _alias = "Created"
+}

@@ -1,0 +1,14 @@
+jira.Field Ido2A10K__cascadingselect__c {
+  name = "Ido2A10K"
+  description = "A field with more than 10K options"
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:cascadingselectsearcher"
+  areOptionsSupported = true
+  isOptionsCountOverLimit = false
+  translatedName = "Ido2A10K"
+  translatedDescription = "A field with more than 10K options"
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:cascadingselect"
+  contexts = [
+    jira.CustomFieldContext.instance.Ido2A10K__cascadingselect__c_Default_Configuration_Scheme_for_Ido2A10K@uuuuussss,
+  ]
+  _alias = "Ido2A10K"
+}

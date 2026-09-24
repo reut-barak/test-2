@@ -1,0 +1,21 @@
+jira.CustomFieldContextOption Incident_Severity__select__c_suuuu_Default_Configuration_Scheme_for_Incident_Severity_SEV1@uuuuumusssssu {
+  value = "SEV1"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Incident_Severity__select__c_suuuu_Default_Configuration_Scheme_for_Incident_Severity@uuuuumusssss,
+  ]
+}
+jira.CustomFieldContextOption Incident_Severity__select__c_suuuu_Default_Configuration_Scheme_for_Incident_Severity_SEV2@uuuuumusssssu {
+  value = "SEV2"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Incident_Severity__select__c_suuuu_Default_Configuration_Scheme_for_Incident_Severity@uuuuumusssss,
+  ]
+}
+jira.CustomFieldContextOption Incident_Severity__select__c_suuuu_Default_Configuration_Scheme_for_Incident_Severity_SEV3@uuuuumusssssu {
+  value = "SEV3"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.Incident_Severity__select__c_suuuu_Default_Configuration_Scheme_for_Incident_Severity@uuuuumusssss,
+  ]
+}

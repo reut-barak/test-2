@@ -1,0 +1,14 @@
+jira.Field CustomRadioButtonZ__radiobuttons__c {
+  name = "CustomRadioButtonZ"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher"
+  areOptionsSupported = true
+  isOptionsCountOverLimit = false
+  translatedName = "CustomRadioButtonZ"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:radiobuttons"
+  contexts = [
+    jira.CustomFieldContext.instance.CustomRadioButtonZ__radiobuttons__c_Default_Configuration_Scheme_for_CustomRadioButton@uuuuussss,
+  ]
+  _alias = "CustomRadioButtonZ"
+}

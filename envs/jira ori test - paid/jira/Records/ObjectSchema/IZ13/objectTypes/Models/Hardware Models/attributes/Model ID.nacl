@@ -1,0 +1,21 @@
+jira.ObjectTypeAttribute IZ13_Models_Hardware_Models_uus_Model_ID@uuumus {
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "Model ID"
+  displayName = "Model ID"
+  objectType = jira.ObjectType.instance.IZ13_Models_Hardware_Models@uus
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 0
+  _alias = "Model ID"
+}

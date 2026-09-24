@@ -1,0 +1,14 @@
+jira.Project shay_JWM@s {
+  key = "SHAY"
+  description = ""
+  name = "shay JWM"
+  projectTypeKey = "business"
+  entityId = "6e278025-08e7-4247-8980-0a903f53ee12"
+  uuid = "6e278025-08e7-4247-8980-0a903f53ee12"
+  leadAccountId = {
+    id = "62ebc187e50f2f2a395557cc"
+    displayName = "Shay Cohen"
+  }
+  assigneeType = "UNASSIGNED"
+  priorityScheme = jira.PriorityScheme.instance.Default_priority_scheme@s
+}

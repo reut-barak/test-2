@@ -1,0 +1,11 @@
+jira.ObjectTypeOrder LNIT_restored_at_202403211012_Models_Hardware_Models_uuuuus_Hardware_Assets_childOrder@uuuuuumusu {
+  objectTypes = [
+    jira.ObjectType.instance.LNIT_restored_at_202403211012_Models_Hardware_Models_uuuuus_Hardware_Assets_uuuuuumus_Laptops@uuuuuuuuumu,
+    jira.ObjectType.instance.LNIT_restored_at_202403211012_Models_Hardware_Models_uuuuus_Hardware_Assets_uuuuuumus_Printers@uuuuuuuuumu,
+    jira.ObjectType.instance.LNIT_restored_at_202403211012_Models_Hardware_Models_uuuuus_Hardware_Assets_uuuuuumus_Phones@uuuuuuuuumu,
+    jira.ObjectType.instance.LNIT_restored_at_202403211012_Models_Hardware_Models_uuuuus_Hardware_Assets_uuuuuumus_Servers@uuuuuuuuumu,
+  ]
+  _parent = [
+    jira.ObjectType.instance.LNIT_restored_at_202403211012_Models_Hardware_Models_uuuuus_Hardware_Assets@uuuuuumus,
+  ]
+}

@@ -1,0 +1,16 @@
+jira.ObjectType IT_Equipment_Hardware_Assets@uus {
+  name = "Hardware Assets"
+  displayName = "Hardware Assets"
+  type = 0
+  inherited = true
+  abstractObjectType = true
+  parentObjectTypeInherited = false
+  schemaLabel = "IT_Equipment"
+  schemaDisplayLabel = "IT_Equipment"
+  iconId = "141"
+  parentObjectTypeId = jira.ObjectSchema.instance.IT_Equipment
+  _parent = [
+    jira.ObjectSchema.instance.IT_Equipment,
+  ]
+  _alias = "Hardware Assets"
+}

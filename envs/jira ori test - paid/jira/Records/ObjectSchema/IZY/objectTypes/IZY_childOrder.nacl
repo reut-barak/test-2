@@ -1,0 +1,9 @@
+jira.ObjectTypeOrder IZY_childOrder {
+  objectTypes = [
+    jira.ObjectType.instance.IZY_Models,
+    jira.ObjectType.instance.IZY_Hardware_Assets@us,
+  ]
+  _parent = [
+    jira.ObjectSchema.instance.IZY,
+  ]
+}

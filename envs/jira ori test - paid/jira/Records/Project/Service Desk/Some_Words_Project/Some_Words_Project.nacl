@@ -1,0 +1,23 @@
+jira.Project Some_Words_Project@s {
+  key = "SWP"
+  description = ""
+  name = "Some Words Project"
+  projectTypeKey = "service_desk"
+  components = [
+    jira.ProjectComponent.instance.Some_Words_Project_s__Intranet@uumuu,
+    jira.ProjectComponent.instance.Some_Words_Project_s__Jira@uumuu,
+    jira.ProjectComponent.instance.Some_Words_Project_s__Public_website@uumuus,
+  ]
+  workflowScheme = jira.WorkflowScheme.instance.Jira_Service_Management_IT_Support_Workflow_Scheme_generated_for_Project_SWP@s
+  permissionScheme = jira.PermissionScheme.instance.Jira_Service_Management_Permission_Scheme_for_Project_SWP@s
+  notificationScheme = jira.NotificationScheme.instance.Default_Notification_Scheme@s
+  issueSecurityScheme = jira.SecurityScheme.instance.Default_Issue_Security_Scheme_for_JSM@s
+  issueTypeScreenScheme = jira.IssueTypeScreenScheme.instance.SWP__Jira_Service_Management_Issue_Type_Screen_Scheme@fsssssss
+  issueTypeScheme = jira.IssueTypeScheme.instance.SWP__Jira_Service_Management_Issue_Type_Scheme@fssssss
+  leadAccountId = {
+    id = "62d20c47a94a6f9c0eff9866"
+    displayName = "Ido Zak"
+  }
+  assigneeType = "UNASSIGNED"
+  priorityScheme = jira.PriorityScheme.instance.Default_priority_scheme@s
+}

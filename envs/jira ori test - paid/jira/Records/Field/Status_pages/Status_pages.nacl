@@ -1,0 +1,14 @@
+jira.Field Status_pages__status_pages_entity_field_cftype__c@suubbbbuu {
+  name = "Status pages"
+  description = "Status Pages linked to this incident"
+  isLocked = true
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "Status pages"
+  translatedDescription = "Status Pages linked to this incident"
+  type = "com.atlassian.jira.modules.servicemanagement.status-pages-entity:status-pages-entity-field-cftype"
+  contexts = [
+    jira.CustomFieldContext.instance.Status_pages__status_pages_entity_field_cftype__c_suubbbbuu_Default_Configuration_Scheme_for_Status_pages@uuuuuuuuumusssss,
+  ]
+  _alias = "Status pages"
+}

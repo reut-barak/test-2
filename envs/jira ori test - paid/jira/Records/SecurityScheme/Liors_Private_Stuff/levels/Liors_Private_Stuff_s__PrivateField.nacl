@@ -1,0 +1,15 @@
+jira.SecurityLevel Liors_Private_Stuff_s__PrivateField@uumuu {
+  description = ""
+  name = "PrivateField"
+  members = [
+    {
+      holder = {
+        type = "projectRole"
+        parameter = jira.ProjectRole.instance.atlassian_addons_project_access@b
+      }
+    },
+  ]
+  _parent = [
+    jira.SecurityScheme.instance.Liors_Private_Stuff@s,
+  ]
+}

@@ -1,0 +1,14 @@
+jira.Field testDesc2__multicheckboxes__c {
+  name = "testDesc2"
+  description = "desc2"
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher"
+  areOptionsSupported = true
+  isOptionsCountOverLimit = false
+  translatedName = "testDesc2"
+  translatedDescription = "desc2"
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes"
+  contexts = [
+    jira.CustomFieldContext.instance.testDesc2__multicheckboxes__c_Default_Configuration_Scheme_for_testDesc2@uuuuussss,
+  ]
+  _alias = "testDesc2"
+}

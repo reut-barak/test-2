@@ -1,0 +1,14 @@
+jira.CustomFieldContextOption lalalala__multicheckboxes__c_Default_Configuration_Scheme_for_lalalala_option1@uuuuussssu {
+  value = "option1"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.lalalala__multicheckboxes__c_Default_Configuration_Scheme_for_lalalala@uuuuussss,
+  ]
+}
+jira.CustomFieldContextOption lalalala__multicheckboxes__c_Default_Configuration_Scheme_for_lalalala_option2@uuuuussssu {
+  value = "option2"
+  disabled = false
+  _parent = [
+    jira.CustomFieldContext.instance.lalalala__multicheckboxes__c_Default_Configuration_Scheme_for_lalalala@uuuuussss,
+  ]
+}

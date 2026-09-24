@@ -1,0 +1,16 @@
+jira.ObjectType IZS_Hardware_Assets_us_Laptops@uumu {
+  name = "Laptops"
+  displayName = "Laptops"
+  type = 0
+  parentObjectTypeId = jira.ObjectType.instance.IZS_Hardware_Assets@us
+  inherited = true
+  abstractObjectType = false
+  parentObjectTypeInherited = true
+  schemaLabel = "IZS"
+  schemaDisplayLabel = "IZS"
+  iconId = "62"
+  _parent = [
+    jira.ObjectSchema.instance.IZS,
+  ]
+  _alias = "Laptops"
+}

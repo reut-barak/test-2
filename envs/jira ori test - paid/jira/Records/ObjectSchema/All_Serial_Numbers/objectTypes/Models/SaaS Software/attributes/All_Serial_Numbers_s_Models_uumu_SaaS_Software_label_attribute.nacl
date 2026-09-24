@@ -1,0 +1,4 @@
+jira.ObjectTypeLabelAttribute All_Serial_Numbers_s_Models_uumu_SaaS_Software_label_attribute@uuuumusuu {
+  labelAttribute = jira.ObjectTypeAttribute.instance.All_Serial_Numbers_s_Models_uumu_SaaS_Software_uuuumus_Name@uuuuuuumu
+  objectType = jira.ObjectType.instance.All_Serial_Numbers_s_Models_uumu_SaaS_Software@uuuumus
+}

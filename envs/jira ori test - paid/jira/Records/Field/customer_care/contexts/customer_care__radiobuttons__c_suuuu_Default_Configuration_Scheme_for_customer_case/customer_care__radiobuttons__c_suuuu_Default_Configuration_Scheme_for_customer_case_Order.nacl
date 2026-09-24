@@ -1,0 +1,9 @@
+jira.FieldContextOptionsOrder customer_care__radiobuttons__c_suuuu_Default_Configuration_Scheme_for_customer_case_order_child@uuuuumusssssuu {
+  options = [
+    jira.CustomFieldContextOption.instance.customer_care__radiobuttons__c_suuuu_Default_Configuration_Scheme_for_customer_case_in_focus@uuuuumusssssus,
+    jira.CustomFieldContextOption.instance.customer_care__radiobuttons__c_suuuu_Default_Configuration_Scheme_for_customer_case_regular@uuuuumusssssu,
+  ]
+  _parent = [
+    jira.CustomFieldContext.instance.customer_care__radiobuttons__c_suuuu_Default_Configuration_Scheme_for_customer_case@uuuuumusssss,
+  ]
+}
