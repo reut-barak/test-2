@@ -59,6 +59,13 @@ jira.PermissionScheme Default_software_scheme@s {
     {
       holder = {
         type = "projectRole"
+        parameter = jira.ProjectRole.instance.POG_admin@s
+      }
+      permission = "ASSIGNABLE_USER"
+    },
+    {
+      holder = {
+        type = "projectRole"
         parameter = jira.ProjectRole.instance.atlassian_addons_project_access@b
       }
       permission = "ASSIGNABLE_USER"
