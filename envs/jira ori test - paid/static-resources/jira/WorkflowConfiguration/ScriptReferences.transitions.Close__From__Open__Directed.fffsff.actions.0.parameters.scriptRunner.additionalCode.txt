@@ -1,9 +1,0 @@
-def issueKey = issue.key
-def comment = 'Here is a comment I prepared earlier'
-
-def result = post("/rest/api/2/issue/${issueKey}/comment")
-        .header('Content-Type', 'application/json')
-        .body([
-            body: comment
-        ])
-        .asString()

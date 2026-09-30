@@ -63,29 +63,11 @@ jira.WorkflowConfiguration ScriptRunnerWorkflow {
       description = ""
       actions = [
         {
-          ruleKey = "connect:remote-workflow-function"
+          ruleKey = "forge:workflow-post-function"
           parameters = {
-            appKey = "com.onresolve.jira.groovy.groovyrunner__script-postfunction"
+            key = "ari:cloud:ecosystem::extension/1dd33d5a-4685-4816-9851-1b36b2fb3dbd/e8a56007-35ad-4cf4-be28-a2e94ae18541/static/script-postfunction"
+            config = "eyJjb21wcmVzc2VkIjpbMzEsMTM5LDgsMCwwLDAsMCwwLDAsMyw4NSw4MSwyMDMsNzgsMTk1LDQ4LDE2LDI1MiwyMSw5OSwxMTMsMzYsMjM4LDM1LDE2NCwxNDEsMTQ0LDEyMiw2NCwyMzcsMTMzLDMsMTMzLDMsMTU2LDcyLDEzMyw1NCwyNDYsMTUwLDkwLDExNywyMzYsMjAwLDE1LDc0LDg1LDI0NSwyMjMsMjE3LDUyLDIxLDQ1LDcxLDIwNywyMDYsMTQwLDExOSwxMDIsMTUsOTIsMjYsOCw5Nyw5LDEzLDI0Miw3LDQ2LDkzLDM1LDY0LDY1LDI3LDIyNSw5MSwxMzUsNDAsMTMwLDIzLDIxMCwxODQsMTY0LDE5NiwyMDYsMjQ5LDIzNywyMTgsMTg0LDE1NywxMjAsMjQzLDk2LDEzMSwxNDIsMjE4LDIxNyw4NywyNDAsMTA0LDM1LDE5MSwyMjcsNDEsMTA1LDY5LDgyLDQ0LDEwMCw4MSw5OCwxNTMsMTAzLDE5NywxODQsMTI4LDIzNiw2MiwxNTksNjQsODYsNzgsNzUsMjAwLDE2NiwyMjcsMjYsMjQzLDczLDQ2LDE2NSw0NCwxMzUsMTk2LDcwLDExLDE4MSw2NSwxOCw2OCwxNTksMTQ0LDE1OCw2Myw0MCw4MywxMDMsMjQ3LDMwLDIwOCwxNDcsMjAzLDIyNyw5OCwyNDEsMjQ5LDE3OCwzNiwxNTgsMTE2LDg2LDE1NywyNTQsMzMsODAsMTM1LDE0NCw4MCwxNzIsNTMsMjYsMjEsNCw0NSwxNzEsMTkxLDQ0LDM0LDE4NywxNTMsNDksMTU1LDE0MCwzMywxNzQsMTk0LDMyLDE4OSwxMTAsMjA3LDEwOCwyLDY0LDI0NSw5MCw0OCwxMTUsMTY3LDE4Niw5MiwxMzEsMSwxMzksMjcsMjksMTUyLDE3OSwxMDIsMjA3LDE4Niw0OCwxMjksMjM3LDU0LDEwNCw5LDY4LDE0MywxNDAsNiwxOTIsMjI2LDk1LDUwLDcwLDExMCwxMzYsMTgyLDE3OCwyMDcsMjA4LDUwLDE3OCwxNTQsMTg3LDE2NiwxNjEsMTY4LDEwOCwxMTgsMTk3LDE3LDE2OSw4NSwxNiw4MSwyMDAsMTI2LDI0Niw0OSw5Miw4MSwxMTEsMTM4LDY1LDk2LDM2LDE3MCwyMzYsNjksMzcsMTA2LDE2NywyNDYsMzYsMTczLDI0OCwyMzcsMTYxLDIwNywxNzcsMTk3LDI1MywxNDUsNzMsNzIsMSw4NSwxOTEsODQsMTE2LDE3MiwxOTgsNDMsMTExLDg0LDIxLDE3NSwyMzYsMTY5LDEzMSwxNDcsNjksMTU5LDIzMyw1MCwxMjcsMjM0LDIzNCwzMCwxNDEsMjU0LDk3LDIzMSwyNTEsMjA1LDE0MSwxMSwyMDAsMTQzLDE5MSwyMTEsNzgsMTY5LDgxLDIxMywxLDAsMF19"
             id = "7df4b9fa-98b8-4942-8b51-bd8d3c5b07fd"
-            disabled = "false"
-            scriptRunner = {
-              className = "com.adaptavist.sr.cloud.workflow.TransitionParent"
-              uuid = "e5c58e83-525a-436a-878a-72be363ccc80"
-              enabled = true
-              executionUser = "ADD_ON"
-              condition = file(
-                "jira/WorkflowConfiguration/ScriptRunnerWorkflow.transitions.Close__From__Open__Directed.fffsff.actions.0.parameters.scriptRunner.condition.txt",
-                "utf-8",
-              )
-              description = ""
-              additionalCode = file(
-                "jira/WorkflowConfiguration/ScriptRunnerWorkflow.transitions.Close__From__Open__Directed.fffsff.actions.0.parameters.scriptRunner.additionalCode.txt",
-                "utf-8",
-              )
-              comment = ""
-              transitionId = jira.WorkflowConfiguration.instance.ScriptRunnerWorkflow.transitions.Close__From__Open__Directed@fffsff
-              transitionName = "Close"
-            }
           }
         },
       ]

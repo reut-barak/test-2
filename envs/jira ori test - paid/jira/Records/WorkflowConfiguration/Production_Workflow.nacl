@@ -126,21 +126,11 @@ jira.WorkflowConfiguration Production_Workflow@s {
       description = ""
       validators = [
         {
-          ruleKey = "connect:expression-validator"
+          ruleKey = "forge:expression-validator"
           parameters = {
-            appKey = "com.onresolve.jira.groovy.groovyrunner__script-workflow-validators"
+            key = "ari:cloud:ecosystem::extension/1dd33d5a-4685-4816-9851-1b36b2fb3dbd/e8a56007-35ad-4cf4-be28-a2e94ae18541/static/script-workflow-validators"
+            config = "{\"uuid\":\"546dcec5-d4b4-4320-8acc-c091bdb3791e\",\"enabled\":true,\"description\":\"Test that SLA is correct\",\"expression\":\"issue.customfield_14076 == 'Urgent SLA' || issue.customfield_14076 == 'Silver SLA'\",\"errorMessage\":\"A ScriptRunner Script Validator is preventing this transition, please contact your Jira admin for more information.\"}"
             id = "83704e30-b1d2-48a6-b2db-aca716020d40"
-            disabled = "false"
-            scriptRunner = {
-              uuid = "546dcec5-d4b4-4320-8acc-c091bdb3791e"
-              enabled = true
-              description = "Test that SLA is correct"
-              expression = file(
-                "jira/WorkflowConfiguration/Production_Workflow.s.transitions.SLA_Customer_Waiting__From__Open__Directed@ssfffsff.validators.0.parameters.scriptRunner.expression.txt",
-                "template",
-              )
-              errorMessage = "A ScriptRunner Script Validator is preventing this transition, please contact your Jira admin for more information."
-            }
           }
         },
       ]
@@ -241,41 +231,11 @@ jira.WorkflowConfiguration Production_Workflow@s {
       description = ""
       actions = [
         {
-          ruleKey = "connect:remote-workflow-function"
+          ruleKey = "forge:workflow-post-function"
           parameters = {
-            appKey = "com.onresolve.jira.groovy.groovyrunner__script-postfunction"
+            key = "ari:cloud:ecosystem::extension/1dd33d5a-4685-4816-9851-1b36b2fb3dbd/e8a56007-35ad-4cf4-be28-a2e94ae18541/static/script-postfunction"
+            config = "eyJjb21wcmVzc2VkIjpbMzEsMTM5LDgsMCwwLDAsMCwwLDAsMywxMDEsODIsOTcsMTExLDIxOCw0OCwxNiwyNTMsNDMsODYsNTIsOSw0MiwxMjksNzMsMjQsMzcsNCwxNDEsMTYxLDE3NCwxMDQsODIsMTY1LDE1MCw3NCwxNjMsMjIxLDE1MSwxMDEsMTcwLDI4LDI1MSwxOCwxODgsNiw1OSwxNzgsMjksMTA0LDEzMiwyNDIsMjIzLDEwMywzOSwxOTIsMTI4LDM3LDE1OSwyMzgsMjUyLDIyMiwxODcsMTg3LDExOSwxODMsMjQ3LDEwNCw3OCwxODAsOTQsMTQ2LDEzLDEyMCw4MywxNDMsMjAyLDEzLDM4LDE0MCwyMCwxMzQsMTA4LDE4NSw1NCw4OCw0Myw3NiwxMTUsODksNTAsMTg4LDE0NywyMzQsNjEsMjA1LDIyOSwxNCwxNzUsNjQsMTc2LDE2NSw1Miw2MCwyMjksMTQ4LDI0LDQ2LDEzMywyMTUsMjQzLDIwMiwxNDYsNTEsNzUsMjQ1LDE2MywxOTIsMTM1LDczLDI2LDI0NiwxMDUsMjAsMTY0LDI1MywxNDUsMTUsMTYzLDYyLDEzNywxMTAsMTk1LDEyNiw3MiwyMDEsMTIwLDE1NiwxMjQsNzgsODgsMTYsNjgsMjIsMTMsMTMwLDM2LDU3LDg4LDEzMCw4MSwzNywyMTYsMjQwLDMsMTA0LDIzMywxMzIsOTQsNTMsNDAsMTcxLDExNCwxODMsODgsMTg4LDYxLDQ3LDQ1LDE0MiwxMjksMTY2LDEzOCwyMyw3NywxNDEsMTY5LDEwMywxOSwxODYsNzYsMjU0LDAsNTMsMTQsMzUsODAsMTY5LDUwLDE2LDYsMTczLDMwLDIzOSwxNiwyMTUsMTg2LDQsMTgwLDM4LDI2LDM3LDAsMiwyMTcsMTI2LDE4MSwxNDksMjM5LDEyMSwxMzIsNDksMjM4LDIxNiwzNiwxOTEsMTUxLDEyLDkwLDEzLDQyLDY5LDE1NSwxODAsOTcsMTk1LDE5NSw0MSwxMzUsMTU2LDEwNSw3Niw3NSwxMDksMjI4LDE2Niw5LDIyMiwxMzAsMTQ1LDMxLDE0MiwyMDksMTA4LDEzNCw5OCwyMzksMjQ1LDg0LDM4LDExOCwxMTYsNjYsMTY5LDQ0LDEzMywxMjEsOTYsMjE4LDI0MiwxMTEsMTA1LDU2LDE1Niw2OCwxOTAsMjksNTksMjQ0LDEzNSwxNjMsMTcsMTM5LDM4LDEwOCwxOCw2OCw2NywyMzQsMTEyLDkwLDI0Myw3NiwxMjgsNDUsMTU0LDE0Niw5MiwyMTksNDEsMjEsMjAsODIsMjUsNTUsMjI0LDMzLDE3NywxNDksNTQsMjEwLDcxLDE5LDExOCwxOTYsMjA4LDI0NSw4OSwxNTYsNDEsODksMjIsMTM1LDE0MSwxODQsMTcsMjA3LDEzLDcxLDIwNiw0MCwyMzcsMTQwLDIyMCwxNiwxMjYsMjgsMTQxLDY1LDEzOCwyMTgsNzMsMjA4LDEyLDEwMSw5NiwxODYsMTU3LDEyOSwyLDEwOSw2LDE2NCwyMjQsMTMxLDIyNSwxNjAsMTIxLDIzMywyMjAsMTk2LDIsMjksNjIsNzYsMjQ0LDExNSw5OSwxMDIsMjQ3LDIwOSwxMTAsMjQ5LDI1MiwzMywxNDUsMTcyLDY2LDIxNCw3NCwxNTEsMjU1LDI0Miw2OCwxMzgsMTc1LDE3NywxMzYsMTMzLDgzLDExMSwxMywyNTAsMjM4LDE0OCwzMCwxNTIsNDUsMTE0LDI0MCw0NSwyMjksMTMwLDE2MSw2MSwyMjYsNiwxMSwyMTksMTc0LDUxLDE3MywyNDMsMiwzMSwxNjYsMTkzLDEyNSwyMzUsMTYwLDI2LDExNSwyMzAsMjI4LDg2LDcwLDExMywxNDUsMjUzLDE2NywyNDQsMTQ3LDIyOCwxMTgsMTE3LDUxLDIxMiw2MSwyMjMsMTk3LDE3NSwxMzksODIsMTkxLDI5LDIyMSw1NCwxMTQsNTEsMTk5LDkxLDEzNSwxMTgsMjUzLDE5NiwxNTgsMjUxLDIzLDY0LDIwLDI1MCwxODAsMTkxLDg4LDIyNywyMDksMjQ4LDU3LDEwMiw5MiwyMyw1NywxNjksMTU2LDEzNywxMTcsMjA3LDE0NSw5NCwyMTQsMTEyLDE0MSwxMTAsMiw4MywyMSwyMDgsNTIsOTUsMTU5LDE1OCwyMjMsMTYxLDE3MCwyMDksMTQyLDE1NSw1Myw0MiwyMCwxNTEsMTM4LDE1NSwyMzQsMTU0LDEyMSwyMDQsMjA3LDE1LDIwNCwyMTEsMjQ1LDI5LDI2LDk2LDIwMCw3Miw4NCwyMDEsMTgsMTg3LDIwMiwxMzksMTI3LDE1MSw2MCwxODksMjIsNTgsMTg3LDI0MiwyMTgsOTcsMjM5LDE1NSwyMTcsOTEsMTE5LDgxLDUxLDE3NiwxNjMsOTIsOTEsMjE0LDY0LDEyNyw2NCw3MCwyMCwyMTEsMTE4LDE4NCw0MywyMDUsMjI3LDE3Nyw5MywxNTQsMjA4LDE1NCwyMiwxMSwxNzUsMjU0LDExLDc2LDE3NiwxMTQsMjMxLDI0MiwzLDAsMF19"
             id = "e51f0f42-19a2-45cc-b754-44a05a009539"
-            disabled = "false"
-            scriptRunner = {
-              className = "com.adaptavist.sr.cloud.workflow.SendNotification"
-              uuid = "0910e8f7-c91f-40e4-a957-7ca66b3bd119"
-              enabled = true
-              executionUser = "ADD_ON"
-              description = ""
-              subject = "An urgent SLA issue has been closed"
-              additionalCode = ""
-              condition = file(
-                "jira/WorkflowConfiguration/Production_Workflow.s.transitions.Done__From__Review__Directed@fffsff.actions.0.parameters.scriptRunner.condition.txt",
-                "template",
-              )
-              accountIds = [
-                {
-                  id = "5c7289009170244d98d8192c"
-                  displayName = "Gil Hoffer"
-                },
-              ]
-              assignee = false
-              reporter = false
-              voters = true
-              watchers = true
-              groupName = [
-                jira.Group.instance.SLA_Notification_Users@s,
-              ]
-              emailCode = file(
-                "jira/WorkflowConfiguration/Production_Workflow.s.transitions.Done__From__Review__Directed@fffsff.actions.0.parameters.scriptRunner.emailCode.txt",
-                "utf-8",
-              )
-            }
           }
         },
       ]

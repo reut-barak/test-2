@@ -81,23 +81,11 @@ jira.WorkflowConfiguration Neta_abc@s {
       description = ""
       actions = [
         {
-          ruleKey = "connect:remote-workflow-function"
+          ruleKey = "forge:workflow-post-function"
           parameters = {
-            appKey = "com.onresolve.jira.groovy.groovyrunner__script-postfunction"
+            key = "ari:cloud:ecosystem::extension/1dd33d5a-4685-4816-9851-1b36b2fb3dbd/e8a56007-35ad-4cf4-be28-a2e94ae18541/static/script-postfunction"
+            config = "eyJjb21wcmVzc2VkIjpbMzEsMTM5LDgsMCwwLDAsMCwwLDAsMyw4NSwxNDMsMTg5LDEwLDE5NCw2NCwxNiwxMzIsMjIzLDIyOSwxMDYsMTE1LDE1MiwyNCwxNDAsMjE4LDEzNyw1NCw1NCwxMDYsMTYxLDE4MSwxMDgsMTE4LDU1LDExMiwxMjAsMTg1LDE0NywyNTEsODEsNjUsMTI0LDExOSw1NSw0MiwxMzAsMjI5LDEyNCwyMDQsMjA0LDIwNiw2MiwyMCw5MCwxMzYsMTEzLDExLDYxLDE3MSwxMzMsNjYsMjIzLDEwNywzMiwxODQsMzYsMTg0LDE1NCwxNTIsMTE2LDEyLDI2LDE3MywyMDcsMTY0LDExMSw2MiwxNTYsNTksMjM1LDExMSwyNTAsMTYsMTkyLDY5LDE0NywxNDAsMTE5LDEyMyw4LDIzNiwxNDYsMjYsMTY5LDE1NiwxMyw3MywyMCwyMDIsMTE4LDE0MCwyMjksMTMyLDEzOCwxNzQsMTczLDIzMSw2OSw5MywxNDksMTc5LDk4LDE0LDIwMCwxOTcsMTgwLDExMCw1OCwxMDYsMTU0LDEwNiwxNDAsNTEsMjAsNTUsNTksMTA0LDQ1LDc1LDMyLDEzMywyMDQsMzQsMjM5LDE0MCwxMjEsMTY4LDU5LDcwLDE0LDIxMCwxNzgsOTIsMTc1LDc5LDE4NywxNzMsMjQ4LDIwOCw1OSwxMjIsMjIzLDE3LDQwLDE0Niw1Niw5OCw0OCwxNTEsNDcsMCwwLDk3LDY0LDMxLDcsMjE2LDE0OSwzOSwyNTQsMjQ4LDIyOCwxMjksMTI2LDE1MiwyNDUsMjIsMjMzLDU1LDExOCw1MSw0NCwxNzIsMjAyLDYzLDI0NiwxMjUsODksNjEsOTUsMjcsNjgsMTIwLDE4NiwzLDEsMCwwXX0="
             id = "a501f1a8-03ae-45a3-b00a-6fa2b51fe662"
-            disabled = "false"
-            scriptRunner = {
-              className = "com.adaptavist.sr.cloud.workflow.TransitionParent"
-              uuid = "a1b0c13d-fb49-4218-9ace-647fd7720c8c"
-              enabled = true
-              executionUser = "ADD_ON"
-              condition = ""
-              description = "aaa"
-              additionalCode = ""
-              comment = ""
-              transitionId = jira.WorkflowConfiguration.instance.Neta_abc@s.transitions.x__From__In_Progress__Directed@fffssff
-              transitionName = ""
-            }
           }
         },
       ]

@@ -63,26 +63,11 @@ jira.WorkflowConfiguration ScriptReferences {
       description = ""
       actions = [
         {
-          ruleKey = "connect:remote-workflow-function"
+          ruleKey = "forge:workflow-post-function"
           parameters = {
-            appKey = "com.onresolve.jira.groovy.groovyrunner__script-postfunction"
+            key = "ari:cloud:ecosystem::extension/1dd33d5a-4685-4816-9851-1b36b2fb3dbd/e8a56007-35ad-4cf4-be28-a2e94ae18541/static/script-postfunction"
+            config = "eyJjb21wcmVzc2VkIjpbMzEsMTM5LDgsMCwwLDAsMCwwLDAsMyw3NywxNDMsOTEsNzksMiw0OSwxNiwxMzMsMjU1LDc0LDIxMSwxNTIsMjM2LDE0NiwxNzYsMTg3LDEyOCwxNjgsNjQsMTk0LDEzMSwxMjksNywxNDEsOSwzOCw5NCwxNTgsOTIsNjcsMTAyLDIxOSw4OSwxNzMsMTQ4LDE4MiwyMzMsNSwzNiwxMzIsMjU1LDExMCwxNTEsMTM5LDQ4LDc5LDIzNyw1NywyNDMsMTU3LDE1MywyMTcsODIsMzgsMTkzLDE4NSwyNSw0NCwxNDUsMTQyLDQwLDIxMSwyMDMsMjgsNTYsMjQsMTUsNDMsMjI1LDEyNCwyMzgsMTA4LDIwNiwxNjQsMTQsNjAsOTUsMTA3LDE4NywxNjgsMTY1LDk0LDIzMSw0Nyw2NSwxODksNTAsNDMsMTQwLDE2NywxMDksMjYsMTMwLDIyNCwxNDUsMTY5LDExMSwxMTAsMjM1LDEwNywxODQsMjM1LDEwMCw1MywyNywyMTQsODksMTkxLDI2LDI0NiwxNzksMTcwLDEzMCwxMjYsNTQsMjM2LDk4LDYxLDIyNCw1NSwxMzEsMTEwLDUzLDE2OCw5OCw1NSw0MiwxNjgsMzYsNzAsMTkyLDIxOSwxMjgsMjQxLDI1MSwxMzksNDQsMTIwLDE2MSwyMTMsMTg3LDY3LDI3LDgzLDIzOCwxNjcsMjExLDI0OSwyNDMsNDQsMjQ2LDQ5LDE3MywxODQsMTA0LDE0MCw0MCwxNjYsNDQsNTYsMTc1LDE1MSwxODEsNjQsMjAxLDIzMSwyMjEsMTEwLDExMSwyMDgsMTA1LDIyOSw0MywxNDQsMSwyMDEsMTIwLDc2LDc0LDEwLDM3LDQ1LDg1LDY4LDU2LDE4NiwyNTMsNzgsNywyMDAsMTYzLDI0MywxNjQsMjMsMTAxLDIyNCwxMzUsMzIsMTQ0LDE5LDIwNSwxNTUsMjM1LDU2LDIxNCw2OCw1NiwyMywyNDAsOSw1NSwxMDAsMTI0LDEyMCwyMzAsMTEsMjIwLDE0OCwxNzAsMTEzLDIyNiwyMzcsNzUsODQsNjIsMjYsMjAxLDMsOTAsMTQwLDU0LDEyOSwxMjcsMjQxLDE0NSwyNCwxMzksNiw0NCwxMTQsMTMwLDk2LDE2NSw2NCwxNTUsMTQ4LDIzNCwxOTIsODksMTE2LDY1LDU0LDE1MiwyMDksMjA2LDE2NywzNyw0NSwxNjIsMjI0LDExLDQ4LDE2MiwyMzIsMjEsMjUxLDE3LDE5NywyMTMsMjQ2LDUyLDExNyw4NywyOCwzLDc1LDIxOCw0MiwyMSw1Nyw4NiwyNTQsMTQxLDE5MiwyMDksMTY2LDIwMSw2OCw0MywzMSwyMDUsMjM2LDEwOSw5OSw0OCwxMDUsMTQ3LDQsMTQwLDE0NSwxMzAsNjUsMTE1LDY4LDI0MSwyMjcsMTgwLDc0LDQ2LDE2MSw3NCwyNDMsNzcsMjUwLDExMywyMiwxNTQsMTA2LDE4MCwyMDksMTA1LDIzMywxNzksMjQ1LDEyMSwyMDEsMTI5LDEyMywyNDUsODYsMTY4LDE3NSw1MiwxMzgsMTE2LDI0Nyw3LDE5NywxNTIsMjE0LDgyLDAsMiwwLDBdfQ=="
             id = "d09b451a-88f5-42b2-bef7-5827d2ce3f75"
-            disabled = "false"
-            scriptRunner = {
-              className = "com.adaptavist.sr.cloud.workflow.RunScript"
-              uuid = "f56f3a70-fc9f-4b94-bba4-91ef8d581b8b"
-              enabled = true
-              executionUser = "ADD_ON"
-              condition = file(
-                "jira/WorkflowConfiguration/ScriptReferences.transitions.Close__From__Open__Directed.fffsff.actions.0.parameters.scriptRunner.condition.txt",
-                "template",
-              )
-              description = "test 2"
-              additionalCode = file(
-                "jira/WorkflowConfiguration/ScriptReferences.transitions.Close__From__Open__Directed.fffsff.actions.0.parameters.scriptRunner.additionalCode.txt",
-                "utf-8",
-              )
-            }
           }
         },
       ]

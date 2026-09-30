@@ -123,11 +123,10 @@ jira.WorkflowConfiguration Alon_s_Test_Workflow_2_copy@tssss {
           }
         },
         {
-          ruleKey = "connect:remote-workflow-function"
+          ruleKey = "forge:workflow-post-function"
           parameters = {
-            appKey = "com.onresolve.jira.groovy.groovyrunner__script-postfunction"
+            key = "ari:cloud:ecosystem::extension/1dd33d5a-4685-4816-9851-1b36b2fb3dbd/e8a56007-35ad-4cf4-be28-a2e94ae18541/static/script-postfunction"
             id = "cc48f8bb-12d1-4a1e-9ebc-cc1f323e6287"
-            disabled = "false"
           }
         },
         {
@@ -230,11 +229,10 @@ jira.WorkflowConfiguration Alon_s_Test_Workflow_2_copy@tssss {
           }
         },
         {
-          ruleKey = "connect:remote-workflow-function"
+          ruleKey = "forge:workflow-post-function"
           parameters = {
-            appKey = "com.onresolve.jira.groovy.groovyrunner__script-postfunction"
+            key = "ari:cloud:ecosystem::extension/1dd33d5a-4685-4816-9851-1b36b2fb3dbd/e8a56007-35ad-4cf4-be28-a2e94ae18541/static/script-postfunction"
             id = "30291ba2-c9bb-469c-9301-899e91274f45"
-            disabled = "false"
           }
         },
       ]

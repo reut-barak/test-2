@@ -1,5 +1,0 @@
-// this only works when there is a transition screen
-Map addComment = transition.update.comment[0].add as Map
-addComment.body = "${issue.key} caused this to be transitioned"
-
-  // local preDeploy test for INCIDENT-43817

@@ -1,1 +1,0 @@
-issueInput.update.labels = [[remove: "finance"]]

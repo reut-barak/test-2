@@ -1,6 +1,0 @@
-// There must be users in this group for this notify request to succeed
-notification.restrict = [
-        groups: [
-                [name: "jira-administrators"]
-        ]
-]

@@ -81,26 +81,11 @@ jira.WorkflowConfiguration InfiniteLoop {
       description = ""
       actions = [
         {
-          ruleKey = "connect:remote-workflow-function"
+          ruleKey = "forge:workflow-post-function"
           parameters = {
-            appKey = "com.onresolve.jira.groovy.groovyrunner__script-postfunction"
+            key = "ari:cloud:ecosystem::extension/1dd33d5a-4685-4816-9851-1b36b2fb3dbd/e8a56007-35ad-4cf4-be28-a2e94ae18541/static/script-postfunction"
+            config = "eyJjb21wcmVzc2VkIjpbMzEsMTM5LDgsMCwwLDAsMCwwLDAsMyw4NSwxNDQsMjA1LDExMCwyLDQ5LDEyLDEzMiw5NSw1LDExNCwyMzgsNzAsMjIxLDE1MCwyNTMsMSwxMzcsNjcsNSw2NiwyMjYsNjYsNDcsMTEyLDcwLDM4LDI0NiwxNjIsMTM2LDEwOCwxMzAsMjI2LDQsMTQ0LDgwLDIyMywyOSw0NywxMTIsMjMzLDIwNSw1MSwyNDksMTk4LDE1MywyMjgsMTc0LDE0MCwzLDIzMCwxMywyNDQsMTY0LDEwMiwyMDIsMTMyLDk0LDMsMTk0LDU3LDE5MywxOTcsMTE0LDIxMCwyOCwxODEsMTEzLDMzLDE2MywxOTAsMTM0LDEyMCwyMzQsOTIsMTg0LDIzNCwyMSwxMTIsMjE4LDcwLDQ4LDE2Nyw1MywxMTUsMzgsMjQ1LDE2MSwxMTQsMTgyLDQwLDY1LDEwNiwwLDE3NywyNTEsMTcyLDEzOSwxNjYsMTA4LDE2NywxOTcsMTY0LDI0OSwxNTgsMjIsODAsMjA5LDQ4LDg1LDExNywyMjEsMTI1LDE4MSwxMDksMTAxLDE0LDY2LDE0NywxMzUsMTMxLDM1LDksMTY0LDE1Miw3MywyMjgsMTQxLDc2LDc4LDU0LDI0OCwyOSw4MywxNDgsNDUsNjMsMjAzLDIyOSwyNTQsMTE5LDM1LDE1Niw5LDMwLDIzNywxMTIsMzIsMTY2LDI5LDExMCwyMTAsMTU3LDM3LDEzNSwxNzIsMTY1LDE3MCw2MSwxMjIsMTYyLDIwOSwxMjAsNjIsMjQyLDIxNyw1Nyw5NywxNDUsMjE2LDY4LDEyMywxMjYsMjExLDk4LDcyLDE0NywxMDMsMjIsMjIwLDM0LDMyLDE4OSw2MCwxMjEsODgsNzksNjIsMTg5LDY4LDEzOCwyMjQsMjQ5LDEzNywxNzIsMTM1LDIzOCwxMDEsMjQ5LDIwNywxMjMsMTI3LDE5NywzNCwxOCwzNiw4MiwxMjcsMTUsMTAwLDEzMSwyMDMsMTUyLDMzLDEsMCwwXX0="
             id = "4974912f-ff22-4017-874c-61b383fd5748"
-            disabled = "false"
-            scriptRunner = {
-              className = "com.adaptavist.sr.cloud.workflow.FastTrackIssue"
-              uuid = "e7addf06-7189-4739-a5e9-47566f2885cb"
-              enabled = true
-              executionUser = "ADD_ON"
-              condition = file(
-                "jira/WorkflowConfiguration/InfiniteLoop.transitions.Cancel__From__Open__Directed.fffsff.actions.0.parameters.scriptRunner.condition.txt",
-                "utf-8",
-              )
-              description = ""
-              additionalCode = ""
-              comment = ""
-              transitionId = jira.WorkflowConfiguration.instance.InfiniteLoop.transitions.Cancel__From__Open__Directed@fffsff
-              transitionName = "Create"
-            }
           }
         },
       ]

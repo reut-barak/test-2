@@ -1,1 +1,0 @@
-(${ jira.Field.instance.a_b__float__c@ruuuu }).value ==a

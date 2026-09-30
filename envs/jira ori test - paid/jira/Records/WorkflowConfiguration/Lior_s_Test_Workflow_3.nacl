@@ -212,39 +212,19 @@ jira.WorkflowConfiguration Lior_s_Test_Workflow_3@tsss {
           }
         },
         {
-          ruleKey = "connect:expression-validator"
+          ruleKey = "forge:expression-validator"
           parameters = {
-            appKey = "com.onresolve.jira.groovy.groovyrunner__script-workflow-validators"
+            key = "ari:cloud:ecosystem::extension/1dd33d5a-4685-4816-9851-1b36b2fb3dbd/e8a56007-35ad-4cf4-be28-a2e94ae18541/static/script-workflow-validators"
+            config = "{\"uuid\":\"bd1aaa25-00ad-49b5-9423-b03e425d8df4\",\"enabled\":true,\"description\":\"Lior Test ScriptRunner Validator \",\"expression\":\"!config['enabled'] ? true : (true)\",\"errorMessage\":\"A ScriptRunner Script Validator is preventing this transition, please contact your Jira admin for more information.\"}"
             id = "7c5ccce4-5100-48ef-975a-ffbb5a4b5bfe"
-            disabled = "false"
-            scriptRunner = {
-              uuid = "bd1aaa25-00ad-49b5-9423-b03e425d8df4"
-              enabled = true
-              description = "Lior Test ScriptRunner Validator "
-              expression = file(
-                "jira/WorkflowConfiguration/Lior_s_Test_Workflow_3.tsss.transitions.LiorTestTransition__From__Open__Directed@fffsff.validators.1.parameters.scriptRunner.expression.txt",
-                "utf-8",
-              )
-              errorMessage = "A ScriptRunner Script Validator is preventing this transition, please contact your Jira admin for more information."
-            }
           }
         },
         {
-          ruleKey = "connect:expression-validator"
+          ruleKey = "forge:expression-validator"
           parameters = {
-            appKey = "com.onresolve.jira.groovy.groovyrunner__script-workflow-validators"
+            key = "ari:cloud:ecosystem::extension/1dd33d5a-4685-4816-9851-1b36b2fb3dbd/e8a56007-35ad-4cf4-be28-a2e94ae18541/static/script-workflow-validators"
+            config = "{\"uuid\":\"8e4ba219-4715-495a-b854-203ba8ca2af5\",\"enabled\":true,\"description\":\"Another ScriptRunner validator\",\"expression\":\"!config['enabled'] ? true : (issue.getResolution() == \\\"Fixed\\\")\",\"errorMessage\":\"A ScriptRunner Script Validator is preventing this transition, please contact your Jira admin for more information.\"}"
             id = "8102ca5d-a9c3-47b1-8bb3-6f6b01a07f96"
-            disabled = "false"
-            scriptRunner = {
-              uuid = "8e4ba219-4715-495a-b854-203ba8ca2af5"
-              enabled = true
-              description = "Another ScriptRunner validator"
-              expression = file(
-                "jira/WorkflowConfiguration/Lior_s_Test_Workflow_3.tsss.transitions.LiorTestTransition__From__Open__Directed@fffsff.validators.2.parameters.scriptRunner.expression.txt",
-                "utf-8",
-              )
-              errorMessage = "A ScriptRunner Script Validator is preventing this transition, please contact your Jira admin for more information."
-            }
           }
         },
       ]

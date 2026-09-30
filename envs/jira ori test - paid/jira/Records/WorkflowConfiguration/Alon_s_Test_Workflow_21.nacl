@@ -631,20 +631,11 @@ jira.WorkflowConfiguration Alon_s_Test_Workflow_21@tsss {
             }
           },
           {
-            ruleKey = "connect:expression-condition"
+            ruleKey = "forge:expression-condition"
             parameters = {
-              appKey = "com.onresolve.jira.groovy.groovyrunner__script-workflow-conditions"
+              key = "ari:cloud:ecosystem::extension/1dd33d5a-4685-4816-9851-1b36b2fb3dbd/e8a56007-35ad-4cf4-be28-a2e94ae18541/static/script-workflow-conditions"
+              config = "{\"uuid\":\"5b4adf29-fede-4351-a115-a6f6622f80ad\",\"enabled\":true,\"description\":\"testCondition\",\"expression\":\"var res = 2\"}"
               id = "a6ecffd9-2d46-4998-9bad-4b31b3c699b3"
-              disabled = "false"
-              scriptRunner = {
-                uuid = "5b4adf29-fede-4351-a115-a6f6622f80ad"
-                enabled = true
-                description = "testCondition"
-                expression = file(
-                  "jira/WorkflowConfiguration/Alon_s_Test_Workflow_21.tsss.transitions.TransitionToShared2__From__A_shared_status3_Approved__Directed@fffssszdff.conditions.conditions.17.parameters.scriptRunner.expression.txt",
-                  "utf-8",
-                )
-              }
             }
           },
         ]
