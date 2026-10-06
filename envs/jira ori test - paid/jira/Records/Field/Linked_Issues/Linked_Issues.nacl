@@ -1,10 +1,10 @@
 jira.Field Linked_Issues__array@suu {
-  name = "Linked Issues"
+  name = "Linked work items"
   schema = {
     type = "array"
     items = "issuelinks"
     system = "issuelinks"
   }
   description = ""
-  _alias = "Linked Issues"
+  _alias = "Linked work items"
 }
