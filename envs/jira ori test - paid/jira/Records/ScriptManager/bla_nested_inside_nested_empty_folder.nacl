@@ -1,8 +1,0 @@
-jira.ScriptManager bla_nested_inside_nested_empty_folder@dduuu {
-  name = "inside_nested_empty_folder"
-  type = "folder"
-  path = "bla/nested/inside_nested_empty_folder"
-  _parent = [
-    jira.ScriptManager.instance.bla_nested@d,
-  ]
-}
