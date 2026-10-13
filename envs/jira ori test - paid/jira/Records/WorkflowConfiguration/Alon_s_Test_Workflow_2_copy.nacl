@@ -216,16 +216,11 @@ jira.WorkflowConfiguration Alon_s_Test_Workflow_2_copy@tssss {
       description = ""
       actions = [
         {
-          ruleKey = "connect:remote-workflow-function"
+          ruleKey = "forge:workflow-post-function"
           parameters = {
-            appKey = "com.innovalog.jmwe.jira-misc-workflow-extensions__DeleteIssueFunction"
+            key = "ari:cloud:ecosystem::extension/6833d3c6-01a7-40f4-94be-b05834ff13b3/663deaf9-41f3-44af-94b9-e3d51adf6c4f/static/DeleteIssueFunction"
+            config = "{\"conditionalExecution\":false,\"_modified\":\"2022-11-08T09:29:52.846Z\",\"runAs\":\"\",\"runAsType\":\"addonUser\"}"
             id = "ab0f2578-37d3-4cb9-9106-cbc90e27ac85"
-            disabled = "false"
-            jsu = {
-              conditionalExecution = false
-              _modified = "2022-11-08T09:29:52.846Z"
-              runAsType = "addonUser"
-            }
           }
         },
         {

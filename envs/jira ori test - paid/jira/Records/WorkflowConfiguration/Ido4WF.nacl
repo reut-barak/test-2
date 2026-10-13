@@ -63,39 +63,19 @@ jira.WorkflowConfiguration Ido4WF {
       description = ""
       actions = [
         {
-          ruleKey = "connect:remote-workflow-function"
+          ruleKey = "forge:workflow-post-function"
           parameters = {
-            appKey = "com.innovalog.jmwe.jira-misc-workflow-extensions__SharedActionFunction"
+            key = "ari:cloud:ecosystem::extension/6833d3c6-01a7-40f4-94be-b05834ff13b3/663deaf9-41f3-44af-94b9-e3d51adf6c4f/static/SharedActionFunction"
+            config = "{\"conditionalExecution\":false,\"targetIssue\":\"outward:jira_subtask_link\",\"_modified\":\"2024-04-21T13:47:22.309Z\",\"sharedActionId\":\"b3c80ac2-abcf-4f68-99c6-17c6a89e0b67\",\"stopAtErrors\":false}"
             id = "db5c3117-dee9-4d43-9f6e-a93d75c60b59"
-            disabled = "false"
-            jsu = {
-              conditionalExecution = false
-              targetIssue = {
-                direction = "outward"
-                linkType = jira.IssueLinkType.instance.missing_jira_subtask_link
-              }
-              _modified = "2024-04-21T13:47:22.309Z"
-              sharedActionId = "b3c80ac2-abcf-4f68-99c6-17c6a89e0b67"
-              stopAtErrors = false
-            }
           }
         },
         {
-          ruleKey = "connect:remote-workflow-function"
+          ruleKey = "forge:workflow-post-function"
           parameters = {
-            appKey = "com.innovalog.jmwe.jira-misc-workflow-extensions__SharedActionFunction"
+            key = "ari:cloud:ecosystem::extension/6833d3c6-01a7-40f4-94be-b05834ff13b3/663deaf9-41f3-44af-94b9-e3d51adf6c4f/static/SharedActionFunction"
+            config = "{\"conditionalExecution\":false,\"targetIssue\":\"inward:jira_subtask_link\",\"_modified\":\"2024-02-14T10:20:28.468Z\",\"sharedActionId\":\"b3c80ac2-abcf-4f68-99c6-17c6a89e0b67\",\"stopAtErrors\":true}"
             id = "12ea7ad0-19cb-4bf8-bfcb-c1c6a7247aeb"
-            disabled = "false"
-            jsu = {
-              conditionalExecution = false
-              targetIssue = {
-                direction = "inward"
-                linkType = jira.IssueLinkType.instance.missing_jira_subtask_link
-              }
-              _modified = "2024-02-14T10:20:28.468Z"
-              sharedActionId = "b3c80ac2-abcf-4f68-99c6-17c6a89e0b67"
-              stopAtErrors = true
-            }
           }
         },
         {
