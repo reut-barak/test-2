@@ -127,6 +127,7 @@ jira.WorkflowConfiguration Alon_s_Test_Workflow_2_copy@tssss {
           parameters = {
             key = "ari:cloud:ecosystem::extension/1dd33d5a-4685-4816-9851-1b36b2fb3dbd/e8a56007-35ad-4cf4-be28-a2e94ae18541/static/script-postfunction"
             id = "cc48f8bb-12d1-4a1e-9ebc-cc1f323e6287"
+            disabled = "false"
           }
         },
         {
@@ -221,6 +222,7 @@ jira.WorkflowConfiguration Alon_s_Test_Workflow_2_copy@tssss {
             key = "ari:cloud:ecosystem::extension/6833d3c6-01a7-40f4-94be-b05834ff13b3/663deaf9-41f3-44af-94b9-e3d51adf6c4f/static/DeleteIssueFunction"
             config = "{\"conditionalExecution\":false,\"_modified\":\"2022-11-08T09:29:52.846Z\",\"runAs\":\"\",\"runAsType\":\"addonUser\"}"
             id = "ab0f2578-37d3-4cb9-9106-cbc90e27ac85"
+            disabled = "false"
           }
         },
         {
@@ -228,6 +230,7 @@ jira.WorkflowConfiguration Alon_s_Test_Workflow_2_copy@tssss {
           parameters = {
             key = "ari:cloud:ecosystem::extension/1dd33d5a-4685-4816-9851-1b36b2fb3dbd/e8a56007-35ad-4cf4-be28-a2e94ae18541/static/script-postfunction"
             id = "30291ba2-c9bb-469c-9301-899e91274f45"
+            disabled = "false"
           }
         },
       ]

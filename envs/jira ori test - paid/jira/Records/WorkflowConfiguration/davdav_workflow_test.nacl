@@ -68,6 +68,7 @@ jira.WorkflowConfiguration davdav_workflow_test@s {
             key = "ari:cloud:ecosystem::extension/6833d3c6-01a7-40f4-94be-b05834ff13b3/663deaf9-41f3-44af-94b9-e3d51adf6c4f/static/ClearFieldsFunction"
             config = "{\"runAsType\":\"thisUser\",\"runAs\":\"accountId:61d44bf59ee70a00685fa6b6\",\"targetIssue\":\"currentIssue:*\",\"fields\":\"customfield_14081\",\"conditionalExecution\":false,\"_modified\":\"2026-07-01T11:48:25.688Z\"}"
             id = "fe6edfc4-bc98-4abb-8161-f57c715d1a55"
+            disabled = "false"
           }
         },
       ]
@@ -78,6 +79,7 @@ jira.WorkflowConfiguration davdav_workflow_test@s {
             key = "ari:cloud:ecosystem::extension/6833d3c6-01a7-40f4-94be-b05834ff13b3/663deaf9-41f3-44af-94b9-e3d51adf6c4f/static/UserValidator"
             config = "{\"errorMessage\":\"eeeeeeee\",\"skipValidationOnCreate\":false,\"conditionalValidation\":false,\"conditionalValidationExpression\":\"\",\"fromUserType\":\"userInField\",\"userField\":\"customfield_10160\",\"conditionMode\":\"all-user-condition\",\"userCriteria\":{\"isReporter\":false,\"isAssignee\":false,\"isWatcher\":false,\"isVoter\":false,\"rolesToCheck\":[],\"groupsToCheck\":[],\"usersToCheck\":[],\"userFieldsToCheck\":[],\"usersConditionScript\":\"or\",\"reverse\":false},\"expression\":\"let selectedUser = !!issue && !!issue.customfield_10160 && issue.customfield_10160; ((!!issue && !!issue.customfield_10160 && (false || (issue.customfield_10160.every(selectedUser => or)))))\",\"_modified\":\"2026-06-28T13:00:29.464Z\"}"
             id = "2862b150-b2d3-49fa-babf-7dadaddcb3a1"
+            disabled = "false"
           }
         },
         {
