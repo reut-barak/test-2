@@ -5,7 +5,7 @@ jira.DashboardGadget Shirs__dashboard_s__Recently_Created_Chart_1_1@uumuussuu {
     row = 1
     column = 1
   }
-  title = "Recently Created Chart"
+  title = "Recently created chart"
   properties = [
     {
       key = "config"
@@ -52,5 +52,5 @@ jira.DashboardGadget Shirs__dashboard_s__Recently_Created_Chart_1_1@uumuussuu {
   _parent = [
     jira.Dashboard.instance.Shirs__dashboard@s,
   ]
-  _alias = "Recently Created Chart"
+  _alias = "Recently created chart"
 }

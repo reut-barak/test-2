@@ -5,7 +5,7 @@ jira.DashboardGadget Custom_dashboard_s__Watched_Issues_0_1@umuusuu {
     row = 1
     column = 0
   }
-  title = "Watched Issues"
+  title = "Watched issues"
   properties = [
     {
       key = "config"
@@ -40,5 +40,5 @@ jira.DashboardGadget Custom_dashboard_s__Watched_Issues_0_1@umuusuu {
   _parent = [
     jira.Dashboard.instance.Custom_dashboard@s,
   ]
-  _alias = "Watched Issues"
+  _alias = "Watched issues"
 }

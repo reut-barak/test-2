@@ -5,7 +5,7 @@ jira.DashboardGadget another_dashbord_s__Filter_Results_1_0@umuusuu {
     row = 0
     column = 1
   }
-  title = "Filter Results"
+  title = "Filter results"
   properties = [
     {
       key = "config"
@@ -40,5 +40,5 @@ jira.DashboardGadget another_dashbord_s__Filter_Results_1_0@umuusuu {
   _parent = [
     jira.Dashboard.instance.another_dashbord@s,
   ]
-  _alias = "Filter Results"
+  _alias = "Filter results"
 }

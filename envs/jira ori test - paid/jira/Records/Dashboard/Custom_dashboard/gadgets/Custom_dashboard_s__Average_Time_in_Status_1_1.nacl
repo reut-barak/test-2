@@ -5,7 +5,7 @@ jira.DashboardGadget Custom_dashboard_s__Average_Time_in_Status_1_1@umuusssuu {
     row = 1
     column = 1
   }
-  title = "Average Time in Status"
+  title = "Average time in status"
   properties = [
     {
       key = "config"
@@ -60,5 +60,5 @@ jira.DashboardGadget Custom_dashboard_s__Average_Time_in_Status_1_1@umuusssuu {
   _parent = [
     jira.Dashboard.instance.Custom_dashboard@s,
   ]
-  _alias = "Average Time in Status"
+  _alias = "Average time in status"
 }

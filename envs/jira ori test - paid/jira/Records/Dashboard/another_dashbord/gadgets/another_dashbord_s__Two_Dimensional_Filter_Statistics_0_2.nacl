@@ -5,7 +5,7 @@ jira.DashboardGadget another_dashbord_s__Two_Dimensional_Filter_Statistics_0_2@u
     row = 2
     column = 0
   }
-  title = "Two Dimensional Filter Statistics"
+  title = "Two dimensional filter statistics"
   properties = [
     {
       key = "config"
@@ -56,5 +56,5 @@ jira.DashboardGadget another_dashbord_s__Two_Dimensional_Filter_Statistics_0_2@u
   _parent = [
     jira.Dashboard.instance.another_dashbord@s,
   ]
-  _alias = "Two Dimensional Filter Statistics"
+  _alias = "Two dimensional filter statistics"
 }

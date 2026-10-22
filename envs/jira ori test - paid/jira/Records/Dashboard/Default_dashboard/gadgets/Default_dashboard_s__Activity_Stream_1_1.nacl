@@ -5,7 +5,7 @@ jira.DashboardGadget Default_dashboard_s__Activity_Stream_1_1@umuusuu {
     row = 1
     column = 1
   }
-  title = "Activity Stream"
+  title = "Activity stream"
   properties = [
     {
       key = "config"
@@ -64,5 +64,5 @@ jira.DashboardGadget Default_dashboard_s__Activity_Stream_1_1@umuusuu {
   _parent = [
     jira.Dashboard.instance.Default_dashboard@s,
   ]
-  _alias = "Activity Stream"
+  _alias = "Activity stream"
 }

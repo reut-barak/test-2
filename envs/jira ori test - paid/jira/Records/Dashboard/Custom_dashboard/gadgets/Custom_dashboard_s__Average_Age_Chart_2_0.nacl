@@ -5,7 +5,7 @@ jira.DashboardGadget Custom_dashboard_s__Average_Age_Chart_2_0@umuussuu {
     row = 0
     column = 2
   }
-  title = "Average Age Chart"
+  title = "Average age chart"
   properties = [
     {
       key = "config"
@@ -40,5 +40,5 @@ jira.DashboardGadget Custom_dashboard_s__Average_Age_Chart_2_0@umuussuu {
   _parent = [
     jira.Dashboard.instance.Custom_dashboard@s,
   ]
-  _alias = "Average Age Chart"
+  _alias = "Average age chart"
 }

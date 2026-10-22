@@ -5,7 +5,7 @@ jira.DashboardGadget Custom_dashboard_s__Agile_Wallboard_Gadget_1_0@umuussuu {
     row = 0
     column = 1
   }
-  title = "Agile Wallboard Gadget"
+  title = "Agile wallboard gadget"
   properties = [
     {
       key = "config"
@@ -44,5 +44,5 @@ jira.DashboardGadget Custom_dashboard_s__Agile_Wallboard_Gadget_1_0@umuussuu {
   _parent = [
     jira.Dashboard.instance.Custom_dashboard@s,
   ]
-  _alias = "Agile Wallboard Gadget"
+  _alias = "Agile wallboard gadget"
 }

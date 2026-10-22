@@ -5,7 +5,7 @@ jira.DashboardGadget Default_dashboard_s__Assigned_to_Me_1_0@umuussuu {
     row = 0
     column = 1
   }
-  title = "Assigned to Me"
+  title = "Assigned to me"
   properties = [
     {
       key = "config"
@@ -20,5 +20,5 @@ jira.DashboardGadget Default_dashboard_s__Assigned_to_Me_1_0@umuussuu {
   _parent = [
     jira.Dashboard.instance.Default_dashboard@s,
   ]
-  _alias = "Assigned to Me"
+  _alias = "Assigned to me"
 }

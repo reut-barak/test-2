@@ -5,7 +5,7 @@ jira.DashboardGadget Shirs__dashboard_s__Pie_Chart_1_0@uumuusuu {
     row = 0
     column = 1
   }
-  title = "Pie Chart"
+  title = "Pie chart"
   properties = [
     {
       key = "config"
@@ -48,5 +48,5 @@ jira.DashboardGadget Shirs__dashboard_s__Pie_Chart_1_0@uumuusuu {
   _parent = [
     jira.Dashboard.instance.Shirs__dashboard@s,
   ]
-  _alias = "Pie Chart"
+  _alias = "Pie chart"
 }
