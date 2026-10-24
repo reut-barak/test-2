@@ -1,0 +1,19 @@
+jira.ObjectSchemaReferenceType a_business_portfolio__a_depends_on {
+  name = "a_depends_on"
+  displayName = "Depends On"
+  description = "Depends On"
+  color = "8777D9"
+  removable = false
+  cdmData = {
+    types = [
+      {
+        key = "ari:cloud:cdm::referencetype/business_portfolio/depends_on/1"
+        version = 1
+        opinionated = true
+      },
+    ]
+  }
+  _parent = [
+    jira.ObjectSchema.instance.a_business_portfolio,
+  ]
+}

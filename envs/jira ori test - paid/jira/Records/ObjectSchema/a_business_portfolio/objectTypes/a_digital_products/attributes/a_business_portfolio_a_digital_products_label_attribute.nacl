@@ -1,0 +1,4 @@
+jira.ObjectTypeLabelAttribute a_business_portfolio_a_digital_products_label_attribute {
+  labelAttribute = jira.ObjectTypeAttribute.instance.a_business_portfolio_a_digital_products_Name
+  objectType = jira.ObjectType.instance.a_business_portfolio_a_digital_products
+}

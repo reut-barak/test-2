@@ -1,0 +1,31 @@
+jira.ObjectType a_business_portfolio_a_digital_products {
+  name = "a_digital_products"
+  displayName = "Digital Products"
+  type = 0
+  inherited = true
+  abstractObjectType = true
+  parentObjectTypeInherited = false
+  cdmData = {
+    types = [
+      {
+        key = "ari:cloud:cdm::objecttype/business_portfolio/digital_products/1"
+        version = 1
+        opinionated = true
+        inherited = false
+      },
+    ]
+  }
+  schemaLabel = "a_business_portfolio"
+  schemaDisplayLabel = "Business Portfolio"
+  iconId = {
+    id = "acdf14c8-e1fa-4e6c-baf8-27a6afd8b968"
+    name = "Digital Products"
+    url16 = "https://assets-media.atlassian.com/assets/icons/icons16/Digital%20Products%20V2.png"
+    url48 = "https://assets-media.atlassian.com/assets/icons/icons48/Digital%20Products%20V2.png"
+  }
+  parentObjectTypeId = jira.ObjectSchema.instance.a_business_portfolio
+  _parent = [
+    jira.ObjectSchema.instance.a_business_portfolio,
+  ]
+  _alias = "a_digital_products"
+}

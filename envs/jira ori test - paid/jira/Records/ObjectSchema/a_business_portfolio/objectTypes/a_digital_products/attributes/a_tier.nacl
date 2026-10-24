@@ -1,0 +1,34 @@
+jira.ObjectTypeAttribute a_business_portfolio_a_digital_products_a_tier {
+  description = "Tier / Criticality of the object"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 1
+  name = "a_tier"
+  displayName = "Tier"
+  objectType = jira.ObjectType.instance.a_business_portfolio_a_digital_products
+  options = "1,2,3,4"
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  cdmData = {
+    types = [
+      {
+        key = "ari:cloud:cdm::objecttypeattribute/business_portfolio/digital_products/tier/1"
+        version = 1
+        opinionated = true
+      },
+    ]
+  }
+  lockedConfiguration = false
+  disabledPermissions = [
+    "configure_attribute",
+  ]
+  defaultTypeId = 10
+  _alias = "a_tier"
+}

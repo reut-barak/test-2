@@ -1,0 +1,37 @@
+jira.ObjectType a_software_registry_a_technical_services_a_software_services {
+  name = "a_software_services"
+  displayName = "Software Services"
+  type = 0
+  parentObjectTypeId = jira.ObjectType.instance.a_software_registry_a_technical_services
+  inherited = true
+  abstractObjectType = false
+  parentObjectTypeInherited = true
+  cdmData = {
+    types = [
+      {
+        key = "ari:cloud:cdm::objecttype/software_registry/technical_services.software_services/1"
+        version = 1
+        opinionated = true
+        inherited = false
+      },
+      {
+        key = "ari:cloud:cdm::objecttype/software_registry/technical_services/1"
+        version = 1
+        opinionated = true
+        inherited = true
+      },
+    ]
+  }
+  schemaLabel = "a_software_registry"
+  schemaDisplayLabel = "Software Registry"
+  iconId = {
+    id = "966aa454-81c1-4e78-9633-b6e8a3f058d7"
+    name = "Software"
+    url16 = "https://assets-media.atlassian.com/assets/icons/icons16/Software%20V2.png"
+    url48 = "https://assets-media.atlassian.com/assets/icons/icons48/Software%20V2.png"
+  }
+  _parent = [
+    jira.ObjectSchema.instance.a_software_registry,
+  ]
+  _alias = "a_software_services"
+}

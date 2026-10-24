@@ -1,0 +1,39 @@
+jira.ObjectTypeAttribute a_business_portfolio_a_digital_products_a_chat_channels {
+  description = "Chat channel to reach the owner team"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 10
+  minimumCardinality = 0
+  name = "a_chat_channels"
+  displayName = "Chat channels"
+  objectType = jira.ObjectType.instance.a_business_portfolio_a_digital_products
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 11
+  uniqueAttribute = false
+  cdmData = {
+    types = [
+      {
+        key = "ari:cloud:cdm::objecttypeattribute/business_portfolio/digital_products/chat_channels/1"
+        version = 1
+        opinionated = true
+      },
+    ]
+  }
+  lockedConfiguration = false
+  externalReferenceType = {
+    id = "893a4b5d-1366-4806-be44-9625c9ec0dca"
+    name = "a_chat_channels"
+    objectSchemaId = "86"
+  }
+  disabledPermissions = [
+    "configure_attribute",
+  ]
+  defaultTypeId = -1
+  _alias = "a_chat_channels"
+}

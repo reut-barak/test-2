@@ -1,0 +1,23 @@
+jira.ObjectSchema a_software_registry {
+  name = "a_software_registry"
+  displayName = "Software Registry"
+  objectSchemaKey = "A_SR"
+  description = "Schema for software services, applications, and tools used in the organization"
+  status = "Ok"
+  crossSchemaReferencingAllowed = true
+  cdmData = {
+    types = [
+      {
+        key = "ari:cloud:cdm::schema/software_registry/1"
+        version = 1
+        opinionated = true
+      },
+    ]
+  }
+  properties = {
+    quickCreateObjects = true
+    allowOtherObjectSchema = true
+    validateQuickCreate = true
+  }
+  _alias = "a_software_registry"
+}

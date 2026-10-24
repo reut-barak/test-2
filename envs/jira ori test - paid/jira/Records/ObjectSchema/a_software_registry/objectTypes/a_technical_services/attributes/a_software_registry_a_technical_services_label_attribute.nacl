@@ -1,0 +1,4 @@
+jira.ObjectTypeLabelAttribute a_software_registry_a_technical_services_label_attribute {
+  labelAttribute = jira.ObjectTypeAttribute.instance.a_software_registry_a_technical_services_Name
+  objectType = jira.ObjectType.instance.a_software_registry_a_technical_services
+}

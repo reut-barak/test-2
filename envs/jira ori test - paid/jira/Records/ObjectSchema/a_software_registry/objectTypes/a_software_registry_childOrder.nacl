@@ -1,0 +1,8 @@
+jira.ObjectTypeOrder a_software_registry_childOrder {
+  objectTypes = [
+    jira.ObjectType.instance.a_software_registry_a_technical_services,
+  ]
+  _parent = [
+    jira.ObjectSchema.instance.a_software_registry,
+  ]
+}

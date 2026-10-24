@@ -1,0 +1,8 @@
+jira.ObjectTypeOrder a_business_portfolio_childOrder {
+  objectTypes = [
+    jira.ObjectType.instance.a_business_portfolio_a_digital_products,
+  ]
+  _parent = [
+    jira.ObjectSchema.instance.a_business_portfolio,
+  ]
+}

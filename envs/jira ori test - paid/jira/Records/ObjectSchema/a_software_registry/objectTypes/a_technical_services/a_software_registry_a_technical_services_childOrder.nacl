@@ -1,0 +1,11 @@
+jira.ObjectTypeOrder a_software_registry_a_technical_services_childOrder {
+  objectTypes = [
+    jira.ObjectType.instance.a_software_registry_a_technical_services_a_software_services,
+    jira.ObjectType.instance.a_software_registry_a_technical_services_a_applications,
+    jira.ObjectType.instance.a_software_registry_a_technical_services_a_capabilities,
+    jira.ObjectType.instance.a_software_registry_a_technical_services_a_deployed_services,
+  ]
+  _parent = [
+    jira.ObjectType.instance.a_software_registry_a_technical_services,
+  ]
+}

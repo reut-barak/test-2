@@ -1,0 +1,37 @@
+jira.ObjectTypeAttribute a_business_portfolio_a_digital_products_a_change_management_connected_space {
+  description = "Jira space for change management integrations"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "a_change_management_connected_space"
+  displayName = "Change management connected space"
+  objectType = jira.ObjectType.instance.a_business_portfolio_a_digital_products
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 10
+  uniqueAttribute = false
+  cdmData = {
+    types = [
+      {
+        key = "ari:cloud:cdm::objecttypeattribute/business_portfolio/digital_products/change_management_connected_space/1"
+        version = 1
+        opinionated = true
+      },
+    ]
+  }
+  lockedConfiguration = false
+  ariTypeValidationConfiguration = [
+    "project",
+  ]
+  disabledPermissions = [
+    "configure_attribute",
+  ]
+  defaultTypeId = -1
+  _alias = "a_change_management_connected_space"
+}

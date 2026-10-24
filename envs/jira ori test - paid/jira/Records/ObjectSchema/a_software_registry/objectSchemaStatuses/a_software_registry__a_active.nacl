@@ -1,0 +1,20 @@
+jira.ObjectSchemaStatus a_software_registry__a_active {
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:277"
+  name = "a_active"
+  displayName = "Active"
+  description = "Active"
+  category = 1
+  cdmData = {
+    types = [
+      {
+        key = "ari:cloud:cdm::statustype/software_registry/active/1"
+        version = 1
+        opinionated = true
+      },
+    ]
+  }
+  _parent = [
+    jira.ObjectSchema.instance.a_software_registry,
+  ]
+  _alias = "a_software_registry:a_active"
+}

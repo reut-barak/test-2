@@ -1,0 +1,39 @@
+jira.ObjectTypeAttribute a_business_portfolio_a_digital_products_a_status {
+  description = "Status of the object"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "a_status"
+  displayName = "Status"
+  objectType = jira.ObjectType.instance.a_business_portfolio_a_digital_products
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 7
+  typeValueMulti = [
+    jira.ObjectSchemaStatus.instance.a_business_portfolio__a_active,
+    jira.ObjectSchemaStatus.instance.a_business_portfolio__a_archived,
+    jira.ObjectSchemaStatus.instance.a_business_portfolio__a_pending,
+  ]
+  uniqueAttribute = false
+  cdmData = {
+    types = [
+      {
+        key = "ari:cloud:cdm::objecttypeattribute/business_portfolio/digital_products/status/1"
+        version = 1
+        opinionated = true
+      },
+    ]
+  }
+  lockedConfiguration = false
+  disabledPermissions = [
+    "configure_attribute",
+  ]
+  defaultTypeId = -1
+  _alias = "a_status"
+}

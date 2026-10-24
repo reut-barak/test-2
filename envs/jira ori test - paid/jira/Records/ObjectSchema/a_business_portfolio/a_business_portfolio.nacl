@@ -1,0 +1,23 @@
+jira.ObjectSchema a_business_portfolio {
+  name = "a_business_portfolio"
+  displayName = "Business Portfolio"
+  objectSchemaKey = "A_BP"
+  description = "Schema for business services and organizational entities"
+  status = "Ok"
+  crossSchemaReferencingAllowed = true
+  cdmData = {
+    types = [
+      {
+        key = "ari:cloud:cdm::schema/business_portfolio/1"
+        version = 1
+        opinionated = true
+      },
+    ]
+  }
+  properties = {
+    quickCreateObjects = true
+    allowOtherObjectSchema = true
+    validateQuickCreate = true
+  }
+  _alias = "a_business_portfolio"
+}

@@ -1,0 +1,39 @@
+jira.ObjectTypeAttribute a_software_registry_a_technical_services_a_repositories {
+  description = "Repositories linked to the object"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 500
+  minimumCardinality = 0
+  name = "a_repositories"
+  displayName = "Repositories"
+  objectType = jira.ObjectType.instance.a_software_registry_a_technical_services
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 11
+  uniqueAttribute = false
+  cdmData = {
+    types = [
+      {
+        key = "ari:cloud:cdm::objecttypeattribute/software_registry/technical_services/repositories/1"
+        version = 1
+        opinionated = true
+      },
+    ]
+  }
+  lockedConfiguration = false
+  externalReferenceType = {
+    id = "f359ba55-23de-42a0-a9d8-28aac71258d5"
+    name = "a_repositories"
+    objectSchemaId = "85"
+  }
+  disabledPermissions = [
+    "configure_attribute",
+  ]
+  defaultTypeId = -1
+  _alias = "a_repositories"
+}

@@ -1,0 +1,34 @@
+jira.ObjectTypeAttribute a_business_portfolio_a_digital_products_a_tags {
+  description = "Tags for the object"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 50
+  minimumCardinality = 0
+  name = "a_tags"
+  displayName = "Tags"
+  objectType = jira.ObjectType.instance.a_business_portfolio_a_digital_products
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  cdmData = {
+    types = [
+      {
+        key = "ari:cloud:cdm::objecttypeattribute/business_portfolio/digital_products/tags/1"
+        version = 1
+        opinionated = true
+      },
+    ]
+  }
+  lockedConfiguration = false
+  disabledPermissions = [
+    "configure_attribute",
+  ]
+  defaultTypeId = 12
+  _alias = "a_tags"
+}

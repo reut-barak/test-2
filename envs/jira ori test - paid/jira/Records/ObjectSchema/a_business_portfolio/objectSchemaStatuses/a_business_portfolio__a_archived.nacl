@@ -1,0 +1,20 @@
+jira.ObjectSchemaStatus a_business_portfolio__a_archived {
+  globalId = "68d020c3-b88e-47dc-9231-452f7dc63521:281"
+  name = "a_archived"
+  displayName = "Archived"
+  description = "Archived"
+  category = 0
+  cdmData = {
+    types = [
+      {
+        key = "ari:cloud:cdm::statustype/business_portfolio/archived/1"
+        version = 1
+        opinionated = true
+      },
+    ]
+  }
+  _parent = [
+    jira.ObjectSchema.instance.a_business_portfolio,
+  ]
+  _alias = "a_business_portfolio:a_archived"
+}

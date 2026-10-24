@@ -1,0 +1,34 @@
+jira.ObjectTypeAttribute a_software_registry_a_technical_services_a_description {
+  description = "Description of the object"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "a_description"
+  displayName = "Description"
+  objectType = jira.ObjectType.instance.a_software_registry_a_technical_services
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  cdmData = {
+    types = [
+      {
+        key = "ari:cloud:cdm::objecttypeattribute/software_registry/technical_services/description/1"
+        version = 1
+        opinionated = true
+      },
+    ]
+  }
+  lockedConfiguration = false
+  disabledPermissions = [
+    "configure_attribute",
+  ]
+  defaultTypeId = 9
+  _alias = "a_description"
+}

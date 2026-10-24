@@ -1,0 +1,35 @@
+jira.ObjectTypeAttribute a_business_portfolio_a_digital_products_a_business_portfolio_references {
+  description = "References with objects in the Business Portfolio schema"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = true
+  indexed = true
+  maximumCardinality = 1000
+  minimumCardinality = 0
+  name = "a_business_portfolio_references"
+  displayName = "Business Portfolio references"
+  objectType = jira.ObjectType.instance.a_business_portfolio_a_digital_products
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 1
+  uniqueAttribute = false
+  cdmData = {
+    types = [
+      {
+        key = "ari:cloud:cdm::objecttypeattribute/business_portfolio/digital_products/business_portfolio_references/1"
+        version = 1
+        opinionated = true
+      },
+    ]
+  }
+  lockedConfiguration = false
+  disabledPermissions = [
+    "configure_attribute",
+  ]
+  defaultTypeId = -1
+  typeValue = jira.ObjectType.instance.a_business_portfolio_a_digital_products
+  _alias = "a_business_portfolio_references"
+}

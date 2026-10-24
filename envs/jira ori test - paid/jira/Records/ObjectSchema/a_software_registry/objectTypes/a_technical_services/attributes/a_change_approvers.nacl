@@ -1,0 +1,38 @@
+jira.ObjectTypeAttribute a_software_registry_a_technical_services_a_change_approvers {
+  description = "Change approvers for changes on the object"
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 20
+  minimumCardinality = 0
+  name = "a_change_approvers"
+  displayName = "Change approvers"
+  objectType = jira.ObjectType.instance.a_software_registry_a_technical_services
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 10
+  uniqueAttribute = false
+  cdmData = {
+    types = [
+      {
+        key = "ari:cloud:cdm::objecttypeattribute/software_registry/technical_services/change_approvers/1"
+        version = 1
+        opinionated = true
+      },
+    ]
+  }
+  lockedConfiguration = false
+  ariTypeValidationConfiguration = [
+    "user",
+    "group",
+  ]
+  disabledPermissions = [
+    "configure_attribute",
+  ]
+  defaultTypeId = -1
+  _alias = "a_change_approvers"
+}
