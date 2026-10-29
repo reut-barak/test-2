@@ -1722,6 +1722,16 @@ jira.FieldScheme test_LNCMPNPRJT_and_1_other_space@s {
       }
     },
     {
+      fieldId = jira.Field.instance.Project__atlas_project__c@uubuu
+      allowedOperations = [
+        "ADD",
+      ]
+      parameters = {
+        isRequired = false
+        rendererType = "jira-text-renderer"
+      }
+    },
+    {
       fieldId = jira.Field.instance.Work_item_created_forms__proforma_forms_field_cftype__c@sssuubbbuu
       allowedOperations = [
         "ADD",
