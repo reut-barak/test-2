@@ -1,0 +1,10 @@
+jira.ProjectRoleMembership LiorCompanyManaged_group_iso_27001_people {
+  group = jira.Group.instance.iso_27001_people
+  roles = [
+    jira.ProjectRole.instance.bbb,
+  ]
+  _parent = [
+    jira.Project.instance.LiorCompanyManaged,
+  ]
+  _alias = "iso_27001_people (LIORCOMP)"
+}

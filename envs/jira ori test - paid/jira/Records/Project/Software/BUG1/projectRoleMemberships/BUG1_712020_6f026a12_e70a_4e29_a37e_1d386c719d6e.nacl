@@ -1,0 +1,14 @@
+jira.ProjectRoleMembership BUG1_712020_6f026a12_e70a_4e29_a37e_1d386c719d6e@ufbbbb {
+  accountId = {
+    id = "712020:6f026a12-e70a-4e29-a37e-1d386c719d6e"
+    displayName = "Reut Barak"
+  }
+  roles = [
+    jira.ProjectRole.instance.Administrators,
+    jira.ProjectRole.instance.POG_admin@s,
+  ]
+  _parent = [
+    jira.Project.instance.BUG1,
+  ]
+  _alias = "Reut Barak (BUG1)"
+}

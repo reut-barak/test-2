@@ -1,0 +1,11 @@
+jira.ProjectRoleMembership testIdoProject_group_jira_admins_ori_salto_test@uubbbb {
+  group = jira.Group.instance.jira_admins_ori_salto_test@b
+  roles = [
+    jira.ProjectRole.instance.aaa,
+    jira.ProjectRole.instance.Ido2Collide,
+  ]
+  _parent = [
+    jira.Project.instance.testIdoProject,
+  ]
+  _alias = "jira-admins-ori-salto-test (TSTDPRJCT)"
+}
