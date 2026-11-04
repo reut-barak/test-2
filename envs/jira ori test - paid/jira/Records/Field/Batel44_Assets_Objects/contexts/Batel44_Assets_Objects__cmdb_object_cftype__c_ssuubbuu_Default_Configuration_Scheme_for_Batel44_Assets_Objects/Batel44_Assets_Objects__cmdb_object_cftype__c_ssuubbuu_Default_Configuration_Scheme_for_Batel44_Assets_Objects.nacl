@@ -14,6 +14,12 @@ jira.CustomFieldContext Batel44_Assets_Objects__cmdb_object_cftype__c_ssuubbuu_D
     multiple = true
     shouldSetDefaultValuesFromEmptySearch = true
     assignStrict = false
+    objectSchemaDisplayName = "ID2_restored_at_202403211012"
+    attributesIncludedInAutoCompleteSearchWithDisplayName = [
+      {
+        name = "Label"
+      },
+    ]
   }
   _parent = [
     jira.Field.instance.Batel44_Assets_Objects__cmdb_object_cftype__c@ssuubbuu,

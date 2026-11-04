@@ -12,6 +12,17 @@ jira.CustomFieldContext batel_create_asset_field__cmdb_object_cftype__c_sssuubbu
     multiple = false
     shouldSetDefaultValuesFromEmptySearch = false
     assignStrict = false
+    objectSchemaDisplayName = "ID2_restored_at_202403211012"
+    attributesIncludedInAutoCompleteSearchWithDisplayName = [
+      {
+        name = "MyAttribute"
+      },
+    ]
+    attributesDisplayedOnIssueWithDisplayName = [
+      {
+        name = "MyAttribute"
+      },
+    ]
   }
   _parent = [
     jira.Field.instance.batel_create_asset_field__cmdb_object_cftype__c@sssuubbuu,
