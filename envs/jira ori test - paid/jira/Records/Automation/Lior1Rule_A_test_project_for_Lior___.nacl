@@ -74,4 +74,5 @@ jira.Automation Lior1Rule_A_test_project_for_Lior___@usssslll {
   }
   isAgentic = false
   _alias = "Lior1Rule"
+  hasDraft = false
 }

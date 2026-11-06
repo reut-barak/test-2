@@ -86,4 +86,5 @@ jira.Automation shirIssueLink_AssignIssue_AlonCompanyProject {
   }
   isAgentic = false
   _alias = "shirIssueLink_AssignIssue"
+  hasDraft = false
 }

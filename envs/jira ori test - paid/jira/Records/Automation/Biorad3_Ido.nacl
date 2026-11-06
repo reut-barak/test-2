@@ -284,4 +284,5 @@ jira.Automation Biorad3_Ido {
   }
   isAgentic = false
   _alias = "Biorad3"
+  hasDraft = false
 }

@@ -72,4 +72,5 @@ jira.Automation ODD_TEST {
   }
   isAgentic = false
   _alias = "ODD_TEST"
+  hasDraft = false
 }

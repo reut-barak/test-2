@@ -80,4 +80,5 @@ jira.Automation shirLinkIssueAction {
   }
   isAgentic = false
   _alias = "shirLinkIssueAction"
+  hasDraft = false
 }

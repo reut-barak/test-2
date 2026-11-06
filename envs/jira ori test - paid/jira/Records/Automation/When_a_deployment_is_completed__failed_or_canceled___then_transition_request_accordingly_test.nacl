@@ -278,4 +278,5 @@ jira.Automation When_a_deployment_is_completed__failed_or_canceled___then_transi
   }
   isAgentic = false
   _alias = "When a deployment is completed, failed or canceled → then transition request accordingly"
+  hasDraft = false
 }

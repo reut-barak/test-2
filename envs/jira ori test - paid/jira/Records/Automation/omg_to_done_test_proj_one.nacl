@@ -107,4 +107,5 @@ jira.Automation omg_to_done_test_proj_one@ssubb {
   }
   isAgentic = false
   _alias = "omg to done"
+  hasDraft = false
 }

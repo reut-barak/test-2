@@ -96,4 +96,5 @@ jira.Automation IdoAlonTest2_AlonCompanyProject10 {
   }
   isAgentic = false
   _alias = "IdoAlonTest2"
+  hasDraft = false
 }

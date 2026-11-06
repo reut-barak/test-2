@@ -83,4 +83,5 @@ jira.Automation farkash_test2_AlonCompanyProject {
   }
   isAgentic = false
   _alias = "farkash_test2"
+  hasDraft = false
 }

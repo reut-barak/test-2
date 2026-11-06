@@ -94,4 +94,5 @@ jira.Automation Email_on_Labels@s {
   }
   isAgentic = false
   _alias = "Email on Labels"
+  hasDraft = false
 }

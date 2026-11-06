@@ -60,4 +60,5 @@ jira.Automation testGlobal {
   }
   isAgentic = false
   _alias = "testGlobal"
+  hasDraft = false
 }

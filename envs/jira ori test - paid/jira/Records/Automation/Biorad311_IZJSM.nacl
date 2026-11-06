@@ -68,4 +68,5 @@ jira.Automation Biorad311_IZJSM {
   }
   isAgentic = false
   _alias = "Biorad311"
+  hasDraft = false
 }

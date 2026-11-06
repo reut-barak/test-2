@@ -66,4 +66,5 @@ jira.Automation webRequestAutomation {
   }
   isAgentic = false
   _alias = "webRequestAutomation"
+  hasDraft = false
 }

@@ -95,4 +95,5 @@ jira.Automation DGE_Update_Priority_Dan_E_s_Project@ssubts {
   }
   isAgentic = false
   _alias = "DGE Update Priority"
+  hasDraft = false
 }

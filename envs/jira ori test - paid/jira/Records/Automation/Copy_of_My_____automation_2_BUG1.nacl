@@ -85,4 +85,5 @@ I can't believe this {{issue.${ jira.Field.instance.How_many_times_has_this_happ
   }
   isAgentic = false
   _alias = "Copy of My אאא automation 2"
+  hasDraft = false
 }

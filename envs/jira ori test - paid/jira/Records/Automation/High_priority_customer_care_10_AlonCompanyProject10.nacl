@@ -114,4 +114,5 @@ jira.Automation High_priority_customer_care_10_AlonCompanyProject10@ssssu {
   }
   isAgentic = false
   _alias = "High priority customer care 10"
+  hasDraft = false
 }

@@ -79,4 +79,5 @@ jira.Automation daniel_test_automation@s {
   }
   isAgentic = false
   _alias = "daniel test automation"
+  hasDraft = false
 }

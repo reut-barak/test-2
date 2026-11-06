@@ -102,4 +102,5 @@ jira.Automation IdoTests3_idoA {
   }
   isAgentic = false
   _alias = "IdoTests3"
+  hasDraft = false
 }

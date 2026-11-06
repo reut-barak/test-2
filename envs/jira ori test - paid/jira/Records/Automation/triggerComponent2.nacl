@@ -63,4 +63,5 @@ jira.Automation triggerComponent2 {
   }
   isAgentic = false
   _alias = "triggerComponent2"
+  hasDraft = false
 }

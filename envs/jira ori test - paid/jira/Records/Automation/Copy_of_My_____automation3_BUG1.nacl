@@ -82,4 +82,5 @@ jira.Automation Copy_of_My_____automation3_BUG1@sss_01488_01488_01488su {
   }
   isAgentic = false
   _alias = "Copy of My אאא automation3"
+  hasDraft = false
 }

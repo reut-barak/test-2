@@ -214,4 +214,5 @@ jira.Automation Copy_of_testImport432@s {
   }
   isAgentic = false
   _alias = "Copy of testImport432"
+  hasDraft = false
 }

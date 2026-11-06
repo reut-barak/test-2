@@ -15,16 +15,6 @@ jira.CustomFieldContext DP___Asset_Field_1__cmdb_object_cftype__c_sbsssuubbuu_De
     shouldSetDefaultValuesFromEmptySearch = true
     assignStrict = false
     objectSchemaDisplayName = "DP - People"
-    attributesIncludedInAutoCompleteSearchWithDisplayName = [
-      {
-        name = "DP_Attribute"
-      },
-    ]
-    attributesDisplayedOnIssueWithDisplayName = [
-      {
-        name = "DP_Attribute"
-      },
-    ]
   }
   _parent = [
     jira.Field.instance.DP___Asset_Field_1__cmdb_object_cftype__c@sbsssuubbuu,

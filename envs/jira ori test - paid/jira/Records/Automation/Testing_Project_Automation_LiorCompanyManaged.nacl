@@ -73,4 +73,5 @@ jira.Automation Testing_Project_Automation_LiorCompanyManaged@ssu {
   }
   isAgentic = false
   _alias = "Testing Project Automation"
+  hasDraft = false
 }

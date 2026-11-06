@@ -96,4 +96,5 @@ jira.Automation testProjectScope_AlonCompanyProject10_AlonCompanyProject2 {
   }
   isAgentic = false
   _alias = "testProjectScope"
+  hasDraft = false
 }

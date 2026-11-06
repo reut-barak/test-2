@@ -107,4 +107,5 @@ jira.Automation testImport12_test_proj_one@ubb {
   }
   isAgentic = false
   _alias = "testImport12"
+  hasDraft = false
 }

@@ -183,4 +183,5 @@ You better check out {{issue.key}} It's coming in HOT.
   }
   isAgentic = false
   _alias = "JC: Important Issues"
+  hasDraft = false
 }

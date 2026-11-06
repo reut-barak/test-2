@@ -218,4 +218,5 @@ jira.Automation When_a_comment_is_added___update_the_status_Support@sssss_08594s
   }
   isAgentic = false
   _alias = "When a comment is added → update the status"
+  hasDraft = false
 }

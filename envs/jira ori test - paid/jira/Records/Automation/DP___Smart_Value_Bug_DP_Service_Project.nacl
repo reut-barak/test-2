@@ -82,4 +82,5 @@ jira.Automation DP___Smart_Value_Bug_DP_Service_Project@sbsssuss {
   }
   isAgentic = false
   _alias = "DP - Smart Value Bug"
+  hasDraft = false
 }

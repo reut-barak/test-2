@@ -66,4 +66,5 @@ jira.Automation Copy_of_EnvVarAutomation@s {
   }
   isAgentic = false
   _alias = "Copy of EnvVarAutomation"
+  hasDraft = false
 }

@@ -70,4 +70,5 @@ jira.Automation first_rule_change@s {
   }
   isAgentic = false
   _alias = "first rule change"
+  hasDraft = false
 }

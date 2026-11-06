@@ -122,4 +122,5 @@ jira.Automation REORDER_TEST@b {
   }
   isAgentic = false
   _alias = "REORDER-TEST"
+  hasDraft = false
 }

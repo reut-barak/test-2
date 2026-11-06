@@ -99,4 +99,5 @@ jira.Automation Alert_on_call_engineer_on_high_incident_severity_AlonCompanyProj
   }
   isAgentic = false
   _alias = "Alert on-call engineer on high incident severity"
+  hasDraft = false
 }

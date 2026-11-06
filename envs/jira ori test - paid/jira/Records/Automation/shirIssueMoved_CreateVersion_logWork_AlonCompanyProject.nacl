@@ -90,4 +90,5 @@ jira.Automation shirIssueMoved_CreateVersion_logWork_AlonCompanyProject {
   }
   isAgentic = false
   _alias = "shirIssueMoved_CreateVersion_logWork"
+  hasDraft = false
 }

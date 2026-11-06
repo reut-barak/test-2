@@ -74,4 +74,5 @@ jira.Automation testSpecificProject_AlonProject {
   }
   isAgentic = false
   _alias = "testSpecificProject"
+  hasDraft = false
 }

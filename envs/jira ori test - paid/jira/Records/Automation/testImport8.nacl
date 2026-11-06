@@ -209,4 +209,5 @@ jira.Automation testImport8 {
   }
   isAgentic = false
   _alias = "testImport8"
+  hasDraft = false
 }

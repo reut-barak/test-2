@@ -156,4 +156,5 @@ jira.Automation shirFieldValueChange_CreateIssue_AlonCompanyProject {
   }
   isAgentic = false
   _alias = "shirFieldValueChange_CreateIssue"
+  hasDraft = false
 }

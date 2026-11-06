@@ -465,4 +465,5 @@ jira.Automation CRANE__NP_EP___Initial_Transition___Assign___Notify_POG_Admin_BU
   }
   isAgentic = false
   _alias = "CRANE: NP/EP - Initial Transition - Assign & Notify POG Admin"
+  hasDraft = false
 }

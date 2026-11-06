@@ -85,4 +85,5 @@ jira.Automation shirCreateSubTasks_AlonCompanyProject10_AlonCompanyProject11_guy
   }
   isAgentic = false
   _alias = "shirCreateSubTasks"
+  hasDraft = false
 }

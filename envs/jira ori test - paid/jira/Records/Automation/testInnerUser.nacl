@@ -103,4 +103,5 @@ jira.Automation testInnerUser {
   }
   isAgentic = false
   _alias = "testInnerUser"
+  hasDraft = false
 }

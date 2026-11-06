@@ -111,4 +111,5 @@ jira.Automation shirMultipleIssue_userCondition_sendEmail_AlonCompanyProject {
   }
   isAgentic = false
   _alias = "shirMultipleIssue_userCondition_sendEmail"
+  hasDraft = false
 }

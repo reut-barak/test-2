@@ -183,4 +183,5 @@ jira.Automation JC__Version_Handling@fss {
   }
   isAgentic = false
   _alias = "JC: Version Handling"
+  hasDraft = false
 }

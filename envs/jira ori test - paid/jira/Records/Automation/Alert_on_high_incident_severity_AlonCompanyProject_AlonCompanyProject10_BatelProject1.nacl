@@ -86,4 +86,5 @@ jira.Automation Alert_on_high_incident_severity_AlonCompanyProject_AlonCompanyPr
   }
   isAgentic = false
   _alias = "Alert on high incident severity"
+  hasDraft = false
 }

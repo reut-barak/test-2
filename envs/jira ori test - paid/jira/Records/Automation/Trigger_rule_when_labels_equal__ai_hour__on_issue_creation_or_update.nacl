@@ -114,4 +114,5 @@ jira.Automation Trigger_rule_when_labels_equal__ai_hour__on_issue_creation_or_up
   }
   isAgentic = false
   _alias = "Trigger rule when labels equal 'ai-hour' on issue creation or update"
+  hasDraft = false
 }

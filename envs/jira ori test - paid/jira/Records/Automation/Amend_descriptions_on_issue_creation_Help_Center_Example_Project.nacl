@@ -69,4 +69,5 @@ jira.Automation Amend_descriptions_on_issue_creation_Help_Center_Example_Project
   }
   isAgentic = false
   _alias = "Amend descriptions on issue creation"
+  hasDraft = false
 }

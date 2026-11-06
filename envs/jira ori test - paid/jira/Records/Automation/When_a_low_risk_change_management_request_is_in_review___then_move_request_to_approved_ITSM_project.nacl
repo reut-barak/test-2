@@ -121,4 +121,5 @@ jira.Automation When_a_low_risk_change_management_request_is_in_review___then_mo
   }
   isAgentic = false
   _alias = "When a low risk change management request is in review → then move request to approved"
+  hasDraft = false
 }

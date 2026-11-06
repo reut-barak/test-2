@@ -64,4 +64,5 @@ URL: {{pullrequest.url}}
   }
   isAgentic = false
   _alias = "Pull Request Created"
+  hasDraft = false
 }

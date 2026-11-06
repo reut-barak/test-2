@@ -52,4 +52,5 @@ jira.Automation DanTal_Rule@s {
   }
   isAgentic = false
   _alias = "DanTal Rule"
+  hasDraft = false
 }

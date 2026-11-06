@@ -107,4 +107,5 @@ jira.Automation w3_automation@s {
   }
   isAgentic = false
   _alias = "w3 automation"
+  hasDraft = false
 }

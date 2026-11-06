@@ -213,4 +213,5 @@ jira.Automation testImport41_AlonCompanyProject {
   }
   isAgentic = false
   _alias = "testImport41"
+  hasDraft = false
 }

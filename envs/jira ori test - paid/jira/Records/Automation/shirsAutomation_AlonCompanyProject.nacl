@@ -183,4 +183,5 @@ jira.Automation shirsAutomation_AlonCompanyProject {
   }
   isAgentic = false
   _alias = "shirsAutomation"
+  hasDraft = false
 }

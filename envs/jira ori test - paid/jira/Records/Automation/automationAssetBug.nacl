@@ -65,4 +65,5 @@ jira.Automation automationAssetBug {
   }
   isAgentic = false
   _alias = "automationAssetBug"
+  hasDraft = false
 }

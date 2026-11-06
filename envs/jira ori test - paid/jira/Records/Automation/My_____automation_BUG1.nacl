@@ -81,4 +81,5 @@ jira.Automation My_____automation_BUG1@s_01488_01488_01488su {
   }
   isAgentic = false
   _alias = "My אאא automation"
+  hasDraft = false
 }

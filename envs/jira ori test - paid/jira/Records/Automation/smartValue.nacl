@@ -55,4 +55,5 @@ jira.Automation smartValue {
   }
   isAgentic = false
   _alias = "smartValue"
+  hasDraft = false
 }

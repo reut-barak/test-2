@@ -65,4 +65,5 @@ jira.Automation w33_automation@s {
   }
   isAgentic = false
   _alias = "w33 automation"
+  hasDraft = false
 }

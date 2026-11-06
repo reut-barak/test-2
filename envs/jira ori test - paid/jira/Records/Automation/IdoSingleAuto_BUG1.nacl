@@ -109,4 +109,5 @@ jira.Automation IdoSingleAuto_BUG1 {
   }
   isAgentic = false
   _alias = "IdoSingleAuto"
+  hasDraft = false
 }

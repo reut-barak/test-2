@@ -50,4 +50,5 @@ jira.Automation testLinkTrigger {
   }
   isAgentic = false
   _alias = "testLinkTrigger"
+  hasDraft = false
 }

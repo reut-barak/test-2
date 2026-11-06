@@ -75,4 +75,5 @@ jira.Automation Send_alert_on_due_date_change@s {
   }
   isAgentic = false
   _alias = "Send alert on due date change"
+  hasDraft = false
 }

@@ -87,4 +87,5 @@ jira.Automation IdoProject2_AlonCompanyProject {
   }
   isAgentic = false
   _alias = "IdoProject2"
+  hasDraft = false
 }

@@ -76,4 +76,5 @@ jira.Automation eee_AlonCompanyProject10_guytestproject {
   }
   isAgentic = false
   _alias = "eee"
+  hasDraft = false
 }

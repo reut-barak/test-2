@@ -228,4 +228,5 @@ jira.Automation Auto_populate_data_when_ticket_created___ISM___JSM_request_type_
   }
   isAgentic = false
   _alias = "Auto populate data when ticket created - ISM - JSM request type"
+  hasDraft = false
 }

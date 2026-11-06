@@ -213,4 +213,5 @@ jira.Automation testImport5 {
   }
   isAgentic = false
   _alias = "testImport5"
+  hasDraft = false
 }

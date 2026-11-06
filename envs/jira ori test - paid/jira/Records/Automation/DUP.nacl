@@ -64,4 +64,5 @@ jira.Automation DUP {
   }
   isAgentic = false
   _alias = "DUP"
+  hasDraft = false
 }

@@ -84,4 +84,5 @@ jira.Automation On_urgent_SLA__alert_Noam@sszdss {
   }
   isAgentic = false
   _alias = "On urgent SLA, alert Noam"
+  hasDraft = false
 }

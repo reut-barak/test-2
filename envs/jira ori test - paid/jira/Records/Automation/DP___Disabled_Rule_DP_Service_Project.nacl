@@ -64,4 +64,5 @@ jira.Automation DP___Disabled_Rule_DP_Service_Project@sbssuss {
   }
   isAgentic = false
   _alias = "DP - Disabled Rule"
+  hasDraft = false
 }

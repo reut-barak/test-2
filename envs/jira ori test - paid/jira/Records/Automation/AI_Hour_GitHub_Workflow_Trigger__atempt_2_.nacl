@@ -114,4 +114,5 @@ jira.Automation AI_Hour_GitHub_Workflow_Trigger__atempt_2_@sssssjsk {
   }
   isAgentic = false
   _alias = "AI Hour GitHub Workflow Trigger (atempt 2)"
+  hasDraft = false
 }

@@ -334,4 +334,5 @@ jira.Automation When_a_change_management_request_is_created___then_update_change
   }
   isAgentic = false
   _alias = "When a change management request is created → then update change type and risk"
+  hasDraft = false
 }

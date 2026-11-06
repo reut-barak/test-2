@@ -94,4 +94,5 @@ jira.Automation "1_When_a_change_request_is_created___then_attach_the_default_ch
   }
   isAgentic = false
   _alias = "1 When a change request is created → then attach the default change management form"
+  hasDraft = false
 }

@@ -138,4 +138,5 @@ jira.Automation testAutomation3_AlonCompanyProject {
   }
   isAgentic = false
   _alias = "testAutomation3"
+  hasDraft = false
 }

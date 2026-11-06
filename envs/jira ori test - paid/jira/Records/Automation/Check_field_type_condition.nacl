@@ -89,4 +89,5 @@ jira.Automation Check_field_type_condition@s {
   }
   isAgentic = false
   _alias = "Check field type condition"
+  hasDraft = false
 }

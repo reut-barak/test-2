@@ -61,4 +61,5 @@ jira.Automation IdoLog {
   }
   isAgentic = false
   _alias = "IdoLog"
+  hasDraft = false
 }

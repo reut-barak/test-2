@@ -87,4 +87,5 @@ jira.Automation testGroup2 {
   }
   isAgentic = false
   _alias = "testGroup2"
+  hasDraft = false
 }

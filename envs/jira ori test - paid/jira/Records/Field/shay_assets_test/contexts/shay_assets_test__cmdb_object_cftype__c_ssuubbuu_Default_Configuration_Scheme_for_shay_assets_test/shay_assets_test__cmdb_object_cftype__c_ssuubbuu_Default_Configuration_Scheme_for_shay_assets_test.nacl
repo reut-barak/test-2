@@ -17,22 +17,6 @@ jira.CustomFieldContext shay_assets_test__cmdb_object_cftype__c_ssuubbuu_Default
     shouldSetDefaultValuesFromEmptySearch = false
     assignStrict = false
     objectSchemaDisplayName = "IIS_restored_at_202403211012"
-    attributesIncludedInAutoCompleteSearchWithDisplayName = [
-      {
-        name = "Idoa"
-      },
-      {
-        name = "Updated"
-      },
-      {
-        name = "Label"
-      },
-    ]
-    attributesDisplayedOnIssueWithDisplayName = [
-      {
-        name = "Key"
-      },
-    ]
   }
   _parent = [
     jira.Field.instance.shay_assets_test__cmdb_object_cftype__c@ssuubbuu,

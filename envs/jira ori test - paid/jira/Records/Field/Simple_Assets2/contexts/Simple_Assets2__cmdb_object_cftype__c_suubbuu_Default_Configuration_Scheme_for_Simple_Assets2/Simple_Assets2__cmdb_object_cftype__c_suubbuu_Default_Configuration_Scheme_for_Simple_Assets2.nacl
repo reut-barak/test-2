@@ -10,11 +10,6 @@ jira.CustomFieldContext Simple_Assets2__cmdb_object_cftype__c_suubbuu_Default_Co
     shouldSetDefaultValuesFromEmptySearch = true
     assignStrict = false
     objectSchemaDisplayName = "Icons"
-    attributesIncludedInAutoCompleteSearchWithDisplayName = [
-      {
-        name = "Key"
-      },
-    ]
   }
   _parent = [
     jira.Field.instance.Simple_Assets2__cmdb_object_cftype__c@suubbuu,

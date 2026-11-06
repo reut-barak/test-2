@@ -68,4 +68,5 @@ jira.Automation DupliField_Automation@s {
   }
   isAgentic = false
   _alias = "DupliField Automation"
+  hasDraft = false
 }

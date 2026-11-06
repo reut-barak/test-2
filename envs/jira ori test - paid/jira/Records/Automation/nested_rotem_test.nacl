@@ -140,4 +140,5 @@ jira.Automation nested_rotem_test@ub {
   }
   isAgentic = false
   _alias = "nested"
+  hasDraft = false
 }

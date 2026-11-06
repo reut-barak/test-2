@@ -135,4 +135,5 @@ jira.Automation sla_rule_AlonProjecta2@su {
   }
   isAgentic = false
   _alias = "sla rule"
+  hasDraft = false
 }

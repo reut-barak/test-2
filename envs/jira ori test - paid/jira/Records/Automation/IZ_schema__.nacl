@@ -74,4 +74,5 @@ jira.Automation IZ_schema__@saa {
   }
   isAgentic = false
   _alias = "IZ schema??"
+  hasDraft = false
 }

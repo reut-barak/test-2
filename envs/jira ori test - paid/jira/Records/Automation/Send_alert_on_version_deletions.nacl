@@ -67,4 +67,5 @@ jira.Automation Send_alert_on_version_deletions@s {
   }
   isAgentic = false
   _alias = "Send alert on version deletions"
+  hasDraft = false
 }

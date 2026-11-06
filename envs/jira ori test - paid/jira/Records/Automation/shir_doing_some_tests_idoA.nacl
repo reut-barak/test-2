@@ -108,4 +108,5 @@ jira.Automation shir_doing_some_tests_idoA@sssu {
   }
   isAgentic = false
   _alias = "shir doing some tests"
+  hasDraft = false
 }

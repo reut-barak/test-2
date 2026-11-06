@@ -106,4 +106,5 @@ jira.Automation DP___Enabled_Rule_DP_Service_Project@sbssuss {
   }
   isAgentic = false
   _alias = "DP - Enabled Rule"
+  hasDraft = false
 }

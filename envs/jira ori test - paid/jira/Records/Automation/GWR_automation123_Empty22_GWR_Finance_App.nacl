@@ -97,4 +97,5 @@ jira.Automation GWR_automation123_Empty22_GWR_Finance_App@suuss {
   }
   isAgentic = false
   _alias = "GWR automation123"
+  hasDraft = false
 }

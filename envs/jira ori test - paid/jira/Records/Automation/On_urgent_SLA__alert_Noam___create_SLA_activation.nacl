@@ -103,4 +103,5 @@ jira.Automation On_urgent_SLA__alert_Noam___create_SLA_activation@sszdssszesss {
   }
   isAgentic = false
   _alias = "On urgent SLA, alert Noam + create SLA activation"
+  hasDraft = false
 }

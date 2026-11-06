@@ -250,4 +250,5 @@ jira.Automation DP___Smart_Values@sbss {
   }
   isAgentic = false
   _alias = "DP - Smart Values"
+  hasDraft = false
 }

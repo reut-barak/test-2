@@ -80,4 +80,5 @@ jira.Automation Testing_breaking_fields_AlonCompanyProject@ssu {
   }
   isAgentic = false
   _alias = "Testing breaking fields"
+  hasDraft = false
 }

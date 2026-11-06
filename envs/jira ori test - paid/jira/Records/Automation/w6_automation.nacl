@@ -107,4 +107,5 @@ jira.Automation w6_automation@s {
   }
   isAgentic = false
   _alias = "w6 automation"
+  hasDraft = false
 }

@@ -78,4 +78,5 @@ jira.Automation EnvVarAutomation {
   }
   isAgentic = false
   _alias = "EnvVarAutomation"
+  hasDraft = false
 }

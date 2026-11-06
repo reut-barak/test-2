@@ -120,4 +120,5 @@ jira.Automation When_parent_is_done___move_all_sub_tasks_to_done_Jira_management
   }
   isAgentic = false
   _alias = "When parent is done → move all sub-tasks to done"
+  hasDraft = false
 }

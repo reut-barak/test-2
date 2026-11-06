@@ -52,4 +52,5 @@ jira.Automation Del_Rule@s {
   }
   isAgentic = false
   _alias = "Del Rule"
+  hasDraft = false
 }

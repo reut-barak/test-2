@@ -97,4 +97,5 @@ jira.Automation DP___Update_Priority_DP___SaaS_Project@sbssusbss {
   }
   isAgentic = false
   _alias = "DP - Update Priority"
+  hasDraft = false
 }

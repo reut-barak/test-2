@@ -100,4 +100,5 @@ jira.Automation GWR_automation1_BUG1_GWR_Finance_App_ITSM_project@suussus {
   }
   isAgentic = false
   _alias = "GWR automation1"
+  hasDraft = false
 }

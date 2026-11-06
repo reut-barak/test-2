@@ -117,4 +117,5 @@ jira.Automation shirIssueTransitioned_createSubTasks_AlonCompanyProject {
   }
   isAgentic = false
   _alias = "shirIssueTransitioned_createSubTasks"
+  hasDraft = false
 }

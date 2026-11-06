@@ -13,16 +13,6 @@ jira.CustomFieldContext ZGY_Assets_Objects__cmdb_object_cftype__c_ssuubbuu_Defau
     shouldSetDefaultValuesFromEmptySearch = false
     assignStrict = false
     objectSchemaDisplayName = "automationAdd"
-    attributesIncludedInAutoCompleteSearchWithDisplayName = [
-      {
-        name = "Label"
-      },
-    ]
-    attributesDisplayedOnIssueWithDisplayName = [
-      {
-        name = "Updated"
-      },
-    ]
   }
   _parent = [
     jira.Field.instance.ZGY_Assets_Objects__cmdb_object_cftype__c@ssuubbuu,

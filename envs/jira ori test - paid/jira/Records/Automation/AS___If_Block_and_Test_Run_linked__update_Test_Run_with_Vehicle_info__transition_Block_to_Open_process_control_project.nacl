@@ -113,4 +113,5 @@ jira.Automation AS___If_Block_and_Test_Run_linked__update_Test_Run_with_Vehicle_
   }
   isAgentic = false
   _alias = "AS - If Block and Test Run linked, update Test Run with Vehicle info, transition Block to Open"
+  hasDraft = false
 }

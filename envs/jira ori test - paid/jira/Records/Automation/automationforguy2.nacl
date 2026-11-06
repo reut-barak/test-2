@@ -71,4 +71,5 @@ jira.Automation automationforguy2 {
   }
   isAgentic = false
   _alias = "automationforguy2"
+  hasDraft = false
 }

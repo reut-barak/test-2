@@ -373,4 +373,5 @@ jira.Automation Yuval_automation {
   }
   isAgentic = false
   _alias = "Yuval_automation"
+  hasDraft = false
 }

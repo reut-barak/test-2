@@ -112,4 +112,5 @@ jira.Automation When_a_customer_comments_on_a_closed_request___then_reopen_the_r
   }
   isAgentic = false
   _alias = "When a customer comments on a closed request → then reopen the request"
+  hasDraft = false
 }

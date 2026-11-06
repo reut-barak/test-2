@@ -244,4 +244,5 @@ jira.Automation testImport32 {
   }
   isAgentic = false
   _alias = "testImport32"
+  hasDraft = false
 }

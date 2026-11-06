@@ -385,4 +385,5 @@ jira.Automation aaa2_idoA {
   }
   isAgentic = false
   _alias = "aaa2"
+  hasDraft = false
 }

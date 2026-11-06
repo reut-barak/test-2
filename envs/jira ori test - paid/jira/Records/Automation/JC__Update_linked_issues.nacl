@@ -183,4 +183,5 @@ Automation for Jira km
   }
   isAgentic = false
   _alias = "JC: Update linked issues"
+  hasDraft = false
 }

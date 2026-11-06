@@ -67,4 +67,5 @@ jira.Automation EnvVarsLiran {
   }
   isAgentic = false
   _alias = "EnvVarsLiran"
+  hasDraft = false
 }

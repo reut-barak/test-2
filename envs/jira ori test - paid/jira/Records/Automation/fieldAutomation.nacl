@@ -84,4 +84,5 @@ jira.Automation fieldAutomation {
   }
   isAgentic = false
   _alias = "fieldAutomation"
+  hasDraft = false
 }

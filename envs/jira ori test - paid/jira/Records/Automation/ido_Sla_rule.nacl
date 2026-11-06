@@ -103,4 +103,5 @@ jira.Automation ido_Sla_rule@s {
   }
   isAgentic = false
   _alias = "ido Sla rule"
+  hasDraft = false
 }

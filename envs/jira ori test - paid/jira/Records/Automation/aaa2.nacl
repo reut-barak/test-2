@@ -71,4 +71,5 @@ jira.Automation aaa2 {
   }
   isAgentic = false
   _alias = "aaa2"
+  hasDraft = false
 }

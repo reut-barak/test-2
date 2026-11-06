@@ -313,4 +313,5 @@ Fill in the Close Code.
   }
   isAgentic = false
   _alias = "biorad2"
+  hasDraft = false
 }

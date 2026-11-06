@@ -70,4 +70,5 @@ jira.Automation IdoAssets1 {
   }
   isAgentic = false
   _alias = "IdoAssets1"
+  hasDraft = false
 }
