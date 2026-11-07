@@ -1,0 +1,4 @@
+jira.ProjectRole atlassian_member_role@b {
+  name = "atlassian-member-role"
+  description = "Members are part of the team, and can add, edit, and collaborate on all work."
+}

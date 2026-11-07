@@ -39,6 +39,13 @@ jira.PermissionScheme Jira_Service_Management_Permission_Scheme_for_Project_ITSA
     },
     {
       holder = {
+        type = "projectRole"
+        parameter = jira.ProjectRole.instance.atlassian_member_role@b
+      }
+      permission = "ADD_COMMENTS"
+    },
+    {
+      holder = {
         type = "sd.customer.portal.only"
       }
       permission = "ADD_COMMENTS"
@@ -128,6 +135,13 @@ jira.PermissionScheme Jira_Service_Management_Permission_Scheme_for_Project_ITSA
     },
     {
       holder = {
+        type = "projectRole"
+        parameter = jira.ProjectRole.instance.atlassian_member_role@b
+      }
+      permission = "ASSIGNABLE_USER"
+    },
+    {
+      holder = {
         type = "applicationRole"
         parameter = "jira-servicedesk"
       }
@@ -158,6 +172,13 @@ jira.PermissionScheme Jira_Service_Management_Permission_Scheme_for_Project_ITSA
       holder = {
         type = "projectRole"
         parameter = jira.ProjectRole.instance.atlassian_ai_agent_role@b
+      }
+      permission = "ASSIGN_ISSUES"
+    },
+    {
+      holder = {
+        type = "projectRole"
+        parameter = jira.ProjectRole.instance.atlassian_member_role@b
       }
       permission = "ASSIGN_ISSUES"
     },
@@ -204,6 +225,13 @@ jira.PermissionScheme Jira_Service_Management_Permission_Scheme_for_Project_ITSA
     },
     {
       holder = {
+        type = "projectRole"
+        parameter = jira.ProjectRole.instance.atlassian_member_role@b
+      }
+      permission = "BROWSE_PROJECTS"
+    },
+    {
+      holder = {
         type = "sd.customer.portal.only"
       }
       permission = "BROWSE_PROJECTS"
@@ -245,6 +273,13 @@ jira.PermissionScheme Jira_Service_Management_Permission_Scheme_for_Project_ITSA
     },
     {
       holder = {
+        type = "projectRole"
+        parameter = jira.ProjectRole.instance.atlassian_member_role@b
+      }
+      permission = "CLOSE_ISSUES"
+    },
+    {
+      holder = {
         type = "sd.customer.portal.only"
       }
       permission = "CLOSE_ISSUES"
@@ -286,6 +321,13 @@ jira.PermissionScheme Jira_Service_Management_Permission_Scheme_for_Project_ITSA
     },
     {
       holder = {
+        type = "projectRole"
+        parameter = jira.ProjectRole.instance.atlassian_member_role@b
+      }
+      permission = "CREATE_ATTACHMENTS"
+    },
+    {
+      holder = {
         type = "sd.customer.portal.only"
       }
       permission = "CREATE_ATTACHMENTS"
@@ -322,6 +364,13 @@ jira.PermissionScheme Jira_Service_Management_Permission_Scheme_for_Project_ITSA
       holder = {
         type = "projectRole"
         parameter = jira.ProjectRole.instance.atlassian_ai_agent_role@b
+      }
+      permission = "CREATE_ISSUES"
+    },
+    {
+      holder = {
+        type = "projectRole"
+        parameter = jira.ProjectRole.instance.atlassian_member_role@b
       }
       permission = "CREATE_ISSUES"
     },
@@ -465,6 +514,13 @@ jira.PermissionScheme Jira_Service_Management_Permission_Scheme_for_Project_ITSA
     },
     {
       holder = {
+        type = "projectRole"
+        parameter = jira.ProjectRole.instance.atlassian_member_role@b
+      }
+      permission = "DELETE_OWN_ATTACHMENTS"
+    },
+    {
+      holder = {
         type = "sd.customer.portal.only"
       }
       permission = "DELETE_OWN_ATTACHMENTS"
@@ -499,6 +555,13 @@ jira.PermissionScheme Jira_Service_Management_Permission_Scheme_for_Project_ITSA
     },
     {
       holder = {
+        type = "projectRole"
+        parameter = jira.ProjectRole.instance.atlassian_member_role@b
+      }
+      permission = "DELETE_OWN_COMMENTS"
+    },
+    {
+      holder = {
         type = "sd.customer.portal.only"
       }
       permission = "DELETE_OWN_COMMENTS"
@@ -533,6 +596,13 @@ jira.PermissionScheme Jira_Service_Management_Permission_Scheme_for_Project_ITSA
     },
     {
       holder = {
+        type = "projectRole"
+        parameter = jira.ProjectRole.instance.atlassian_member_role@b
+      }
+      permission = "DELETE_OWN_WORKLOGS"
+    },
+    {
+      holder = {
         type = "applicationRole"
         parameter = "jira-servicedesk"
       }
@@ -610,6 +680,13 @@ jira.PermissionScheme Jira_Service_Management_Permission_Scheme_for_Project_ITSA
     },
     {
       holder = {
+        type = "projectRole"
+        parameter = jira.ProjectRole.instance.atlassian_member_role@b
+      }
+      permission = "EDIT_ISSUES"
+    },
+    {
+      holder = {
         type = "sd.customer.portal.only"
       }
       permission = "EDIT_ISSUES"
@@ -665,6 +742,13 @@ jira.PermissionScheme Jira_Service_Management_Permission_Scheme_for_Project_ITSA
     },
     {
       holder = {
+        type = "projectRole"
+        parameter = jira.ProjectRole.instance.atlassian_member_role@b
+      }
+      permission = "EDIT_OWN_COMMENTS"
+    },
+    {
+      holder = {
         type = "sd.customer.portal.only"
       }
       permission = "EDIT_OWN_COMMENTS"
@@ -701,6 +785,13 @@ jira.PermissionScheme Jira_Service_Management_Permission_Scheme_for_Project_ITSA
       holder = {
         type = "projectRole"
         parameter = jira.ProjectRole.instance.atlassian_ai_agent_role@b
+      }
+      permission = "EDIT_OWN_WORKLOGS"
+    },
+    {
+      holder = {
+        type = "projectRole"
+        parameter = jira.ProjectRole.instance.atlassian_member_role@b
       }
       permission = "EDIT_OWN_WORKLOGS"
     },
@@ -743,6 +834,13 @@ jira.PermissionScheme Jira_Service_Management_Permission_Scheme_for_Project_ITSA
       holder = {
         type = "projectRole"
         parameter = jira.ProjectRole.instance.atlassian_ai_agent_role@b
+      }
+      permission = "LINK_ISSUES"
+    },
+    {
+      holder = {
+        type = "projectRole"
+        parameter = jira.ProjectRole.instance.atlassian_member_role@b
       }
       permission = "LINK_ISSUES"
     },
@@ -885,6 +983,13 @@ jira.PermissionScheme Jira_Service_Management_Permission_Scheme_for_Project_ITSA
     },
     {
       holder = {
+        type = "projectRole"
+        parameter = jira.ProjectRole.instance.atlassian_member_role@b
+      }
+      permission = "MOVE_ISSUES"
+    },
+    {
+      holder = {
         type = "sd.customer.portal.only"
       }
       permission = "MOVE_ISSUES"
@@ -926,6 +1031,13 @@ jira.PermissionScheme Jira_Service_Management_Permission_Scheme_for_Project_ITSA
     },
     {
       holder = {
+        type = "projectRole"
+        parameter = jira.ProjectRole.instance.atlassian_member_role@b
+      }
+      permission = "RESOLVE_ISSUES"
+    },
+    {
+      holder = {
         type = "sd.customer.portal.only"
       }
       permission = "RESOLVE_ISSUES"
@@ -967,6 +1079,13 @@ jira.PermissionScheme Jira_Service_Management_Permission_Scheme_for_Project_ITSA
     },
     {
       holder = {
+        type = "projectRole"
+        parameter = jira.ProjectRole.instance.atlassian_member_role@b
+      }
+      permission = "SCHEDULE_ISSUES"
+    },
+    {
+      holder = {
         type = "sd.customer.portal.only"
       }
       permission = "SCHEDULE_ISSUES"
@@ -1070,6 +1189,13 @@ jira.PermissionScheme Jira_Service_Management_Permission_Scheme_for_Project_ITSA
     },
     {
       holder = {
+        type = "projectRole"
+        parameter = jira.ProjectRole.instance.atlassian_member_role@b
+      }
+      permission = "TRANSITION_ISSUES"
+    },
+    {
+      holder = {
         type = "sd.customer.portal.only"
       }
       permission = "TRANSITION_ISSUES"
@@ -1180,6 +1306,13 @@ jira.PermissionScheme Jira_Service_Management_Permission_Scheme_for_Project_ITSA
     },
     {
       holder = {
+        type = "projectRole"
+        parameter = jira.ProjectRole.instance.atlassian_member_role@b
+      }
+      permission = "VIEW_READONLY_WORKFLOW"
+    },
+    {
+      holder = {
         type = "applicationRole"
         parameter = "jira-servicedesk"
       }
@@ -1210,6 +1343,13 @@ jira.PermissionScheme Jira_Service_Management_Permission_Scheme_for_Project_ITSA
       holder = {
         type = "projectRole"
         parameter = jira.ProjectRole.instance.atlassian_ai_agent_role@b
+      }
+      permission = "VIEW_VOTERS_AND_WATCHERS"
+    },
+    {
+      holder = {
+        type = "projectRole"
+        parameter = jira.ProjectRole.instance.atlassian_member_role@b
       }
       permission = "VIEW_VOTERS_AND_WATCHERS"
     },
@@ -1251,6 +1391,13 @@ jira.PermissionScheme Jira_Service_Management_Permission_Scheme_for_Project_ITSA
       holder = {
         type = "projectRole"
         parameter = jira.ProjectRole.instance.atlassian_ai_agent_role@b
+      }
+      permission = "WORK_ON_ISSUES"
+    },
+    {
+      holder = {
+        type = "projectRole"
+        parameter = jira.ProjectRole.instance.atlassian_member_role@b
       }
       permission = "WORK_ON_ISSUES"
     },
