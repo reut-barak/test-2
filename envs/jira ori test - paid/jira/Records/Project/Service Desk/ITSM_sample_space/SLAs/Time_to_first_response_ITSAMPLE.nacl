@@ -60,6 +60,7 @@ jira.SLA Time_to_first_response_ITSAMPLE@sssu {
       },
     ]
     slaDisplayFormat = "NEW_SLA_FORMAT"
+    lastUpdatedMsEpoch = 1732136537710
   }
   _parent = [
     jira.Project.instance.ITSM_sample_space@s,

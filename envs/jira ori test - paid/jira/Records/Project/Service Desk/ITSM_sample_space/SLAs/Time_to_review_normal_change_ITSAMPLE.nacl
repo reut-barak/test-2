@@ -53,6 +53,7 @@ jira.SLA Time_to_review_normal_change_ITSAMPLE@ssssu {
       },
     ]
     slaDisplayFormat = "NEW_SLA_FORMAT"
+    lastUpdatedMsEpoch = 1643624027488
   }
   _parent = [
     jira.Project.instance.ITSM_sample_space@s,

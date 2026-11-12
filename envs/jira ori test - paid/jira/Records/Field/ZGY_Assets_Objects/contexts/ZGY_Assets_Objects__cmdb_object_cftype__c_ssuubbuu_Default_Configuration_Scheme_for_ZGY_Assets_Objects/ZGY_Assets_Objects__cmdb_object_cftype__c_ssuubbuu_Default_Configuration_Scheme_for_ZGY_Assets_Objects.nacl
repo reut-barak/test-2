@@ -12,7 +12,6 @@ jira.CustomFieldContext ZGY_Assets_Objects__cmdb_object_cftype__c_ssuubbuu_Defau
     multiple = false
     shouldSetDefaultValuesFromEmptySearch = false
     assignStrict = false
-    objectSchemaDisplayName = "automationAdd"
   }
   _parent = [
     jira.Field.instance.ZGY_Assets_Objects__cmdb_object_cftype__c@ssuubbuu,

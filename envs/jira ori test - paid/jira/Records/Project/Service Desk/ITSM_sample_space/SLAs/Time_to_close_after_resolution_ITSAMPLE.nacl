@@ -41,6 +41,7 @@ jira.SLA Time_to_close_after_resolution_ITSAMPLE@ssssu {
       },
     ]
     slaDisplayFormat = "NEW_SLA_FORMAT"
+    lastUpdatedMsEpoch = 1643624027488
   }
   _parent = [
     jira.Project.instance.ITSM_sample_space@s,

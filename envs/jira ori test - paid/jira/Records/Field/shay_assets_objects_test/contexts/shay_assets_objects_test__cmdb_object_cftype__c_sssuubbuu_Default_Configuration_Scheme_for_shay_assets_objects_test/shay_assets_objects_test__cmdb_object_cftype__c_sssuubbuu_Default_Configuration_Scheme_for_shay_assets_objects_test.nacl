@@ -9,7 +9,6 @@ jira.CustomFieldContext shay_assets_objects_test__cmdb_object_cftype__c_sssuubbu
     multiple = false
     shouldSetDefaultValuesFromEmptySearch = true
     assignStrict = false
-    objectSchemaDisplayName = "Icons"
   }
   _parent = [
     jira.Field.instance.shay_assets_objects_test__cmdb_object_cftype__c@sssuubbuu,

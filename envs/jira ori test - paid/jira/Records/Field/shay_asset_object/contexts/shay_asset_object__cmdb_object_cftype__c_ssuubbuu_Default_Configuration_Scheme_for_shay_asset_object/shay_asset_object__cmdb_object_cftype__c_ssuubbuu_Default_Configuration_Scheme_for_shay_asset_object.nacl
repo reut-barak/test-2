@@ -23,7 +23,6 @@ jira.CustomFieldContext shay_asset_object__cmdb_object_cftype__c_ssuubbuu_Defaul
     multiple = false
     shouldSetDefaultValuesFromEmptySearch = true
     assignStrict = false
-    objectSchemaDisplayName = "idoA Schema rename"
   }
   _parent = [
     jira.Field.instance.shay_asset_object__cmdb_object_cftype__c@ssuubbuu,
