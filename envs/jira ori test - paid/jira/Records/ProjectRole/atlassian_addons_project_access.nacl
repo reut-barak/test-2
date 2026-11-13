@@ -143,12 +143,12 @@ jira.ProjectRole atlassian_addons_project_access@b {
       }
     },
     {
-      displayName = "PlanApply for Jira Cloud - Configuration Management"
+      displayName = "PlanApply for Jira Cloud - (Deprecated)"
       type = "atlassian-user-role-actor"
       actorUser = {
         accountId = {
           id = "712020:d018898a-83b7-4f18-8229-f234f5dc91fa"
-          displayName = "PlanApply for Jira Cloud - Configuration Management"
+          displayName = "PlanApply for Jira Cloud - (Deprecated)"
         }
       }
     },
