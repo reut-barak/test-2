@@ -1,0 +1,54 @@
+jira.Automation SALTO8305_B {
+  name = "SALTO8305_B"
+  state = "ENABLED"
+  description = "edit: id + masked token"
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "60e8b78784c9920071996842"
+    displayName = "Lior Neudorfer"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.incoming.webhook"
+    value = {
+      searchOrProvide = "none"
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      type = "codebarrel.action.log"
+      conditions = [
+      ]
+      children = [
+      ]
+      rawValue = "SALTO-8305 test"
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "690eab9f-88e6-4d26-8b34-8d25a831a882"
+  checksum = {
+    version = 3
+    value = "c4c11701aad97a55892d9a40543fc7e770dc99b39b41eb5df318cb0632bd7707"
+  }
+  isAgentic = false
+  hasDraft = false
+  _alias = "SALTO8305_B"
+}
