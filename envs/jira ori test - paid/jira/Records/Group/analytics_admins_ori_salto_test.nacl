@@ -1,0 +1,3 @@
+jira.Group analytics_admins_ori_salto_test@b {
+  name = "analytics-admins-ori-salto-test"
+}

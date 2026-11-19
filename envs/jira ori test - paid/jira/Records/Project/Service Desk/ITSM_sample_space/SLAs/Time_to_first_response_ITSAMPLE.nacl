@@ -60,6 +60,7 @@ jira.SLA Time_to_first_response_ITSAMPLE@sssu {
       },
     ]
     slaDisplayFormat = "NEW_SLA_FORMAT"
+    slaVisibleInPortal = false
     lastUpdatedMsEpoch = 1732136537710
   }
   _parent = [
