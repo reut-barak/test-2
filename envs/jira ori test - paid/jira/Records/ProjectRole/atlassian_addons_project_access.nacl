@@ -33,16 +33,6 @@ jira.ProjectRole atlassian_addons_project_access@b {
       }
     },
     {
-      displayName = "Behaviours - ScriptRunner for Jira Cloud"
-      type = "atlassian-user-role-actor"
-      actorUser = {
-        accountId = {
-          id = "627e5f2798eae500689fee1b"
-          displayName = "Behaviours - ScriptRunner for Jira Cloud"
-        }
-      }
-    },
-    {
       displayName = "Configuration Manager for Jira (CMJ)"
       type = "atlassian-user-role-actor"
       actorUser = {
