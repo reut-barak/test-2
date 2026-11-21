@@ -7,6 +7,7 @@ jira.CustomFieldContext Ido_Assets_field__cmdb_object_cftype__c_ssuubbuu_My_seco
     multiple = false
     shouldSetDefaultValuesFromEmptySearch = false
     assignStrict = false
+    customFieldId = "customfield_14152"
   }
   _parent = [
     jira.Field.instance.Ido_Assets_field__cmdb_object_cftype__c@ssuubbuu,

@@ -11,6 +11,7 @@ jira.CustomFieldContext Ido2_Assets__cmdb_object_cftype__c_suubbuu_Default_Confi
     multiple = false
     shouldSetDefaultValuesFromEmptySearch = false
     assignStrict = false
+    customFieldId = "customfield_14168"
   }
   _parent = [
     jira.Field.instance.Ido2_Assets__cmdb_object_cftype__c@suubbuu,

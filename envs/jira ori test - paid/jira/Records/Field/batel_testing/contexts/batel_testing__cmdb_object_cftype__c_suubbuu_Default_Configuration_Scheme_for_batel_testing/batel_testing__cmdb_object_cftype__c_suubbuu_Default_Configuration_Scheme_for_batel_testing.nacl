@@ -15,6 +15,7 @@ jira.CustomFieldContext batel_testing__cmdb_object_cftype__c_suubbuu_Default_Con
     multiple = true
     shouldSetDefaultValuesFromEmptySearch = true
     assignStrict = false
+    customFieldId = "customfield_14175"
   }
   _parent = [
     jira.Field.instance.batel_testing__cmdb_object_cftype__c@suubbuu,

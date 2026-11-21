@@ -5,6 +5,7 @@ jira.CustomFieldContext ido7Sand_assets__cmdb_object_cftype__c_suubbuu_Default_C
     multiple = false
     shouldSetDefaultValuesFromEmptySearch = false
     assignStrict = false
+    customFieldId = "customfield_14171"
   }
   _parent = [
     jira.Field.instance.ido7Sand_assets__cmdb_object_cftype__c@suubbuu,

@@ -5,6 +5,7 @@ jira.CustomFieldContext without_context__cmdb_object_cftype__c_suubbuu_Default_C
     multiple = false
     shouldSetDefaultValuesFromEmptySearch = false
     assignStrict = false
+    customFieldId = "customfield_14174"
   }
   _parent = [
     jira.Field.instance.without_context__cmdb_object_cftype__c@suubbuu,

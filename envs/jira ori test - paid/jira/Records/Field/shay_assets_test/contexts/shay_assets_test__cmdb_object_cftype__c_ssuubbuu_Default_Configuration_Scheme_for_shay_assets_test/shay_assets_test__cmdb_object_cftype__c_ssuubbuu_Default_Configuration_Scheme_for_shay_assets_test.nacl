@@ -16,6 +16,7 @@ jira.CustomFieldContext shay_assets_test__cmdb_object_cftype__c_ssuubbuu_Default
     multiple = true
     shouldSetDefaultValuesFromEmptySearch = false
     assignStrict = false
+    customFieldId = "customfield_14158"
   }
   _parent = [
     jira.Field.instance.shay_assets_test__cmdb_object_cftype__c@ssuubbuu,

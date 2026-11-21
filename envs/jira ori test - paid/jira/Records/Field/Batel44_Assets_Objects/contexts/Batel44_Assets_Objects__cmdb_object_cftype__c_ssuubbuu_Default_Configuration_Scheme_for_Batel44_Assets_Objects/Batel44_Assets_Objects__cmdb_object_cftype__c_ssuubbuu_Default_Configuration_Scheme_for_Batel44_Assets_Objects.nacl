@@ -14,6 +14,7 @@ jira.CustomFieldContext Batel44_Assets_Objects__cmdb_object_cftype__c_ssuubbuu_D
     multiple = true
     shouldSetDefaultValuesFromEmptySearch = true
     assignStrict = false
+    customFieldId = "customfield_14170"
   }
   _parent = [
     jira.Field.instance.Batel44_Assets_Objects__cmdb_object_cftype__c@ssuubbuu,
@@ -27,6 +28,7 @@ jira.CustomFieldContext Batel44_Assets_Objects__cmdb_object_cftype__c_ssuubbuu_D
     multiple = false
     shouldSetDefaultValuesFromEmptySearch = false
     assignStrict = false
+    customFieldId = "customfield_14170"
   }
   _parent = [
     jira.Field.instance.Batel44_Assets_Objects__cmdb_object_cftype__c@ssuubbuu,
