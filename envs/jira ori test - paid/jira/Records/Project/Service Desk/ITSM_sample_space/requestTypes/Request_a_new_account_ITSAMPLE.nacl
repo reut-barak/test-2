@@ -324,7 +324,28 @@ jira.RequestType Request_a_new_account_ITSAMPLE@sssu {
         {
           type = "FIELD"
           sectionType = "SECONDARY"
+          key = jira.Field.instance.Batel_Assets_Objects__cmdb_object_cftype__c@ssuubbuu
+          data = {
+            custom = true
+            global = true
+            description = "Batel testing assets objects"
+            required = false
+          }
+        },
+        {
+          type = "FIELD"
+          sectionType = "SECONDARY"
           key = jira.Field.instance.Parent
+          data = {
+            custom = false
+            global = true
+            required = false
+          }
+        },
+        {
+          type = "FIELD"
+          sectionType = "SECONDARY"
+          key = jira.Field.instance.Due_date__date@suu
           data = {
             custom = false
             global = true

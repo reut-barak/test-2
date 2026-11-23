@@ -26,6 +26,8 @@ jira.Screen ITSAMPLE__Jira_Service_Management__Request_Fulfilment_View_Edit_Scre
         jira.Field.instance.NewCustomFieldLior__multicheckboxes__c,
         jira.Field.instance.AAA_test_custom_field__multicheckboxes__c@sssuuuu,
         jira.Field.instance.Parent,
+        jira.Field.instance.Batel_Assets_Objects__cmdb_object_cftype__c@ssuubbuu,
+        jira.Field.instance.Due_date__date@suu,
       ]
       position = 0
     }
