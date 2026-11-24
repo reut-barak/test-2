@@ -1,0 +1,8 @@
+jira.ScriptedField Ido_Test2@s {
+  name = "Ido Test2"
+  scriptedFieldType = "NUMBER_FIELD"
+  codeToRun = file(
+    "jira/ScriptedField/Ido_Test2.s.codeToRun.txt",
+    "utf-8",
+  )
+}

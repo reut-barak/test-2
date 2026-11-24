@@ -1,0 +1,54 @@
+jira.Behavior Neta_test_2@s {
+  description = "aaa"
+  name = "Neta test 2"
+  enabled = true
+  config = [
+    {
+      event = [
+        "ONLOAD",
+      ]
+      fieldName = ""
+      javascript = file(
+        "jira/Behavior/Neta_test_2.s.config.0.javascript.txt",
+        "utf-8",
+      )
+      typescript = file(
+        "jira/Behavior/Neta_test_2.s.config.0.typescript.txt",
+        "utf-8",
+      )
+      affectedFields = [
+        jira.Field.instance.Summary__string,
+      ]
+      viewTypes = [
+        "GIC",
+      ]
+    },
+    {
+      event = [
+        "ONLOAD",
+      ]
+      fieldName = ""
+      javascript = file(
+        "jira/Behavior/Neta_test_2.s.config.1.javascript.txt",
+        "utf-8",
+      )
+      typescript = file(
+        "jira/Behavior/Neta_test_2.s.config.1.typescript.txt",
+        "utf-8",
+      )
+      affectedFields = [
+        jira.Field.instance.Summary__string,
+      ]
+      viewTypes = [
+        "GIC",
+      ]
+    },
+  ]
+  product = "jira"
+  projects = [
+    jira.Project.instance.Neta_aaa@s,
+  ]
+  issueTypes = [
+    jira.IssueType.instance.Neta_aaa1@s,
+  ]
+}

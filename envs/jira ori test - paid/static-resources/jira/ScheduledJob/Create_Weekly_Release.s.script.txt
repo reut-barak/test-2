@@ -1,0 +1,27 @@
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+            
+// Getting todays date
+final releaseDate = DateTimeFormatter.ISO_LOCAL_DATE.format(LocalDateTime.now())
+
+// This will be the name of the version
+final name = "Version $releaseDate"
+
+// Replace TEST with the project key you'd like to create a release in
+final projectKey = 'TEST'
+
+// Added configuration
+final archived = false
+final released = true
+
+// Here we tell jira to create the release as specified
+post("/rest/api/2/version")
+    .header('Content-Type', 'application/json')
+    .body([
+        name: name,
+        archived: archived,
+        released: released,
+        releaseDate: releaseDate,
+        project: projectKey
+    ])
+    .asString()

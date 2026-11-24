@@ -1,0 +1,1 @@
+getFieldById("summary").setDescription("Include invoice number in your issue summary");

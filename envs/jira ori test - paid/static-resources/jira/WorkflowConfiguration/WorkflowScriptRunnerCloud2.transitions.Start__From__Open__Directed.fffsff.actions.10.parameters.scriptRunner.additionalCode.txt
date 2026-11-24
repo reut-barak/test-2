@@ -1,0 +1,11 @@
+def issueKey = issue.key
+def newSummary = 'Updated by a script'
+
+def result = put("/rest/api/2/issue/${issueKey}")
+        .header('Content-Type', 'application/json')
+        .body([
+                fields: [
+                        summary: newSummary
+                ]
+        ])
+        .asString()

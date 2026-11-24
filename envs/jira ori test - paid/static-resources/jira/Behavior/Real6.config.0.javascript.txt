@@ -1,0 +1,1 @@
+getFieldById("summary").setDescription("IDO11256 scriptRunner Change");

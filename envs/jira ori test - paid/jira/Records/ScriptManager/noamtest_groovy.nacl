@@ -1,0 +1,9 @@
+jira.ScriptManager noamtest_groovy@v {
+  name = "noamtest.groovy"
+  type = "file"
+  path = "noamtest.groovy"
+  content = file(
+    "jira/ScriptManager/noamtest.groovy",
+    "utf-8",
+  )
+}

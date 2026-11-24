@@ -1,0 +1,13 @@
+jira.ScriptRunnerListener test_bla@s {
+  events = [
+    "attachment_created",
+  ]
+  script = file(
+    "jira/ScriptRunnerListener/test_bla.s.script.txt",
+    "utf-8",
+  )
+  executionCondition = ""
+  description = "test bla"
+  enabled = true
+  executionUser = "INITIATING_USER"
+}

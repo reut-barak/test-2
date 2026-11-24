@@ -1,0 +1,11 @@
+def issueId = issue.id
+
+def link = post('/rest/api/2/issueLink')
+        .header('Content-Type', 'application/json')
+        .body([
+            type: [ name: "Blocks" ],
+            outwardIssue: [ id: issueId ],  // This is the issue that the link 'starts' at
+            inwardIssue: [ key: 'EX-1' ]  // You'll need to specify an issue ID or key here
+        ])
+        .asString()
+assert link.status == 201
