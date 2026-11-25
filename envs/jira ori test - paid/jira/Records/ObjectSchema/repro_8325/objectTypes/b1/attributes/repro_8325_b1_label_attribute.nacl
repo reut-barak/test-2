@@ -1,0 +1,4 @@
+jira.ObjectTypeLabelAttribute repro_8325_b1_label_attribute {
+  labelAttribute = jira.ObjectTypeAttribute.instance.repro_8325_b1_Name
+  objectType = jira.ObjectType.instance.repro_8325_b1
+}

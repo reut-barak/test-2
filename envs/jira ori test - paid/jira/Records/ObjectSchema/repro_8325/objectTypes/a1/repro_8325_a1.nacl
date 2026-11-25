@@ -1,0 +1,22 @@
+jira.ObjectType repro_8325_a1 {
+  name = "a1"
+  displayName = "A1"
+  type = 0
+  description = ""
+  inherited = false
+  abstractObjectType = false
+  parentObjectTypeInherited = false
+  schemaLabel = "repro_8325"
+  schemaDisplayLabel = "Repro 8325"
+  iconId = {
+    id = "1d82d315-046d-41ba-99cb-29784f2348ca"
+    name = "Debian"
+    url16 = "https://assets-media.atlassian.com/assets/icons/icons16/Debian.png"
+    url48 = "https://assets-media.atlassian.com/assets/icons/icons48/Debian.png"
+  }
+  parentObjectTypeId = jira.ObjectSchema.instance.repro_8325
+  _parent = [
+    jira.ObjectSchema.instance.repro_8325,
+  ]
+  _alias = "a1"
+}

@@ -1,0 +1,22 @@
+jira.ObjectType repro_8325_b1 {
+  name = "b1"
+  displayName = "B1"
+  type = 0
+  description = ""
+  inherited = false
+  abstractObjectType = false
+  parentObjectTypeInherited = false
+  schemaLabel = "repro_8325"
+  schemaDisplayLabel = "Repro 8325"
+  iconId = {
+    id = "78a227d9-d69b-4e96-93f7-8e501b475b0c"
+    name = "Deployment"
+    url16 = "https://assets-media.atlassian.com/assets/icons/icons16/Deployment.png"
+    url48 = "https://assets-media.atlassian.com/assets/icons/icons48/Deployment.png"
+  }
+  parentObjectTypeId = jira.ObjectSchema.instance.repro_8325
+  _parent = [
+    jira.ObjectSchema.instance.repro_8325,
+  ]
+  _alias = "b1"
+}

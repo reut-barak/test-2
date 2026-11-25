@@ -1,0 +1,9 @@
+jira.ObjectTypeOrder repro_8325_childOrder {
+  objectTypes = [
+    jira.ObjectType.instance.repro_8325_a1,
+    jira.ObjectType.instance.repro_8325_b1,
+  ]
+  _parent = [
+    jira.ObjectSchema.instance.repro_8325,
+  ]
+}

@@ -1,0 +1,10 @@
+jira.ObjectSchemaReferenceType repro_8325__repro_owner {
+  name = "repro_owner"
+  displayName = "Repro Owner"
+  description = ""
+  color = "8777D9"
+  removable = false
+  _parent = [
+    jira.ObjectSchema.instance.repro_8325,
+  ]
+}

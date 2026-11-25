@@ -1,0 +1,23 @@
+jira.ObjectTypeAttribute repro_8325_a1_reftob {
+  description = ""
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "reftob"
+  displayName = "RefToB"
+  objectType = jira.ObjectType.instance.repro_8325_a1
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 1
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = -1
+  typeValue = jira.ObjectType.instance.repro_8325_b1
+  _alias = "reftob"
+}
