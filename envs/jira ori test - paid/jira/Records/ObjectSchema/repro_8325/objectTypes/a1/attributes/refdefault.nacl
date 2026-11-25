@@ -1,0 +1,22 @@
+jira.ObjectTypeAttribute repro_8325_a1_refdefault {
+  description = ""
+  editable = true
+  hidden = false
+  includeChildObjectTypes = false
+  indexed = true
+  maximumCardinality = 1
+  minimumCardinality = 0
+  name = "refdefault"
+  displayName = "RefDefault"
+  objectType = jira.ObjectType.instance.repro_8325_a1
+  options = ""
+  pendingCreation = false
+  removable = true
+  sortable = true
+  summable = false
+  type = 0
+  uniqueAttribute = false
+  lockedConfiguration = false
+  defaultTypeId = 7
+  _alias = "refdefault"
+}
